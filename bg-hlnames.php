@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Bg Highlight Names
-Plugin URI: http://bogaiskov.ru
+Plugin URI: https://bogaiskov.ru/highlight-names/
 Description: Highlight Russian names in text of posts and pages.
 Version: 0.3.2
 Author: VBog
