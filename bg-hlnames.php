@@ -3,7 +3,7 @@
 Plugin Name: Bg Highlight Names
 Plugin URI: http://bogaiskov.ru
 Description: Highlight Russian names in text of posts and pages.
-Version: 0.3.1
+Version: 0.3.2
 Author: VBog
 Author URI: http://bogaiskov.ru
 */
@@ -33,7 +33,7 @@ Author URI: http://bogaiskov.ru
 if ( !defined('ABSPATH') ) {
 	die( 'Sorry, you are not allowed to access this page directly.' ); 
 }
-define('BG_HLNAMES_VERSION', '0.3.1');
+define('BG_HLNAMES_VERSION', '0.3.2');
 
 // Подключаем дополнительные модули
 include_once('includes/settings.php' );
@@ -114,38 +114,38 @@ class BgHighlightNames
 			if ($is_monk) {		// Монах
 				if ($nick) {		// Если есть Прозвище	
 					// 1. Прозвище обязательно, а второе Прозвище или Фамилия необязательны.
-					$template = "/\b".$this->template( $the_curacy.$name.$the_num.$space.$nick.$the_surname )."\b/iu";					// архиепископ Иоанн Шанхайский (Максимович)
+					$template = "/\b".$this->template( $the_curacy.$name.$the_num.$space.$nick.$the_surname )."(\b|\)?)/iu";					// архиепископ Иоанн Шанхайский (Максимович)
 					$txt = $this->add_link ($txt, $template, $the_person);
 					// 2. Возможно Прозвище в комбинации с Саном
 					if ($curacy) {
 						// - после имени
-						$template = "/\b".$this->template( $name.$the_num.$the_surname."\\,".$space.$curacy.$space.$nick )."\b/iu";		// Иоанн (Максимович), архиепископ Шанхайский
+						$template = "/\b".$this->template( $name.$the_num.$the_surname."\\,".$space.$curacy.$space.$nick )."(\b|\)?)/iu";		// Иоанн (Максимович), архиепископ Шанхайский
 						$txt = $this->add_link ($txt, $template, $the_person);
 						// - перед именем
-						$template = "/\b".$this->template( $curacy.$space.$nick.$space.$name.$the_num.$the_surname )."\b/iu";			// архиепископ Шанхайский Иоанн (Максимович)
+						$template = "/\b".$this->template( $curacy.$space.$nick.$space.$name.$the_num.$the_surname )."(\b|\)?)/iu";				// архиепископ Шанхайский Иоанн (Максимович)
 						$txt = $this->add_link ($txt, $template, $the_person);
 					}
 					// 3. Возможны Прозвища в обратной последовательности
 					if ($surname) {
-						$template = "/\b".$this->template( $the_curacy.$name.$the_num.$space.$surname."(".$space.$nick.")?" )."\b/iu";	// архиепископ Иоанн (Максимович) Шанхайский
+						$template = "/\b".$this->template( $the_curacy.$name.$the_num.$space.$surname."(".$space.$nick.")?" )."(\b|\)?)/iu";	// архиепископ Иоанн (Максимович) Шанхайский
 						$txt = $this->add_link ($txt, $template, $the_person);
 					}
 				} elseif ($surname) {	// 4. Иначе если есть только Фамилия
-					$template = "/\b".$this->template( $the_curacy.$name.$the_num.$space.$surname )."\b/iu";							// святитель Игнатий (Брянчанинов)
+					$template = "/\b".$this->template( $the_curacy.$name.$the_num.$space.$surname )."(\b|\)?)/iu";								// святитель Игнатий (Брянчанинов)
 					$txt = $this->add_link ($txt, $template, $the_person);
 				} elseif ($curacy) {	// 5. Если нет ни Прозвища ни Фамилии, то определяем по Сану
 						// - после имени
-						$template = "/\b".$this->template( $name.$the_num."\\,".$space.$curacy )."\b/iu";								// Варнава, апостол
+						$template = "/\b".$this->template( $name.$the_num."\\,".$space.$curacy )."\b/iu";										// Варнава, апостол
 						$txt = $this->add_link ($txt, $template, $the_person);
 						// - перед именем
-						$template = "/\b".$this->template( $curacy.$space.$name.$the_num )."\b/iu";										// апостол Варнава
+						$template = "/\b".$this->template( $curacy.$space.$name.$the_num )."\b/iu";												// апостол Варнава
 						$txt = $this->add_link ($txt, $template, $the_person);
 				} elseif ($num) {		// 6. Если нет ни Прозвища ни Фамилии, ни Сана - определяем по номеру
-						$template = "/\b".$this->template( $name.$space.$num )."\b/iu";													// Феликс III
+						$template = "/\b".$this->template( $name.$space.$num )."\b/iu";															// Феликс III
 						$txt = $this->add_link ($txt, $template, $the_person);
 				} else {				// 7. Если нет ни Прозвища ни Фамилии, ни Сана, ни номера - определяем только по имени 
 										//    (Имя должно быть уникальными располагаться в конце базы данных!!!)
-						$template = "/\b".$this->template( $name )."\b/iu";																// Ерм
+						$template = "/\b".$this->template( $name )."\b/iu";																		// Ерм
 						$txt = $this->add_link ($txt, $template, $the_person);
 				}
 			} else {			// Мирянин
