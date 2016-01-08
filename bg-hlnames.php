@@ -3,7 +3,7 @@
 Plugin Name: Bg Highlight Names
 Plugin URI: https://bogaiskov.ru/highlight-names/
 Description: Highlight Russian names in text of posts and pages.
-Version: 0.3.2
+Version: 0.3.3
 Author: VBog
 Author URI: http://bogaiskov.ru
 */
@@ -33,7 +33,7 @@ Author URI: http://bogaiskov.ru
 if ( !defined('ABSPATH') ) {
 	die( 'Sorry, you are not allowed to access this page directly.' ); 
 }
-define('BG_HLNAMES_VERSION', '0.3.2');
+define('BG_HLNAMES_VERSION', '0.3.3');
 
 // Подключаем дополнительные модули
 include_once('includes/settings.php' );
@@ -52,7 +52,14 @@ if ( defined('ABSPATH') && defined('WPINC') ) {
 // Функция обработки ссылок на Библию 
 function bg_hlnames_proc($content) {
 	$maxtime = get_option('bg_hlnames_maxtime');
-	set_time_limit ($maxtime);
+	if (!set_time_limit ($maxtime)) {
+		$systemtime = ini_get('max_execution_time'); 
+		if (!$systemtime) $systemtime = 30;
+		if (get_option('bg_hlnames_debug')) {
+			$content .= '<p class="bg_hlnames_debug">Максимальное время ('.$maxtime.' сек.) работы скрипта установить не удалось. Максимальное время, установленное в системе: '.$systemtime.' сек.</p>';
+		}
+		$maxtime = $systemtime - 2;
+	}
 	$bg_hlnames = new BgHighlightNames();
 	$content = $bg_hlnames->proc($content, $maxtime);
 	return $content;
@@ -168,7 +175,17 @@ class BgHighlightNames
 			if ($time-$time0 > $cicle_time) $cicle_time = $time-$time0;
 			$time0 = $time;
 //			echo ($i+1).". ".$time." сек. <br>";
-			if ($time > $maxtime-$cicle_time) return $txt;
+			if ($maxtime && $time > $maxtime-$cicle_time) {
+				if (get_option('bg_hlnames_debug')) {
+					$time = number_format ( $time, 1 );
+					$txt .= '<p class="bg_hlnames_debug">Проверено '.($i+1).' из '.$cnt.' имён за '.$time.' сек.</p>';
+				}
+				return $txt;
+			}
+		}
+		if (get_option('bg_hlnames_debug')) {
+			$time = number_format ( $time, 1 );
+			$txt .= '<p class="bg_hlnames_debug">Успешно проверены все из '.$cnt.' имён за '.$time.' сек.</p>';
 		}
 		return $txt;
 	}
@@ -184,13 +201,14 @@ class BgHighlightNames
 		preg_match_all($template, $txt, $matches, PREG_OFFSET_CAPTURE);
 		$cnt = count($matches[0]);
 
+		$target = get_option('bg_hlnames_target');
 		$text = "";
 		$start = 0;
 		$title = $the_person['discription']."\n".$the_person['lifedates'];
 		for ($i = 0; $i < $cnt; $i++) {
 		// Обработка по каждому паттерну, если он не находится внутри тега <a ...</a>
 			if ($this->check_tag($hdr_a, $matches[0][$i][1])) {		
-				$newmt = "<a href='".$the_person['link']."' target='_blank' title='".$title."'>".$matches[0][$i][0]."</a>";
+				$newmt = "<a class='bg_hlnames' href='".$the_person['link']."' target='".$target."' title='".$title."'>".$matches[0][$i][0]."</a>";
 				$text = $text.substr($txt, $start, $matches[0][$i][1]-$start).str_replace($matches[0][$i][0], $newmt, $matches[0][$i][0]);
 				$start = $matches[0][$i][1] + strlen($matches[0][$i][0]);
 			}
