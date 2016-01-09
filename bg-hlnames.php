@@ -3,7 +3,7 @@
 Plugin Name: Bg Highlight Names
 Plugin URI: https://bogaiskov.ru/highlight-names/
 Description: Highlight Russian names in text of posts and pages.
-Version: 0.3.3
+Version: 0.3.4
 Author: VBog
 Author URI: http://bogaiskov.ru
 */
@@ -33,7 +33,13 @@ Author URI: http://bogaiskov.ru
 if ( !defined('ABSPATH') ) {
 	die( 'Sorry, you are not allowed to access this page directly.' ); 
 }
-define('BG_HLNAMES_VERSION', '0.3.3');
+define('BG_HLNAMES_VERSION', '0.3.4');
+
+// Загрузка интернационализации
+add_action( 'plugins_loaded', 'bg_highlight_load_textdomain' );
+function bg_highlight_load_textdomain() {
+  load_plugin_textdomain( 'bg-highlight-names', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' ); 
+}
 
 // Подключаем дополнительные модули
 include_once('includes/settings.php' );
@@ -56,7 +62,7 @@ function bg_hlnames_proc($content) {
 		$systemtime = ini_get('max_execution_time'); 
 		if (!$systemtime) $systemtime = 30;
 		if (get_option('bg_hlnames_debug')) {
-			$content .= '<p class="bg_hlnames_debug">Максимальное время ('.$maxtime.' сек.) работы скрипта установить не удалось. Максимальное время, установленное в системе: '.$systemtime.' сек.</p>';
+			$content .= '<p class="bg_hlnames_debug">'.sprintf(__( 'The maximum execution time (%1$s sec.) could not be set. System limits the maximum execution time of %2$s sec.', 'bg-highlight-names'), $maxtime, $systemtime).'</p>';
 		}
 		$maxtime = $systemtime - 2;
 	}
@@ -71,7 +77,7 @@ if ( is_admin() ){ 				// admin actions
 // action function for above hook
 function  bg_hlnames_add_pages() {
     // Add a new submenu under Options:
-    add_options_page('Настройки плагина подсветки имён', 'Подсветка имён', 'manage_options', __FILE__, 'bg_hlnames_options_page');
+    add_options_page(__('Plugin\'s &#171;Highlight Names&#187; settings', 'bg-highlight-names'), __('Highlight names', 'bg-highlight-names'), 'manage_options', __FILE__, 'bg_hlnames_options_page');
 }
 
 /*****************************************************************************************
@@ -174,18 +180,17 @@ class BgHighlightNames
 			$time = microtime(true) - $start_time;
 			if ($time-$time0 > $cicle_time) $cicle_time = $time-$time0;
 			$time0 = $time;
-//			echo ($i+1).". ".$time." сек. <br>";
 			if ($maxtime && $time > $maxtime-$cicle_time) {
 				if (get_option('bg_hlnames_debug')) {
-					$time = number_format ( $time, 1 );
-					$txt .= '<p class="bg_hlnames_debug">Проверено '.($i+1).' из '.$cnt.' имён за '.$time.' сек.</p>';
+//					$time = number_format ( $time, 1 );
+					$txt .= '<p class="bg_hlnames_debug">'.sprintf(__('Tested %1$d of %2$d names in %3$.1f seconds.', 'bg-highlight-names'), ($i+1), $cnt, $time).'</p>';
 				}
 				return $txt;
 			}
 		}
 		if (get_option('bg_hlnames_debug')) {
 			$time = number_format ( $time, 1 );
-			$txt .= '<p class="bg_hlnames_debug">Успешно проверены все из '.$cnt.' имён за '.$time.' сек.</p>';
+			$txt .= '<p class="bg_hlnames_debug">'.sprintf(__('Successfully tested all %1$d names in %2$.1f seconds.', 'bg-highlight-names'), $cnt, $time).'</p>';
 		}
 		return $txt;
 	}
