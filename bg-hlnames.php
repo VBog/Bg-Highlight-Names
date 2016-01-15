@@ -3,7 +3,7 @@
 Plugin Name: Bg Highlight Names
 Plugin URI: https://bogaiskov.ru/highlight-names/
 Description: Highlight Russian names in text of posts and pages.
-Version: 0.4.0
+Version: 0.4.1
 Author: VBog
 Author URI: http://bogaiskov.ru
 */
@@ -33,7 +33,7 @@ Author URI: http://bogaiskov.ru
 if ( !defined('ABSPATH') ) {
 	die( 'Sorry, you are not allowed to access this page directly.' ); 
 }
-define('BG_HLNAMES_VERSION', '0.4.0');
+define('BG_HLNAMES_VERSION', '0.4.1');
 
 // Загрузка интернационализации
 add_action( 'plugins_loaded', 'bg_highlight_load_textdomain' );
@@ -52,6 +52,8 @@ if ( defined('ABSPATH') && defined('WPINC') ) {
 // Регистрируем крючок для обработки контента при его сохранении в БД
 	elseif ($plugin_mode == "offline") add_action('wp_insert_post_data', 'bg_hlnames_post_save', 20, 2 );
 }
+
+$bg_hlnames_maxlinks = (int) get_option('bg_hlnames_maxlinks');
 
 /*****************************************************************************************
 	Функции запуска плагина
@@ -209,10 +211,19 @@ class BgHighlightNames
 		return $txt;
 	}
 		
+	
 	/*******************************************************************************
 	// Функция добавляет ссылку к имени персоны
 	*******************************************************************************/  
 	private function add_link ($txt, $template, $the_person) {
+		
+		global $bg_hlnames_maxlinks;
+		static $pers = "";
+		static $num_links=0;
+		if ($pers != $the_person['link']) {
+			$pers = $the_person['link'];
+			$num_links = 0;
+		}
 		
 		// Ищем все вхождения ссылок <a ...</a>
 		preg_match_all("/<a\\s.*?<\/a>/sui", $txt, $hdr_a, PREG_OFFSET_CAPTURE);
@@ -224,12 +235,13 @@ class BgHighlightNames
 		$text = "";
 		$start = 0;
 		$title = $the_person['discription']."\n".$the_person['lifedates'];
-		for ($i = 0; $i < $cnt; $i++) {
+		for ($i = 0; ($i < $cnt) && (!$bg_hlnames_maxlinks || ($num_links < $bg_hlnames_maxlinks)); $i++) {
 		// Обработка по каждому паттерну, если он не находится внутри тега <a ...</a>
 			if ($this->check_tag($hdr_a, $matches[0][$i][1])) {		
 				$newmt = "<a class='bg_hlnames' href='".$the_person['link']."' target='".$target."' title='".$title."'>".$matches[0][$i][0]."</a>";
 				$text = $text.substr($txt, $start, $matches[0][$i][1]-$start).str_replace($matches[0][$i][0], $newmt, $matches[0][$i][0]);
 				$start = $matches[0][$i][1] + strlen($matches[0][$i][0]);
+				$num_links++;
 			}
 		}
 		$txt = $text.substr($txt, $start);
