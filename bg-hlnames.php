@@ -3,7 +3,7 @@
 Plugin Name: Bg Highlight Names
 Plugin URI: https://bogaiskov.ru/highlight-names/
 Description: Highlight Russian names in text of posts and pages.
-Version: 0.3.4
+Version: 0.4.0
 Author: VBog
 Author URI: http://bogaiskov.ru
 */
@@ -33,7 +33,7 @@ Author URI: http://bogaiskov.ru
 if ( !defined('ABSPATH') ) {
 	die( 'Sorry, you are not allowed to access this page directly.' ); 
 }
-define('BG_HLNAMES_VERSION', '0.3.4');
+define('BG_HLNAMES_VERSION', '0.4.0');
 
 // Загрузка интернационализации
 add_action( 'plugins_loaded', 'bg_highlight_load_textdomain' );
@@ -46,8 +46,11 @@ include_once('includes/settings.php' );
 
 
 if ( defined('ABSPATH') && defined('WPINC') ) {
+	$plugin_mode = get_option('bg_hlnames_mode');
 // Регистрируем крючок для обработки контента при его загрузке
-	add_filter( 'the_content', 'bg_hlnames_proc' );
+	if ($plugin_mode == "online") add_filter( 'the_content', 'bg_hlnames_proc' );
+// Регистрируем крючок для обработки контента при его сохранении в БД
+	elseif ($plugin_mode == "offline") add_action('wp_insert_post_data', 'bg_hlnames_post_save', 20, 2 );
 }
 
 /*****************************************************************************************
@@ -55,7 +58,7 @@ if ( defined('ABSPATH') && defined('WPINC') ) {
 	
 ******************************************************************************************/
  
-// Функция обработки ссылок на Библию 
+// Функция обработки списка имён
 function bg_hlnames_proc($content) {
 	$maxtime = get_option('bg_hlnames_maxtime');
 	if (!set_time_limit ($maxtime)) {
@@ -79,6 +82,19 @@ function  bg_hlnames_add_pages() {
     // Add a new submenu under Options:
     add_options_page(__('Plugin\'s &#171;Highlight Names&#187; settings', 'bg-highlight-names'), __('Highlight names', 'bg-highlight-names'), 'manage_options', __FILE__, 'bg_hlnames_options_page');
 }
+
+function bg_hlnames_post_save( $data, $postarr ){
+	if( isset($_POST['post_type']) && ($_POST['post_type'] == 'post' || $_POST['post_type'] == 'page') ) { 	// убедимся что мы редактируем нужный тип поста
+		if( get_current_screen()->id != 'post' && get_current_screen()->id != 'post') return $data; 		// убедимся что мы на нужной странице админки
+		if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE  ) return $data; 					// пропустим если это автосохранение
+		if ( ! current_user_can('edit_post', $postarr['ID'] ) ) return $data; 				// убедимся что пользователь может редактировать запись
+
+		// Все ОК! обрабатываем
+		$data['post_content'] = bg_hlnames_proc($data['post_content']);
+	}
+	return $data;
+}
+
 
 /*****************************************************************************************
 	Класс плагина
@@ -182,14 +198,12 @@ class BgHighlightNames
 			$time0 = $time;
 			if ($maxtime && $time > $maxtime-$cicle_time) {
 				if (get_option('bg_hlnames_debug')) {
-//					$time = number_format ( $time, 1 );
 					$txt .= '<p class="bg_hlnames_debug">'.sprintf(__('Tested %1$d of %2$d names in %3$.1f seconds.', 'bg-highlight-names'), ($i+1), $cnt, $time).'</p>';
 				}
 				return $txt;
 			}
 		}
 		if (get_option('bg_hlnames_debug')) {
-			$time = number_format ( $time, 1 );
 			$txt .= '<p class="bg_hlnames_debug">'.sprintf(__('Successfully tested all %1$d names in %2$.1f seconds.', 'bg-highlight-names'), $cnt, $time).'</p>';
 		}
 		return $txt;

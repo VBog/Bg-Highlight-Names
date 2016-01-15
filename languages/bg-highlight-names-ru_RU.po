@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bg Highlight Names\n"
 "POT-Creation-Date: 2016-01-09 14:02+0300\n"
-"PO-Revision-Date: 2016-01-09 14:03+0300\n"
+"PO-Revision-Date: 2016-01-12 08:05+0300\n"
 "Last-Translator: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
 "Language-Team: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
 "Language: ru_RU\n"
@@ -41,12 +41,12 @@ msgstr "Подсветка имён"
 #: bg-hlnames.php:186
 #, php-format
 msgid "Tested %1$d of %2$d names in %3$.1f seconds."
-msgstr "Проверено %1$d из %2$d имён за %3$f сек."
+msgstr "Проверено %1$d из %2$d имён за %3$.1f сек."
 
 #: bg-hlnames.php:193
 #, php-format
 msgid "Successfully tested all %1$d names in %2$.1f seconds."
-msgstr "Успешно проверены все %1$d имён за %2$f сек."
+msgstr "Успешно проверены все %1$d имён за  %2$.1f сек."
 
 #: includes/settings.php:21
 msgid "Open links"
