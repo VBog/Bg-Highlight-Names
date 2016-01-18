@@ -40,7 +40,8 @@ function bg_hlnames_options_page() {
 <button id='bg_hlnames_backend_button' type="button" class="button-primary" style="float: left; margin: 3px 10px 3px 0px;" <?php if(get_option('bg_hlnames_in_progress')) echo "disabled" ?> onclick="bg_hlnames_parse_posts ();"><?php _e('Parse all posts', 'bg-highlight-names') ?></button>
 <span id="bg_hlnames_warning" style="color: red;" ><i><?php _e('(It makes permanent changes in the text of all pages and posts.) <br><b>We strongly recommend to keep your SQL-database dump.</b>', 'bg-highlight-names') ?></i></span>
 <span id="bg_hlnames_wait" style="color: darkblue; display: none;" ><b><?php _e('Don\'t close this tab. Parsing in progress!<br>Wait, please.', 'bg-highlight-names') ?></b></span><br>
-<?php _e('For detail see: ', 'bg-highlight-names') ?> <a href='<?php echo $debug_file; ?>' target='_blank'>parsing.log</a></td>
+<?php _e('For detail see: ', 'bg-highlight-names') ?> <a href='<?php echo $debug_file; ?>' target='_blank'>parsing.log</a><br>
+<div id="bg_hlnames_resalt"></div></td>
 </tr>
 
 <tr valign="top">
@@ -121,8 +122,12 @@ function bg_hlnames_parse_posts () {
 				action: 'bg_hlnames'
 			},
 			success: function (t) {
-				alert(t);
-				if (t[0] == '*') bg_hlnames_in_progress ('');	
+				
+				if (t[0] == '*') {
+					document.getElementById('bg_hlnames_resalt').innerHTML  = "<p><font color='darkblue'><b>"+t+"</b></font></p>";
+					bg_hlnames_in_progress ('');
+				}
+				else document.getElementById('bg_hlnames_resalt').innerHTML  = t;
 			}
 		});
 	}
