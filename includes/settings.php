@@ -4,6 +4,10 @@
 	
 *******************************************************************************************/
 function bg_hlnames_options_page() {
+	$debug_file = plugins_url( 'parsing.log', dirname(__FILE__) );
+
+	add_option('bg_hlnames_in_progress', "");
+	
 	add_option('bg_hlnames_mode', "online");
 	add_option('bg_hlnames_maxlinks', 0);
 	add_option('bg_hlnames_target', "_blank");
@@ -21,15 +25,25 @@ function bg_hlnames_options_page() {
 
 <tr valign="top">
 <th scope="row"><?php _e('Plugin mode', 'bg-highlight-names') ?></th>
-<td><input type="radio" name="bg_hlnames_mode" value="online" <?php if(get_option('bg_hlnames_mode')=="online") echo "checked" ?> /> <?php _e(' online ', 'bg-highlight-names') ?><br>
-<input type="radio" name="bg_hlnames_mode" value="offline" <?php if(get_option('bg_hlnames_mode')=="offline") echo "checked" ?> /> <?php _e(' offline ', 'bg-highlight-names') ?><br>
-<i><font color="red"><?php _e('(This mode makes permanent changes in the text of the saved post.) <br><b>We strongly recommend to keep your SQL-database dump.</b>', 'bg-highlight-names') ?></font></i><br>
-<input type="radio" name="bg_hlnames_mode" disabled value="mixed" <?php if(get_option('bg_hlnames_mode')=="mixed") echo "checked" ?> /> <?php _e(' mixed ', 'bg-highlight-names') ?></td>
+<td><input type="radio" name="bg_hlnames_mode" value="online" <?php if(get_option('bg_hlnames_mode')=="online") echo "checked" ?> /> <b><?php _e('online', 'bg-highlight-names') ?></b> <i><?php _e('(In this mode the plugin highlights the names only when text displays on the screen.)', 'bg-highlight-names') ?></i><br>
+<input type="radio" name="bg_hlnames_mode" value="offline" <?php if(get_option('bg_hlnames_mode')=="offline") echo "checked" ?> /> <b><?php _e('offline', 'bg-highlight-names') ?></b> <i><?php _e('(This mode makes permanent changes in the text of the saved posts.)', 'bg-highlight-names') ?></i><br>
+<input type="radio" name="bg_hlnames_mode" value="mixed" <?php if(get_option('bg_hlnames_mode')=="mixed") echo "checked" ?> /> <b><?php _e('mixed', 'bg-highlight-names') ?></b> <i><?php _e('(Mixing online & offline mode. Highlight the names when text displays on the screen, only if the text doesn\'t include links for names.)', 'bg-highlight-names') ?></i><br>
+<input type="radio" name="bg_hlnames_mode" value="clear" <?php if(get_option('bg_hlnames_mode')=="clear") echo "checked" ?> /> <b><?php _e('clear', 'bg-highlight-names') ?></b> <i><?php _e('(Removes links to the names from the text.)', 'bg-highlight-names') ?></i><br>
+<input type="radio" name="bg_hlnames_mode" value="" <?php if(get_option('bg_hlnames_mode')=="") echo "checked" ?> /> <b><?php _e('off', 'bg-highlight-names') ?></b> <i><?php _e('(The plugin does not work (batch mode only).)', 'bg-highlight-names') ?></i></td>
+</tr>
+
+<tr valign="top">
+<th scope="row"><?php _e('Batch mode', 'bg-highlight-names') ?></th>
+<td><b><?php _e('Removes links (and/or highlight names) in all pages and posts in offline mode', 'bg-highlight-names') ?></b><br>
+<button id='bg_hlnames_backend_button' type="button" class="button-primary" style="float: left; margin: 3px 10px 3px 0px;" <?php if(get_option('bg_hlnames_in_progress')) echo "disabled" ?> onclick="bg_hlnames_parse_posts ();"><?php _e('Parse all posts', 'bg-highlight-names') ?></button>
+<span id="bg_hlnames_warning" style="color: red;" ><i><?php _e('(It makes permanent changes in the text of all pages and posts.) <br><b>We strongly recommend to keep your SQL-database dump.</b>', 'bg-highlight-names') ?></i></span>
+<span id="bg_hlnames_wait" style="color: darkblue; display: none;" ><b><?php _e('Don\'t close this tab. Parsing in progress!<br>Wait, please. For detail see: ', 'bg-highlight-names') ?></b> <a href='<?php echo $debug_file; ?>' target='_blank'>parsing.log</a></span>
+</td>
 </tr>
 
 <tr valign="top">
 <th scope="row"><?php _e('Limit the amount of links per person', 'bg-highlight-names') ?></th>
-<td><input type="number" name="bg_hlnames_maxlinks" value="<?php echo get_option('bg_hlnames_maxlinks'); ?>" /><br>
+<td><input type="number" name="bg_hlnames_maxlinks" min="0" value="<?php echo get_option('bg_hlnames_maxlinks'); ?>" /><br>
 <?php _e('(0 - no limits).', 'bg-highlight-names') ?></td>
 </tr>
  
@@ -47,7 +61,7 @@ function bg_hlnames_options_page() {
  
 <tr valign="top">
 <th scope="row"><?php _e('The maximum execution time', 'bg-highlight-names') ?></th>
-<td><input type="number" name="bg_hlnames_maxtime" value="<?php echo get_option('bg_hlnames_maxtime'); ?>" /> <?php _e('sec.', 'bg-highlight-names') ?><br>
+<td><input type="number" name="bg_hlnames_maxtime" min="0" value="<?php echo get_option('bg_hlnames_maxtime'); ?>" /> <?php _e('sec.', 'bg-highlight-names') ?><br>
 <?php _e('(0 - no limits).', 'bg-highlight-names') ?></td>
 </tr>
  
@@ -64,15 +78,52 @@ function bg_hlnames_options_page() {
 <p class="submit">
 <input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />
 </p>
+
+</form>
+</div>
+
 <p class="help">
 <?php _e('Download XML schema:', 'bg-highlight-names') ?> <a href="<?php echo plugins_url( 'schema.xml', dirname(__FILE__) ); ?>">schema.xml</a><br>
 <?php _e('How to create the XML with names list read', 'bg-highlight-names') ?> <a href="<?php echo plugins_url( 'readme.txt', dirname(__FILE__) ); ?>">readme.txt</a><br>
 <?php _e('How to create and edit of XML-file in Excel is written in', 'bg-highlight-names') ?> <a href="https://bogaiskov.ru/xml-excel/"><?php _e(' this article', 'bg-highlight-names') ?></a>.
 </p>
+<script>
+bg_hlnames_in_progress (<?php echo "'".get_option('bg_hlnames_in_progress')."'"; ?>);
 
+function bg_hlnames_in_progress (status) {
+	if (status == 'on') {
+		document.getElementById('bg_hlnames_backend_button').disabled = true;
+		document.getElementById('bg_hlnames_warning').style.display = "none";
+		document.getElementById('bg_hlnames_wait').style.display = "";
+	} else {
+		document.getElementById('bg_hlnames_backend_button').disabled = false;
+		document.getElementById('bg_hlnames_warning').style.display = "";
+		document.getElementById('bg_hlnames_wait').style.display = "none";
+	}	
+}
 
-</form>
-</div>
+function bg_hlnames_parse_posts () {
+	var doParse = confirm("<?php _e('Really highlight names in all posts and pages?', 'bg-highlight-names') ?>");
+	if (doParse) doParse = confirm("<?php _e('Are you sure?', 'bg-highlight-names') ?>");
+	if (doParse) {
+		bg_hlnames_in_progress ('on');	
+		jQuery.ajax({
+			type: 'GET',
+			cache: false,
+			async: true,										// Асинхронный запрос
+			dataType: 'text',
+			url: '/wp-admin/admin-ajax.php?parseallposts=1',	// Запрос на обработку постов
+			data: {
+				action: 'bg_hlnames'
+			},
+			success: function (t) {
+				alert(t);
+				if (t[0] == '*') bg_hlnames_in_progress ('');	
+			}
+		});
+	}
+}
+</script>
 <?php
 
 }

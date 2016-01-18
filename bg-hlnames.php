@@ -3,7 +3,7 @@
 Plugin Name: Bg Highlight Names
 Plugin URI: https://bogaiskov.ru/highlight-names/
 Description: Highlight Russian names in text of posts and pages.
-Version: 0.4.1
+Version: 0.5.0
 Author: VBog
 Author URI: http://bogaiskov.ru
 */
@@ -33,16 +33,23 @@ Author URI: http://bogaiskov.ru
 if ( !defined('ABSPATH') ) {
 	die( 'Sorry, you are not allowed to access this page directly.' ); 
 }
-define('BG_HLNAMES_VERSION', '0.4.1');
+define('BG_HLNAMES_VERSION', '0.5.0');
 
 // Загрузка интернационализации
 add_action( 'plugins_loaded', 'bg_highlight_load_textdomain' );
 function bg_highlight_load_textdomain() {
   load_plugin_textdomain( 'bg-highlight-names', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' ); 
 }
+// Функция, исполняемая при активации плагина.
+function  bg_highlight_activate() {
+	delete_option('bg_hlnames_in_progress');	
+}
+register_activation_hook( __FILE__, 'bg_highlight_activate' );
 
 // Подключаем дополнительные модули
 include_once('includes/settings.php' );
+
+ini_set('memory_limit', '256M');
 
 
 if ( defined('ABSPATH') && defined('WPINC') ) {
@@ -51,7 +58,16 @@ if ( defined('ABSPATH') && defined('WPINC') ) {
 	if ($plugin_mode == "online") add_filter( 'the_content', 'bg_hlnames_proc' );
 // Регистрируем крючок для обработки контента при его сохранении в БД
 	elseif ($plugin_mode == "offline") add_action('wp_insert_post_data', 'bg_hlnames_post_save', 20, 2 );
+// Регистрируем крючок для обработки контента при его загрузке 
+// и крючок для обработки контента при его сохранении в БД 
+	elseif ($plugin_mode == "mixed") {
+		add_filter( 'the_content', 'bg_hlnames_proc' );
+		add_action('wp_insert_post_data', 'bg_hlnames_post_save', 20, 2 );
+	}
+// Регистрируем крючок для обработки контента при его сохранении в БД (удаление ссылок)
+	elseif ($plugin_mode == "clear") add_action('wp_insert_post_data', 'bg_hlnames_post_clear', 20, 2 );
 }
+
 
 $bg_hlnames_maxlinks = (int) get_option('bg_hlnames_maxlinks');
 
@@ -62,6 +78,9 @@ $bg_hlnames_maxlinks = (int) get_option('bg_hlnames_maxlinks');
  
 // Функция обработки списка имён
 function bg_hlnames_proc($content) {
+	$mode = get_option('bg_hlnames_mode');
+	if ($mode=='mixed' && strstr ( $content ,'bg_hlnames' )) return $content;
+
 	$maxtime = get_option('bg_hlnames_maxtime');
 	if (!set_time_limit ($maxtime)) {
 		$systemtime = ini_get('max_execution_time'); 
@@ -75,6 +94,39 @@ function bg_hlnames_proc($content) {
 	$content = $bg_hlnames->proc($content, $maxtime);
 	return $content;
 }
+// Функция очистки от ссылок списка имён
+function bg_hlnames_clear($content) {
+	set_time_limit (0);
+	$bg_hlnames = new BgHighlightNames();
+	$content = $bg_hlnames->clear($content);
+	return $content;
+}
+// Функция добавления ссылок к именам в офлайн режиме
+function bg_hlnames_post_save( $data, $postarr ){
+	if( isset($_POST['post_type']) && ($_POST['post_type'] == 'post' || $_POST['post_type'] == 'page') ) { 	// убедимся что мы редактируем нужный тип поста
+		if( get_current_screen()->id != 'post' && get_current_screen()->id != 'post') return $data; 		// убедимся что мы на нужной странице админки
+		if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE  ) return $data; 					// пропустим если это автосохранение
+		if ( ! current_user_can('edit_post', $postarr['ID'] ) ) return $data; 				// убедимся что пользователь может редактировать запись
+
+		// Все ОК! обрабатываем
+		$data['post_content'] = bg_hlnames_clear($data['post_content']);	// Сначала удаляем ранее установленные ссылки
+		$data['post_content'] = bg_hlnames_proc($data['post_content']);		// Затем устанавливаем новые ссылки
+	}
+	return $data;
+}
+// Функция удаления ссылок в офлайн режиме
+function bg_hlnames_post_clear( $data, $postarr ){
+	if( isset($_POST['post_type']) && ($_POST['post_type'] == 'post' || $_POST['post_type'] == 'page') ) { 	// убедимся что мы редактируем нужный тип поста
+		if( get_current_screen()->id != 'post' && get_current_screen()->id != 'post') return $data; 		// убедимся что мы на нужной странице админки
+		if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE  ) return $data; 					// пропустим если это автосохранение
+		if ( ! current_user_can('edit_post', $postarr['ID'] ) ) return $data; 				// убедимся что пользователь может редактировать запись
+
+		// Все ОК! обрабатываем
+		$data['post_content'] =  bg_hlnames_clear($data['post_content']);
+	}
+	return $data;
+}
+
 // Hook for adding admin menus
 if ( is_admin() ){ 				// admin actions
 	add_action('admin_menu', 'bg_hlnames_add_pages');
@@ -84,17 +136,49 @@ function  bg_hlnames_add_pages() {
     // Add a new submenu under Options:
     add_options_page(__('Plugin\'s &#171;Highlight Names&#187; settings', 'bg-highlight-names'), __('Highlight names', 'bg-highlight-names'), 'manage_options', __FILE__, 'bg_hlnames_options_page');
 }
+/*****************************************************************************************
+	Генератор ответа AJAX
+	
+******************************************************************************************/
+add_action ('wp_ajax_bg_hlnames', 'bg_hlnames_callback');
+add_action ('wp_ajax_nopriv_bg_hlnames', 'bg_hlnames_callback');
 
-function bg_hlnames_post_save( $data, $postarr ){
-	if( isset($_POST['post_type']) && ($_POST['post_type'] == 'post' || $_POST['post_type'] == 'page') ) { 	// убедимся что мы редактируем нужный тип поста
-		if( get_current_screen()->id != 'post' && get_current_screen()->id != 'post') return $data; 		// убедимся что мы на нужной странице админки
-		if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE  ) return $data; 					// пропустим если это автосохранение
-		if ( ! current_user_can('edit_post', $postarr['ID'] ) ) return $data; 				// убедимся что пользователь может редактировать запись
-
-		// Все ОК! обрабатываем
-		$data['post_content'] = bg_hlnames_proc($data['post_content']);
+function bg_hlnames_callback() {
+	
+	if ( !empty($_GET['parseallposts']) ) {
+	
+		if (get_option('bg_hlnames_in_progress')) {
+			die();
+		}
+		$mode = get_option('bg_hlnames_mode');
+		update_option( 'bg_hlnames_in_progress', 'on' );
+		$args = array('post_type' => array( 'post', 'page'), 'post_status' => 'publish', 'numberposts' => -1);
+		$posts_array = get_posts($args);
+		
+		$cnt = count($posts_array);
+		$j=0;
+		
+		$debug_file = dirname(__FILE__ )."/parsing.log";
+		if (file_exists($debug_file)) unlink ( $debug_file );
+		$start_time = microtime(true);
+		error_log(date ("j-m-Y H:i"). " Start parse ".$cnt." posts\n", 3, $debug_file);
+		
+		foreach ($posts_array as $post) {
+			$post->post_content = bg_hlnames_clear($post->post_content);
+			if ($mode != 'clear') $post->post_content = bg_hlnames_proc($post->post_content);
+			wp_update_post($post);
+			$j++;
+			
+			$this_time = microtime(true);
+			$time = ($this_time - $start_time);
+			error_log($j.". ".get_permalink($post->ID)." (".number_format($j*100/$cnt, 1)."%) ". number_format($time, 2)." sec.\n", 3, $debug_file);
+			$start_time = $this_time;
+		}
+		error_log(date ("j-m-Y H:i")." Updated all ".$cnt." pages and posts!", 3, $debug_file);
+		printf ("* ".__('Updated all %1$d pages and posts!', 'bg-highlight-names'), $cnt);
+		update_option( 'bg_hlnames_in_progress', '' );
 	}
-	return $data;
+	die();
 }
 
 
@@ -210,8 +294,25 @@ class BgHighlightNames
 		}
 		return $txt;
 	}
-		
-	
+	/*******************************************************************************
+	// Функция удаляет ранее установленную ссылку к имени персоны
+	*******************************************************************************/  
+	public function clear ($txt) {
+		// Ищем все вхождения ссылок <a ...</a>
+		preg_match_all("/<a\\s.*?<\/a>/sui", $txt, $hdr, PREG_OFFSET_CAPTURE);
+
+		$cnt = count($hdr[0]);
+
+		for ($i = 0; $i < $cnt; $i++) {
+			if (strstr ( $hdr[0][$i][0] ,'bg_hlnames' )) {
+				$start = strpos ( $hdr[0][$i][0], '>', 1 )+1;
+				$finish = strrpos ( $hdr[0][$i][0], '<', 1 );
+				$newhdr = substr ( $hdr[0][$i][0], $start, $finish-$start );
+				$txt = str_replace ( $hdr[0][$i][0], $newhdr, $txt );
+			}
+		}
+		return $txt;
+	}
 	/*******************************************************************************
 	// Функция добавляет ссылку к имени персоны
 	*******************************************************************************/  
@@ -234,7 +335,7 @@ class BgHighlightNames
 		$target = get_option('bg_hlnames_target');
 		$text = "";
 		$start = 0;
-		$title = $the_person['discription']."\n".$the_person['lifedates'];
+		$title = $the_person['discription'];
 		for ($i = 0; ($i < $cnt) && (!$bg_hlnames_maxlinks || ($num_links < $bg_hlnames_maxlinks)); $i++) {
 		// Обработка по каждому паттерну, если он не находится внутри тега <a ...</a>
 			if ($this->check_tag($hdr_a, $matches[0][$i][1])) {		
