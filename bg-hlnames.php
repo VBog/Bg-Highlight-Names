@@ -3,7 +3,7 @@
 Plugin Name: Bg Highlight Names
 Plugin URI: https://bogaiskov.ru/highlight-names/
 Description: Highlight Russian names in text of posts and pages.
-Version: 0.5.0
+Version: 0.5.1
 Author: VBog
 Author URI: http://bogaiskov.ru
 */
@@ -33,7 +33,7 @@ Author URI: http://bogaiskov.ru
 if ( !defined('ABSPATH') ) {
 	die( 'Sorry, you are not allowed to access this page directly.' ); 
 }
-define('BG_HLNAMES_VERSION', '0.5.0');
+define('BG_HLNAMES_VERSION', '0.5.1');
 
 // Загрузка интернационализации
 add_action( 'plugins_loaded', 'bg_highlight_load_textdomain' );
@@ -96,7 +96,15 @@ function bg_hlnames_proc($content) {
 }
 // Функция очистки от ссылок списка имён
 function bg_hlnames_clear($content) {
-	set_time_limit (0);
+	$maxtime = get_option('bg_hlnames_maxtime');
+	if (!set_time_limit ($maxtime)) {
+		$systemtime = ini_get('max_execution_time'); 
+		if (!$systemtime) $systemtime = 30;
+		if (get_option('bg_hlnames_debug')) {
+			$content .= '<p class="bg_hlnames_debug">'.sprintf(__( 'The maximum execution time (%1$s sec.) could not be set. System limits the maximum execution time of %2$s sec.', 'bg-highlight-names'), $maxtime, $systemtime).'</p>';
+		}
+		$maxtime = $systemtime - 2;
+	}
 	$bg_hlnames = new BgHighlightNames();
 	$content = $bg_hlnames->clear($content);
 	return $content;
@@ -150,13 +158,18 @@ function bg_hlnames_callback() {
 		if (get_option('bg_hlnames_in_progress')) {
 			die();
 		}
+		$start_no = (int) $_GET['start_no'];
+		if ($start_no < 1) $start_no = 1;
+		$finish_no = (int) $_GET['finish_no'];
+		if ($finish_no < 1) $finish_no = 1;
+		
 		$mode = get_option('bg_hlnames_mode');
 		update_option( 'bg_hlnames_in_progress', 'on' );
-		$args = array('post_type' => array( 'post', 'page'), 'post_status' => 'publish', 'numberposts' => -1);
+		$args = array('post_type' => array( 'post', 'page'), 'post_status' => 'publish', 'numberposts' => -1, 'orderby' => 'ID');
 		$posts_array = get_posts($args);
 		
 		$cnt = count($posts_array);
-		$j=0;
+		$j=0; $i=0;
 		
 		$debug_file = dirname(__FILE__ )."/parsing.log";
 		if (file_exists($debug_file)) unlink ( $debug_file );
@@ -164,23 +177,29 @@ function bg_hlnames_callback() {
 		error_log(date ("j-m-Y H:i"). " Start parse ".$cnt." posts\n", 3, $debug_file);
 		
 		foreach ($posts_array as $post) {
-			$post->post_content = bg_hlnames_clear($post->post_content);
-			if ($mode != 'clear') $post->post_content = bg_hlnames_proc($post->post_content);
-			wp_update_post($post);
 			$j++;
-			
-			$this_time = microtime(true);
-			$time = ($this_time - $start_time);
-			error_log($j.". ".get_permalink($post->ID)." (".number_format($j*100/$cnt, 1)."%) ". number_format($time, 2)." sec.\n", 3, $debug_file);
-			$start_time = $this_time;
+			if ( $j >= $start_no && $j <= $finish_no )	{
+				$post->post_content = bg_hlnames_clear($post->post_content);
+				if ($mode != 'clear') $post->post_content = bg_hlnames_proc($post->post_content);
+				wp_update_post($post);
+				$i++;
+				$this_time = microtime(true);
+				$time = ($this_time - $start_time);
+				error_log($j.". ".get_permalink($post->ID)." (".number_format($j*100/$cnt, 1)."%) ". number_format($time, 2)." sec.\n", 3, $debug_file);
+				$start_time = $this_time;
+			}
 		}
-		error_log(date ("j-m-Y H:i")." Updated all ".$cnt." pages and posts!", 3, $debug_file);
-		printf ("* ".__('Updated all %1$d pages and posts!', 'bg-highlight-names'), $cnt);
+		error_log(date ("j-m-Y H:i")." Updated ".$i." pages and posts!", 3, $debug_file);
+		printf ("* ".__('Updated %1$d pages and posts!', 'bg-highlight-names'), $i);
 		update_option( 'bg_hlnames_in_progress', '' );
 	}
 	die();
 }
-
+// Версия плагина
+function bg_hlnames_version() {
+	$plugin_data = get_plugin_data( __FILE__  );
+	return $plugin_data['Version'];
+}
 
 /*****************************************************************************************
 	Класс плагина

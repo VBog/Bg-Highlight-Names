@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Bg Highlight Names\n"
-"POT-Creation-Date: 2016-01-18 15:08+0300\n"
+"POT-Creation-Date: 2016-01-18 23:35+0300\n"
 "PO-Revision-Date: 2016-01-09 13:51+0300\n"
 "Last-Translator: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
 "Language-Team: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
@@ -20,175 +20,190 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: bg-hlnames.php:89
+#: bg-hlnames.php:89 bg-hlnames.php:104
 #, php-format
 msgid ""
 "The maximum execution time (%1$s sec.) could not be set. System limits the "
 "maximum execution time of %2$s sec."
 msgstr ""
 
-#: bg-hlnames.php:137 includes/settings.php:19
+#: bg-hlnames.php:145 includes/settings.php:19
 msgid "Plugin's &#171;Highlight Names&#187; settings"
 msgstr ""
 
-#: bg-hlnames.php:137
+#: bg-hlnames.php:145
 msgid "Highlight names"
 msgstr ""
 
-#: bg-hlnames.php:178
+#: bg-hlnames.php:193
 #, php-format
-msgid "Updated all %1$d pages and posts!"
+msgid "Updated %1$d pages and posts!"
 msgstr ""
 
-#: bg-hlnames.php:287
+#: bg-hlnames.php:306
 #, php-format
 msgid "Tested %1$d of %2$d names in %3$.1f seconds."
 msgstr ""
 
-#: bg-hlnames.php:293
+#: bg-hlnames.php:312
 #, php-format
 msgid "Successfully tested all %1$d names in %2$.1f seconds."
 msgstr ""
 
-#: includes/settings.php:27
+#: includes/settings.php:20
+msgid "Version"
+msgstr ""
+
+#: includes/settings.php:28
 msgid "Plugin mode"
 msgstr ""
 
-#: includes/settings.php:28
+#: includes/settings.php:29
 msgid "online"
 msgstr ""
 
-#: includes/settings.php:28
+#: includes/settings.php:29
 msgid ""
 "(In this mode the plugin highlights the names only when text displays on the "
 "screen.)"
 msgstr ""
 
-#: includes/settings.php:29
+#: includes/settings.php:30
 msgid "offline"
 msgstr ""
 
-#: includes/settings.php:29
+#: includes/settings.php:30
 msgid "(This mode makes permanent changes in the text of the saved posts.)"
 msgstr ""
 
-#: includes/settings.php:30
+#: includes/settings.php:31
 msgid "mixed"
 msgstr ""
 
-#: includes/settings.php:30
+#: includes/settings.php:31
 msgid ""
 "(Mixing online & offline mode. Highlight the names when text displays on the "
 "screen, only if the text doesn't include links for names.)"
 msgstr ""
 
-#: includes/settings.php:31
+#: includes/settings.php:32
 msgid "clear"
 msgstr ""
 
-#: includes/settings.php:31
+#: includes/settings.php:32
 msgid "(Removes links to the names from the text.)"
 msgstr ""
 
-#: includes/settings.php:32
+#: includes/settings.php:33
 msgid "off"
 msgstr ""
 
-#: includes/settings.php:32
+#: includes/settings.php:33
 msgid "(The plugin does not work (batch mode only).)"
 msgstr ""
 
-#: includes/settings.php:36
+#: includes/settings.php:37
 msgid "Batch mode"
 msgstr ""
 
-#: includes/settings.php:37
+#: includes/settings.php:38
 msgid ""
 "Removes links (and/or highlight names) in all pages and posts in offline mode"
 msgstr ""
 
-#: includes/settings.php:38
-msgid "Parse all posts"
+#: includes/settings.php:39
+msgid "Parse posts: start #"
 msgstr ""
 
 #: includes/settings.php:39
+msgid "finish #"
+msgstr ""
+
+#: includes/settings.php:40
+msgid "Parse all posts"
+msgstr ""
+
+#: includes/settings.php:41
 msgid ""
 "(It makes permanent changes in the text of all pages and posts.) <br><b>We "
 "strongly recommend to keep your SQL-database dump.</b>"
 msgstr ""
 
-#: includes/settings.php:40
-msgid ""
-"Don't close this tab. Parsing in progress!<br>Wait, please. For detail see: "
+#: includes/settings.php:42
+msgid "Don't close this tab. Parsing in progress!<br>Wait, please."
 msgstr ""
 
-#: includes/settings.php:45
+#: includes/settings.php:43
+msgid "For detail see: "
+msgstr ""
+
+#: includes/settings.php:47
 msgid "Limit the amount of links per person"
 msgstr ""
 
-#: includes/settings.php:47 includes/settings.php:65
+#: includes/settings.php:49 includes/settings.php:67
 msgid "(0 - no limits)."
 msgstr ""
 
-#: includes/settings.php:51
+#: includes/settings.php:53
 msgid "Open links"
 msgstr ""
 
-#: includes/settings.php:52
+#: includes/settings.php:54
 msgid "in blank window"
 msgstr ""
 
-#: includes/settings.php:53
+#: includes/settings.php:55
 msgid "in self window"
 msgstr ""
 
-#: includes/settings.php:57
+#: includes/settings.php:59
 msgid "XML-file with names list"
 msgstr ""
 
-#: includes/settings.php:59
+#: includes/settings.php:61
 msgid ""
 "(Specify a local URL of XML-file that contain the names to highlight them in "
 "text. <br> Leave blank to use the XML-file by default.)"
 msgstr ""
 
-#: includes/settings.php:63
+#: includes/settings.php:65
 msgid "The maximum execution time"
 msgstr ""
 
-#: includes/settings.php:64
+#: includes/settings.php:66
 msgid "sec."
 msgstr ""
 
-#: includes/settings.php:69
+#: includes/settings.php:71
 msgid "Show debug info at the end of the post"
 msgstr ""
 
-#: includes/settings.php:79
+#: includes/settings.php:81
 msgid "Save Changes"
 msgstr ""
 
-#: includes/settings.php:86
+#: includes/settings.php:88
 msgid "Download XML schema:"
 msgstr ""
 
-#: includes/settings.php:87
+#: includes/settings.php:89
 msgid "How to create the XML with names list read"
 msgstr ""
 
-#: includes/settings.php:88
+#: includes/settings.php:90
 msgid "How to create and edit of XML-file in Excel is written in"
 msgstr ""
 
-#: includes/settings.php:88
+#: includes/settings.php:90
 msgid " this article"
 msgstr ""
 
-#: includes/settings.php:106
+#: includes/settings.php:108
 msgid "Really highlight names in all posts and pages?"
 msgstr ""
 
-#: includes/settings.php:107
+#: includes/settings.php:109
 msgid "Are you sure?"
 msgstr ""
 

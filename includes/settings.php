@@ -17,6 +17,7 @@ function bg_hlnames_options_page() {
 ?>
 <div class="wrap">
 <h2><?php _e('Plugin\'s &#171;Highlight Names&#187; settings', 'bg-highlight-names') ?></h2>
+<p><?php printf( __( 'Version', 'bg-highlight-names' ).' <b>'.bg_hlnames_version().'</b>' ); ?></p>
 
 <form method="post" action="options.php">
 <?php wp_nonce_field('update-options'); ?>
@@ -35,10 +36,11 @@ function bg_hlnames_options_page() {
 <tr valign="top">
 <th scope="row"><?php _e('Batch mode', 'bg-highlight-names') ?></th>
 <td><b><?php _e('Removes links (and/or highlight names) in all pages and posts in offline mode', 'bg-highlight-names') ?></b><br>
+<?php _e('Parse posts: start #', 'bg-highlight-names') ?> <input type="number" id="bg_hlnames_start_no" min="1" value="1" /> <?php _e('finish #', 'bg-highlight-names') ?> <input type="number" id="bg_hlnames_finish_no" min="1" value="<?php echo bg_hlnames_count_posts (); ?>" /></br>
 <button id='bg_hlnames_backend_button' type="button" class="button-primary" style="float: left; margin: 3px 10px 3px 0px;" <?php if(get_option('bg_hlnames_in_progress')) echo "disabled" ?> onclick="bg_hlnames_parse_posts ();"><?php _e('Parse all posts', 'bg-highlight-names') ?></button>
 <span id="bg_hlnames_warning" style="color: red;" ><i><?php _e('(It makes permanent changes in the text of all pages and posts.) <br><b>We strongly recommend to keep your SQL-database dump.</b>', 'bg-highlight-names') ?></i></span>
-<span id="bg_hlnames_wait" style="color: darkblue; display: none;" ><b><?php _e('Don\'t close this tab. Parsing in progress!<br>Wait, please. For detail see: ', 'bg-highlight-names') ?></b> <a href='<?php echo $debug_file; ?>' target='_blank'>parsing.log</a></span>
-</td>
+<span id="bg_hlnames_wait" style="color: darkblue; display: none;" ><b><?php _e('Don\'t close this tab. Parsing in progress!<br>Wait, please.', 'bg-highlight-names') ?></b></span><br>
+<?php _e('For detail see: ', 'bg-highlight-names') ?> <a href='<?php echo $debug_file; ?>' target='_blank'>parsing.log</a></td>
 </tr>
 
 <tr valign="top">
@@ -106,13 +108,15 @@ function bg_hlnames_parse_posts () {
 	var doParse = confirm("<?php _e('Really highlight names in all posts and pages?', 'bg-highlight-names') ?>");
 	if (doParse) doParse = confirm("<?php _e('Are you sure?', 'bg-highlight-names') ?>");
 	if (doParse) {
-		bg_hlnames_in_progress ('on');	
+		bg_hlnames_in_progress ('on');
+		var start_no = document.getElementById('bg_hlnames_start_no').value;
+		var finish_no = document.getElementById('bg_hlnames_finish_no').value;
 		jQuery.ajax({
 			type: 'GET',
 			cache: false,
 			async: true,										// Асинхронный запрос
 			dataType: 'text',
-			url: '/wp-admin/admin-ajax.php?parseallposts=1',	// Запрос на обработку постов
+			url: '/wp-admin/admin-ajax.php?parseallposts=1&start_no='+start_no+'&finish_no='+finish_no,	// Запрос на обработку постов
 			data: {
 				action: 'bg_hlnames'
 			},
@@ -126,4 +130,8 @@ function bg_hlnames_parse_posts () {
 </script>
 <?php
 
+}
+function bg_hlnames_count_posts () {
+	$count_posts = wp_count_posts()->publish;
+	return $count_posts;
 }
