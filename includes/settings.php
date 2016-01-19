@@ -127,7 +127,7 @@ function bg_hlnames_parse_posts () {
 					document.getElementById('bg_hlnames_resalt').innerHTML  = "<p><font color='darkblue'><b>"+t+"</b></font></p>";
 					bg_hlnames_in_progress ('');
 				}
-				elseif (t[0] == '~') {
+				else if (t[0] == '~') {
 					document.getElementById('bg_hlnames_resalt').innerHTML  = "<p><font color='red'><b>"+t+"</b></font></p>";
 				}
 				else {
