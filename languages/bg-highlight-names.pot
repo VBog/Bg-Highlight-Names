@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Bg Highlight Names\n"
-"POT-Creation-Date: 2016-01-18 23:35+0300\n"
+"POT-Creation-Date: 2016-01-19 07:55+0300\n"
 "PO-Revision-Date: 2016-01-09 13:51+0300\n"
 "Last-Translator: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
 "Language-Team: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
@@ -35,17 +35,21 @@ msgstr ""
 msgid "Highlight names"
 msgstr ""
 
-#: bg-hlnames.php:193
+#: bg-hlnames.php:159
+msgid "Processing has not yet completed. Please wait."
+msgstr ""
+
+#: bg-hlnames.php:194
 #, php-format
 msgid "Updated %1$d pages and posts!"
 msgstr ""
 
-#: bg-hlnames.php:306
+#: bg-hlnames.php:307
 #, php-format
 msgid "Tested %1$d of %2$d names in %3$.1f seconds."
 msgstr ""
 
-#: bg-hlnames.php:312
+#: bg-hlnames.php:313
 #, php-format
 msgid "Successfully tested all %1$d names in %2$.1f seconds."
 msgstr ""
@@ -137,73 +141,73 @@ msgstr ""
 msgid "For detail see: "
 msgstr ""
 
-#: includes/settings.php:47
+#: includes/settings.php:48
 msgid "Limit the amount of links per person"
 msgstr ""
 
-#: includes/settings.php:49 includes/settings.php:67
+#: includes/settings.php:50 includes/settings.php:68
 msgid "(0 - no limits)."
 msgstr ""
 
-#: includes/settings.php:53
+#: includes/settings.php:54
 msgid "Open links"
 msgstr ""
 
-#: includes/settings.php:54
+#: includes/settings.php:55
 msgid "in blank window"
 msgstr ""
 
-#: includes/settings.php:55
+#: includes/settings.php:56
 msgid "in self window"
 msgstr ""
 
-#: includes/settings.php:59
+#: includes/settings.php:60
 msgid "XML-file with names list"
 msgstr ""
 
-#: includes/settings.php:61
+#: includes/settings.php:62
 msgid ""
 "(Specify a local URL of XML-file that contain the names to highlight them in "
 "text. <br> Leave blank to use the XML-file by default.)"
 msgstr ""
 
-#: includes/settings.php:65
+#: includes/settings.php:66
 msgid "The maximum execution time"
 msgstr ""
 
-#: includes/settings.php:66
+#: includes/settings.php:67
 msgid "sec."
 msgstr ""
 
-#: includes/settings.php:71
+#: includes/settings.php:72
 msgid "Show debug info at the end of the post"
 msgstr ""
 
-#: includes/settings.php:81
+#: includes/settings.php:82
 msgid "Save Changes"
 msgstr ""
 
-#: includes/settings.php:88
+#: includes/settings.php:89
 msgid "Download XML schema:"
 msgstr ""
 
-#: includes/settings.php:89
+#: includes/settings.php:90
 msgid "How to create the XML with names list read"
 msgstr ""
 
-#: includes/settings.php:90
+#: includes/settings.php:91
 msgid "How to create and edit of XML-file in Excel is written in"
 msgstr ""
 
-#: includes/settings.php:90
+#: includes/settings.php:91
 msgid " this article"
 msgstr ""
 
-#: includes/settings.php:108
+#: includes/settings.php:109
 msgid "Really highlight names in all posts and pages?"
 msgstr ""
 
-#: includes/settings.php:109
+#: includes/settings.php:110
 msgid "Are you sure?"
 msgstr ""
 

@@ -127,7 +127,13 @@ function bg_hlnames_parse_posts () {
 					document.getElementById('bg_hlnames_resalt').innerHTML  = "<p><font color='darkblue'><b>"+t+"</b></font></p>";
 					bg_hlnames_in_progress ('');
 				}
-				else document.getElementById('bg_hlnames_resalt').innerHTML  = t;
+				elseif (t[0] == '~') {
+					document.getElementById('bg_hlnames_resalt').innerHTML  = "<p><font color='red'><b>"+t+"</b></font></p>";
+				}
+				else {
+					document.getElementById('bg_hlnames_resalt').innerHTML  = t;
+					bg_hlnames_in_progress ('');
+				}
 			}
 		});
 	}
