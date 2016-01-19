@@ -3,7 +3,7 @@
 Plugin Name: Bg Highlight Names
 Plugin URI: https://bogaiskov.ru/highlight-names/
 Description: Highlight Russian names in text of posts and pages.
-Version: 0.5.2
+Version: 0.5.3
 Author: VBog
 Author URI: http://bogaiskov.ru
 */
@@ -33,7 +33,7 @@ Author URI: http://bogaiskov.ru
 if ( !defined('ABSPATH') ) {
 	die( 'Sorry, you are not allowed to access this page directly.' ); 
 }
-define('BG_HLNAMES_VERSION', '0.5.2');
+define('BG_HLNAMES_VERSION', '0.5.3');
 
 // Загрузка интернационализации
 add_action( 'plugins_loaded', 'bg_highlight_load_textdomain' );
@@ -70,6 +70,7 @@ if ( defined('ABSPATH') && defined('WPINC') ) {
 
 
 $bg_hlnames_maxlinks = (int) get_option('bg_hlnames_maxlinks');
+$bg_hlnames_debug_file = dirname(__FILE__ )."/parsing.log";
 
 /*****************************************************************************************
 	Функции запуска плагина
@@ -78,6 +79,7 @@ $bg_hlnames_maxlinks = (int) get_option('bg_hlnames_maxlinks');
  
 // Функция обработки списка имён
 function bg_hlnames_proc($content) {
+	global $bg_hlnames_debug_file;
 	$mode = get_option('bg_hlnames_mode');
 	if ($mode=='mixed' && strstr ( $content ,'bg_hlnames' )) return $content;
 
@@ -89,6 +91,7 @@ function bg_hlnames_proc($content) {
 			$content .= '<p class="bg_hlnames_debug">'.sprintf(__( 'The maximum execution time (%1$s sec.) could not be set. System limits the maximum execution time of %2$s sec.', 'bg-highlight-names'), $maxtime, $systemtime).'</p>';
 		}
 		$maxtime = $systemtime - 2;
+		if ( !empty($_GET['parseallposts'])) error_log(sprintf( 'The maximum execution time (%1$s sec.) could not be set. System limits the maximum execution time of %2$s sec. ', $maxtime, $systemtime), 3, $bg_hlnames_debug_file);
 	}
 	$bg_hlnames = new BgHighlightNames();
 	$content = $bg_hlnames->proc($content, $maxtime);
@@ -104,6 +107,7 @@ function bg_hlnames_clear($content) {
 			$content .= '<p class="bg_hlnames_debug">'.sprintf(__( 'The maximum execution time (%1$s sec.) could not be set. System limits the maximum execution time of %2$s sec.', 'bg-highlight-names'), $maxtime, $systemtime).'</p>';
 		}
 		$maxtime = $systemtime - 2;
+		if ( !empty($_GET['parseallposts'])) error_log(sprintf('The maximum execution time (%1$s sec.) could not be set. System limits the maximum execution time of %2$s sec. ', $maxtime, $systemtime), 3, $bg_hlnames_debug_file);
 	}
 	$bg_hlnames = new BgHighlightNames();
 	$content = $bg_hlnames->clear($content);
@@ -149,10 +153,15 @@ function  bg_hlnames_add_pages() {
 	
 ******************************************************************************************/
 add_action ('wp_ajax_bg_hlnames', 'bg_hlnames_callback');
-add_action ('wp_ajax_nopriv_bg_hlnames', 'bg_hlnames_callback');
+//add_action ('wp_ajax_nopriv_bg_hlnames', 'bg_hlnames_callback');
 
 function bg_hlnames_callback() {
 	
+	global $bg_hlnames_debug_file;
+	if ($_POST['parseallposts']=='reset') {
+		update_option( 'bg_hlnames_in_progress', '' );
+		die();
+	}
 	if ( !empty($_GET['parseallposts']) ) {
 	
 		if (get_option('bg_hlnames_in_progress')) {
@@ -172,25 +181,29 @@ function bg_hlnames_callback() {
 		$cnt = count($posts_array);
 		$j=0; $i=0;
 		
-		$debug_file = dirname(__FILE__ )."/parsing.log";
-		if (file_exists($debug_file)) unlink ( $debug_file );
+		if (file_exists($bg_hlnames_debug_file)) unlink ( $bg_hlnames_debug_file );
 		$start_time = microtime(true);
-		error_log(date ("j-m-Y H:i"). " Start parse ".($finish_no-$start_no+1)." of ".$cnt." posts\n", 3, $debug_file);
+		if (!error_log(date ("j-m-Y H:i"). " Start parse ".($finish_no-$start_no+1)." of ".$cnt." posts\n", 3, $bg_hlnames_debug_file)) {
+			echo '~~~ '.__('Cannot write to log. Stop.', 'bg-highlight-names').' ~~~';
+			update_option( 'bg_hlnames_in_progress', '' );
+			die();
+		}
 		
 		foreach ($posts_array as $post) {
 			$j++;
 			if ( $j >= $start_no && $j <= $finish_no )	{
+				error_log($j.". ".get_permalink($post->ID)." (".number_format($j*100/$cnt, 1)."%)\n", 3, $bg_hlnames_debug_file);
 				$post->post_content = bg_hlnames_clear($post->post_content);
 				if ($mode != 'clear') $post->post_content = bg_hlnames_proc($post->post_content);
 				wp_update_post($post);
 				$i++;
 				$this_time = microtime(true);
 				$time = ($this_time - $start_time);
-				error_log($j.". ".get_permalink($post->ID)." (".number_format($j*100/$cnt, 1)."%) ". number_format($time, 2)." sec.\n", 3, $debug_file);
+				error_log("Complited in ".number_format($time, 2)." sec.\n", 3, $bg_hlnames_debug_file);
 				$start_time = $this_time;
 			}
 		}
-		error_log(date ("j-m-Y H:i")." Updated ".$i." pages and posts!", 3, $debug_file);
+		error_log(date ("j-m-Y H:i")." Updated ".$i." pages and posts!\n", 3, $bg_hlnames_debug_file);
 		printf ("* ".__('Updated %1$d pages and posts!', 'bg-highlight-names'), $i);
 		update_option( 'bg_hlnames_in_progress', '' );
 	}
@@ -210,6 +223,7 @@ class BgHighlightNames
 {
 	public function proc ($txt, $maxtime) {
 
+		global $bg_hlnames_debug_file;
 		$space = "(?:\s|\x{00A0}|\x{00C2}|(?:&nbsp;))";
 	
 		$time0 = 0;
@@ -306,20 +320,24 @@ class BgHighlightNames
 				if (get_option('bg_hlnames_debug')) {
 					$txt .= '<p class="bg_hlnames_debug">'.sprintf(__('Tested %1$d of %2$d names in %3$.1f seconds.', 'bg-highlight-names'), ($i+1), $cnt, $time).'</p>';
 				}
+				if ( !empty($_GET['parseallposts'])) error_log(sprintf('Tested %1$d of %2$d names in %3$.1f seconds. ', ($i+1), $cnt, $time), 3, $bg_hlnames_debug_file);
 				return $txt;
 			}
 		}
 		if (get_option('bg_hlnames_debug')) {
 			$txt .= '<p class="bg_hlnames_debug">'.sprintf(__('Successfully tested all %1$d names in %2$.1f seconds.', 'bg-highlight-names'), $cnt, $time).'</p>';
 		}
+		if ( !empty($_GET['parseallposts'])) error_log(sprintf('Successfully tested all %1$d names in %2$.1f seconds. ', $cnt, $time), 3, $bg_hlnames_debug_file);
 		return $txt;
 	}
 	/*******************************************************************************
 	// Функция удаляет ранее установленную ссылку к имени персоны
 	*******************************************************************************/  
 	public function clear ($txt) {
+		global $bg_hlnames_debug_file;
 		// Ищем все вхождения ссылок <a ...</a>
 		preg_match_all("/<a\\s.*?<\/a>/sui", $txt, $hdr, PREG_OFFSET_CAPTURE);
+		$start_time = microtime(true);
 
 		$cnt = count($hdr[0]);
 
@@ -331,6 +349,8 @@ class BgHighlightNames
 				$txt = str_replace ( $hdr[0][$i][0], $newhdr, $txt );
 			}
 		}
+		$time = microtime(true) - $start_time;
+		if ( !empty($_GET['parseallposts'])) error_log(sprintf('Successfully removed all %1$d links in %2$.1f seconds. ', $cnt, $time), 3, $bg_hlnames_debug_file);
 		return $txt;
 	}
 	/*******************************************************************************

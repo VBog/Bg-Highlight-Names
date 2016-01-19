@@ -17,6 +17,7 @@ function bg_hlnames_options_page() {
 ?>
 <div class="wrap">
 <h2><?php _e('Plugin\'s &#171;Highlight Names&#187; settings', 'bg-highlight-names') ?></h2>
+<div id="bg_hlnames_resalt"></div>
 <p><?php printf( __( 'Version', 'bg-highlight-names' ).' <b>'.bg_hlnames_version().'</b>' ); ?></p>
 
 <form method="post" action="options.php">
@@ -40,9 +41,9 @@ function bg_hlnames_options_page() {
 <button id='bg_hlnames_backend_button' type="button" class="button-primary" style="float: left; margin: 3px 10px 3px 0px;" <?php if(get_option('bg_hlnames_in_progress')) echo "disabled" ?> onclick="bg_hlnames_parse_posts ();"><?php _e('Parse all posts', 'bg-highlight-names') ?></button>
 <span id="bg_hlnames_warning" style="color: red;" ><i><?php _e('(It makes permanent changes in the text of all pages and posts.) <br><b>We strongly recommend to keep your SQL-database dump.</b>', 'bg-highlight-names') ?></i></span>
 <span id="bg_hlnames_wait" style="color: darkblue; display: none;" ><b><?php _e('Don\'t close this tab. Parsing in progress!<br>Wait, please.', 'bg-highlight-names') ?></b></span><br>
-<?php _e('For detail see: ', 'bg-highlight-names') ?> <a href='<?php echo $debug_file; ?>' target='_blank'>parsing.log</a><br>
-<div id="bg_hlnames_resalt"></div></td>
+<?php _e('For detail see: ', 'bg-highlight-names') ?> <a href='<?php echo $debug_file; ?>' target='_blank'>parsing.log</a></td>
 </tr>
+
 
 <tr valign="top">
 <th scope="row"><?php _e('Limit the amount of links per person', 'bg-highlight-names') ?></th>
@@ -98,6 +99,8 @@ function bg_hlnames_in_progress (status) {
 		document.getElementById('bg_hlnames_backend_button').disabled = true;
 		document.getElementById('bg_hlnames_warning').style.display = "none";
 		document.getElementById('bg_hlnames_wait').style.display = "";
+		document.getElementById('bg_hlnames_resalt').innerHTML  = "";
+		document.getElementById('bg_hlnames_resalt').className  = "";
 	} else {
 		document.getElementById('bg_hlnames_backend_button').disabled = false;
 		document.getElementById('bg_hlnames_warning').style.display = "";
@@ -115,23 +118,34 @@ function bg_hlnames_parse_posts () {
 		jQuery.ajax({
 			type: 'GET',
 			cache: false,
-			async: true,										// Асинхронный запрос
+			async: true,		// Асинхронный запрос
 			dataType: 'text',
-			url: '/wp-admin/admin-ajax.php?parseallposts=1&start_no='+start_no+'&finish_no='+finish_no,	// Запрос на обработку постов
+			url: ajaxurl,		// Запрос на обработку постов
 			data: {
-				action: 'bg_hlnames'
+				action: 'bg_hlnames',
+				parseallposts: 'go',
+				start_no: start_no,
+				finish_no: finish_no
 			},
 			success: function (t) {
-				
+				el = document.getElementById('bg_hlnames_resalt');
 				if (t[0] == '*') {
-					document.getElementById('bg_hlnames_resalt').innerHTML  = "<p><font color='darkblue'><b>"+t+"</b></font></p>";
+					el.innerHTML  = "<p><b>"+t+"</b></p>";
+					el.className  = "updated";
 					bg_hlnames_in_progress ('');
 				}
 				else if (t[0] == '~') {
-					document.getElementById('bg_hlnames_resalt').innerHTML  = "<p><font color='red'><b>"+t+"</b></font></p>";
+					el.innerHTML  = "<p><b>"+t+"</b></p>";
+					el.className  = "update-nag";
 				}
 				else {
-					document.getElementById('bg_hlnames_resalt').innerHTML  = t;
+					el.innerHTML  = "<p>"+"<b><?php _e('Process aborted.', 'bg-highlight-names') ?></b>"+t+"</p>";
+					el.className  = "error";
+					var data = {
+						action: 'bg_hlnames',
+						parseallposts: 'reset'
+					};
+					jQuery.post( ajaxurl, data, function(response) {bg_hlnames_in_progress ('');});
 				}
 			}
 		});

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Bg Highlight Names\n"
-"POT-Creation-Date: 2016-01-19 07:55+0300\n"
-"PO-Revision-Date: 2016-01-19 07:56+0300\n"
+"POT-Creation-Date: 2016-01-20 00:10+0300\n"
+"PO-Revision-Date: 2016-01-20 00:10+0300\n"
 "Last-Translator: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
 "Language-Team: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
 "Language: ru_RU\n"
@@ -21,7 +21,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: bg-hlnames.php:89 bg-hlnames.php:104
+#: bg-hlnames.php:91 bg-hlnames.php:107
 #, php-format
 msgid ""
 "The maximum execution time (%1$s sec.) could not be set. System limits the "
@@ -30,46 +30,50 @@ msgstr ""
 "Максимальное время (%1$s сек.) работы скрипта установить не удалось. "
 "Максимальное время, установленное в системе: %2$s сек."
 
-#: bg-hlnames.php:145 includes/settings.php:19
+#: bg-hlnames.php:149 includes/settings.php:19
 msgid "Plugin's &#171;Highlight Names&#187; settings"
 msgstr "Настройки плагина &#171;Подсветка имён&#187;"
 
-#: bg-hlnames.php:145
+#: bg-hlnames.php:149
 msgid "Highlight names"
 msgstr "Подсветка имён"
 
-#: bg-hlnames.php:159
+#: bg-hlnames.php:168
 msgid "Processing has not yet completed. Please wait."
 msgstr "Обработки еще не завершена. Подождите, пожалуйста."
 
-#: bg-hlnames.php:194
+#: bg-hlnames.php:187
+msgid "Cannot write to log. Stop."
+msgstr "Не удается записать в журнал. Остановлено."
+
+#: bg-hlnames.php:207
 #, php-format
 msgid "Updated %1$d pages and posts!"
 msgstr "Обновлено %1$d страниц и постов!"
 
-#: bg-hlnames.php:307
+#: bg-hlnames.php:321
 #, php-format
 msgid "Tested %1$d of %2$d names in %3$.1f seconds."
 msgstr "Проверено %1$d из %2$d имён за %3$.1f сек."
 
-#: bg-hlnames.php:313
+#: bg-hlnames.php:328
 #, php-format
 msgid "Successfully tested all %1$d names in %2$.1f seconds."
 msgstr "Успешно проверены все %1$d имён за  %2$.1f сек."
 
-#: includes/settings.php:20
+#: includes/settings.php:21
 msgid "Version"
 msgstr "Версия"
 
-#: includes/settings.php:28
+#: includes/settings.php:29
 msgid "Plugin mode"
 msgstr "Режим работы плагина"
 
-#: includes/settings.php:29
+#: includes/settings.php:30
 msgid "online"
 msgstr "онлайн"
 
-#: includes/settings.php:29
+#: includes/settings.php:30
 msgid ""
 "(In this mode the plugin highlights the names only when text displays on the "
 "screen.)"
@@ -77,20 +81,20 @@ msgstr ""
 "(В этом режиме плагин выделяет имена лишь тогда, когда текст отображается на "
 "экране.)"
 
-#: includes/settings.php:30
+#: includes/settings.php:31
 msgid "offline"
 msgstr "оффлайн"
 
-#: includes/settings.php:30
+#: includes/settings.php:31
 msgid "(This mode makes permanent changes in the text of the saved posts.)"
 msgstr ""
 "(Этот режим делает постоянные изменения в текст при сохранении сообщений.)"
 
-#: includes/settings.php:31
+#: includes/settings.php:32
 msgid "mixed"
 msgstr "смешенный"
 
-#: includes/settings.php:31
+#: includes/settings.php:32
 msgid ""
 "(Mixing online & offline mode. Highlight the names when text displays on the "
 "screen, only if the text doesn't include links for names.)"
@@ -99,46 +103,46 @@ msgstr ""
 "отображается на экране, только если текст не включает в себя ссылки на "
 "имена.)"
 
-#: includes/settings.php:32
+#: includes/settings.php:33
 msgid "clear"
 msgstr "очистка"
 
-#: includes/settings.php:32
+#: includes/settings.php:33
 msgid "(Removes links to the names from the text.)"
 msgstr "(Удаляет ссылки на имена из текста.)"
 
-#: includes/settings.php:33
+#: includes/settings.php:34
 msgid "off"
 msgstr "выкл."
 
-#: includes/settings.php:33
+#: includes/settings.php:34
 msgid "(The plugin does not work (batch mode only).)"
 msgstr "(Плагин не работает (только пакетный режим).)"
 
-#: includes/settings.php:37
+#: includes/settings.php:38
 msgid "Batch mode"
 msgstr "Пакетный режим"
 
-#: includes/settings.php:38
+#: includes/settings.php:39
 msgid ""
 "Removes links (and/or highlight names) in all pages and posts in offline mode"
 msgstr ""
 "Удаляет ссылки (и/или подсвечивает имена) во всех страницах и сообщениях в "
 "оффлайн режиме"
 
-#: includes/settings.php:39
+#: includes/settings.php:40
 msgid "Parse posts: start #"
 msgstr "Обработать посты: от №"
 
-#: includes/settings.php:39
+#: includes/settings.php:40
 msgid "finish #"
 msgstr "до №"
 
-#: includes/settings.php:40
+#: includes/settings.php:41
 msgid "Parse all posts"
 msgstr "Разбор всех постов"
 
-#: includes/settings.php:41
+#: includes/settings.php:42
 msgid ""
 "(It makes permanent changes in the text of all pages and posts.) <br><b>We "
 "strongly recommend to keep your SQL-database dump.</b>"
@@ -146,40 +150,40 @@ msgstr ""
 "(Делает постоянные изменения в текст всех страниц и сообщений). <br> <b>Мы "
 "настоятельно рекомендуем сохранить дамп SQL-базы данных.</b>"
 
-#: includes/settings.php:42
+#: includes/settings.php:43
 msgid "Don't close this tab. Parsing in progress!<br>Wait, please."
 msgstr ""
 "Не закрывайте эту вкладку. Разбор в процессе! <br> Подождите, пожалуйста."
 
-#: includes/settings.php:43
+#: includes/settings.php:44
 msgid "For detail see: "
 msgstr "Подробнее см.:"
 
-#: includes/settings.php:48
+#: includes/settings.php:49
 msgid "Limit the amount of links per person"
 msgstr "Ограничение количество ссылок на человека"
 
-#: includes/settings.php:50 includes/settings.php:68
+#: includes/settings.php:51 includes/settings.php:69
 msgid "(0 - no limits)."
 msgstr "(0 - без ограничений)."
 
-#: includes/settings.php:54
+#: includes/settings.php:55
 msgid "Open links"
 msgstr "Открывать ссылки"
 
-#: includes/settings.php:55
+#: includes/settings.php:56
 msgid "in blank window"
 msgstr "в новом окне"
 
-#: includes/settings.php:56
+#: includes/settings.php:57
 msgid "in self window"
 msgstr "в текущем окне"
 
-#: includes/settings.php:60
+#: includes/settings.php:61
 msgid "XML-file with names list"
 msgstr "XML-файл имён"
 
-#: includes/settings.php:62
+#: includes/settings.php:63
 msgid ""
 "(Specify a local URL of XML-file that contain the names to highlight them in "
 "text. <br> Leave blank to use the XML-file by default.)"
@@ -187,45 +191,49 @@ msgstr ""
 "(Укажите локальный URL XML-файла, содержащего имена для подсветки в тексте "
 "статей.<br>Оставьте поле пустым, чтобы использовать XML-файл по умолчанию.)"
 
-#: includes/settings.php:66
+#: includes/settings.php:67
 msgid "The maximum execution time"
 msgstr "Максимальное время работы плагина"
 
-#: includes/settings.php:67
+#: includes/settings.php:68
 msgid "sec."
 msgstr "сек."
 
-#: includes/settings.php:72
+#: includes/settings.php:73
 msgid "Show debug info at the end of the post"
 msgstr "Отображать отладочную информацию в конце поста"
 
-#: includes/settings.php:82
+#: includes/settings.php:83
 msgid "Save Changes"
 msgstr "Сохранить изменения"
 
-#: includes/settings.php:89
+#: includes/settings.php:90
 msgid "Download XML schema:"
 msgstr "Скачать схему XML-файла:"
 
-#: includes/settings.php:90
+#: includes/settings.php:91
 msgid "How to create the XML with names list read"
 msgstr "О создании XML-файла имён читайте"
 
-#: includes/settings.php:91
+#: includes/settings.php:92
 msgid "How to create and edit of XML-file in Excel is written in"
 msgstr "Создание и редактирование XML-файла в Excel описано в"
 
-#: includes/settings.php:91
+#: includes/settings.php:92
 msgid " this article"
 msgstr "этой статье"
 
-#: includes/settings.php:109
+#: includes/settings.php:112
 msgid "Really highlight names in all posts and pages?"
 msgstr "Действительно выделить имена во всех постах и страницах?"
 
-#: includes/settings.php:110
+#: includes/settings.php:113
 msgid "Are you sure?"
 msgstr "Это точно ?"
+
+#: includes/settings.php:142
+msgid "Process aborted."
+msgstr "Обработка прервана."
 
 #. Plugin Name of the plugin/theme
 msgid "Bg Highlight Names"
