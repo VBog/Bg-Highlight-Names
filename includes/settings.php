@@ -132,7 +132,6 @@ function bg_hlnames_parse_posts () {
 				}
 				else {
 					document.getElementById('bg_hlnames_resalt').innerHTML  = t;
-					bg_hlnames_in_progress ('');
 				}
 			}
 		});

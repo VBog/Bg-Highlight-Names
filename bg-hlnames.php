@@ -175,7 +175,7 @@ function bg_hlnames_callback() {
 		$debug_file = dirname(__FILE__ )."/parsing.log";
 		if (file_exists($debug_file)) unlink ( $debug_file );
 		$start_time = microtime(true);
-		error_log(date ("j-m-Y H:i"). " Start parse ".$cnt." posts\n", 3, $debug_file);
+		error_log(date ("j-m-Y H:i"). " Start parse ".($finish_no-$start_no+1)." of ".$cnt." posts\n", 3, $debug_file);
 		
 		foreach ($posts_array as $post) {
 			$j++;
