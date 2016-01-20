@@ -348,6 +348,7 @@ class BgHighlightNames
 		$start_time = microtime(true);
 
 		$cnt = count($hdr[0]);
+		$j=0;
 
 		for ($i = 0; $i < $cnt; $i++) {
 			if (strstr ( $hdr[0][$i][0] ,'bg_hlnames' )) {
@@ -355,10 +356,11 @@ class BgHighlightNames
 				$finish = strrpos ( $hdr[0][$i][0], '<', 1 );
 				$newhdr = substr ( $hdr[0][$i][0], $start, $finish-$start );
 				$txt = str_replace ( $hdr[0][$i][0], $newhdr, $txt );
+				$j++;
 			}
 		}
 		$time = microtime(true) - $start_time;
-		if ( !empty($_GET['parseallposts'])) error_log(sprintf('Successfully removed all %1$d links in %2$.1f seconds. ', $cnt, $time), 3, $bg_hlnames_debug_file);
+		if ( !empty($_GET['parseallposts'])) error_log(sprintf('Successfully removed %1$d of %2$d links in %3$.1f seconds. ', $j, $cnt, $time), 3, $bg_hlnames_debug_file);
 		return $txt;
 	}
 	/*******************************************************************************
