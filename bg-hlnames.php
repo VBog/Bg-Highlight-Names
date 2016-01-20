@@ -3,7 +3,7 @@
 Plugin Name: Bg Highlight Names
 Plugin URI: https://bogaiskov.ru/highlight-names/
 Description: Highlight Russian names in text of posts and pages.
-Version: 0.5.3
+Version: 0.5.4
 Author: VBog
 Author URI: http://bogaiskov.ru
 */
@@ -33,7 +33,7 @@ Author URI: http://bogaiskov.ru
 if ( !defined('ABSPATH') ) {
 	die( 'Sorry, you are not allowed to access this page directly.' ); 
 }
-define('BG_HLNAMES_VERSION', '0.5.3');
+define('BG_HLNAMES_VERSION', '0.5.4');
 
 // Загрузка интернационализации
 add_action( 'plugins_loaded', 'bg_highlight_load_textdomain' );
@@ -158,7 +158,7 @@ add_action ('wp_ajax_bg_hlnames', 'bg_hlnames_callback');
 function bg_hlnames_callback() {
 	
 	global $bg_hlnames_debug_file;
-	if ($_POST['parseallposts']=='reset') {
+	if (isset($_POST['parseallposts']) && $_POST['parseallposts']=='reset') {
 		update_option( 'bg_hlnames_in_progress', '' );
 		die();
 	}
@@ -168,18 +168,19 @@ function bg_hlnames_callback() {
 			echo '~~~ '.__('Processing has not yet completed. Please wait.', 'bg-highlight-names').' ~~~';
 			die();
 		}
-		$start_no = (int) $_GET['start_no'];
-		if ($start_no < 1) $start_no = 1;
-		$finish_no = (int) $_GET['finish_no'];
-		if ($finish_no < 1) $finish_no = 1;
+		$cnt = wp_count_posts()->publish;
 		
+		$start_no = intval( $_GET['start_no'] );
+		if ($start_no < 1) $start_no = 1;
+		if ($start_no > $cnt) $start_no = $cnt;
+
+		$finish_no = intval( $_GET['finish_no'] );
+		if ($finish_no < $start_no) $finish_no = $start_no;
+		if ($finish_no > $cnt) $finish_no = $cnt;
+		
+		$i=0;
 		$mode = get_option('bg_hlnames_mode');
 		update_option( 'bg_hlnames_in_progress', 'on' );
-		$args = array('post_type' => array( 'post', 'page'), 'post_status' => 'publish', 'numberposts' => -1, 'orderby' => 'ID');
-		$posts_array = get_posts($args);
-		
-		$cnt = count($posts_array);
-		$j=0; $i=0;
 		
 		if (file_exists($bg_hlnames_debug_file)) unlink ( $bg_hlnames_debug_file );
 		$start_time = microtime(true);
@@ -188,20 +189,21 @@ function bg_hlnames_callback() {
 			update_option( 'bg_hlnames_in_progress', '' );
 			die();
 		}
-		
-		foreach ($posts_array as $post) {
-			$j++;
-			if ( $j >= $start_no && $j <= $finish_no )	{
-				error_log($j.". ".get_permalink($post->ID)." (".number_format($j*100/$cnt, 1)."%)\n", 3, $bg_hlnames_debug_file);
-				$post->post_content = bg_hlnames_clear($post->post_content);
-				if ($mode != 'clear') $post->post_content = bg_hlnames_proc($post->post_content);
-				wp_update_post($post);
-				$i++;
-				$this_time = microtime(true);
-				$time = ($this_time - $start_time);
-				error_log("Complited in ".number_format($time, 2)." sec.\n", 3, $bg_hlnames_debug_file);
-				$start_time = $this_time;
-			}
+		for ($k = $start_no-1; $k < $finish_no; $k++){
+			$args = array('post_type' => array( 'post', 'page'), 'post_status' => 'publish', 'numberposts' => 1, 'offset' => $k, 'orderby' => 'ID');
+			$posts_array = get_posts($args);
+			$post = $posts_array[0];
+			error_log(($k+1).". ".get_permalink($post->ID)."\n", 3, $bg_hlnames_debug_file);
+			
+			$post->post_content = bg_hlnames_clear($post->post_content);
+			if ($mode != 'clear') $post->post_content = bg_hlnames_proc($post->post_content);
+			wp_update_post($post);
+			
+			$i++;
+			$this_time = microtime(true);
+			$time = ($this_time - $start_time);
+			error_log("Complited in ".number_format($time, 2)." sec.\n", 3, $bg_hlnames_debug_file);
+			$start_time = $this_time;
 		}
 		error_log(date ("j-m-Y H:i")." Updated ".$i." pages and posts!\n", 3, $bg_hlnames_debug_file);
 		printf ("* ".__('Updated %1$d pages and posts!', 'bg-highlight-names'), $i);
@@ -241,12 +243,18 @@ class BgHighlightNames
 		for ($i=0; $i<$cnt; $i++) {
 			$the_person = $person[$i];
 
-			$curacy = $the_person['curacy'];
-			$name = $the_person['name'];
-			$num = $the_person['num'];
-			$middlename = $the_person['middlename'];
-			$nick = $the_person['nick'];
-			$surname = $the_person['surname'];
+			if ( isset($the_person['curacy'])) $curacy = $the_person['curacy'];
+			else  $curacy="";
+			if ( isset($the_person['name'])) $name = $the_person['name'];
+			else  $name="";
+			if ( isset($the_person['num'])) $num = $the_person['num'];
+			else  $num="";
+			if ( isset($the_person['middlename'])) $middlename = $the_person['middlename'];
+			else  $middlename="";
+			if ( isset($the_person['nick'])) $nick = $the_person['nick'];
+			else  $nick="";
+			if ( isset($the_person['surname'])) $surname = $the_person['surname'];
+			else  $surname="";
 			$is_monk = !$surname  || (substr($surname, 0, 1) == '('); 				// У монаха нет фамилии или фамилия в скобках
 
 			$the_curacy = $curacy?("(".$curacy.$space.")?"):"";
@@ -314,9 +322,9 @@ class BgHighlightNames
 
 	// Ограничение времени работы функции
 			$time = microtime(true) - $start_time;
-			if ($time-$time0 > $cicle_time) $cicle_time = $time-$time0;
+			if ($time-$time0 > $cycle_time) $cycle_time = $time-$time0;
 			$time0 = $time;
-			if ($maxtime && $time > $maxtime-$cicle_time) {
+			if ($maxtime && $time > $maxtime-$cycle_time) {
 				if (get_option('bg_hlnames_debug')) {
 					$txt .= '<p class="bg_hlnames_debug">'.sprintf(__('Tested %1$d of %2$d names in %3$.1f seconds.', 'bg-highlight-names'), ($i+1), $cnt, $time).'</p>';
 				}

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Bg Highlight Names\n"
-"POT-Creation-Date: 2016-01-20 00:10+0300\n"
+"POT-Creation-Date: 2016-01-20 16:42+0300\n"
 "PO-Revision-Date: 2016-01-09 13:51+0300\n"
 "Last-Translator: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
 "Language-Team: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
@@ -39,21 +39,21 @@ msgstr ""
 msgid "Processing has not yet completed. Please wait."
 msgstr ""
 
-#: bg-hlnames.php:187
+#: bg-hlnames.php:188
 msgid "Cannot write to log. Stop."
 msgstr ""
 
-#: bg-hlnames.php:207
+#: bg-hlnames.php:209
 #, php-format
 msgid "Updated %1$d pages and posts!"
 msgstr ""
 
-#: bg-hlnames.php:321
+#: bg-hlnames.php:329
 #, php-format
 msgid "Tested %1$d of %2$d names in %3$.1f seconds."
 msgstr ""
 
-#: bg-hlnames.php:328
+#: bg-hlnames.php:336
 #, php-format
 msgid "Successfully tested all %1$d names in %2$.1f seconds."
 msgstr ""
@@ -216,6 +216,10 @@ msgid "Are you sure?"
 msgstr ""
 
 #: includes/settings.php:142
+msgid "No response."
+msgstr ""
+
+#: includes/settings.php:143
 msgid "Process aborted."
 msgstr ""
 

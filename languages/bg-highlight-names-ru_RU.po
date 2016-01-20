@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Bg Highlight Names\n"
-"POT-Creation-Date: 2016-01-20 00:10+0300\n"
-"PO-Revision-Date: 2016-01-20 00:10+0300\n"
+"POT-Creation-Date: 2016-01-20 16:42+0300\n"
+"PO-Revision-Date: 2016-01-20 16:42+0300\n"
 "Last-Translator: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
 "Language-Team: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
 "Language: ru_RU\n"
@@ -42,21 +42,21 @@ msgstr "Подсветка имён"
 msgid "Processing has not yet completed. Please wait."
 msgstr "Обработки еще не завершена. Подождите, пожалуйста."
 
-#: bg-hlnames.php:187
+#: bg-hlnames.php:188
 msgid "Cannot write to log. Stop."
 msgstr "Не удается записать в журнал. Остановлено."
 
-#: bg-hlnames.php:207
+#: bg-hlnames.php:209
 #, php-format
 msgid "Updated %1$d pages and posts!"
 msgstr "Обновлено %1$d страниц и постов!"
 
-#: bg-hlnames.php:321
+#: bg-hlnames.php:329
 #, php-format
 msgid "Tested %1$d of %2$d names in %3$.1f seconds."
 msgstr "Проверено %1$d из %2$d имён за %3$.1f сек."
 
-#: bg-hlnames.php:328
+#: bg-hlnames.php:336
 #, php-format
 msgid "Successfully tested all %1$d names in %2$.1f seconds."
 msgstr "Успешно проверены все %1$d имён за  %2$.1f сек."
@@ -232,6 +232,10 @@ msgid "Are you sure?"
 msgstr "Это точно ?"
 
 #: includes/settings.php:142
+msgid "No response."
+msgstr "Нет ответа."
+
+#: includes/settings.php:143
 msgid "Process aborted."
 msgstr "Обработка прервана."
 
@@ -254,6 +258,9 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "http://bogaiskov.ru"
 msgstr ""
+
+#~ msgid "Process aborted. "
+#~ msgstr "Обработка прервана."
 
 #~ msgid "Updated all %1$d pages and posts!"
 #~ msgstr "Обновлены все %1$d страниц и сообщений!"

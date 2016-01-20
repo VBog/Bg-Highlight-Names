@@ -139,7 +139,8 @@ function bg_hlnames_parse_posts () {
 					el.className  = "update-nag";
 				}
 				else {
-					el.innerHTML  = "<p>"+"<b><?php _e('Process aborted.', 'bg-highlight-names') ?></b>"+t+"</p>";
+					if (!t) t="<?php _e('No response.', 'bg-highlight-names'); ?>";
+					el.innerHTML  = "<p>"+"<b><?php _e('Process aborted.', 'bg-highlight-names'); ?> </b>"+t+"</p>";
 					el.className  = "error";
 					var data = {
 						action: 'bg_hlnames',
