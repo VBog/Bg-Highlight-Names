@@ -148,6 +148,18 @@ function bg_hlnames_parse_posts () {
 					};
 					jQuery.post( ajaxurl, data, function(response) {bg_hlnames_in_progress ('');});
 				}
+			},
+			error: function (e, t) {
+				el = document.getElementById('bg_hlnames_resalt');
+				if (!t) t="<?php _e('No response.', 'bg-highlight-names'); ?>";
+				t += " <b>" + e.status + "</b> " + e.responseText;
+				el.innerHTML  = "<p>"+"<b><?php _e('Process aborted.', 'bg-highlight-names'); ?> </b>"+t+"</p>";
+				el.className  = "error";
+				var data = {
+					action: 'bg_hlnames',
+					parseallposts: 'reset'
+				};
+				jQuery.post( ajaxurl, data, function(response) {bg_hlnames_in_progress ('');});
 			}
 		});
 	}
