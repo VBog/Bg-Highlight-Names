@@ -159,6 +159,7 @@ add_action ('wp_ajax_bg_hlnames', 'bg_hlnames_callback');
 function bg_hlnames_callback() {
 	
 	global $bg_hlnames_debug_file;
+	$param = new stdClass();
 
 	if (isset($_POST['parseallposts']) && $_POST['parseallposts']=='reset') {
 		update_option( 'bg_hlnames_in_progress', '' );

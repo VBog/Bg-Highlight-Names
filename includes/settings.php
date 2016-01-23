@@ -101,7 +101,9 @@ if (bg_hlnames_in_progress (<?php echo "'".get_option('bg_hlnames_in_progress').
 	document.getElementById('bg_hlnames_resalt').innerHTML  = "<?php _e("You had reloaded this tab. Sorry, but you can not watch the process here. Check the log file to see the result of parsing. When the process is completed, just reload the tab again.<br>To interrupt the process, deactivate and then activate the plugin on the plugins page.", 'bg-highlight-names'); ?>";
 	document.getElementById('bg_hlnames_resalt').className  = "update-nag";
 }
-
+function bg_hlnames_parse_posts_repiad () {
+	bg_hlnames_parse_posts ('repiad');		// Повторим еще раз
+}
 function bg_hlnames_in_progress (status) {
 	if (status == 'on') {
 		document.getElementById('bg_hlnames_backend_button').disabled = true;
@@ -119,7 +121,7 @@ function bg_hlnames_in_progress (status) {
 
 function bg_hlnames_parse_posts (process) {
 	if (process == 'repiad' || confirm("<?php _e('Really highlight names in all posts and pages?', 'bg-highlight-names') ?>")) {
-		bg_hlnames_in_progress ('on');
+		if (process != 'repiad') bg_hlnames_in_progress ('on');
 		var start_no = document.getElementById('bg_hlnames_start_no').value;
 		var finish_no = document.getElementById('bg_hlnames_finish_no').value;
 
@@ -135,7 +137,7 @@ function bg_hlnames_parse_posts (process) {
 				start_no: start_no,
 				finish_no: finish_no
 			},
-			success: function (t) {
+			success: function (t, textStatus) {
 				el = document.getElementById('bg_hlnames_resalt');
 				if (t[0] == '*') {
 					el.innerHTML  = t.substr(1);
@@ -153,18 +155,35 @@ function bg_hlnames_parse_posts (process) {
 				}
 				else {
 					if (!t) t="<?php _e('No response.', 'bg-highlight-names'); ?>";
-					el.innerHTML  = "<p>"+"<b><?php _e('Process aborted.', 'bg-highlight-names'); ?> </b>"+t+"</p>";
-					el.className  = "error";
-					bg_hlnames_parse_posts ('repiad');		// Повторим еще раз
+					if (textStatus == 'error' || textStatus == 'parsererror' ||  textStatus == 'timeout') {	// error, parsererror, timeout
+						date = new Date();
+						el.innerHTML  = date.toLocaleString("ru")+" <p><b>"+textStatus+". <?php _e('Fatal error:', 'bg-highlight-names'); ?> </b>"+t+" <?php _e('Try again...', 'bg-highlight-names'); ?></p>";
+						el.className  = "error";
+						bg_hlnames_parse_posts ('repiad');		// Повторим еще раз
+					} else if (textStatus == 'abort') {														// abort
+						el.innerHTML  = date.toLocaleString("ru")+" <p><b>"+textStatus+". <?php _e('Process aborted.', 'bg-highlight-names'); ?> </b>"+t+"</p>";
+						el.className  = "error";
+					} else {																				// notmodified, success
+						el.innerHTML  = date.toLocaleString("ru")+" <p><b>"+textStatus+". <?php _e('Warning:', 'bg-highlight-names'); ?> </b>"+t+" <?php _e('Continue...', 'bg-highlight-names'); ?></p>";
+						el.className  = "update-nag";
+					}
 				}
 			},
-			error: function (e, t) {
+			error: function (e, textStatus) {
 				el = document.getElementById('bg_hlnames_resalt');
-				if (!t) t="<?php _e('No response.', 'bg-highlight-names'); ?>";
-				t += " <b>" + e.status + "</b> " + e.responseText;
-				el.innerHTML  = "<p>"+"<b><?php _e('Process aborted.', 'bg-highlight-names'); ?> </b>"+t+"</p>";
-				el.className  = "error";
-				bg_hlnames_parse_posts ('repiad');		// Повторим еще раз
+				t = " <b>" + e.status + "</b> " + e.responseText;
+				if (textStatus == 'error' || textStatus == 'parsererror' ||  textStatus == 'timeout') {	// error, parsererror, timeout
+					date = new Date();
+					el.innerHTML  = date.toLocaleString("ru")+" <p><b>"+textStatus+". <?php _e('Fatal error:', 'bg-highlight-names'); ?> </b>"+t+"<br><?php _e('Try again...', 'bg-highlight-names'); ?></p>";
+					el.className  = "error";
+					bg_hlnames_parse_posts ('repiad');		// Повторим еще раз
+				} else if (textStatus == 'abort') {														// abort
+					el.innerHTML  = date.toLocaleString("ru")+" <p><b>"+textStatus+". <?php _e('Process aborted.', 'bg-highlight-names'); ?> </b>"+t+"</p>";
+					el.className  = "error";
+				} else {																				// notmodified, success
+					el.innerHTML  = date.toLocaleString("ru")+" <p><b>"+textStatus+". <?php _e('Warning:', 'bg-highlight-names'); ?> </b>"+t+"<br><?php _e('Continue...', 'bg-highlight-names'); ?></p>";
+					el.className  = "update-nag";
+				}
 			}
 		});
 	}

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Bg Highlight Names\n"
-"POT-Creation-Date: 2016-01-23 14:53+0300\n"
+"POT-Creation-Date: 2016-01-24 02:13+0300\n"
 "PO-Revision-Date: 2016-01-09 13:51+0300\n"
 "Last-Translator: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
 "Language-Team: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
@@ -35,27 +35,27 @@ msgstr ""
 msgid "Highlight names"
 msgstr ""
 
-#: bg-hlnames.php:171
+#: bg-hlnames.php:172
 msgid "Processing has not yet completed. Please wait."
 msgstr ""
 
-#: bg-hlnames.php:188
+#: bg-hlnames.php:189
 msgid "Nothing more to process."
 msgstr ""
 
-#: bg-hlnames.php:242
+#: bg-hlnames.php:247
 #, php-format
 msgid "Updated %1$d page or post!"
 msgid_plural "Updated %1$d pages and posts!"
 msgstr[0] ""
 msgstr[1] ""
 
-#: bg-hlnames.php:362
+#: bg-hlnames.php:367
 #, php-format
 msgid "Tested %1$d of %2$d names in %3$.1f seconds."
 msgstr ""
 
-#: bg-hlnames.php:369
+#: bg-hlnames.php:374
 #, php-format
 msgid "Successfully tested all %1$d names in %2$.1f seconds."
 msgstr ""
@@ -217,16 +217,32 @@ msgid ""
 "deactivate and then activate the plugin on the plugins page."
 msgstr ""
 
-#: includes/settings.php:122
+#: includes/settings.php:123
 msgid "Really highlight names in all posts and pages?"
 msgstr ""
 
-#: includes/settings.php:156 includes/settings.php:164
+#: includes/settings.php:157
 msgid "No response."
 msgstr ""
 
-#: includes/settings.php:157 includes/settings.php:166
+#: includes/settings.php:160 includes/settings.php:177
+msgid "Fatal error:"
+msgstr ""
+
+#: includes/settings.php:160 includes/settings.php:177
+msgid "Try again..."
+msgstr ""
+
+#: includes/settings.php:164 includes/settings.php:181
 msgid "Process aborted."
+msgstr ""
+
+#: includes/settings.php:167 includes/settings.php:184
+msgid "Warning:"
+msgstr ""
+
+#: includes/settings.php:167 includes/settings.php:184
+msgid "Continue..."
 msgstr ""
 
 #. Plugin Name of the plugin/theme

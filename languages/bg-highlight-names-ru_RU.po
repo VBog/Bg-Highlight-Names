@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Bg Highlight Names\n"
-"POT-Creation-Date: 2016-01-23 14:54+0300\n"
-"PO-Revision-Date: 2016-01-23 20:08+0300\n"
+"POT-Creation-Date: 2016-01-24 02:13+0300\n"
+"PO-Revision-Date: 2016-01-24 02:13+0300\n"
 "Last-Translator: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
 "Language-Team: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
 "Language: ru_RU\n"
@@ -38,15 +38,15 @@ msgstr "Настройки плагина &#171;Подсветка имён&#187
 msgid "Highlight names"
 msgstr "Подсветка имён"
 
-#: bg-hlnames.php:171
+#: bg-hlnames.php:172
 msgid "Processing has not yet completed. Please wait."
 msgstr "Обработки еще не завершена. Подождите, пожалуйста."
 
-#: bg-hlnames.php:188
+#: bg-hlnames.php:189
 msgid "Nothing more to process."
 msgstr "Больше нечего обрабатывать."
 
-#: bg-hlnames.php:242
+#: bg-hlnames.php:247
 #, php-format
 msgid "Updated %1$d page or post!"
 msgid_plural "Updated %1$d pages and posts!"
@@ -54,12 +54,12 @@ msgstr[0] "Обновлена %1$d страница или пост!"
 msgstr[1] "Обновлено %1$d страницы и поста!"
 msgstr[2] "Обновлено %1$d страниц и постов!"
 
-#: bg-hlnames.php:362
+#: bg-hlnames.php:367
 #, php-format
 msgid "Tested %1$d of %2$d names in %3$.1f seconds."
 msgstr "Проверено %1$d из %2$d имён за %3$.1f сек."
 
-#: bg-hlnames.php:369
+#: bg-hlnames.php:374
 #, php-format
 msgid "Successfully tested all %1$d names in %2$.1f seconds."
 msgstr "Успешно проверены все %1$d имён за  %2$.1f сек."
@@ -240,17 +240,33 @@ msgstr ""
 "прервать процесс, деактивируйте и вновь активируйте плагин на странице "
 "Плагинов."
 
-#: includes/settings.php:122
+#: includes/settings.php:123
 msgid "Really highlight names in all posts and pages?"
 msgstr "Действительно выделить имена во всех постах и страницах?"
 
-#: includes/settings.php:156 includes/settings.php:164
+#: includes/settings.php:157
 msgid "No response."
 msgstr "Нет ответа."
 
-#: includes/settings.php:157 includes/settings.php:166
+#: includes/settings.php:160 includes/settings.php:177
+msgid "Fatal error:"
+msgstr "Критическая ошибка:"
+
+#: includes/settings.php:160 includes/settings.php:177
+msgid "Try again..."
+msgstr "Попробуем ещё раз..."
+
+#: includes/settings.php:164 includes/settings.php:181
 msgid "Process aborted."
 msgstr "Обработка прервана."
+
+#: includes/settings.php:167 includes/settings.php:184
+msgid "Warning:"
+msgstr "Предупреждение:"
+
+#: includes/settings.php:167 includes/settings.php:184
+msgid "Continue..."
+msgstr "Продолжить..."
 
 #. Plugin Name of the plugin/theme
 msgid "Bg Highlight Names"
@@ -271,6 +287,12 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "http://bogaiskov.ru"
 msgstr ""
+
+#~ msgid "Fatal error."
+#~ msgstr "Критическая ошибка."
+
+#~ msgid "Warning."
+#~ msgstr "Предупреждение."
 
 #~ msgid "Don't close this tab. Parsing in progress!<br>Wait, please."
 #~ msgstr ""
