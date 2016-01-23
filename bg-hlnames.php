@@ -3,7 +3,7 @@
 Plugin Name: Bg Highlight Names
 Plugin URI: https://bogaiskov.ru/highlight-names/
 Description: Highlight Russian names in text of posts and pages.
-Version: 0.5.4
+Version: 0.6.0
 Author: VBog
 Author URI: http://bogaiskov.ru
 */
@@ -33,7 +33,7 @@ Author URI: http://bogaiskov.ru
 if ( !defined('ABSPATH') ) {
 	die( 'Sorry, you are not allowed to access this page directly.' ); 
 }
-define('BG_HLNAMES_VERSION', '0.5.4');
+define('BG_HLNAMES_VERSION', '0.6.0');
 
 // Загрузка интернационализации
 add_action( 'plugins_loaded', 'bg_highlight_load_textdomain' );
@@ -71,6 +71,7 @@ if ( defined('ABSPATH') && defined('WPINC') ) {
 
 $bg_hlnames_maxlinks = (int) get_option('bg_hlnames_maxlinks');
 $bg_hlnames_debug_file = dirname(__FILE__ )."/parsing.log";
+$bg_hlnames_start_old = 0;
 
 /*****************************************************************************************
 	Функции запуска плагина
@@ -158,58 +159,94 @@ add_action ('wp_ajax_bg_hlnames', 'bg_hlnames_callback');
 function bg_hlnames_callback() {
 	
 	global $bg_hlnames_debug_file;
+
 	if (isset($_POST['parseallposts']) && $_POST['parseallposts']=='reset') {
 		update_option( 'bg_hlnames_in_progress', '' );
-		die();
+		wp_die();
 	}
 	if ( !empty($_GET['parseallposts']) ) {
 	
-		if (get_option('bg_hlnames_in_progress')) {
-			echo '~~~ '.__('Processing has not yet completed. Please wait.', 'bg-highlight-names').' ~~~';
-			die();
+		$process = $_GET['parseallposts'];
+		if (get_option('bg_hlnames_in_progress') && ($process != 'repiad')) {
+			echo '~'.__('Processing has not yet completed. Please wait.', 'bg-highlight-names');
+			wp_die();
 		}
-		$cnt = wp_count_posts()->publish;
 		
-		$start_no = intval( $_GET['start_no'] );
-		if ($start_no < 1) $start_no = 1;
-		if ($start_no > $cnt) $start_no = $cnt;
+		if ( $process == 'go' ) {
+			$param->cnt = wp_count_posts()->publish;
+			if (file_exists($bg_hlnames_debug_file)) unlink ( $bg_hlnames_debug_file );
+			$start_no = intval( $_GET['start_no'] );
+			if ($start_no < 1) $start_no = 1;
+			if ($start_no > $param->cnt) $start_no = $param->cnt;
+			update_option( 'bg_hlnames_start_no', $start_no );
 
-		$finish_no = intval( $_GET['finish_no'] );
-		if ($finish_no < $start_no) $finish_no = $start_no;
-		if ($finish_no > $cnt) $finish_no = $cnt;
-		
-		$i=0;
+			$finish_no = intval( $_GET['finish_no'] );
+			if ($finish_no > $param->cnt) $finish_no = $param->cnt;
+			update_option( 'bg_hlnames_finish_no', $finish_no );
+			if ($finish_no < $start_no) {
+				error_log(date ("j-m-Y H:i")." Nothing more to process.\n", 3, $bg_hlnames_debug_file);
+				printf ("* <p id='bg_hlnames_result_p' start_no='".$start_no."' finish_no='".$finish_no."'><b>".__('Nothing more to process.', 'bg-highlight-names')."</b></p>", $i);
+				update_option( 'bg_hlnames_in_progress', '' );
+				wp_die();
+			}
+			$param->start_time = microtime(true);
+			$param->num_posts = $finish_no - $start_no +1;
+			update_option( 'bg_hlnames_param', $param );
+		} elseif ( $process == 'repiad' ) {
+			error_log("\n".date ("j-m-Y H:i")." Repiad the process.\n\n", 3, $bg_hlnames_debug_file);
+			$start_no = get_option('bg_hlnames_start_no');
+			$finish_no = get_option('bg_hlnames_finish_no');
+			$param = get_option('bg_hlnames_param');
+		} else { 
+			wp_die (); 
+		}
+// Начинаем парсинг статей		
 		$mode = get_option('bg_hlnames_mode');
 		update_option( 'bg_hlnames_in_progress', 'on' );
 		
-		if (file_exists($bg_hlnames_debug_file)) unlink ( $bg_hlnames_debug_file );
 		$start_time = microtime(true);
-		if (!error_log(date ("j-m-Y H:i"). " Start parse ".($finish_no-$start_no+1)." of ".$cnt." posts\n", 3, $bg_hlnames_debug_file)) {
-			echo '~~~ '.__('Cannot write to log. Stop.', 'bg-highlight-names').' ~~~';
-			update_option( 'bg_hlnames_in_progress', '' );
-			die();
-		}
+		$this_time = $start_time;
+		error_log(date ("j-m-Y H:i"). " Start parse ".($finish_no-$start_no+1)." of ".$param->cnt." posts\n", 3, $bg_hlnames_debug_file);
+		
+		if (get_option('bg_hlnames_start_old') == $start_no) {				// Нельзя повторять парсинг статьи два раза подряд
+			error_log($start_no.". Not allowed repeated parsing! Will try the next post.\n", 3, $bg_hlnames_debug_file);
+			error_log(date ("j-m-Y H:i"). " Cann't parse the post: ".$start_no."\n", 3, dirname(__FILE__ )."/parsing_error.log");
+			$start_no++;
+			update_option( 'bg_hlnames_start_no', $start_no );
+		} 
+		update_option( 'bg_hlnames_start_old', $start_no);
+		
 		for ($k = $start_no-1; $k < $finish_no; $k++){
+			update_option( 'bg_hlnames_start_no', ($k+1) );
+
 			$args = array('post_type' => array( 'post', 'page'), 'post_status' => 'publish', 'numberposts' => 1, 'offset' => $k, 'orderby' => 'ID');
 			$posts_array = get_posts($args);
 			$post = $posts_array[0];
-			error_log(($k+1).". ".get_permalink($post->ID)."\n", 3, $bg_hlnames_debug_file);
-			
+			error_log(($k+1).". ".get_permalink($post->ID)." (size=".number_format( (strlen($post->post_content)/1024), 1 )."kB)\n", 3, $bg_hlnames_debug_file);
+				
 			$post->post_content = bg_hlnames_clear($post->post_content);
 			if ($mode != 'clear') $post->post_content = bg_hlnames_proc($post->post_content);
 			wp_update_post($post);
-			
-			$i++;
+				
 			$this_time = microtime(true);
-			$time = ($this_time - $start_time);
-			error_log("Complited in ".number_format($time, 2)." sec.\n", 3, $bg_hlnames_debug_file);
+			$time = number_format(($this_time - $start_time), 2);
+			$memory = number_format( (memory_get_usage()/1024), 1 );
+			error_log("Memory usage ".$memory."kB. Complited in ".$time." sec.\n", 3, $bg_hlnames_debug_file);
 			$start_time = $this_time;
 		}
-		error_log(date ("j-m-Y H:i")." Updated ".$i." pages and posts!\n", 3, $bg_hlnames_debug_file);
-		printf ("* ".__('Updated %1$d pages and posts!', 'bg-highlight-names'), $i);
+		
+		$start_no = $k+1;
+		if ($start_no > $param->cnt) $start_no=1;
+		$finish_no = $param->num_posts+$start_no-1;
+		if ($finish_no > $param->cnt) $finish_no = $param->cnt;
+		update_option( 'bg_hlnames_start_no', $start_no );
+		update_option( 'bg_hlnames_finish_no', $finish_no );
+		$time = number_format(($this_time - $param->start_time), 2);
+		error_log(date ("j-m-Y H:i")." Updated ".$param->num_posts." pages and posts! Total time: ".$time." sec.\n", 3, $bg_hlnames_debug_file);
+		printf ("* <p id='bg_hlnames_result_p' start_no='".$start_no."' finish_no='".$finish_no."'><b>"._n('Updated %1$d page or post!','Updated %1$d pages and posts!', $param->num_posts, 'bg-highlight-names')."</b></p>", $param->num_posts);
 		update_option( 'bg_hlnames_in_progress', '' );
 	}
-	die();
+	wp_die();
 }
 // Версия плагина
 function bg_hlnames_version() {

@@ -7,6 +7,10 @@ function bg_hlnames_options_page() {
 	$debug_file = plugins_url( 'parsing.log', dirname(__FILE__) );
 
 	add_option('bg_hlnames_in_progress', "");
+	add_option('bg_hlnames_start_old', 0);
+
+	add_option('bg_hlnames_start_no', 1);
+	add_option('bg_hlnames_finish_no', bg_hlnames_count_posts ());
 	
 	add_option('bg_hlnames_mode', "online");
 	add_option('bg_hlnames_maxlinks', 0);
@@ -20,7 +24,7 @@ function bg_hlnames_options_page() {
 <div id="bg_hlnames_resalt"></div>
 <p><?php printf( __( 'Version', 'bg-highlight-names' ).' <b>'.bg_hlnames_version().'</b>' ); ?></p>
 
-<form method="post" action="options.php">
+<form id="bg_hlnames_options" method="post" action="options.php">
 <?php wp_nonce_field('update-options'); ?>
 
 <table class="form-table">
@@ -37,10 +41,11 @@ function bg_hlnames_options_page() {
 <tr valign="top">
 <th scope="row"><?php _e('Batch mode', 'bg-highlight-names') ?></th>
 <td><b><?php _e('Removes links (and/or highlight names) in all pages and posts in offline mode', 'bg-highlight-names') ?></b><br>
-<?php _e('Parse posts: start #', 'bg-highlight-names') ?> <input type="number" id="bg_hlnames_start_no" min="1" value="1" /> <?php _e('finish #', 'bg-highlight-names') ?> <input type="number" id="bg_hlnames_finish_no" min="1" value="<?php echo bg_hlnames_count_posts (); ?>" /></br>
-<button id='bg_hlnames_backend_button' type="button" class="button-primary" style="float: left; margin: 3px 10px 3px 0px;" <?php if(get_option('bg_hlnames_in_progress')) echo "disabled" ?> onclick="bg_hlnames_parse_posts ();"><?php _e('Parse all posts', 'bg-highlight-names') ?></button>
+<?php _e('Parse posts: start #', 'bg-highlight-names') ?> <input type="number" id="bg_hlnames_start_no" name="bg_hlnames_start_no" min="1" value="<?php echo get_option('bg_hlnames_start_no') ?>" /> 
+<?php " "._e('finish #', 'bg-highlight-names') ?> <input type="number" id="bg_hlnames_finish_no" name="bg_hlnames_finish_no" min="1" value="<?php echo get_option('bg_hlnames_finish_no') ?>" /> (max.: <?php echo bg_hlnames_count_posts (); ?>)</br>
+<input type="button" id='bg_hlnames_backend_button' class="button-primary" style="float: left; margin: 3px 10px 3px 0px;" <?php if(get_option('bg_hlnames_in_progress')) echo "disabled" ?> onclick="bg_hlnames_parse_posts('go');return false" value="<?php _e('Parse posts', 'bg-highlight-names') ?>" />
 <span id="bg_hlnames_warning" style="color: red;" ><i><?php _e('(It makes permanent changes in the text of all pages and posts.) <br><b>We strongly recommend to keep your SQL-database dump.</b>', 'bg-highlight-names') ?></i></span>
-<span id="bg_hlnames_wait" style="color: darkblue; display: none;" ><b><?php _e('Don\'t close this tab. Parsing in progress!<br>Wait, please.', 'bg-highlight-names') ?></b></span><br>
+<span id="bg_hlnames_wait" style="color: darkblue; display: none;" ><b><?php _e('Don\'t close or update this tab. Parsing in progress!<br>Wait, please.', 'bg-highlight-names'); ?></b></span><br>
 <?php _e('For detail see: ', 'bg-highlight-names') ?> <a href='<?php echo $debug_file; ?>' target='_blank'>parsing.log</a></td>
 </tr>
 
@@ -77,7 +82,7 @@ function bg_hlnames_options_page() {
  </table>
 
 <input type="hidden" name="action" value="update" />
-<input type="hidden" name="page_options" value="bg_hlnames_mode, bg_hlnames_maxlinks, bg_hlnames_target, bg_hlnames_datebase, bg_hlnames_maxtime, bg_hlnames_debug" />
+<input type="hidden" name="page_options" value="bg_hlnames_start_no, bg_hlnames_finish_no, bg_hlnames_mode, bg_hlnames_maxlinks, bg_hlnames_target, bg_hlnames_datebase, bg_hlnames_maxtime, bg_hlnames_debug" />
 
 <p class="submit">
 <input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />
@@ -92,7 +97,10 @@ function bg_hlnames_options_page() {
 <?php _e('How to create and edit of XML-file in Excel is written in', 'bg-highlight-names') ?> <a href="https://bogaiskov.ru/xml-excel/"><?php _e(' this article', 'bg-highlight-names') ?></a>.
 </p>
 <script>
-bg_hlnames_in_progress (<?php echo "'".get_option('bg_hlnames_in_progress')."'"; ?>);
+if (bg_hlnames_in_progress (<?php echo "'".get_option('bg_hlnames_in_progress')."'"; ?>) == 'on') {
+	document.getElementById('bg_hlnames_resalt').innerHTML  = "<?php _e("You had reloaded this tab. Sorry, but you can not watch the process here. Check the log file to see the result of parsing. When the process is completed, just reload the tab again.<br>To interrupt the process, deactivate and then activate the plugin on the plugins page.", 'bg-highlight-names'); ?>";
+	document.getElementById('bg_hlnames_resalt').className  = "update-nag";
+}
 
 function bg_hlnames_in_progress (status) {
 	if (status == 'on') {
@@ -105,16 +113,16 @@ function bg_hlnames_in_progress (status) {
 		document.getElementById('bg_hlnames_backend_button').disabled = false;
 		document.getElementById('bg_hlnames_warning').style.display = "";
 		document.getElementById('bg_hlnames_wait').style.display = "none";
-	}	
+	}
+	return status;
 }
 
-function bg_hlnames_parse_posts () {
-	var doParse = confirm("<?php _e('Really highlight names in all posts and pages?', 'bg-highlight-names') ?>");
-	if (doParse) doParse = confirm("<?php _e('Are you sure?', 'bg-highlight-names') ?>");
-	if (doParse) {
+function bg_hlnames_parse_posts (process) {
+	if (process == 'repiad' || confirm("<?php _e('Really highlight names in all posts and pages?', 'bg-highlight-names') ?>")) {
 		bg_hlnames_in_progress ('on');
 		var start_no = document.getElementById('bg_hlnames_start_no').value;
 		var finish_no = document.getElementById('bg_hlnames_finish_no').value;
+
 		jQuery.ajax({
 			type: 'GET',
 			cache: false,
@@ -123,30 +131,31 @@ function bg_hlnames_parse_posts () {
 			url: ajaxurl,		// Запрос на обработку постов
 			data: {
 				action: 'bg_hlnames',
-				parseallposts: 'go',
+				parseallposts: process,
 				start_no: start_no,
 				finish_no: finish_no
 			},
 			success: function (t) {
 				el = document.getElementById('bg_hlnames_resalt');
 				if (t[0] == '*') {
-					el.innerHTML  = "<p><b>"+t+"</b></p>";
+					el.innerHTML  = t.substr(1);
+					document.getElementById('bg_hlnames_start_no').value=document.getElementById('bg_hlnames_result_p').getAttribute('start_no');
+					document.getElementById('bg_hlnames_finish_no').value=document.getElementById('bg_hlnames_result_p').getAttribute('finish_no');
 					el.className  = "updated";
 					bg_hlnames_in_progress ('');
 				}
 				else if (t[0] == '~') {
-					el.innerHTML  = "<p><b>"+t+"</b></p>";
+					el.innerHTML  = t.substr(1);
+					document.getElementById('bg_hlnames_start_no').value=document.getElementById('bg_hlnames_result_p').getAttribute('start_no');
+					document.getElementById('bg_hlnames_finish_no').value=document.getElementById('bg_hlnames_result_p').getAttribute('finish_no');
 					el.className  = "update-nag";
+					bg_hlnames_in_progress ('');
 				}
 				else {
 					if (!t) t="<?php _e('No response.', 'bg-highlight-names'); ?>";
 					el.innerHTML  = "<p>"+"<b><?php _e('Process aborted.', 'bg-highlight-names'); ?> </b>"+t+"</p>";
 					el.className  = "error";
-					var data = {
-						action: 'bg_hlnames',
-						parseallposts: 'reset'
-					};
-					jQuery.post( ajaxurl, data, function(response) {bg_hlnames_in_progress ('');});
+					bg_hlnames_parse_posts ('repiad');		// Повторим еще раз
 				}
 			},
 			error: function (e, t) {
@@ -155,11 +164,7 @@ function bg_hlnames_parse_posts () {
 				t += " <b>" + e.status + "</b> " + e.responseText;
 				el.innerHTML  = "<p>"+"<b><?php _e('Process aborted.', 'bg-highlight-names'); ?> </b>"+t+"</p>";
 				el.className  = "error";
-				var data = {
-					action: 'bg_hlnames',
-					parseallposts: 'reset'
-				};
-				jQuery.post( ajaxurl, data, function(response) {bg_hlnames_in_progress ('');});
+				bg_hlnames_parse_posts ('repiad');		// Повторим еще раз
 			}
 		});
 	}
