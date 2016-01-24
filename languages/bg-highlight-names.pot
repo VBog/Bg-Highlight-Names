@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Bg Highlight Names\n"
-"POT-Creation-Date: 2016-01-24 02:13+0300\n"
+"POT-Creation-Date: 2016-01-24 13:03+0300\n"
 "PO-Revision-Date: 2016-01-09 13:51+0300\n"
 "Last-Translator: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
 "Language-Team: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
@@ -225,24 +225,20 @@ msgstr ""
 msgid "No response."
 msgstr ""
 
-#: includes/settings.php:160 includes/settings.php:177
+#: includes/settings.php:172
 msgid "Fatal error:"
 msgstr ""
 
-#: includes/settings.php:160 includes/settings.php:177
+#: includes/settings.php:172
 msgid "Try again..."
 msgstr ""
 
-#: includes/settings.php:164 includes/settings.php:181
+#: includes/settings.php:176
 msgid "Process aborted."
 msgstr ""
 
-#: includes/settings.php:167 includes/settings.php:184
+#: includes/settings.php:180
 msgid "Warning:"
-msgstr ""
-
-#: includes/settings.php:167 includes/settings.php:184
-msgid "Continue..."
 msgstr ""
 
 #. Plugin Name of the plugin/theme

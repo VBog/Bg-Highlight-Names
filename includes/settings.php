@@ -155,37 +155,31 @@ function bg_hlnames_parse_posts (process) {
 				}
 				else {
 					if (!t) t="<?php _e('No response.', 'bg-highlight-names'); ?>";
-					if (textStatus == 'error' || textStatus == 'parsererror' ||  textStatus == 'timeout') {	// error, parsererror, timeout
-						date = new Date();
-						el.innerHTML  = date.toLocaleString("ru")+" <p><b>"+textStatus+". <?php _e('Fatal error:', 'bg-highlight-names'); ?> </b>"+t+" <?php _e('Try again...', 'bg-highlight-names'); ?></p>";
-						el.className  = "error";
-						bg_hlnames_parse_posts ('repiad');		// Повторим еще раз
-					} else if (textStatus == 'abort') {														// abort
-						el.innerHTML  = date.toLocaleString("ru")+" <p><b>"+textStatus+". <?php _e('Process aborted.', 'bg-highlight-names'); ?> </b>"+t+"</p>";
-						el.className  = "error";
-					} else {																				// notmodified, success
-						el.innerHTML  = date.toLocaleString("ru")+" <p><b>"+textStatus+". <?php _e('Warning:', 'bg-highlight-names'); ?> </b>"+t+" <?php _e('Continue...', 'bg-highlight-names'); ?></p>";
-						el.className  = "update-nag";
-					}
+					bg_hlnames_show_errorcode (el, textStatus, t);
 				}
 			},
 			error: function (e, textStatus) {
 				el = document.getElementById('bg_hlnames_resalt');
 				t = " <b>" + e.status + "</b> " + e.responseText;
-				if (textStatus == 'error' || textStatus == 'parsererror' ||  textStatus == 'timeout') {	// error, parsererror, timeout
-					date = new Date();
-					el.innerHTML  = date.toLocaleString("ru")+" <p><b>"+textStatus+". <?php _e('Fatal error:', 'bg-highlight-names'); ?> </b>"+t+"<br><?php _e('Try again...', 'bg-highlight-names'); ?></p>";
-					el.className  = "error";
-					bg_hlnames_parse_posts ('repiad');		// Повторим еще раз
-				} else if (textStatus == 'abort') {														// abort
-					el.innerHTML  = date.toLocaleString("ru")+" <p><b>"+textStatus+". <?php _e('Process aborted.', 'bg-highlight-names'); ?> </b>"+t+"</p>";
-					el.className  = "error";
-				} else {																				// notmodified, success
-					el.innerHTML  = date.toLocaleString("ru")+" <p><b>"+textStatus+". <?php _e('Warning:', 'bg-highlight-names'); ?> </b>"+t+"<br><?php _e('Continue...', 'bg-highlight-names'); ?></p>";
-					el.className  = "update-nag";
-				}
+				bg_hlnames_show_errorcode (el, textStatus, t);
 			}
 		});
+	}
+}
+function bg_hlnames_show_errorcode (el, textStatus, t) {
+	date = new Date();
+	if (textStatus == 'error' || textStatus == 'parsererror' ||  textStatus == 'timeout') {	// error, parsererror, timeout
+		el.innerHTML  = date.toLocaleString("ru")+" <p><b>"+textStatus+". <?php _e('Fatal error:', 'bg-highlight-names'); ?> </b>"+t+" <?php _e('Try again...', 'bg-highlight-names'); ?></p>";
+		el.className  = "error";
+		bg_hlnames_parse_posts ('repiad');		// Повторим еще раз
+	} else if (textStatus == 'abort') {														// abort
+		el.innerHTML  = date.toLocaleString("ru")+" <p><b>"+textStatus+". <?php _e('Process aborted.', 'bg-highlight-names'); ?> </b>"+t+"</p>";
+		el.className  = "error";
+		bg_hlnames_in_progress ('');
+	} else {																				// notmodified, success
+		el.innerHTML  = date.toLocaleString("ru")+" <p><b>"+textStatus+". <?php _e('Warning:', 'bg-highlight-names'); ?> </b>"+t+"</p>";
+			el.className  = "update-nag";
+			bg_hlnames_in_progress ('');
 	}
 }
 </script>

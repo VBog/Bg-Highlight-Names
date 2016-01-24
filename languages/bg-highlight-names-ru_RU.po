@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Bg Highlight Names\n"
-"POT-Creation-Date: 2016-01-24 02:13+0300\n"
-"PO-Revision-Date: 2016-01-24 02:13+0300\n"
+"POT-Creation-Date: 2016-01-24 13:03+0300\n"
+"PO-Revision-Date: 2016-01-24 13:03+0300\n"
 "Last-Translator: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
 "Language-Team: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
 "Language: ru_RU\n"
@@ -248,25 +248,21 @@ msgstr "Действительно выделить имена во всех п�
 msgid "No response."
 msgstr "Нет ответа."
 
-#: includes/settings.php:160 includes/settings.php:177
+#: includes/settings.php:172
 msgid "Fatal error:"
 msgstr "Критическая ошибка:"
 
-#: includes/settings.php:160 includes/settings.php:177
+#: includes/settings.php:172
 msgid "Try again..."
 msgstr "Попробуем ещё раз..."
 
-#: includes/settings.php:164 includes/settings.php:181
+#: includes/settings.php:176
 msgid "Process aborted."
 msgstr "Обработка прервана."
 
-#: includes/settings.php:167 includes/settings.php:184
+#: includes/settings.php:180
 msgid "Warning:"
 msgstr "Предупреждение:"
-
-#: includes/settings.php:167 includes/settings.php:184
-msgid "Continue..."
-msgstr "Продолжить..."
 
 #. Plugin Name of the plugin/theme
 msgid "Bg Highlight Names"
@@ -287,6 +283,9 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "http://bogaiskov.ru"
 msgstr ""
+
+#~ msgid "Continue..."
+#~ msgstr "Продолжить..."
 
 #~ msgid "Fatal error."
 #~ msgstr "Критическая ошибка."
