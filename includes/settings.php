@@ -14,6 +14,7 @@ function bg_hlnames_options_page() {
 	
 	add_option('bg_hlnames_mode', "online");
 	add_option('bg_hlnames_maxlinks', 0);
+	add_option('bg_hlnames_distance', 0);
 	add_option('bg_hlnames_target', "_blank");
 	add_option('bg_hlnames_datebase', "");
 	add_option('bg_hlnames_maxtime', 60);
@@ -43,7 +44,7 @@ function bg_hlnames_options_page() {
 <td><b><?php _e('Removes links (and/or highlight names) in all pages and posts in offline mode', 'bg-highlight-names') ?></b><br>
 <?php _e('Parse posts: start #', 'bg-highlight-names') ?> <input type="number" id="bg_hlnames_start_no" name="bg_hlnames_start_no" min="1" value="<?php echo get_option('bg_hlnames_start_no') ?>" /> 
 <?php " "._e('finish #', 'bg-highlight-names') ?> <input type="number" id="bg_hlnames_finish_no" name="bg_hlnames_finish_no" min="1" value="<?php echo get_option('bg_hlnames_finish_no') ?>" /> (max.: <?php echo bg_hlnames_count_posts (); ?>)</br>
-<input type="button" id='bg_hlnames_backend_button' class="button-primary" style="float: left; margin: 3px 10px 3px 0px;" <?php if(get_option('bg_hlnames_in_progress')) echo "disabled" ?> onclick="bg_hlnames_parse_posts('go');return false" value="<?php _e('Parse posts', 'bg-highlight-names') ?>" />
+<input type="button" id='bg_hlnames_backend_button' class="button-primary" style="float: left; margin: 3px 10px 3px 0px;" <?php if(get_option('bg_hlnames_in_progress')) echo "disabled" ?> onclick="bg_hlnames_parse_posts('go');" value="<?php _e('Parse posts', 'bg-highlight-names') ?>" />
 <span id="bg_hlnames_warning" style="color: red;" ><i><?php _e('(It makes permanent changes in the text of all pages and posts.) <br><b>We strongly recommend to keep your SQL-database dump.</b>', 'bg-highlight-names') ?></i></span>
 <span id="bg_hlnames_wait" style="color: darkblue; display: none;" ><b><?php _e('Don\'t close or update this tab. Parsing in progress!<br>Wait, please.', 'bg-highlight-names'); ?></b></span><br>
 <?php _e('For detail see: ', 'bg-highlight-names') ?> <a href='<?php echo $debug_file; ?>' target='_blank'>parsing.log</a></td>
@@ -54,6 +55,11 @@ function bg_hlnames_options_page() {
 <th scope="row"><?php _e('Limit the amount of links per person', 'bg-highlight-names') ?></th>
 <td><input type="number" name="bg_hlnames_maxlinks" min="0" value="<?php echo get_option('bg_hlnames_maxlinks'); ?>" /><br>
 <?php _e('(0 - no limits).', 'bg-highlight-names') ?></td>
+</tr>
+
+<tr valign="top">
+<th scope="row"><?php _e('The minimum number of chars between two links to one person', 'bg-highlight-names') ?></th>
+<td><input type="number" name="bg_hlnames_distance" min="0" value="<?php echo get_option('bg_hlnames_distance'); ?>" /></td>
 </tr>
  
 <tr valign="top">
@@ -82,7 +88,7 @@ function bg_hlnames_options_page() {
  </table>
 
 <input type="hidden" name="action" value="update" />
-<input type="hidden" name="page_options" value="bg_hlnames_start_no, bg_hlnames_finish_no, bg_hlnames_mode, bg_hlnames_maxlinks, bg_hlnames_target, bg_hlnames_datebase, bg_hlnames_maxtime, bg_hlnames_debug" />
+<input type="hidden" name="page_options" value="bg_hlnames_start_no, bg_hlnames_finish_no, bg_hlnames_mode, bg_hlnames_maxlinks, bg_hlnames_distance, bg_hlnames_target, bg_hlnames_datebase, bg_hlnames_maxtime, bg_hlnames_debug" />
 
 <p class="submit">
 <input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />

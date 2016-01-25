@@ -3,7 +3,7 @@
 Plugin Name: Bg Highlight Names
 Plugin URI: https://bogaiskov.ru/highlight-names/
 Description: Highlight Russian names in text of posts and pages.
-Version: 0.6.0
+Version: 0.7.0
 Author: VBog
 Author URI: http://bogaiskov.ru
 */
@@ -33,7 +33,7 @@ Author URI: http://bogaiskov.ru
 if ( !defined('ABSPATH') ) {
 	die( 'Sorry, you are not allowed to access this page directly.' ); 
 }
-define('BG_HLNAMES_VERSION', '0.6.0');
+define('BG_HLNAMES_VERSION', '0.7.0');
 
 // Загрузка интернационализации
 add_action( 'plugins_loaded', 'bg_highlight_load_textdomain' );
@@ -55,13 +55,17 @@ ini_set('memory_limit', '256M');
 if ( defined('ABSPATH') && defined('WPINC') ) {
 	$plugin_mode = get_option('bg_hlnames_mode');
 // Регистрируем крючок для обработки контента при его загрузке
-	if ($plugin_mode == "online") add_filter( 'the_content', 'bg_hlnames_proc' );
+	if ($plugin_mode == "online") {
+		add_filter( 'the_content', 'bg_hlnames_proc' );
+		add_filter( 'the_excerpt', 'bg_hlnames_proc' );
+	}
 // Регистрируем крючок для обработки контента при его сохранении в БД
 	elseif ($plugin_mode == "offline") add_action('wp_insert_post_data', 'bg_hlnames_post_save', 20, 2 );
 // Регистрируем крючок для обработки контента при его загрузке 
 // и крючок для обработки контента при его сохранении в БД 
 	elseif ($plugin_mode == "mixed") {
 		add_filter( 'the_content', 'bg_hlnames_proc' );
+		add_filter( 'the_excerpt', 'bg_hlnames_proc' );
 		add_action('wp_insert_post_data', 'bg_hlnames_post_save', 20, 2 );
 	}
 // Регистрируем крючок для обработки контента при его сохранении в БД (удаление ссылок)
@@ -70,6 +74,7 @@ if ( defined('ABSPATH') && defined('WPINC') ) {
 
 
 $bg_hlnames_maxlinks = (int) get_option('bg_hlnames_maxlinks');
+$bg_hlnames_distance = (int) get_option('bg_hlnames_distance');
 $bg_hlnames_debug_file = dirname(__FILE__ )."/parsing.log";
 $bg_hlnames_start_old = 0;
 
@@ -406,12 +411,14 @@ class BgHighlightNames
 	*******************************************************************************/  
 	private function add_link ($txt, $template, $the_person) {
 		
-		global $bg_hlnames_maxlinks;
+		global $bg_hlnames_maxlinks, $bg_hlnames_distance;
 		static $pers = "";
 		static $num_links=0;
+		static $last_position = 0;
 		if ($pers != $the_person['link']) {
 			$pers = $the_person['link'];
 			$num_links = 0;
+			$last_position = 0;
 		}
 		
 		// Ищем все вхождения ссылок <a ...</a>
@@ -425,12 +432,16 @@ class BgHighlightNames
 		$start = 0;
 		$title = $the_person['discription'];
 		for ($i = 0; ($i < $cnt) && (!$bg_hlnames_maxlinks || ($num_links < $bg_hlnames_maxlinks)); $i++) {
+			
 		// Обработка по каждому паттерну, если он не находится внутри тега <a ...</a>
-			if ($this->check_tag($hdr_a, $matches[0][$i][1])) {		
-				$newmt = "<a class='bg_hlnames' href='".$the_person['link']."' target='".$target."' title='".$title."'>".$matches[0][$i][0]."</a>";
-				$text = $text.substr($txt, $start, $matches[0][$i][1]-$start).str_replace($matches[0][$i][0], $newmt, $matches[0][$i][0]);
-				$start = $matches[0][$i][1] + strlen($matches[0][$i][0]);
-				$num_links++;
+			if ($this->check_tag($hdr_a, $matches[0][$i][1])) {
+				if ($matches[0][$i][1]-$last_position > $bg_hlnames_distance) {	// Обрабатываем если растояние между ссылками больше заданного
+					$newmt = "<a class='bg_hlnames' href='".$the_person['link']."' target='".$target."' title='".$title."'>".$matches[0][$i][0]."</a>";
+					$text = $text.substr($txt, $start, $matches[0][$i][1]-$start).str_replace($matches[0][$i][0], $newmt, $matches[0][$i][0]);
+					$start = $matches[0][$i][1] + strlen($matches[0][$i][0]);
+					$last_position = $start;
+					$num_links++;
+				}
 			}
 		}
 		$txt = $text.substr($txt, $start);
