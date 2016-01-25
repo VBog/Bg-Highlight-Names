@@ -34,26 +34,27 @@ function bg_hlnames_options_page() {
 <tr valign="top">
 <th scope="row"><?php _e('Plugin mode', 'bg-highlight-names') ?></th>
 <td><input type="radio" name="bg_hlnames_mode" value="online" <?php if(get_option('bg_hlnames_mode')=="online") echo "checked" ?> /> <b><?php _e('online', 'bg-highlight-names') ?></b> <i><?php _e('(In this mode the plugin highlights the names only when text displays on the screen.)', 'bg-highlight-names') ?></i><br>
-<input type="radio" name="bg_hlnames_mode" value="offline" <?php if(get_option('bg_hlnames_mode')=="offline") echo "checked" ?> /> <b><?php _e('offline', 'bg-highlight-names') ?></b> <i><?php _e('(This mode makes permanent changes in the text of the saved posts.)', 'bg-highlight-names') ?></i><br>
+<input type="radio" name="bg_hlnames_mode" value="offline" <?php if(get_option('bg_hlnames_mode')=="offline") echo "checked" ?> /> <b><?php _e('offline', 'bg-highlight-names') ?></b> <i><?php _e('(This mode makes permanent changes in the text in editor mode.)', 'bg-highlight-names') ?></i><br>
 <input type="radio" name="bg_hlnames_mode" value="mixed" <?php if(get_option('bg_hlnames_mode')=="mixed") echo "checked" ?> /> <b><?php _e('mixed', 'bg-highlight-names') ?></b> <i><?php _e('(Mixing online & offline mode. Highlight the names when text displays on the screen, only if the text doesn\'t include links for names.)', 'bg-highlight-names') ?></i><br>
-<input type="radio" name="bg_hlnames_mode" value="clear" <?php if(get_option('bg_hlnames_mode')=="clear") echo "checked" ?> /> <b><?php _e('clear', 'bg-highlight-names') ?></b> <i><?php _e('(Removes links to the names from the text.)', 'bg-highlight-names') ?></i><br>
+<input type="radio" name="bg_hlnames_mode" value="clear" <?php if(get_option('bg_hlnames_mode')=="clear") echo "checked" ?> /> <b><?php _e('clear', 'bg-highlight-names') ?></b> <i><?php _e('(Removes links to the names from the text in editor and batch modes.)', 'bg-highlight-names') ?></i><br>
 <input type="radio" name="bg_hlnames_mode" value="" <?php if(get_option('bg_hlnames_mode')=="") echo "checked" ?> /> <b><?php _e('off', 'bg-highlight-names') ?></b> <i><?php _e('(The plugin does not work (batch mode only).)', 'bg-highlight-names') ?></i></td>
 </tr>
 
 <tr valign="top">
-<th scope="row"><?php _e('Batch mode', 'bg-highlight-names') ?></th>
-<td><b><?php _e('Removes links (and/or highlight names) in all pages and posts in offline mode', 'bg-highlight-names') ?></b><br>
+<th scope="row"><?php _e('Batch mode<br>(depend on plugin mode)', 'bg-highlight-names') ?></th>
+<td><p id="bg_hlnames_batch_mode_title"></p>
 <?php _e('Parse posts: start #', 'bg-highlight-names') ?> <input type="number" id="bg_hlnames_start_no" name="bg_hlnames_start_no" min="1" value="<?php echo get_option('bg_hlnames_start_no') ?>" /> 
 <?php " "._e('finish #', 'bg-highlight-names') ?> <input type="number" id="bg_hlnames_finish_no" name="bg_hlnames_finish_no" min="1" value="<?php echo get_option('bg_hlnames_finish_no') ?>" /> (max.: <?php echo bg_hlnames_count_posts (); ?>)</br>
 <input type="button" id='bg_hlnames_backend_button' class="button" style="float: left; margin: 3px 10px 3px 0px;" <?php if(get_option('bg_hlnames_in_progress')) echo "disabled" ?> onclick="bg_hlnames_parse_posts('go');" value="<?php _e('Parse posts', 'bg-highlight-names') ?>" />
 <span id="bg_hlnames_warning" style="color: red;" ><i><?php _e('(It makes permanent changes in the text of all pages and posts.) <br><b>We strongly recommend to keep your SQL-database dump.</b>', 'bg-highlight-names') ?></i></span>
 <span id="bg_hlnames_wait" style="color: darkblue; display: none;" ><b><?php _e('Don\'t close or update this tab. Parsing in progress!<br>Wait, please.', 'bg-highlight-names'); ?></b></span><br>
-<?php _e('For detail see: ', 'bg-highlight-names') ?> <a href='<?php echo $debug_file; ?>' target='_blank'>parsing.log</a></td>
+<?php _e('Don\'t forget save options before start of batch mode!', 'bg-highlight-names') ?><br>
+<?php _e('For detail of results see: ', 'bg-highlight-names') ?> <a href='<?php echo $debug_file; ?>' target='_blank'>parsing.log</a></td>
 </tr>
 
 <tr valign="top">
 <th scope="row"><?php _e('Do not clean before parsing', 'bg-highlight-names') ?></th>
-<td><input type="checkbox" name="bg_hlnames_not_clean" <?php if(get_option('bg_hlnames_not_clean')) echo "checked" ?> value="on" /> <?php _e('Batch mode only.', 'bg-highlight-names') ?><br>
+<td><input type="checkbox" id="bg_hlnames_not_clean" name="bg_hlnames_not_clean" <?php if(get_option('bg_hlnames_not_clean')) echo "checked" ?> value="on" /> <?php _e('in batch mode only', 'bg-highlight-names') ?><br>
 <?php _e('(Note: New links will be added to the existing ones.)', 'bg-highlight-names') ?></td>
 </tr>
 
@@ -114,6 +115,35 @@ if (bg_hlnames_in_progress (<?php echo "'".get_option('bg_hlnames_in_progress').
 	document.getElementById('bg_hlnames_resalt').innerHTML  = "<?php _e("You had reloaded this tab. Sorry, but you can not watch the process here. Check the log file to see the result of parsing. When the process is completed, just reload the tab again.<br>To interrupt the process, deactivate and then activate the plugin on the plugins page.", 'bg-highlight-names'); ?>";
 	document.getElementById('bg_hlnames_resalt').className  = "update-nag";
 }
+
+jQuery( "document" ).ready( bg_hlnames_batch_mode_title);
+jQuery( "input[name='bg_hlnames_mode']" ).on( "click", bg_hlnames_batch_mode_title);
+jQuery( "#bg_hlnames_not_clean" ).on( "click", bg_hlnames_batch_mode_title);
+
+function bg_hlnames_batch_mode_title() {
+	var mode = jQuery( "input[name='bg_hlnames_mode']:checked" ).val();
+	if (mode == 'clear') {
+		document.getElementById('bg_hlnames_not_clean').checked = false;
+		document.getElementById('bg_hlnames_not_clean').disabled = true;
+	} else {
+		document.getElementById('bg_hlnames_not_clean').disabled = false;
+	}
+	var no_clean = document.getElementById('bg_hlnames_not_clean').checked;
+	switch (mode) {
+		case 'mixed':
+			if (no_clean) title = "<b><?php _e('Adds links in pages and posts where the links don\'t yet added only', 'bg-highlight-names') ?></b>";
+			else title = "<b><?php _e('Removes and then adds links in all pages and posts', 'bg-highlight-names') ?></b>";
+			break;
+		case 'clear':
+			title = "<b><?php _e('Removes links from all pages and posts', 'bg-highlight-names') ?></b>";
+			break;
+		default:
+			if (no_clean) title = "<b><?php _e('Adds links in all pages and posts', 'bg-highlight-names') ?></b>";
+			else title = "<b><?php _e('Removes and then adds links in all pages and posts', 'bg-highlight-names') ?></b>";
+	}
+	document.getElementById('bg_hlnames_batch_mode_title').innerHTML  = title;
+}
+
 function bg_hlnames_parse_posts_repiad () {
 	bg_hlnames_parse_posts ('repiad');		// Повторим еще раз
 }
@@ -133,7 +163,7 @@ function bg_hlnames_in_progress (status) {
 }
 
 function bg_hlnames_parse_posts (process) {
-	if (process == 'repiad' || confirm("<?php _e('Really highlight names in all posts and pages?', 'bg-highlight-names') ?>")) {
+	if (process == 'repiad' || confirm("<?php _e('Really begin highlight names in all posts and pages in batch mode?', 'bg-highlight-names') ?>")) {
 		if (process != 'repiad') bg_hlnames_in_progress ('on');
 		var start_no = document.getElementById('bg_hlnames_start_no').value;
 		var finish_no = document.getElementById('bg_hlnames_finish_no').value;

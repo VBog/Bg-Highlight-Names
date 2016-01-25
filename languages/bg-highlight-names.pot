@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Bg Highlight Names\n"
-"POT-Creation-Date: 2016-01-25 17:38+0300\n"
+"POT-Creation-Date: 2016-01-26 00:40+0300\n"
 "PO-Revision-Date: 2016-01-09 13:51+0300\n"
 "Last-Translator: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
 "Language-Team: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
@@ -83,7 +83,7 @@ msgid "offline"
 msgstr ""
 
 #: includes/settings.php:37
-msgid "(This mode makes permanent changes in the text of the saved posts.)"
+msgid "(This mode makes permanent changes in the text in editor mode.)"
 msgstr ""
 
 #: includes/settings.php:38
@@ -101,7 +101,7 @@ msgid "clear"
 msgstr ""
 
 #: includes/settings.php:39
-msgid "(Removes links to the names from the text.)"
+msgid "(Removes links to the names from the text in editor and batch modes.)"
 msgstr ""
 
 #: includes/settings.php:40
@@ -113,12 +113,7 @@ msgid "(The plugin does not work (batch mode only).)"
 msgstr ""
 
 #: includes/settings.php:44
-msgid "Batch mode"
-msgstr ""
-
-#: includes/settings.php:45
-msgid ""
-"Removes links (and/or highlight names) in all pages and posts in offline mode"
+msgid "Batch mode<br>(depend on plugin mode)"
 msgstr ""
 
 #: includes/settings.php:46
@@ -144,88 +139,92 @@ msgid "Don't close or update this tab. Parsing in progress!<br>Wait, please."
 msgstr ""
 
 #: includes/settings.php:51
-msgid "For detail see: "
+msgid "Don't forget save options before start of batch mode!"
 msgstr ""
 
-#: includes/settings.php:55
-msgid "Do not clean before parsing"
+#: includes/settings.php:52
+msgid "For detail of results see: "
 msgstr ""
 
 #: includes/settings.php:56
-msgid "Batch mode only."
+msgid "Do not clean before parsing"
 msgstr ""
 
 #: includes/settings.php:57
+msgid "in batch mode only"
+msgstr ""
+
+#: includes/settings.php:58
 msgid "(Note: New links will be added to the existing ones.)"
 msgstr ""
 
-#: includes/settings.php:62
+#: includes/settings.php:63
 msgid "Limit the amount of links per person"
 msgstr ""
 
-#: includes/settings.php:64 includes/settings.php:87
+#: includes/settings.php:65 includes/settings.php:88
 msgid "(0 - no limits)."
 msgstr ""
 
-#: includes/settings.php:68
+#: includes/settings.php:69
 msgid "The minimum number of chars between two links to one person"
 msgstr ""
 
-#: includes/settings.php:73
+#: includes/settings.php:74
 msgid "Open links"
 msgstr ""
 
-#: includes/settings.php:74
+#: includes/settings.php:75
 msgid "in blank window"
 msgstr ""
 
-#: includes/settings.php:75
+#: includes/settings.php:76
 msgid "in self window"
 msgstr ""
 
-#: includes/settings.php:79
+#: includes/settings.php:80
 msgid "XML-file with names list"
 msgstr ""
 
-#: includes/settings.php:81
+#: includes/settings.php:82
 msgid ""
 "(Specify a local URL of XML-file that contain the names to highlight them in "
 "text. <br> Leave blank to use the XML-file by default.)"
 msgstr ""
 
-#: includes/settings.php:85
+#: includes/settings.php:86
 msgid "The maximum execution time"
 msgstr ""
 
-#: includes/settings.php:86
+#: includes/settings.php:87
 msgid "sec."
 msgstr ""
 
-#: includes/settings.php:91
+#: includes/settings.php:92
 msgid "Show debug info at the end of the post"
 msgstr ""
 
-#: includes/settings.php:101
+#: includes/settings.php:102
 msgid "Save Changes"
 msgstr ""
 
-#: includes/settings.php:108
+#: includes/settings.php:109
 msgid "Download XML schema:"
 msgstr ""
 
-#: includes/settings.php:109
+#: includes/settings.php:110
 msgid "How to create the XML with names list read"
 msgstr ""
 
-#: includes/settings.php:110
+#: includes/settings.php:111
 msgid "How to create and edit of XML-file in Excel is written in"
 msgstr ""
 
-#: includes/settings.php:110
+#: includes/settings.php:111
 msgid " this article"
 msgstr ""
 
-#: includes/settings.php:114
+#: includes/settings.php:115
 msgid ""
 "You had reloaded this tab. Sorry, but you can not watch the process here. "
 "Check the log file to see the result of parsing. When the process is "
@@ -233,27 +232,43 @@ msgid ""
 "deactivate and then activate the plugin on the plugins page."
 msgstr ""
 
-#: includes/settings.php:136
-msgid "Really highlight names in all posts and pages?"
+#: includes/settings.php:134
+msgid "Adds links in pages and posts where the links don't yet added only"
 msgstr ""
 
-#: includes/settings.php:170
+#: includes/settings.php:135 includes/settings.php:142
+msgid "Removes and then adds links in all pages and posts"
+msgstr ""
+
+#: includes/settings.php:138
+msgid "Removes links from all pages and posts"
+msgstr ""
+
+#: includes/settings.php:141
+msgid "Adds links in all pages and posts"
+msgstr ""
+
+#: includes/settings.php:166
+msgid "Really begin highlight names in all posts and pages in batch mode?"
+msgstr ""
+
+#: includes/settings.php:200
 msgid "No response."
 msgstr ""
 
-#: includes/settings.php:185
+#: includes/settings.php:215
 msgid "Fatal error:"
 msgstr ""
 
-#: includes/settings.php:185
+#: includes/settings.php:215
 msgid "Try again..."
 msgstr ""
 
-#: includes/settings.php:189
+#: includes/settings.php:219
 msgid "Process aborted."
 msgstr ""
 
-#: includes/settings.php:193
+#: includes/settings.php:223
 msgid "Warning:"
 msgstr ""
 

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Bg Highlight Names\n"
-"POT-Creation-Date: 2016-01-25 17:38+0300\n"
-"PO-Revision-Date: 2016-01-25 17:38+0300\n"
+"POT-Creation-Date: 2016-01-26 00:40+0300\n"
+"PO-Revision-Date: 2016-01-26 00:42+0300\n"
 "Last-Translator: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
 "Language-Team: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
 "Language: ru_RU\n"
@@ -89,9 +89,8 @@ msgid "offline"
 msgstr "оффлайн"
 
 #: includes/settings.php:37
-msgid "(This mode makes permanent changes in the text of the saved posts.)"
-msgstr ""
-"(Этот режим делает постоянные изменения в текст при сохранении сообщений.)"
+msgid "(This mode makes permanent changes in the text in editor mode.)"
+msgstr "(Этот режим делает постоянные изменения в тексте в режиме редактора)."
 
 #: includes/settings.php:38
 msgid "mixed"
@@ -111,8 +110,9 @@ msgid "clear"
 msgstr "очистка"
 
 #: includes/settings.php:39
-msgid "(Removes links to the names from the text.)"
-msgstr "(Удаляет ссылки на имена из текста.)"
+msgid "(Removes links to the names from the text in editor and batch modes.)"
+msgstr ""
+"(Удаляет ссылки на имена из текста в режиме редактора и пакетном режиме.)"
 
 #: includes/settings.php:40
 msgid "off"
@@ -123,15 +123,8 @@ msgid "(The plugin does not work (batch mode only).)"
 msgstr "(Плагин не работает (только пакетный режим).)"
 
 #: includes/settings.php:44
-msgid "Batch mode"
-msgstr "Пакетный режим"
-
-#: includes/settings.php:45
-msgid ""
-"Removes links (and/or highlight names) in all pages and posts in offline mode"
-msgstr ""
-"Удаляет ссылки (и/или подсвечивает имена) во всех страницах и сообщениях в "
-"оффлайн режиме"
+msgid "Batch mode<br>(depend on plugin mode)"
+msgstr "Пакетный режим<br>(зависит от режима плагина)"
 
 #: includes/settings.php:46
 msgid "Parse posts: start #"
@@ -160,51 +153,55 @@ msgstr ""
 "<br> Подождите, пожалуйста."
 
 #: includes/settings.php:51
-msgid "For detail see: "
-msgstr "Подробнее см.:"
+msgid "Don't forget save options before start of batch mode!"
+msgstr "Не забудьте сохранить настройки перед началом пакетного режима!"
 
-#: includes/settings.php:55
+#: includes/settings.php:52
+msgid "For detail of results see: "
+msgstr "Подробно результаты обработки см.:"
+
+#: includes/settings.php:56
 msgid "Do not clean before parsing"
 msgstr "Не очищать перед обработкой"
 
-#: includes/settings.php:56
-msgid "Batch mode only."
-msgstr "Только в пакетном режиме."
-
 #: includes/settings.php:57
+msgid "in batch mode only"
+msgstr "только в пакетном режиме"
+
+#: includes/settings.php:58
 msgid "(Note: New links will be added to the existing ones.)"
 msgstr "(Обратите внимание: Новые ссылки будут добавлены к существующим.)"
 
-#: includes/settings.php:62
+#: includes/settings.php:63
 msgid "Limit the amount of links per person"
 msgstr "Ограничение количество ссылок на человека"
 
-#: includes/settings.php:64 includes/settings.php:87
+#: includes/settings.php:65 includes/settings.php:88
 msgid "(0 - no limits)."
 msgstr "(0 - без ограничений)."
 
-#: includes/settings.php:68
+#: includes/settings.php:69
 msgid "The minimum number of chars between two links to one person"
 msgstr ""
 "Минимальное количество символов между двумя ссылками на одного человека"
 
-#: includes/settings.php:73
+#: includes/settings.php:74
 msgid "Open links"
 msgstr "Открывать ссылки"
 
-#: includes/settings.php:74
+#: includes/settings.php:75
 msgid "in blank window"
 msgstr "в новом окне"
 
-#: includes/settings.php:75
+#: includes/settings.php:76
 msgid "in self window"
 msgstr "в текущем окне"
 
-#: includes/settings.php:79
+#: includes/settings.php:80
 msgid "XML-file with names list"
 msgstr "XML-файл имён"
 
-#: includes/settings.php:81
+#: includes/settings.php:82
 msgid ""
 "(Specify a local URL of XML-file that contain the names to highlight them in "
 "text. <br> Leave blank to use the XML-file by default.)"
@@ -212,39 +209,39 @@ msgstr ""
 "(Укажите локальный URL XML-файла, содержащего имена для подсветки в тексте "
 "статей.<br>Оставьте поле пустым, чтобы использовать XML-файл по умолчанию.)"
 
-#: includes/settings.php:85
+#: includes/settings.php:86
 msgid "The maximum execution time"
 msgstr "Максимальное время работы плагина"
 
-#: includes/settings.php:86
+#: includes/settings.php:87
 msgid "sec."
 msgstr "сек."
 
-#: includes/settings.php:91
+#: includes/settings.php:92
 msgid "Show debug info at the end of the post"
 msgstr "Отображать отладочную информацию в конце поста"
 
-#: includes/settings.php:101
+#: includes/settings.php:102
 msgid "Save Changes"
 msgstr "Сохранить изменения"
 
-#: includes/settings.php:108
+#: includes/settings.php:109
 msgid "Download XML schema:"
 msgstr "Скачать схему XML-файла:"
 
-#: includes/settings.php:109
+#: includes/settings.php:110
 msgid "How to create the XML with names list read"
 msgstr "О создании XML-файла имён читайте"
 
-#: includes/settings.php:110
+#: includes/settings.php:111
 msgid "How to create and edit of XML-file in Excel is written in"
 msgstr "Создание и редактирование XML-файла в Excel описано в"
 
-#: includes/settings.php:110
+#: includes/settings.php:111
 msgid " this article"
 msgstr "этой статье"
 
-#: includes/settings.php:114
+#: includes/settings.php:115
 msgid ""
 "You had reloaded this tab. Sorry, but you can not watch the process here. "
 "Check the log file to see the result of parsing. When the process is "
@@ -257,27 +254,45 @@ msgstr ""
 "прервать процесс, деактивируйте и вновь активируйте плагин на странице "
 "Плагинов."
 
-#: includes/settings.php:136
-msgid "Really highlight names in all posts and pages?"
-msgstr "Действительно выделить имена во всех постах и страницах?"
+#: includes/settings.php:134
+msgid "Adds links in pages and posts where the links don't yet added only"
+msgstr ""
+"Добавляет ссылки только на страницы и в посты, где ссылки ещё не были "
+"добавлены"
 
-#: includes/settings.php:170
+#: includes/settings.php:135 includes/settings.php:142
+msgid "Removes and then adds links in all pages and posts"
+msgstr "Удаляет и затем добавляет ссылки во всех страницах и постах"
+
+#: includes/settings.php:138
+msgid "Removes links from all pages and posts"
+msgstr "Удаляет ссылки со всех страниц и постов"
+
+#: includes/settings.php:141
+msgid "Adds links in all pages and posts"
+msgstr "Добавляет ссылки во все страницы и посты"
+
+#: includes/settings.php:166
+msgid "Really begin highlight names in all posts and pages in batch mode?"
+msgstr "Начать подсветку имен всех постах и страницах в пакетном режиме?"
+
+#: includes/settings.php:200
 msgid "No response."
 msgstr "Нет ответа."
 
-#: includes/settings.php:185
+#: includes/settings.php:215
 msgid "Fatal error:"
 msgstr "Критическая ошибка:"
 
-#: includes/settings.php:185
+#: includes/settings.php:215
 msgid "Try again..."
 msgstr "Попробуем ещё раз..."
 
-#: includes/settings.php:189
+#: includes/settings.php:219
 msgid "Process aborted."
 msgstr "Обработка прервана."
 
-#: includes/settings.php:193
+#: includes/settings.php:223
 msgid "Warning:"
 msgstr "Предупреждение:"
 
@@ -300,6 +315,35 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "http://bogaiskov.ru"
 msgstr ""
+
+#~ msgid "Removes and then adds links to names in all pages and posts"
+#~ msgstr "Удаляет и затем добавляет ссылки во всех страницах и постах"
+
+#~ msgid "Really highlight names in all posts and pages?"
+#~ msgstr "Действительно выделить имена во всех постах и страницах?"
+
+#~ msgid "(This mode makes permanent changes in the text of the saved posts.)"
+#~ msgstr ""
+#~ "(Этот режим делает постоянные изменения в текст при сохранении сообщений.)"
+
+#~ msgid "(Removes links to the names from the text.)"
+#~ msgstr "(Удаляет ссылки на имена из текста.)"
+
+#~ msgid "Batch mode"
+#~ msgstr "Пакетный режим"
+
+#~ msgid ""
+#~ "Removes links (and/or highlight names) in all pages and posts in offline "
+#~ "mode"
+#~ msgstr ""
+#~ "Удаляет ссылки (и/или подсвечивает имена) во всех страницах и сообщениях "
+#~ "в оффлайн режиме"
+
+#~ msgid "For detail see: "
+#~ msgstr "Подробнее см.:"
+
+#~ msgid "Batch mode only."
+#~ msgstr "Только в пакетном режиме."
 
 #~ msgid "Continue..."
 #~ msgstr "Продолжить..."
