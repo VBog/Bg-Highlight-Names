@@ -3,7 +3,7 @@
 Plugin Name: Bg Highlight Names
 Plugin URI: https://bogaiskov.ru/highlight-names/
 Description: Highlight Russian names in text of posts and pages.
-Version: 0.7.0
+Version: 0.7.1
 Author: VBog
 Author URI: http://bogaiskov.ru
 */
@@ -33,7 +33,7 @@ Author URI: http://bogaiskov.ru
 if ( !defined('ABSPATH') ) {
 	die( 'Sorry, you are not allowed to access this page directly.' ); 
 }
-define('BG_HLNAMES_VERSION', '0.7.0');
+define('BG_HLNAMES_VERSION', '0.7.1');
 
 // Загрузка интернационализации
 add_action( 'plugins_loaded', 'bg_highlight_load_textdomain' );
@@ -209,6 +209,8 @@ function bg_hlnames_callback() {
 // Начинаем парсинг статей		
 		$mode = get_option('bg_hlnames_mode');
 		update_option( 'bg_hlnames_in_progress', 'on' );
+		$not_clean = get_option('bg_hlnames_not_clean');
+		
 		
 		$start_time = microtime(true);
 		$this_time = $start_time;
@@ -230,7 +232,7 @@ function bg_hlnames_callback() {
 			$post = $posts_array[0];
 			error_log(($k+1).". ".get_permalink($post->ID)." (size=".number_format( (strlen($post->post_content)/1024), 1 )."kB)\n", 3, $bg_hlnames_debug_file);
 				
-			$post->post_content = bg_hlnames_clear($post->post_content);
+			if (!$not_clean) $post->post_content = bg_hlnames_clear($post->post_content);
 			if ($mode != 'clear') $post->post_content = bg_hlnames_proc($post->post_content);
 			wp_update_post($post);
 				
@@ -435,7 +437,7 @@ class BgHighlightNames
 			
 		// Обработка по каждому паттерну, если он не находится внутри тега <a ...</a>
 			if ($this->check_tag($hdr_a, $matches[0][$i][1])) {
-				if ($matches[0][$i][1]-$last_position > $bg_hlnames_distance) {	// Обрабатываем если растояние между ссылками больше заданного
+				if (!$num_links || ($matches[0][$i][1]-$last_position > $bg_hlnames_distance)) {	// Обрабатываем если растояние между ссылками больше заданного
 					$newmt = "<a class='bg_hlnames' href='".$the_person['link']."' target='".$target."' title='".$title."'>".$matches[0][$i][0]."</a>";
 					$text = $text.substr($txt, $start, $matches[0][$i][1]-$start).str_replace($matches[0][$i][0], $newmt, $matches[0][$i][0]);
 					$start = $matches[0][$i][1] + strlen($matches[0][$i][0]);
