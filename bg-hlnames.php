@@ -3,7 +3,7 @@
 Plugin Name: Bg Highlight Names
 Plugin URI: https://bogaiskov.ru/highlight-names/
 Description: Highlight Russian names in text of posts and pages.
-Version: 0.7.2
+Version: 0.8.0
 Author: VBog
 Author URI: http://bogaiskov.ru
 */
@@ -33,7 +33,7 @@ Author URI: http://bogaiskov.ru
 if ( !defined('ABSPATH') ) {
 	die( 'Sorry, you are not allowed to access this page directly.' ); 
 }
-define('BG_HLNAMES_VERSION', '0.7.2');
+define('BG_HLNAMES_VERSION', '0.8.0');
 
 // Загрузка интернационализации
 add_action( 'plugins_loaded', 'bg_highlight_load_textdomain' );
@@ -430,6 +430,8 @@ class BgHighlightNames
 		$cnt = count($matches[0]);
 
 		$target = get_option('bg_hlnames_target');
+		if (get_option('bg_hlnames_classname')) $classname = 'bg_hlnames '.get_option('bg_hlnames_classname');
+		else $classname = 'bg_hlnames';
 		$text = "";
 		$start = 0;
 		$title = $the_person['discription'];
@@ -438,7 +440,7 @@ class BgHighlightNames
 		// Обработка по каждому паттерну, если он не находится внутри тега <a ...</a>
 			if ($this->check_tag($hdr_a, $matches[0][$i][1])) {
 				if (!$num_links || ($matches[0][$i][1]-$last_position > $bg_hlnames_distance)) {	// Обрабатываем если растояние между ссылками больше заданного
-					$newmt = "<a class='bg_hlnames' href='".$the_person['link']."' target='".$target."' title='".$title."'>".$matches[0][$i][0]."</a>";
+					$newmt = "<a class='".$classname."' href='".$the_person['link']."' target='".$target."' title='".$title."'>".$matches[0][$i][0]."</a>";
 					$text = $text.substr($txt, $start, $matches[0][$i][1]-$start).str_replace($matches[0][$i][0], $newmt, $matches[0][$i][0]);
 					$start = $matches[0][$i][1] + strlen($matches[0][$i][0]);
 					$last_position = $start;

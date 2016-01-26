@@ -18,6 +18,7 @@ function bg_hlnames_options_page() {
 	add_option('bg_hlnames_distance', 0);
 	add_option('bg_hlnames_target', "_blank");
 	add_option('bg_hlnames_datebase', "");
+	add_option('bg_hlnames_classname', "");
 	add_option('bg_hlnames_maxtime', 60);
 	add_option('bg_hlnames_debug', "");
 ?>
@@ -71,9 +72,14 @@ function bg_hlnames_options_page() {
 </tr>
  
 <tr valign="top">
-<th scope="row"><?php _e('Open links', 'bg-highlight-names') ?></th>
-<td><input type="radio" name="bg_hlnames_target" value="_blank" <?php if(get_option('bg_hlnames_target')=="_blank") echo "checked" ?> /> <?php _e('in blank window', 'bg-highlight-names') ?><br>
-<input type="radio" name="bg_hlnames_target" value="_self" <?php if(get_option('bg_hlnames_target')=="_self") echo "checked" ?> /> <?php _e('in self window', 'bg-highlight-names') ?></td>
+<th scope="row"><?php _e('Where open links?', 'bg-highlight-names') ?></th>
+<td><input type="text" name="bg_hlnames_target" value="<?php echo get_option('bg_hlnames_target'); ?>" /><br> 
+<b>_blank</b> - <?php _e('in blank window', 'bg-highlight-names') ?>, <b>_self</b> - <?php _e('in self window', 'bg-highlight-names') ?> <?php _e('or any other window name', 'bg-highlight-names') ?>.</td>
+</tr>
+ 
+<tr valign="top">
+<th scope="row"><?php _e('Additional class for links', 'bg-highlight-names') ?></th>
+<td><input type="text" name="bg_hlnames_classname" value="<?php echo get_option('bg_hlnames_classname'); ?>" /></td>
 </tr>
  
 <tr valign="top">
@@ -96,7 +102,7 @@ function bg_hlnames_options_page() {
  </table>
 
 <input type="hidden" name="action" value="update" />
-<input type="hidden" name="page_options" value="bg_hlnames_start_no, bg_hlnames_finish_no, bg_hlnames_mode, bg_hlnames_not_clean, bg_hlnames_maxlinks, bg_hlnames_distance, bg_hlnames_target, bg_hlnames_datebase, bg_hlnames_maxtime, bg_hlnames_debug" />
+<input type="hidden" name="page_options" value="bg_hlnames_start_no, bg_hlnames_finish_no, bg_hlnames_mode, bg_hlnames_not_clean, bg_hlnames_maxlinks, bg_hlnames_distance, bg_hlnames_target, bg_hlnames_classname, bg_hlnames_datebase, bg_hlnames_maxtime, bg_hlnames_debug" />
 
 <p class="submit">
 <input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />
