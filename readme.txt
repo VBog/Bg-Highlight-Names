@@ -184,8 +184,9 @@ Plugin highlight the names in the text. Supports Russian names (Last, First, MI)
 
 == Screenshots ==
 
-1. Plugin's settings page.
-2. Страница настроек плагина.
+1. Общие настройки плагина.
+2. Управление файлом данных.
+3. Пакетный режим работы плагина.
 
 == Installation ==
 
@@ -212,11 +213,19 @@ Plugin highlight the names in the text. Supports Russian names (Last, First, MI)
 
 == Changelog ==
 
+= 1.1 =
+
+* Добавлена возможность загружать XML-файл из репозитория WordPress.
+
 = 1.0 =
 
 * Первая публичная версия
 
 == Upgrade Notice ==
+
+= 1.1 =
+
+* Добавлена возможность загружать XML-файл из репозитория WordPress.
 
 = 1.0 =
 
