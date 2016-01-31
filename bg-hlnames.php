@@ -3,7 +3,7 @@
 Plugin Name: Bg Highlight Names
 Plugin URI: https://bogaiskov.ru/highlight-names/
 Description: Highlight Russian names in text of posts and pages.
-Version: 1.0.2
+Version: 1.1.0
 Author: VBog
 Author URI: http://bogaiskov.ru
 */
@@ -33,7 +33,7 @@ Author URI: http://bogaiskov.ru
 if ( !defined('ABSPATH') ) {
 	die( 'Sorry, you are not allowed to access this page directly.' ); 
 }
-define('BG_HLNAMES_VERSION', '1.0.2');
+define('BG_HLNAMES_VERSION', '1.1.0');
 
 // Загрузка интернационализации
 add_action( 'plugins_loaded', 'bg_highlight_load_textdomain' );
@@ -43,6 +43,11 @@ function bg_highlight_load_textdomain() {
 // Функция, исполняемая при активации плагина.
 function  bg_highlight_activate() {
 	delete_option('bg_hlnames_in_progress');	
+	$datafile = get_option( 'bg_hlnames_datafile' );
+	if (isset($datafile) && $datafile) {
+		copy ( $datafile, dirname(__FILE__ ).'/data.xml' );
+	}
+
 }
 register_activation_hook( __FILE__, 'bg_highlight_activate' );
 
@@ -169,6 +174,18 @@ function bg_hlnames_callback() {
 	global $bg_hlnames_debug_file;
 	$param = new stdClass();
 
+	if (isset($_POST['datafile']) && $_POST['datafile']) {
+		$datafile = $_POST['datafile'];
+		$url = dirname(__FILE__ ).'/data.xml';		// Файл по умолчанию
+		if (copy ( $datafile, $url )) {
+			update_option( 'bg_hlnames_datafile', $datafile );
+			$xml = file_get_contents($url);		
+			$p = json_decode(json_encode((array)simplexml_load_string($xml)),1);							
+			echo '*'.$p['about'];
+		}
+		else echo '*'.__('Error while XML-file uploading.', 'bg-highlight-names');
+		wp_die();
+	}
 	if (isset($_POST['parseallposts']) && $_POST['parseallposts']=='reset') {
 		update_option( 'bg_hlnames_in_progress', '' );
 		wp_die();

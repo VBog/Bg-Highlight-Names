@@ -87,7 +87,69 @@ function bg_hlnames_options_page() {
 <table class="form-table">
 
 <tr valign="top">
-<th scope="row"><?php _e('XML-file with names list', 'bg-highlight-names') ?></th>
+<th scope="row"><?php _e('Current XML-file', 'bg-highlight-names') ?></th>
+<td><p id="bg_hlnames_datafile"><?php 
+	if (get_option("bg_hlnames_datafile")) echo get_option("bg_hlnames_datafile"); 
+	else _e('default', 'bg-highlight-names'); 
+?></p>
+<p id="bg_hlnames_current_file"><b><i><?php 
+	$url = dirname(dirname(__FILE__ )).'/data.xml';		// Файл по умолчанию
+	$xml = file_get_contents($url);		
+	$p = json_decode(json_encode((array)simplexml_load_string($xml)),1);							
+	echo $p['about'];
+?>
+</i></b></p></td>
+</tr>
+
+<tr valign="top">
+<th scope="row"><?php _e('Upload XML-file', 'bg-highlight-names') ?></th>
+<td>
+<?php 
+$url = "http://plugins.svn.wordpress.org/bg-highlight-names/xml/";
+$xml = @file_get_contents($url."filelist.xml");
+
+if ($xml) {
+	$files = json_decode(json_encode((array)simplexml_load_string($xml)),1);
+	$file = $files['file'];
+	$cnt = count($file);
+	echo "<select id='bg_hlnames_get_datafile' name='bg_hlnames_get_datafile'>";
+		echo "<option value='' disabled selected>--- ".__('Select file', 'bg-highlight-names')." ---</option>";
+		for ($i = 0; $i < $cnt; $i++) {
+			if ($file[$i]['name']) echo "<option value='".$file[$i]['name']."' title='".$file[$i]['about']."'>".$file[$i]['name']."</option>";
+		}
+	echo "</select>";
+}
+?> <input type="button" id='bg_hlnames_upload_button' class="button" onclick="bg_hlnames_upload_datafile();" value="<?php _e('Upload', 'bg-highlight-names') ?>" />
+<script>function bg_hlnames_upload_datafile() {
+	datafile = document.getElementById('bg_hlnames_get_datafile').value;
+	if (datafile) {
+		datafile = "http://plugins.svn.wordpress.org/bg-highlight-names/xml/" + datafile;
+		if (confirm("<?php _e('Really upload the file?', 'bg-highlight-names') ?>"+"\n"+datafile)) {
+			jQuery.post( ajaxurl, { action: 'bg_hlnames', datafile: datafile }, function (t) {
+				el = document.getElementById('bg_hlnames_resalt');
+				if (t[0] == '*') {
+					el.innerHTML  = '<?php _e('XML-file uploaded.', 'bg-highlight-names'); ?>';
+					el.className  = "updated";
+					document.getElementById('bg_hlnames_current_file').innerHTML = "<b><i><font color='green'>"+t.substr(1)+"</font></i></b>";
+				}
+				else if (t[0] == '~') {
+					el.innerHTML  = t.substr(1);
+					el.className  = "update-nag";
+				}
+				else {
+					if (!t) t="<?php _e('No response.', 'bg-highlight-names'); ?>";
+					el.innerHTML  = t;
+					el.className  = "error";
+				}
+			} );
+		}
+	}
+}</script>
+</td>
+</tr>
+
+<tr valign="top">
+<th scope="row"><?php _e('Custom XML-file with names list', 'bg-highlight-names') ?></th>
 <td><input type="text" name="bg_hlnames_datebase" value="<?php echo get_option('bg_hlnames_datebase'); ?>" /><br>
 <i><?php _e('(Specify a local URL of XML-file that contain the names to highlight them in text. <br> Leave blank to use the XML-file by default.)', 'bg-highlight-names') ?></i></td>
 </tr>
@@ -102,6 +164,7 @@ function bg_hlnames_options_page() {
 </p>
 
 <p class="help">
+<?php _e('XML-files and Excel templates on', 'bg-highlight-names') ?> <a href="http://plugins.svn.wordpress.org/bg-highlight-names/xml/"><?php _e(' WordPress.org', 'bg-highlight-names') ?></a>.<br>
 <?php _e('Download XML schema:', 'bg-highlight-names') ?> <a href="<?php echo plugins_url( 'schema.xml', dirname(__FILE__) ); ?>">schema.xml</a><br>
 <?php _e('How to create the XML with names list read', 'bg-highlight-names') ?> <a href="<?php echo plugins_url( 'readme.txt', dirname(__FILE__) ); ?>">readme.txt</a><br>
 <?php _e('How to create and edit of XML-file in Excel is written in', 'bg-highlight-names') ?> <a href="https://bogaiskov.ru/xml-excel/"><?php _e(' this article', 'bg-highlight-names') ?></a>.
@@ -287,4 +350,6 @@ function bg_hlnames_add_options () {
 	add_option('bg_hlnames_classname', "");
 	add_option('bg_hlnames_maxtime', 60);
 	add_option('bg_hlnames_debug', "");
+
+	add_option('bg_hlnames_datafile', "");
 }

@@ -1,28 +1,27 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <HighlightNames>
-  <about />
-  <person>
-    <name></name>
-    <num></num>
-    <nick></nick>
-    <middlename></middlename>
-    <surname></surname>
-    <curacy></curacy>
-    <sex></sex>
-    <discription></discription>
-    <lifedates></lifedates>
-    <link></link>
-  </person>
-  <person>
-    <name></name>
-    <num></num>
-    <nick></nick>
-    <middlename></middlename>
-    <surname></surname>
-    <curacy></curacy>
-    <sex></sex>
-    <discription></discription>
-    <lifedates></lifedates>
-    <link></link>
-  </person>
+    <person>
+      <name></name>
+      <num></num>
+      <nick></nick>
+      <middlename></middlename>
+      <surname></surname>
+	  <curacy></curacy>
+      <sex></sex>
+      <discription></discription>
+      <lifedates></lifedates>
+      <link></link>
+    </person>
+    <person>
+      <name></name>
+      <num></num>
+       <nick></nick>
+     <middlename></middlename>
+      <surname></surname>
+	  <curacy></curacy>
+      <sex></sex>
+      <discription></discription>
+      <lifedates></lifedates>
+      <link></link>
+    </person>
 </HighlightNames>
