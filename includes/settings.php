@@ -130,7 +130,8 @@ if ($xml) {
 				if (t[0] == '*') {
 					el.innerHTML  = '<?php _e('XML-file uploaded.', 'bg-highlight-names'); ?>';
 					el.className  = "updated";
-					document.getElementById('bg_hlnames_current_file').innerHTML = "<b><i><font color='green'>"+t.substr(1)+"</font></i></b>";
+					document.getElementById('bg_hlnames_datafile').innerHTML = "<font color='darkblue'>"+datafile+"</font>";
+					document.getElementById('bg_hlnames_current_file').innerHTML = "<b><i><font color='darkblue'>"+t.substr(1)+"</font></i></b>";
 				}
 				else if (t[0] == '~') {
 					el.innerHTML  = t.substr(1);
