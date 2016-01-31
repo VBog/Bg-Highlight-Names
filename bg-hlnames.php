@@ -3,7 +3,7 @@
 Plugin Name: Bg Highlight Names
 Plugin URI: https://bogaiskov.ru/highlight-names/
 Description: Highlight Russian names in text of posts and pages.
-Version: 1.1.0
+Version: 1.1.1
 Author: VBog
 Author URI: http://bogaiskov.ru
 */
@@ -33,7 +33,7 @@ Author URI: http://bogaiskov.ru
 if ( !defined('ABSPATH') ) {
 	die( 'Sorry, you are not allowed to access this page directly.' ); 
 }
-define('BG_HLNAMES_VERSION', '1.1.0');
+define('BG_HLNAMES_VERSION', '1.1.1');
 
 // Загрузка интернационализации
 add_action( 'plugins_loaded', 'bg_highlight_load_textdomain' );
@@ -43,11 +43,7 @@ function bg_highlight_load_textdomain() {
 // Функция, исполняемая при активации плагина.
 function  bg_highlight_activate() {
 	delete_option('bg_hlnames_in_progress');	
-	$datafile = get_option( 'bg_hlnames_datafile' );
-	if (isset($datafile) && $datafile) {
-		copy ( $datafile, dirname(__FILE__ ).'/data.xml' );
-	}
-
+	bg_hlnames_copy_datafile();
 }
 register_activation_hook( __FILE__, 'bg_highlight_activate' );
 
@@ -59,6 +55,15 @@ bg_hlnames_add_options ();
 
 ini_set('memory_limit', '256M');
 
+
+// Проверяем текущую версию плагина и обновляем файл данных
+function bg_hlnames_update_datefile() {
+	if ( version_compare( get_option('bg_hlnames_version'), BG_HLNAMES_VERSION, '<' ) ) {
+		bg_hlnames_copy_datafile();
+		update_option( 'bg_hlnames_version', BG_HLNAMES_VERSION );
+	}
+}
+add_action( 'plugins_loaded', 'bg_hlnames_update_datefile' );
 
 if ( defined('ABSPATH') && defined('WPINC') ) {
 	$plugin_mode = get_option('bg_hlnames_mode');
@@ -151,6 +156,14 @@ function bg_hlnames_post_clear( $data, $postarr ){
 		$data['post_content'] =  bg_hlnames_clear($data['post_content']);
 	}
 	return $data;
+}
+
+// Функция загрузки файла данных из репозитория
+function bg_hlnames_copy_datafile() {
+	$datafile = get_option( 'bg_hlnames_datafile' );
+	if (isset($datafile) && $datafile) {
+		copy ( $datafile, dirname(__FILE__ ).'/data.xml' );
+	}
 }
 
 // Hook for adding admin menus
