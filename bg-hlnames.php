@@ -6,6 +6,8 @@ Description: Highlight Russian names in text of posts and pages.
 Version: 1.1.1
 Author: VBog
 Author URI: http://bogaiskov.ru
+Text Domain: bg-highlight-names
+Domain Path: /languages
 */
 
 /*  Copyright 2016  Vadim Bogaiskov  (email: vadim.bogaiskov@gmail.com)
