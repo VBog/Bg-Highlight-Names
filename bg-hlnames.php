@@ -3,7 +3,7 @@
 Plugin Name: Bg Highlight Names
 Plugin URI: https://bogaiskov.ru/highlight-names/
 Description: Highlight Russian names in text of posts and pages.
-Version: 1.1.1
+Version: 1.1.2
 Author: VBog
 Author URI: http://bogaiskov.ru
 Text Domain: bg-highlight-names
@@ -35,7 +35,10 @@ Domain Path: /languages
 if ( !defined('ABSPATH') ) {
 	die( 'Sorry, you are not allowed to access this page directly.' ); 
 }
-define('BG_HLNAMES_VERSION', '1.1.1');
+define('BG_HLNAMES_VERSION', '1.1.2');
+
+
+$bg_hlnames_start_time = microtime(true);
 
 // Загрузка интернационализации
 add_action( 'plugins_loaded', 'bg_highlight_load_textdomain' );
@@ -100,38 +103,52 @@ $bg_hlnames_start_old = 0;
  
 // Функция обработки списка имён
 function bg_hlnames_proc($content) {
-	global $bg_hlnames_debug_file;
+	global $bg_hlnames_debug_file, $bg_hlnames_start_time ;
+
 	$mode = get_option('bg_hlnames_mode');
 	if ($mode=='mixed' && strstr ( $content ,'bg_hlnames' )) return $content;
 
 	$maxtime = get_option('bg_hlnames_maxtime');
-	if (!set_time_limit ($maxtime)) {
+	if (!function_exists ('set_time_limit') || !(@set_time_limit ($maxtime))) {
 		$systemtime = ini_get('max_execution_time'); 
 		if (!$systemtime) $systemtime = 30;
+		else $systemtime = intval($systemtime);
 		if (get_option('bg_hlnames_debug')) {
 			$content .= '<p class="bg_hlnames_debug">'.sprintf(__( 'The maximum execution time (%1$s sec.) could not be set. System limits the maximum execution time of %2$s sec.', 'bg-highlight-names'), $maxtime, $systemtime).'</p>';
 		}
-		$maxtime = $systemtime - 2;
 		if ( !empty($_GET['parseallposts'])) error_log(sprintf( 'The maximum execution time (%1$s sec.) could not be set. System limits the maximum execution time of %2$s sec. ', $maxtime, $systemtime), 3, $bg_hlnames_debug_file);
+		$maxtime = $systemtime;
+	} else {
+		 $bg_hlnames_start_time = microtime(true);
 	}
 	$bg_hlnames = new BgHighlightNames();
-	$content = $bg_hlnames->proc($content, $maxtime);
+	
+	$pretime = microtime(true) - $bg_hlnames_start_time;
+	$maxtime = $maxtime - $pretime - 2;
+	if ($maxtime-$pretime > 2) $content = $bg_hlnames->proc($content, $maxtime);
 	return $content;
 }
 // Функция очистки от ссылок списка имён
 function bg_hlnames_clear($content) {
+
 	$maxtime = get_option('bg_hlnames_maxtime');
-	if (!set_time_limit ($maxtime)) {
+	if (!function_exists ('set_time_limit') || !(@set_time_limit ($maxtime))) {
 		$systemtime = ini_get('max_execution_time'); 
 		if (!$systemtime) $systemtime = 30;
+		else $systemtime = intval($systemtime);
 		if (get_option('bg_hlnames_debug')) {
 			$content .= '<p class="bg_hlnames_debug">'.sprintf(__( 'The maximum execution time (%1$s sec.) could not be set. System limits the maximum execution time of %2$s sec.', 'bg-highlight-names'), $maxtime, $systemtime).'</p>';
 		}
-		$maxtime = $systemtime - 2;
 		if ( !empty($_GET['parseallposts'])) error_log(sprintf('The maximum execution time (%1$s sec.) could not be set. System limits the maximum execution time of %2$s sec. ', $maxtime, $systemtime), 3, $bg_hlnames_debug_file);
+		$maxtime = $systemtime;
+	} else {
+		 $bg_hlnames_start_time = microtime(true);
 	}
+
 	$bg_hlnames = new BgHighlightNames();
-	$content = $bg_hlnames->clear($content);
+	$pretime = microtime(true) - $bg_hlnames_start_time;
+	$maxtime = $maxtime - $pretime - 2;
+	if ($maxtime-$pretime > 2) $content = $bg_hlnames->clear($content);
 	return $content;
 }
 // Функция добавления ссылок к именам в офлайн режиме
