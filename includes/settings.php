@@ -329,28 +329,3 @@ function bg_hlnames_show_errorcode (el, textStatus, t) {
 <?php
 
 }
-// Определяем количество опубликованных постов
-function bg_hlnames_count_posts () {
-	$count_posts = wp_count_posts()->publish;
-	return $count_posts;
-}
-// Задаем начальные значения параметров
-function bg_hlnames_add_options () {
-	add_option('bg_hlnames_in_progress', "");
-	add_option('bg_hlnames_start_old', 0);
-
-	add_option('bg_hlnames_start_no', 1);
-	add_option('bg_hlnames_finish_no', bg_hlnames_count_posts ());
-	
-	add_option('bg_hlnames_mode', "online");
-	add_option('bg_hlnames_not_clean', "");
-	add_option('bg_hlnames_maxlinks', 0);
-	add_option('bg_hlnames_distance', 0);
-	add_option('bg_hlnames_target', "_blank");
-	add_option('bg_hlnames_datebase', "");
-	add_option('bg_hlnames_classname', "");
-	add_option('bg_hlnames_maxtime', 60);
-	add_option('bg_hlnames_debug', "");
-
-	add_option('bg_hlnames_datafile', "");
-}

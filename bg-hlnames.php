@@ -3,7 +3,7 @@
 Plugin Name: Bg Highlight Names
 Plugin URI: https://bogaiskov.ru/highlight-names/
 Description: Highlight Russian names in text of posts and pages.
-Version: 1.1.3
+Version: 1.1.4
 Author: VBog
 Author URI: http://bogaiskov.ru
 Text Domain: bg-highlight-names
@@ -35,7 +35,7 @@ Domain Path: /languages
 if ( !defined('ABSPATH') ) {
 	die( 'Sorry, you are not allowed to access this page directly.' ); 
 }
-define('BG_HLNAMES_VERSION', '1.1.3');
+define('BG_HLNAMES_VERSION', '1.1.4');
 
 
 $bg_hlnames_start_time = microtime(true);
@@ -535,4 +535,33 @@ class BgHighlightNames
 		}
 		return true; 
 	}
+}
+/******************************************************************************************
+	Параметры плагина
+	
+*******************************************************************************************/
+// Задаем начальные значения параметров
+function bg_hlnames_add_options () {
+	add_option('bg_hlnames_in_progress', "");
+	add_option('bg_hlnames_start_old', 0);
+
+	add_option('bg_hlnames_start_no', 1);
+	add_option('bg_hlnames_finish_no', bg_hlnames_count_posts ());
+	
+	add_option('bg_hlnames_mode', "online");
+	add_option('bg_hlnames_not_clean', "");
+	add_option('bg_hlnames_maxlinks', 0);
+	add_option('bg_hlnames_distance', 0);
+	add_option('bg_hlnames_target', "_blank");
+	add_option('bg_hlnames_datebase', "");
+	add_option('bg_hlnames_classname', "");
+	add_option('bg_hlnames_maxtime', 60);
+	add_option('bg_hlnames_debug', "");
+
+	add_option('bg_hlnames_datafile', "");
+}
+// Определяем количество опубликованных постов
+function bg_hlnames_count_posts () {
+	$count_posts = wp_count_posts()->publish;
+	return $count_posts;
 }
