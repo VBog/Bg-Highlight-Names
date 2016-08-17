@@ -3,7 +3,7 @@
 Plugin Name: Bg Highlight Names
 Plugin URI: https://bogaiskov.ru/highlight-names/
 Description: Highlight Russian names in text of posts and pages.
-Version: 1.1.4
+Version: 1.2.0
 Author: VBog
 Author URI: http://bogaiskov.ru
 Text Domain: bg-highlight-names
@@ -35,7 +35,7 @@ Domain Path: /languages
 if ( !defined('ABSPATH') ) {
 	die( 'Sorry, you are not allowed to access this page directly.' ); 
 }
-define('BG_HLNAMES_VERSION', '1.1.4');
+define('BG_HLNAMES_VERSION', '1.2.0');
 
 
 $bg_hlnames_start_time = microtime(true);
@@ -90,6 +90,12 @@ if ( defined('ABSPATH') && defined('WPINC') ) {
 	elseif ($plugin_mode == "clear") add_action('wp_insert_post_data', 'bg_hlnames_post_clear', 20, 2 );
 }
 
+// Регистрируем шорт-код nonames
+add_shortcode( 'nonames', 'bg_hlnames_nonames' );
+// [nonames]
+function bg_hlnames_nonames( $atts, $content = null ) {
+	 return do_shortcode($content);
+}
 
 $bg_hlnames_maxlinks = (int) get_option('bg_hlnames_maxlinks');
 $bg_hlnames_distance = (int) get_option('bg_hlnames_distance');
@@ -210,9 +216,39 @@ function bg_hlnames_callback() {
 			update_option( 'bg_hlnames_datafile', $datafile );
 			$xml = file_get_contents($url);		
 			$p = json_decode(json_encode((array)simplexml_load_string($xml)),1);							
-			echo '*'.$p['about'];
+			if ( isset($p['about']) ) echo '*'.$p['about'];
+			else echo '*'.__('XML-file without comment.', 'bg-highlight-names');
+
 		}
 		else echo '*'.__('Error while XML-file uploading.', 'bg-highlight-names');
+		wp_die();
+	}
+	if (isset($_POST['database'])) {
+		$datafile = trim($_POST['database']);
+		if ( $datafile ) {
+			if ($datafile[0] == '/') $url = get_home_url().$datafile;
+			else $url = get_home_url().'/'.$datafile;
+			$xml = @file_get_contents($url);	
+			if ($xml && @simplexml_load_string($xml)) {
+				$p = json_decode(json_encode((array)simplexml_load_string($xml)),1);
+				if ( isset($p['person']) ) {
+					update_option( 'bg_hlnames_datafile', $url );
+					if ( isset($p['about']) ) echo '*'.$p['about'];
+					else echo '*'.__('XML-file without comment.', 'bg-highlight-names');
+				}
+				else {
+					update_option( 'bg_hlnames_datafile', "" );
+					update_option( 'bg_hlnames_datebase', "" );
+					echo __($datafile.' is not correct database file.', 'bg-highlight-names');
+				}
+			}
+			else {
+				update_option( 'bg_hlnames_datafile', "" );
+				update_option( 'bg_hlnames_datebase', "" );
+				echo __($datafile.' - XML-file not exist.', 'bg-highlight-names');
+			}
+		} else update_option( 'bg_hlnames_datafile', "" );
+
 		wp_die();
 	}
 	if (isset($_POST['parseallposts']) && $_POST['parseallposts']=='reset') {
@@ -477,6 +513,7 @@ class BgHighlightNames
 		
 		// Ищем все вхождения ссылок <a ...</a>
 		preg_match_all("/<a\\s.*?<\/a>/sui", $txt, $hdr_a, PREG_OFFSET_CAPTURE);
+		preg_match_all("/\[nonames.*?\[\/nonames\]/sui", $txt, $hdr_nonames, PREG_OFFSET_CAPTURE);
 		
 		preg_match_all($template, $txt, $matches, PREG_OFFSET_CAPTURE);
 		$cnt = count($matches[0]);
@@ -490,7 +527,8 @@ class BgHighlightNames
 		for ($i = 0; ($i < $cnt) && (!$bg_hlnames_maxlinks || ($num_links < $bg_hlnames_maxlinks)); $i++) {
 			
 		// Обработка по каждому паттерну, если он не находится внутри тега <a ...</a>
-			if ($this->check_tag($hdr_a, $matches[0][$i][1])) {
+			if ($this->check_tag($hdr_a, $matches[0][$i][1])
+			&&  $this->check_tag($hdr_nonames, $matches[0][$i][1]) ) {
 				if (!$num_links || ($matches[0][$i][1]-$last_position > $bg_hlnames_distance)) {	// Обрабатываем если растояние между ссылками больше заданного
 					$newmt = "<a class='".$classname."' href='".$the_person['link']."' target='".$target."' title='".$title."'>".$matches[0][$i][0]."</a>";
 					$text = $text.substr($txt, $start, $matches[0][$i][1]-$start).str_replace($matches[0][$i][0], $newmt, $matches[0][$i][0]);

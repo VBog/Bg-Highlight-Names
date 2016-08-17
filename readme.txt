@@ -8,7 +8,7 @@ Tags: имя, отчество, монах, фамилия, ссылка, кни
 
 Requires at least: 3.0.1
 
-Tested up to: 4.4.1
+Tested up to: 4.6.0
 
 Stable tag: trunk
 
@@ -24,6 +24,8 @@ Highlight the names in the text
 Plugin highlight the names in the text. Supports Russian names (Last, First, MI) and the names of monks.
 
 Плагин подсвечивает имена в тексте статей. Поддерживает русские имена (Фамилия, Имя, Отчество) и имена монахов.
+
+Чтобы не подсвечивать имена в определенной части текста, поместите этот отрывок внутри шорт-кода `[nonames]...[/nonames]`.
 
 = Настройки плагина =
 
@@ -212,6 +214,11 @@ Plugin highlight the names in the text. Supports Russian names (Last, First, MI)
 
 
 == Changelog ==
+
+= 1.2 =
+
+* Добавлен шорт-код [nonames]...[/nonames].
+* Дополнен файл данных "Библиотека Святых отцов и церковных писателей".
 
 = 1.1 =
 

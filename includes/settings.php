@@ -93,10 +93,12 @@ function bg_hlnames_options_page() {
 	else _e('default', 'bg-highlight-names'); 
 ?></p>
 <p id="bg_hlnames_current_file"><b><i><?php 
-	$url = dirname(dirname(__FILE__ )).'/data.xml';		// Файл по умолчанию
+	if (get_option("bg_hlnames_datafile")) $url = get_option("bg_hlnames_datafile"); 
+	else $url = dirname(dirname(__FILE__ )).'/data.xml';		// Файл по умолчанию
 	$xml = file_get_contents($url);		
 	$p = json_decode(json_encode((array)simplexml_load_string($xml)),1);							
-	echo $p['about'];
+	if ( isset($p['about']) ) echo $p['about'];
+	else echo __('XML-file without comment.', 'bg-highlight-names');
 ?>
 </i></b></p></td>
 </tr>
@@ -151,9 +153,34 @@ if ($xml) {
 
 <tr valign="top">
 <th scope="row"><?php _e('Custom XML-file with names list', 'bg-highlight-names') ?></th>
-<td><input type="text" name="bg_hlnames_datebase" value="<?php echo get_option('bg_hlnames_datebase'); ?>" /><br>
+<td><input type="search" id="bg_hlnames_datebase" name="bg_hlnames_datebase" value="<?php echo get_option('bg_hlnames_datebase'); ?>" onblur='bg_hlnames_datebase_check();' /><br>
 <i><?php _e('(Specify a local URL of XML-file that contain the names to highlight them in text. <br> Leave blank to use the XML-file by default.)', 'bg-highlight-names') ?></i></td>
 </tr>
+<script>function bg_hlnames_datebase_check() {
+	datafile = document.getElementById('bg_hlnames_datebase').value;
+	jQuery.post( ajaxurl, { action: 'bg_hlnames', database: datafile }, function (t) {
+		el = document.getElementById('bg_hlnames_resalt');
+		if (t[0] == '*') {
+			el.innerHTML  = '<?php _e("XML-file changed. Don\'t forget save settings.", 'bg-highlight-names'); ?>';
+			el.className  = "update-nag";
+			document.getElementById('bg_hlnames_datafile').innerHTML = "<font color='darkblue'>"+datafile+"</font>";
+			document.getElementById('bg_hlnames_current_file').innerHTML = "<b><i><font color='darkblue'>"+t.substr(1)+"</font></i></b>";
+		}
+		else {
+			if (!t) {
+				el.innerHTML  = '<?php _e("XML-file set to default. Don\'t forget save settings.", 'bg-highlight-names'); ?>';
+				el.className  = "update-nag";
+				document.getElementById('bg_hlnames_datafile').innerHTML = "<font color='darkblue'><?php _e('default', 'bg-highlight-names') ?></font>";
+				document.getElementById('bg_hlnames_current_file').innerHTML = "<b><i><font color='darkblue'></font></i></b>";
+				
+			} else {	
+				el.innerHTML  = t;
+				el.className  = "error";
+			}
+		}
+	} );
+
+}</script>
 
 </table>
  

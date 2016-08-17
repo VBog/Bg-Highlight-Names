@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Bg Highlight Names\n"
-"POT-Creation-Date: 2016-01-31 12:40+0300\n"
+"POT-Creation-Date: 2016-08-17 13:05+0300\n"
 "PO-Revision-Date: 2016-01-09 13:51+0300\n"
 "Last-Translator: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
 "Language-Team: Vadim Bogaiskov <vadim.bogaiskov@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.8.8\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: bg-hlnames.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -20,46 +20,58 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: bg-hlnames.php:105 bg-hlnames.php:121
+#: bg-hlnames.php:123 bg-hlnames.php:146
 #, php-format
 msgid ""
 "The maximum execution time (%1$s sec.) could not be set. System limits the "
 "maximum execution time of %2$s sec."
 msgstr ""
 
-#: bg-hlnames.php:163 includes/settings.php:14
+#: bg-hlnames.php:198 includes/settings.php:14
 msgid "Plugin's &#171;Highlight Names&#187; settings"
 msgstr ""
 
-#: bg-hlnames.php:163
+#: bg-hlnames.php:198
 msgid "Highlight names"
 msgstr ""
 
-#: bg-hlnames.php:186
+#: bg-hlnames.php:220 bg-hlnames.php:237 includes/settings.php:101
+msgid "XML-file without comment."
+msgstr ""
+
+#: bg-hlnames.php:223
 msgid "Error while XML-file uploading."
 msgstr ""
 
-#: bg-hlnames.php:197
+#: bg-hlnames.php:242
+msgid " is not correct database file."
+msgstr ""
+
+#: bg-hlnames.php:248
+msgid " - XML-file not exist."
+msgstr ""
+
+#: bg-hlnames.php:262
 msgid "Processing has not yet completed. Please wait."
 msgstr ""
 
-#: bg-hlnames.php:217
+#: bg-hlnames.php:282
 msgid "Nothing more to process."
 msgstr ""
 
-#: bg-hlnames.php:277
+#: bg-hlnames.php:342
 #, php-format
 msgid "Updated %1$d page or post!"
 msgid_plural "Updated %1$d pages and posts!"
 msgstr[0] ""
 msgstr[1] ""
 
-#: bg-hlnames.php:397
+#: bg-hlnames.php:462
 #, php-format
 msgid "Tested %1$d of %2$d names in %3$.1f seconds."
 msgstr ""
 
-#: bg-hlnames.php:404
+#: bg-hlnames.php:469
 #, php-format
 msgid "Successfully tested all %1$d names in %2$.1f seconds."
 msgstr ""
@@ -172,7 +184,7 @@ msgstr ""
 msgid "Show debug info at the end of the post"
 msgstr ""
 
-#: includes/settings.php:80 includes/settings.php:163
+#: includes/settings.php:80 includes/settings.php:191
 msgid "Save Changes"
 msgstr ""
 
@@ -180,111 +192,119 @@ msgstr ""
 msgid "Current XML-file"
 msgstr ""
 
-#: includes/settings.php:93
+#: includes/settings.php:93 includes/settings.php:173
 msgid "default"
 msgstr ""
 
-#: includes/settings.php:105
+#: includes/settings.php:107
 msgid "Upload XML-file"
 msgstr ""
 
-#: includes/settings.php:116
+#: includes/settings.php:118
 msgid "Select file"
 msgstr ""
 
-#: includes/settings.php:122
+#: includes/settings.php:124
 msgid "Upload"
 msgstr ""
 
-#: includes/settings.php:127
+#: includes/settings.php:129
 msgid "Really upload the file?"
 msgstr ""
 
-#: includes/settings.php:131
+#: includes/settings.php:133
 msgid "XML-file uploaded."
 msgstr ""
 
-#: includes/settings.php:140 includes/settings.php:294
+#: includes/settings.php:143 includes/settings.php:322
 msgid "No response."
 msgstr ""
 
-#: includes/settings.php:152
+#: includes/settings.php:155
 msgid "Custom XML-file with names list"
 msgstr ""
 
-#: includes/settings.php:154
+#: includes/settings.php:157
 msgid ""
 "(Specify a local URL of XML-file that contain the names to highlight them in "
 "text. <br> Leave blank to use the XML-file by default.)"
 msgstr ""
 
-#: includes/settings.php:167
-msgid "XML-files and Excel templates on"
+#: includes/settings.php:164
+msgid "XML-file changed. Don\\'t forget save settings."
 msgstr ""
 
-#: includes/settings.php:167
-msgid " WordPress.org"
-msgstr ""
-
-#: includes/settings.php:168
-msgid "Download XML schema:"
-msgstr ""
-
-#: includes/settings.php:169
-msgid "How to create the XML with names list read"
-msgstr ""
-
-#: includes/settings.php:170
-msgid "How to create and edit of XML-file in Excel is written in"
-msgstr ""
-
-#: includes/settings.php:170
-msgid " this article"
-msgstr ""
-
-#: includes/settings.php:180
-msgid "Batch mode<br>(depend on plugin mode)"
-msgstr ""
-
-#: includes/settings.php:182
-msgid "Parse posts: start #"
-msgstr ""
-
-#: includes/settings.php:183
-msgid "finish #"
-msgstr ""
-
-#: includes/settings.php:187
-msgid "Do not clean before parsing"
-msgstr ""
-
-#: includes/settings.php:189
-msgid "Note: New links will be added to the existing ones."
-msgstr ""
-
-#: includes/settings.php:193
-msgid "Parse posts"
+#: includes/settings.php:171
+msgid "XML-file set to default. Don\\'t forget save settings."
 msgstr ""
 
 #: includes/settings.php:195
+msgid "XML-files and Excel templates on"
+msgstr ""
+
+#: includes/settings.php:195
+msgid " WordPress.org"
+msgstr ""
+
+#: includes/settings.php:196
+msgid "Download XML schema:"
+msgstr ""
+
+#: includes/settings.php:197
+msgid "How to create the XML with names list read"
+msgstr ""
+
+#: includes/settings.php:198
+msgid "How to create and edit of XML-file in Excel is written in"
+msgstr ""
+
+#: includes/settings.php:198
+msgid " this article"
+msgstr ""
+
+#: includes/settings.php:208
+msgid "Batch mode<br>(depend on plugin mode)"
+msgstr ""
+
+#: includes/settings.php:210
+msgid "Parse posts: start #"
+msgstr ""
+
+#: includes/settings.php:211
+msgid "finish #"
+msgstr ""
+
+#: includes/settings.php:215
+msgid "Do not clean before parsing"
+msgstr ""
+
+#: includes/settings.php:217
+msgid "Note: New links will be added to the existing ones."
+msgstr ""
+
+#: includes/settings.php:221
+msgid "Parse posts"
+msgstr ""
+
+#: includes/settings.php:223
 msgid ""
 "(It makes permanent changes in the text of all pages and posts.) <br><b>We "
 "strongly recommend to keep your SQL-database dump.</b>"
 msgstr ""
 
-#: includes/settings.php:196
+#: includes/settings.php:224
 msgid "Don't close or update this tab. Parsing in progress!<br>Wait, please."
 msgstr ""
 
-#: includes/settings.php:197
+#: includes/settings.php:225
 msgid "Don't forget save options before start of batch mode!"
 msgstr ""
 
-#: includes/settings.php:198
+#: includes/settings.php:226
 msgid "For detail of results see: "
 msgstr ""
 
-#: includes/settings.php:205
+#: includes/settings.php:233
 msgid ""
 "You had reloaded this tab. Sorry, but you can not watch the process here. "
 "Check the log file to see the result of parsing. When the process is "
@@ -292,39 +312,39 @@ msgid ""
 "deactivate and then activate the plugin on the plugins page."
 msgstr ""
 
-#: includes/settings.php:226
+#: includes/settings.php:254
 msgid "Adds links in pages and posts where the links don't yet added only"
 msgstr ""
 
-#: includes/settings.php:227 includes/settings.php:234
+#: includes/settings.php:255 includes/settings.php:262
 msgid "Removes and then adds links in all pages and posts"
 msgstr ""
 
-#: includes/settings.php:230
+#: includes/settings.php:258
 msgid "Removes links from all pages and posts"
 msgstr ""
 
-#: includes/settings.php:233
+#: includes/settings.php:261
 msgid "Adds links in all pages and posts"
 msgstr ""
 
-#: includes/settings.php:258
+#: includes/settings.php:286
 msgid "Really begin highlight names in all posts and pages in batch mode?"
 msgstr ""
 
-#: includes/settings.php:309
+#: includes/settings.php:337
 msgid "Fatal error:"
 msgstr ""
 
-#: includes/settings.php:309
+#: includes/settings.php:337
 msgid "Try again..."
 msgstr ""
 
-#: includes/settings.php:313
+#: includes/settings.php:341
 msgid "Process aborted."
 msgstr ""
 
-#: includes/settings.php:317
+#: includes/settings.php:345
 msgid "Warning:"
 msgstr ""
 
