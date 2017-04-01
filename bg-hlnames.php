@@ -3,7 +3,7 @@
 Plugin Name: Bg Highlight Names
 Plugin URI: https://bogaiskov.ru/highlight-names/
 Description: Highlight Russian names in text of posts and pages.
-Version: 1.2.0
+Version: 1.2.2
 Author: VBog
 Author URI: http://bogaiskov.ru
 Text Domain: bg-highlight-names
@@ -35,7 +35,7 @@ Domain Path: /languages
 if ( !defined('ABSPATH') ) {
 	die( 'Sorry, you are not allowed to access this page directly.' ); 
 }
-define('BG_HLNAMES_VERSION', '1.2.0');
+define('BG_HLNAMES_VERSION', '1.2.2');
 
 
 $bg_hlnames_start_time = microtime(true);
@@ -74,16 +74,16 @@ if ( defined('ABSPATH') && defined('WPINC') ) {
 	$plugin_mode = get_option('bg_hlnames_mode');
 // Регистрируем крючок для обработки контента при его загрузке
 	if ($plugin_mode == "online") {
-		add_filter( 'the_content', 'bg_hlnames_proc' );
-		add_filter( 'the_excerpt', 'bg_hlnames_proc' );
+		add_filter( 'the_content', 'bg_hlnames_proc', 9 );
+		add_filter( 'the_excerpt', 'bg_hlnames_proc', 9 );
 	}
 // Регистрируем крючок для обработки контента при его сохранении в БД
 	elseif ($plugin_mode == "offline") add_action('wp_insert_post_data', 'bg_hlnames_post_save', 20, 2 );
 // Регистрируем крючок для обработки контента при его загрузке 
 // и крючок для обработки контента при его сохранении в БД 
 	elseif ($plugin_mode == "mixed") {
-		add_filter( 'the_content', 'bg_hlnames_proc' );
-		add_filter( 'the_excerpt', 'bg_hlnames_proc' );
+		add_filter( 'the_content', 'bg_hlnames_proc', 9 );
+		add_filter( 'the_excerpt', 'bg_hlnames_proc', 9 );
 		add_action('wp_insert_post_data', 'bg_hlnames_post_save', 20, 2 );
 	}
 // Регистрируем крючок для обработки контента при его сохранении в БД (удаление ссылок)
@@ -514,6 +514,7 @@ class BgHighlightNames
 		// Ищем все вхождения ссылок <a ...</a>
 		preg_match_all("/<a\\s.*?<\/a>/sui", $txt, $hdr_a, PREG_OFFSET_CAPTURE);
 		preg_match_all("/\[nonames.*?\[\/nonames\]/sui", $txt, $hdr_nonames, PREG_OFFSET_CAPTURE);
+		preg_match_all("/<.*?>/sui", $txt, $hdr_tag, PREG_OFFSET_CAPTURE);
 		
 		preg_match_all($template, $txt, $matches, PREG_OFFSET_CAPTURE);
 		$cnt = count($matches[0]);
@@ -528,7 +529,8 @@ class BgHighlightNames
 			
 		// Обработка по каждому паттерну, если он не находится внутри тега <a ...</a>
 			if ($this->check_tag($hdr_a, $matches[0][$i][1])
-			&&  $this->check_tag($hdr_nonames, $matches[0][$i][1]) ) {
+			&&  $this->check_tag($hdr_nonames, $matches[0][$i][1]) 
+			&&  $this->check_tag($hdr_tag, $matches[0][$i][1]) ) {
 				if (!$num_links || ($matches[0][$i][1]-$last_position > $bg_hlnames_distance)) {	// Обрабатываем если растояние между ссылками больше заданного
 					$newmt = "<a class='".$classname."' href='".$the_person['link']."' target='".$target."' title='".$title."'>".$matches[0][$i][0]."</a>";
 					$text = $text.substr($txt, $start, $matches[0][$i][1]-$start).str_replace($matches[0][$i][0], $newmt, $matches[0][$i][0]);
