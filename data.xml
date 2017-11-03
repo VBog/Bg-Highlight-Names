@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <HighlightNames xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<about>Библиотека Святых отцов и церковных писателей</about>
 	<person>
 		<name>Аверки$%</name>
 		<nick/>
@@ -8,7 +7,7 @@
 		<sex>m</sex>
 		<discription>Аверкий (Таушев), архиепископ</discription>
 		<lifedates>(1906–1976)</lifedates>
-		<link>http://azbyka.ru/otechnik/Averkij_Taushev/</link>
+		<link>https://azbyka.ru/otechnik/Averkij_Taushev/</link>
 	</person>
 	<person>
 		<name>Аврели$%</name>
@@ -17,7 +16,24 @@
 		<sex>m</sex>
 		<discription>Аврелий Августин, блаженный</discription>
 		<lifedates>(354–430)</lifedates>
-		<link>http://azbyka.ru/otechnik/Avrelij_Avgustin/</link>
+		<link>https://azbyka.ru/otechnik/Avrelij_Avgustin/</link>
+	</person>
+	<person>
+		<name>Августин%%</name>
+		<nick>Блаженн$$%</nick>
+		<surname>(Аврели%%)</surname>
+		<sex>m</sex>
+		<discription>Аврелий Августин, блаженный</discription>
+		<lifedates>(354–430)</lifedates>
+		<link>https://azbyka.ru/otechnik/Avrelij_Avgustin/</link>
+	</person>
+	<person>
+		<name>Август$$%</name>
+		<nick>Аврели$%%</nick> 
+		<sex>m</sex>
+		<discription>Аврелий Августин, блаженный</discription>
+		<lifedates>(354–430)</lifedates>
+		<link>https://azbyka.ru/otechnik/Avrelij_Avgustin/</link>
 	</person>
 	<person>
 		<name>Августин%%</name>
@@ -25,7 +41,7 @@
 		<sex>m</sex>
 		<discription>Аврелий Августин, блаженный</discription>
 		<lifedates>(354–430)</lifedates>
-		<link>http://azbyka.ru/otechnik/Avrelij_Avgustin/</link>
+		<link>https://azbyka.ru/otechnik/Avrelij_Avgustin/</link>
 	</person>
 	<person>
 		<name>Агапит%%</name>
@@ -33,7 +49,7 @@
 		<sex>m</sex>
 		<discription>Агапит Римский, святитель</discription>
 		<lifedates>(?–536)</lifedates>
-		<link>http://azbyka.ru/otechnik/Agapit_Rimskij/</link>
+		<link>https://azbyka.ru/otechnik/Agapit_Rimskij/</link>
 	</person>
 	<person>
 		<name>Агапит%%</name>
@@ -42,7 +58,7 @@
 		<sex>m</sex>
 		<discription>Агапит (Ланд), инок Критский</discription>
 		<lifedates>(в конце XVI–?)</lifedates>
-		<link>http://azbyka.ru/otechnik/Agapit_Land/</link>
+		<link>https://azbyka.ru/otechnik/Agapit_Land/</link>
 	</person>
 	<person>
 		<name>Акаки$%</name>
@@ -51,7 +67,7 @@
 		<sex>m</sex>
 		<discription>Акакий, епископ Мелитинский, преподобный</discription>
 		<lifedates>(~370–~438)</lifedates>
-		<link>http://azbyka.ru/otechnik/Akakij_Melitinskij/</link>
+		<link>https://azbyka.ru/otechnik/Akakij_Melitinskij/</link>
 	</person>
 	<person>
 		<name>Аким%%</name>
@@ -61,7 +77,7 @@
 		<sex>m</sex>
 		<discription>Аким Алексеевич Олесницкий, профессор</discription>
 		<lifedates>(1842–27.08.1907)</lifedates>
-		<link>http://azbyka.ru/otechnik/Akim_Olesnickij/</link>
+		<link>https://azbyka.ru/otechnik/Akim_Olesnickij/</link>
 	</person>
 	<person>
 		<name>Александр%%</name>
@@ -70,7 +86,7 @@
 		<sex>m</sex>
 		<discription>Александр (Милеант), епископ</discription>
 		<lifedates>(1938–2005)</lifedates>
-		<link>http://azbyka.ru/otechnik/Aleksandr_Mileant/</link>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Mileant/</link>
 	</person>
 	<person>
 		<name>Александр%%</name>
@@ -79,7 +95,7 @@
 		<sex>m</sex>
 		<discription>протоиерей Александр Иванцов-Платонов</discription>
 		<lifedates>(25.10.1836–12.11.1894)</lifedates>
-		<link>http://azbyka.ru/otechnik/Aleksandr_Ivancov_Platonov/</link>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Ivancov_Platonov/</link>
 	</person>
 	<person>
 		<name>Александр%%</name>
@@ -88,7 +104,7 @@
 		<sex>m</sex>
 		<discription>Александр (Стрыгин), иеросхимонах</discription>
 		<lifedates>(1810–09.02.1878)</lifedates>
-		<link>http://azbyka.ru/otechnik/Aleksandr_Strygin/</link>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Strygin/</link>
 	</person>
 	<person>
 		<name>Александр%%</name>
@@ -96,7 +112,7 @@
 		<sex>m</sex>
 		<discription>Александр Александрийский, святитель</discription>
 		<lifedates>(?–326)</lifedates>
-		<link>http://azbyka.ru/otechnik/Aleksandr_Aleksandrijskij/</link>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Aleksandrijskij/</link>
 	</person>
 	<person>
 		<name>Александр%%</name>
@@ -106,7 +122,7 @@
 		<sex>m</sex>
 		<discription>Александр Иванович Алмазов</discription>
 		<lifedates>(27.08.1859–15.03.1920)</lifedates>
-		<link>http://azbyka.ru/otechnik/Aleksandr_Almazov/</link>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Almazov/</link>
 	</person>
 	<person>
 		<name>Александр%%</name>
@@ -116,7 +132,7 @@
 		<sex>m</sex>
 		<discription>Александр Дмитриевич Беляев, профессор</discription>
 		<lifedates>(23.07.1849–29.10.1919)</lifedates>
-		<link>http://azbyka.ru/otechnik/Aleksandr_Belyaev/</link>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Belyaev/</link>
 	</person>
 	<person>
 		<name>Александр%%</name>
@@ -126,7 +142,7 @@
 		<sex>m</sex>
 		<discription>Александр Иванович Бриллиантов, профессор</discription>
 		<lifedates>(22.08.1867–1.06.1933)</lifedates>
-		<link>http://azbyka.ru/otechnik/Aleksandr_Brilliantov/</link>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Brilliantov/</link>
 	</person>
 	<person>
 		<name>Александр%%</name>
@@ -135,7 +151,7 @@
 		<sex>m</sex>
 		<discription>Александр Глаголев, священномученик</discription>
 		<lifedates>(14.02.1872–25.11.1937)</lifedates>
-		<link>http://azbyka.ru/otechnik/Aleksandr_Glagolev/</link>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Glagolev/</link>
 	</person>
 	<person>
 		<name>Александр%%</name>
@@ -145,7 +161,7 @@
 		<sex>m</sex>
 		<discription>Александр Павлович Доброклонский, профессор</discription>
 		<lifedates>(10.12.1856–04.12.1937)</lifedates>
-		<link>http://azbyka.ru/otechnik/Aleksandr_Dobroklonskij/</link>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Dobroklonskij/</link>
 	</person>
 	<person>
 		<name>Александр%%</name>
@@ -155,7 +171,7 @@
 		<sex>m</sex>
 		<discription>Александр Васильевич Иванов, профессор</discription>
 		<lifedates>(1837–1911)</lifedates>
-		<link>http://azbyka.ru/otechnik/Aleksandr_Ivanov/</link>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Ivanov/</link>
 	</person>
 	<person>
 		<name>Александр%%</name>
@@ -165,7 +181,7 @@
 		<sex>m</sex>
 		<discription>Александр Павлович Лопухин, профессор</discription>
 		<lifedates>(10.10.1852–22.08.1904)</lifedates>
-		<link>http://azbyka.ru/otechnik/Lopuhin/</link>
+		<link>https://azbyka.ru/otechnik/Lopuhin/</link>
 	</person>
 	<person>
 		<name>Александр%%</name>
@@ -173,7 +189,7 @@
 		<sex>m</sex>
 		<discription>Александр Миропольский, священномученик</discription>
 		<lifedates>(~1850–1918)</lifedates>
-		<link>http://azbyka.ru/otechnik/Aleksandr_Miropolskij/</link>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Miropolskij/</link>
 	</person>
 	<person>
 		<name>Александр%%</name>
@@ -181,7 +197,7 @@
 		<sex>m</sex>
 		<discription>Александр Свирский, преподобный</discription>
 		<lifedates>(1448–30 августа 1533)</lifedates>
-		<link>http://azbyka.ru/otechnik/Aleksandr_Svirskij/</link>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Svirskij/</link>
 	</person>
 	<person>
 		<name>Александр%%</name>
@@ -190,7 +206,7 @@
 		<sex>m</sex>
 		<discription>профессор Александр Васильевич Попов</discription>
 		<lifedates>(1856–9.11.1909)</lifedates>
-		<link>http://azbyka.ru/otechnik/Aleksandr_Popov/</link>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Popov/</link>
 	</person>
 	<person>
 		<name>Иоанн%%</name>
@@ -199,7 +215,7 @@
 		<sex>m</sex>
 		<discription>протоиерей Иоанн Толмачев</discription>
 		<lifedates>(?-1897)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ioann_Tolmachev/</link>
+		<link>https://azbyka.ru/otechnik/Ioann_Tolmachev/</link>
 	</person>
 	<person>
 		<name>Александр%%</name>
@@ -208,7 +224,7 @@
 		<sex>m</sex>
 		<discription>Александр Шмеман, протопресвитер</discription>
 		<lifedates>(13.09.1921–13.12.1983)</lifedates>
-		<link>http://azbyka.ru/otechnik/Aleksandr_Shmeman/</link>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Shmeman/</link>
 	</person>
 	<person>
 		<name>Алексе$%</name>
@@ -218,7 +234,7 @@
 		<sex>m</sex>
 		<discription>Алексей Афанасьевич Дмитриевский, профессор</discription>
 		<lifedates>(11.03.1856–10.08.1929)</lifedates>
-		<link>http://azbyka.ru/otechnik/Aleksej_Dmitrievskij/</link>
+		<link>https://azbyka.ru/otechnik/Aleksej_Dmitrievskij/</link>
 	</person>
 	<person>
 		<name>Алексе$%</name>
@@ -228,7 +244,7 @@
 		<sex>m</sex>
 		<discription>Алексей Петрович Лебедев, профессор</discription>
 		<lifedates>(2.03.1845–14.07.1908)</lifedates>
-		<link>http://azbyka.ru/otechnik/Aleksej_Lebedev/</link>
+		<link>https://azbyka.ru/otechnik/Aleksej_Lebedev/</link>
 	</person>
 	<person>
 		<name>Алексе$%</name>
@@ -238,7 +254,7 @@
 		<sex>m</sex>
 		<discription>Алексей Иванович Сидоров, профессор</discription>
 		<lifedates>(27.11.1944)</lifedates>
-		<link>http://azbyka.ru/otechnik/Aleksej_Sidorov/</link>
+		<link>https://azbyka.ru/otechnik/Aleksej_Sidorov/</link>
 	</person>
 	<person>
 		<name>Алекси$%</name>
@@ -247,7 +263,7 @@
 		<sex>m</sex>
 		<discription>Алексий Зосимовский (Соловьёв), преподобный</discription>
 		<lifedates>(29.01.1846–2.10.1928)</lifedates>
-		<link>http://azbyka.ru/otechnik/Aleksij_Zosimovskij/</link>
+		<link>https://azbyka.ru/otechnik/Aleksij_Zosimovskij/</link>
 	</person>
 	<person>
 		<name>Алекси$%</name>
@@ -255,7 +271,7 @@
 		<sex>m</sex>
 		<discription>Алексий Мечёв, праведный</discription>
 		<lifedates>(30 марта 1859–22 июня 1923)</lifedates>
-		<link>http://azbyka.ru/otechnik/Aleksij_Mechev/</link>
+		<link>https://azbyka.ru/otechnik/Aleksij_Mechev/</link>
 	</person>
 	<person>
 		<name>Алекси$%</name>
@@ -263,7 +279,7 @@
 		<sex>m</sex>
 		<discription>Алексий Московский, святитель</discription>
 		<lifedates>(1295–1378)</lifedates>
-		<link>http://azbyka.ru/otechnik/Aleksij_Moskovskij/</link>
+		<link>https://azbyka.ru/otechnik/Aleksij_Moskovskij/</link>
 	</person>
 	<person>
 		<name>Алекси$%</name>
@@ -272,7 +288,7 @@
 		<sex>m</sex>
 		<discription>Алексий Тимаков, священник</discription>
 		<lifedates>(05.05.1959)</lifedates>
-		<link>http://azbyka.ru/otechnik/Aleksij_Timakov/</link>
+		<link>https://azbyka.ru/otechnik/Aleksij_Timakov/</link>
 	</person>
 	<person>
 		<name>Алекси$%</name>
@@ -281,7 +297,7 @@
 		<sex>m</sex>
 		<discription>Алексий Уминский, протоиерей</discription>
 		<lifedates>(3.06.1960)</lifedates>
-		<link>http://azbyka.ru/otechnik/Aleksij_Uminskij/</link>
+		<link>https://azbyka.ru/otechnik/Aleksij_Uminskij/</link>
 	</person>
 	<person>
 		<name>Амвроси$%</name>
@@ -290,7 +306,7 @@
 		<sex>m</sex>
 		<discription>Амвросий (Ключарев), архиепископ</discription>
 		<lifedates>(17.03.1820–03.09.1901)</lifedates>
-		<link>http://azbyka.ru/otechnik/Amvrosij_Klucharev/</link>
+		<link>https://azbyka.ru/otechnik/Amvrosij_Klucharev/</link>
 	</person>
 	<person>
 		<name>Амвроси$%</name>
@@ -299,7 +315,7 @@
 		<sex>m</sex>
 		<discription>Амвросий Балабановский (Иванов), схиархимандрит</discription>
 		<lifedates>(2.02.1882–1978)</lifedates>
-		<link>http://azbyka.ru/otechnik/Amvrosij_Balabanovskij/</link>
+		<link>https://azbyka.ru/otechnik/Amvrosij_Balabanovskij/</link>
 	</person>
 	<person>
 		<name>Амвроси$%</name>
@@ -307,7 +323,7 @@
 		<sex>m</sex>
 		<discription>Амвросий Медиоланский, святитель</discription>
 		<lifedates>(~340–397)</lifedates>
-		<link>http://azbyka.ru/otechnik/Amvrosij_Mediolanskij/</link>
+		<link>https://azbyka.ru/otechnik/Amvrosij_Mediolanskij/</link>
 	</person>
 	<person>
 		<name>Амвроси$%</name>
@@ -316,7 +332,7 @@
 		<sex>m</sex>
 		<discription>Амвросий Оптинский (Гренков), преподобный</discription>
 		<lifedates>(1812–1891)</lifedates>
-		<link>http://azbyka.ru/otechnik/Amvrosij_Optinskij/</link>
+		<link>https://azbyka.ru/otechnik/Amvrosij_Optinskij/</link>
 	</person>
 	<person>
 		<name>Аммон%%</name>
@@ -326,7 +342,7 @@
 		<sex>m</sex>
 		<discription>Аммон, епископ</discription>
 		<lifedates>(~400)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ammon/</link>
+		<link>https://azbyka.ru/otechnik/Ammon/</link>
 	</person>
 	<person>
 		<name>Амфилохи$%</name>
@@ -335,7 +351,7 @@
 		<sex>m</sex>
 		<discription>Амфилохий (Макрис), преподобный</discription>
 		<lifedates>(1889–1970)</lifedates>
-		<link>http://azbyka.ru/otechnik/Amfilohij_Makris/</link>
+		<link>https://azbyka.ru/otechnik/Amfilohij_Makris/</link>
 	</person>
 	<person>
 		<name>Амфилохи$%</name>
@@ -344,7 +360,7 @@
 		<sex>m</sex>
 		<discription>Амфилохий (Радович), митрополит</discription>
 		<lifedates>(7.01.1938)</lifedates>
-		<link>http://azbyka.ru/otechnik/Amfilohij_Radovich/</link>
+		<link>https://azbyka.ru/otechnik/Amfilohij_Radovich/</link>
 	</person>
 	<person>
 		<name>Амфилохи$%</name>
@@ -352,7 +368,7 @@
 		<sex>m</sex>
 		<discription>Амфилохий Иконийский, святитель</discription>
 		<lifedates>(340–394)</lifedates>
-		<link>http://azbyka.ru/otechnik/Amfilohij_Ikonijskij/</link>
+		<link>https://azbyka.ru/otechnik/Amfilohij_Ikonijskij/</link>
 	</person>
 	<person>
 		<name>Анастаси$%</name>
@@ -360,7 +376,7 @@
 		<sex>m</sex>
 		<discription>Анастасий Антиохийский, святитель</discription>
 		<lifedates>(559–570, или 594–599)</lifedates>
-		<link>http://azbyka.ru/otechnik/Anastasij_Antiohijskij/</link>
+		<link>https://azbyka.ru/otechnik/Anastasij_Antiohijskij/</link>
 	</person>
 	<person>
 		<name>Анастаси$%</name>
@@ -368,7 +384,7 @@
 		<sex>m</sex>
 		<discription>Анастасий Синаит, преподобный</discription>
 		<lifedates>(~640–~695, или в начале VIII века)</lifedates>
-		<link>http://azbyka.ru/otechnik/Anastasij_Sinait/</link>
+		<link>https://azbyka.ru/otechnik/Anastasij_Sinait/</link>
 	</person>
 	<person>
 		<name>Андре$%</name>
@@ -378,7 +394,7 @@
 		<sex>m</sex>
 		<discription>Андрей Сергеевич Десницкий</discription>
 		<lifedates>(21.08.1968)</lifedates>
-		<link>http://azbyka.ru/otechnik/Andrej_Desnickij/</link>
+		<link>https://azbyka.ru/otechnik/Andrej_Desnickij/</link>
 	</person>
 	<person>
 		<name>Андре$%</name>
@@ -386,7 +402,7 @@
 		<sex>m</sex>
 		<discription>Андрей Кесарийский, святитель</discription>
 		<lifedates>(VI–VII века)</lifedates>
-		<link>http://azbyka.ru/otechnik/Andrej_Kesarijskij/</link>
+		<link>https://azbyka.ru/otechnik/Andrej_Kesarijskij/</link>
 	</person>
 	<person>
 		<name>Андре$%</name>
@@ -394,7 +410,7 @@
 		<sex>m</sex>
 		<discription>Андрей Критский, святитель</discription>
 		<lifedates>(650–712/726)</lifedates>
-		<link>http://azbyka.ru/otechnik/Andrej_Kritskij/</link>
+		<link>https://azbyka.ru/otechnik/Andrej_Kritskij/</link>
 	</person>
 	<person>
 		<name>Андроник%%</name>
@@ -403,7 +419,7 @@
 		<sex>m</sex>
 		<discription>Андроник (Лукаш), преподобный</discription>
 		<lifedates>(12.02.1889–21.03.1974)</lifedates>
-		<link>http://azbyka.ru/otechnik/Andronik_Lukash/</link>
+		<link>https://azbyka.ru/otechnik/Andronik_Lukash/</link>
 	</person>
 	<person>
 		<name>Антиох%%</name>
@@ -411,7 +427,7 @@
 		<sex>m</sex>
 		<discription>Антиох Палестинский, преподобный</discription>
 		<lifedates>(VI–ок. 635)</lifedates>
-		<link>http://azbyka.ru/otechnik/Antioh_Palestinskij/</link>
+		<link>https://azbyka.ru/otechnik/Antioh_Palestinskij/</link>
 	</person>
 	<person>
 		<name>Антон%%</name>
@@ -421,7 +437,7 @@
 		<sex>m</sex>
 		<discription>Антон Владимирович Карташёв, профессор</discription>
 		<lifedates>(11.07.1875–10.09.1960)</lifedates>
-		<link>http://azbyka.ru/otechnik/Anton_Kartashev/</link>
+		<link>https://azbyka.ru/otechnik/Anton_Kartashev/</link>
 	</person>
 	<person>
 		<name>Антони$%</name>
@@ -429,7 +445,7 @@
 		<sex>m</sex>
 		<discription>Антоний Великий, преподобный</discription>
 		<lifedates>(~251–356)</lifedates>
-		<link>http://azbyka.ru/otechnik/Antonij_Velikij/</link>
+		<link>https://azbyka.ru/otechnik/Antonij_Velikij/</link>
 	</person>
 	<person>
 		<name>Антони$%</name>
@@ -439,7 +455,7 @@
 		<sex>m</sex>
 		<discription>Антоний, митрополит Сурожский</discription>
 		<lifedates>(19 июня 1914 года–04 августа 2003 года)</lifedates>
-		<link>http://azbyka.ru/otechnik/Antonij_Surozhskij/</link>
+		<link>https://azbyka.ru/otechnik/Antonij_Surozhskij/</link>
 	</person>
 	<person>
 		<name>Сурожский</name>
@@ -448,7 +464,7 @@
 		<sex>m</sex>
 		<discription>Антоний, митрополит Сурожский</discription>
 		<lifedates>(19 июня 1914 года–04 августа 2003 года)</lifedates>
-		<link>http://azbyka.ru/otechnik/Antonij_Surozhskij/</link>
+		<link>https://azbyka.ru/otechnik/Antonij_Surozhskij/</link>
 	</person>
 	<person>
 		<name>Антони$%</name>
@@ -457,7 +473,7 @@
 		<sex>m</sex>
 		<discription>Антоний (Голынский-Михайловский), священник</discription>
 		<lifedates>(1889–13.04.1976)</lifedates>
-		<link>http://azbyka.ru/otechnik/Antonij_Golynskij-Mihajlovskij/</link>
+		<link>https://azbyka.ru/otechnik/Antonij_Golynskij-Mihajlovskij/</link>
 	</person>
 	<person>
 		<name>Антони$%</name>
@@ -466,7 +482,7 @@
 		<sex>m</sex>
 		<discription>Антоний (Смирницкий), архиепископ Воронежский и Задонский, святитель</discription>
 		<lifedates>(29.10.1773–20.12.1846)</lifedates>
-		<link>http://azbyka.ru/otechnik/Antonij_Smirnitskij/</link>
+		<link>https://azbyka.ru/otechnik/Antonij_Smirnitskij/</link>
 	</person>
 	<person>
 		<name>Антони$%</name>
@@ -475,7 +491,7 @@
 		<sex>m</sex>
 		<discription>Антоний (Храповицкий), митрополит</discription>
 		<lifedates>(29.03.1863–10.08.1936)</lifedates>
-		<link>http://azbyka.ru/otechnik/Antonij_Hrapovickij/</link>
+		<link>https://azbyka.ru/otechnik/Antonij_Hrapovickij/</link>
 	</person>
 	<person>
 		<name>Антонин*</name>
@@ -484,7 +500,7 @@
 		<sex>m</sex>
 		<discription>Антонин (Капустин), архимандрит</discription>
 		<lifedates>(12.08.1817–5.04.1894)</lifedates>
-		<link>http://azbyka.ru/otechnik/Antonin_Kapustin/</link>
+		<link>https://azbyka.ru/otechnik/Antonin_Kapustin/</link>
 	</person>
 	<person>
 		<name>Аполлони$%</name>
@@ -492,7 +508,7 @@
 		<sex>m</sex>
 		<discription>Аполлоний Римский, мученик</discription>
 		<lifedates>(II в.)</lifedates>
-		<link>http://azbyka.ru/otechnik/Apollonij_Rimskij/</link>
+		<link>https://azbyka.ru/otechnik/Apollonij_Rimskij/</link>
 	</person>
 	<person>
 		<name>Ареф$%</name>
@@ -502,7 +518,7 @@
 		<sex>m</sex>
 		<discription>Арефа, архиепископ Кесарийский</discription>
 		<lifedates>(ок. 850–после 932)</lifedates>
-		<link>http://azbyka.ru/otechnik/Arefa_Kesarijskij/</link>
+		<link>https://azbyka.ru/otechnik/Arefa_Kesarijskij/</link>
 	</person>
 	<person>
 		<name>Аристид%%</name>
@@ -511,7 +527,7 @@
 		<sex>m</sex>
 		<discription>Аристид, мученик, философ Афинский</discription>
 		<lifedates>(вторая половина I в.–?)</lifedates>
-		<link>http://azbyka.ru/otechnik/Aristid_Afinskij/</link>
+		<link>https://azbyka.ru/otechnik/Aristid_Afinskij/</link>
 	</person>
 	<person>
 		<name>Аристид%%</name>
@@ -520,7 +536,7 @@
 		<sex>m</sex>
 		<discription>Аристид, мученик, философ Афинский</discription>
 		<lifedates>(вторая половина I в.–?)</lifedates>
-		<link>http://azbyka.ru/otechnik/Aristid_Afinskij/</link>
+		<link>https://azbyka.ru/otechnik/Aristid_Afinskij/</link>
 	</person>
 	<person>
 		<name>Аркади$%</name>
@@ -529,7 +545,7 @@
 		<sex>m</sex>
 		<discription>Аркадий (Остальский), священномученик</discription>
 		<lifedates>(1889–1937)</lifedates>
-		<link>http://azbyka.ru/otechnik/Arkadij_Ostalskij/</link>
+		<link>https://azbyka.ru/otechnik/Arkadij_Ostalskij/</link>
 	</person>
 	<person>
 		<name>Арсени$%</name>
@@ -537,7 +553,7 @@
 		<sex>m</sex>
 		<discription>Арсений Каппадокийский, преподобный</discription>
 		<lifedates>(~1840–1924)</lifedates>
-		<link>http://azbyka.ru/otechnik/Arsenij_Kappadokijskij/</link>
+		<link>https://azbyka.ru/otechnik/Arsenij_Kappadokijskij/</link>
 	</person>
 	<person>
 		<name>Арсени$%</name>
@@ -545,7 +561,7 @@
 		<sex>m</sex>
 		<discription>Арсений Великий, преподобный</discription>
 		<lifedates>(354–449)</lifedates>
-		<link>http://azbyka.ru/otechnik/Arsenij_Velikij/</link>
+		<link>https://azbyka.ru/otechnik/Arsenij_Velikij/</link>
 	</person>
 	<person>
 		<name>Арсени$%</name>
@@ -554,7 +570,7 @@
 		<sex>m</sex>
 		<discription>Арсений (Жадановский), епископ</discription>
 		<lifedates>(1874–1937)</lifedates>
-		<link>http://azbyka.ru/otechnik/Arsenij_Zhadanovskij/</link>
+		<link>https://azbyka.ru/otechnik/Arsenij_Zhadanovskij/</link>
 	</person>
 	<person>
 		<name>Арсени$%</name>
@@ -563,7 +579,7 @@
 		<sex>f</sex>
 		<discription>Арсения (Себрякова), игумения</discription>
 		<lifedates>(3.07.1833–21.07.1905)</lifedates>
-		<link>http://azbyka.ru/otechnik/Arsenija_Sebrjakova/</link>
+		<link>https://azbyka.ru/otechnik/Arsenija_Sebrjakova/</link>
 	</person>
 	<person>
 		<name>Астери$%</name>
@@ -571,7 +587,7 @@
 		<sex>m</sex>
 		<discription>Астерий Амасийский, святитель</discription>
 		<lifedates>(?–404/410)</lifedates>
-		<link>http://azbyka.ru/otechnik/Asterij_Amasijskij/</link>
+		<link>https://azbyka.ru/otechnik/Asterij_Amasijskij/</link>
 	</person>
 	<person>
 		<name>Аттик%%</name>
@@ -579,7 +595,7 @@
 		<sex>m</sex>
 		<discription>Аттик Константинопольский, святитель</discription>
 		<lifedates>(?–10 октября 425(6))</lifedates>
-		<link>http://azbyka.ru/otechnik/Attik_Konstantinopolskij/</link>
+		<link>https://azbyka.ru/otechnik/Attik_Konstantinopolskij/</link>
 	</person>
 	<person>
 		<name>Афанаси$%</name>
@@ -587,7 +603,15 @@
 		<sex>m</sex>
 		<discription>Афанасий Великий, святитель</discription>
 		<lifedates>(298–373)</lifedates>
-		<link>http://azbyka.ru/otechnik/Afanasij_Velikij/</link>
+		<link>https://azbyka.ru/otechnik/Afanasij_Velikij/</link>
+	</person>
+	<person>
+		<name>Афанаси$%</name>
+		<nick>Александрийск$$%</nick>
+		<sex>m</sex>
+		<discription>Афанасий Великий, святитель</discription>
+		<lifedates>(298–373)</lifedates>
+		<link>https://azbyka.ru/otechnik/Afanasij_Velikij/</link>
 	</person>
 	<person>
 		<name>Афанаси$%</name>
@@ -595,7 +619,7 @@
 		<sex>m</sex>
 		<discription>Афанасий Афонский, преподобный</discription>
 		<lifedates>(920–1000)</lifedates>
-		<link>http://azbyka.ru/otechnik/Afanasij_Afonskij/</link>
+		<link>https://azbyka.ru/otechnik/Afanasij_Afonskij/</link>
 	</person>
 	<person>
 		<name>Афанаси$%</name>
@@ -604,7 +628,7 @@
 		<sex>m</sex>
 		<discription>Афанасий (Сахаров), святитель</discription>
 		<lifedates>(2 июля 1887–28 октября 1962)</lifedates>
-		<link>http://azbyka.ru/otechnik/Afanasij_Saharov/</link>
+		<link>https://azbyka.ru/otechnik/Afanasij_Saharov/</link>
 	</person>
 	<person>
 		<name>Афанаси$%</name>
@@ -613,15 +637,15 @@
 		<sex>m</sex>
 		<discription>Афанасий (Евтич), епископ</discription>
 		<lifedates>(8.07.1938)</lifedates>
-		<link>http://azbyka.ru/otechnik/afanasij-evtich/</link>
+		<link>https://azbyka.ru/otechnik/afanasij-evtich/</link>
 	</person>
 	<person>
 		<name>Афинагор%%</name>
-		<nick>Афинск$$%</nick>
+		<nick>Афин%%%%%</nick>
 		<sex>m</sex>
 		<discription>Афинагор Афинский</discription>
 		<lifedates>(II век)</lifedates>
-		<link>http://azbyka.ru/otechnik/Afinagor_Afinskij/</link>
+		<link>https://azbyka.ru/otechnik/Afinagor_Afinskij/</link>
 	</person>
 	<person>
 		<name>Бед$%</name>
@@ -629,7 +653,7 @@
 		<sex>m</sex>
 		<discription>Беда Достопочтенный, святой</discription>
 		<lifedates>(~672 или 673–27 мая 735)</lifedates>
-		<link>http://azbyka.ru/otechnik/Beda_Dostopochtennyj/</link>
+		<link>https://azbyka.ru/otechnik/Beda_Dostopochtennyj/</link>
 	</person>
 	<person>
 		<name>Бенедикт%%</name>
@@ -637,7 +661,7 @@
 		<sex>m</sex>
 		<discription>Бенедикт Нурсийский, преподобный</discription>
 		<lifedates>(480–21 марта 547)</lifedates>
-		<link>http://azbyka.ru/otechnik/Benedikt_Nursijskij/</link>
+		<link>https://azbyka.ru/otechnik/Benedikt_Nursijskij/</link>
 	</person>
 	<person>
 		<name>Борис%%</name>
@@ -646,7 +670,7 @@
 		<sex>m</sex>
 		<discription>Борис (Холчев), архимандрит</discription>
 		<lifedates>(7.06.1895–10.10.1971)</lifedates>
-		<link>http://azbyka.ru/otechnik/Boris_Holchev/</link>
+		<link>https://azbyka.ru/otechnik/Boris_Holchev/</link>
 	</person>
 	<person>
 		<name>Борис%%</name>
@@ -655,7 +679,7 @@
 		<sex>m</sex>
 		<discription>Борис Бобринский, протопресвитер</discription>
 		<lifedates>( 25.02.1925)</lifedates>
-		<link>http://azbyka.ru/otechnik/Boris_Bobrinskij/</link>
+		<link>https://azbyka.ru/otechnik/Boris_Bobrinskij/</link>
 	</person>
 	<person>
 		<name>Борис%%</name>
@@ -665,7 +689,7 @@
 		<sex>m</sex>
 		<discription>Борис Петрович Вышеславцев, профессор</discription>
 		<lifedates>(30.10.1877–5.10.1954)</lifedates>
-		<link>http://azbyka.ru/otechnik/Boris_Vysheslavcev/</link>
+		<link>https://azbyka.ru/otechnik/Boris_Vysheslavcev/</link>
 	</person>
 	<person>
 		<name>Вадим%%</name>
@@ -674,7 +698,7 @@
 		<sex>m</sex>
 		<discription>Вадим Коржевский, иерей</discription>
 		<lifedates>(17.09.1975 )</lifedates>
-		<link>http://azbyka.ru/otechnik/Vadim_Korzhevskij/</link>
+		<link>https://azbyka.ru/otechnik/Vadim_Korzhevskij/</link>
 	</person>
 	<person>
 		<name>Валентин%%</name>
@@ -683,7 +707,7 @@
 		<sex>m</sex>
 		<discription>Валентин Амфитеатров, протоиерей</discription>
 		<lifedates>(1.09.1836–20.07.1908)</lifedates>
-		<link>http://azbyka.ru/otechnik/Valentin_Amfiteatrov/</link>
+		<link>https://azbyka.ru/otechnik/Valentin_Amfiteatrov/</link>
 	</person>
 	<person>
 		<name>Валентин%%</name>
@@ -692,7 +716,7 @@
 		<sex>m</sex>
 		<discription>Валентин Асмус, протоиерей</discription>
 		<lifedates>(5.08.1950)</lifedates>
-		<link>http://azbyka.ru/otechnik/Valentin_Asmus/</link>
+		<link>https://azbyka.ru/otechnik/Valentin_Asmus/</link>
 	</person>
 	<person>
 		<name>Валентин%%</name>
@@ -701,7 +725,7 @@
 		<sex>m</sex>
 		<discription>Валентин Свенцицкий, протоиерей</discription>
 		<lifedates>(1881–1931)</lifedates>
-		<link>http://azbyka.ru/otechnik/Valentin_Sventsitskij/</link>
+		<link>https://azbyka.ru/otechnik/Valentin_Sventsitskij/</link>
 	</person>
 	<person>
 		<name>Варвар$%</name>
@@ -710,7 +734,7 @@
 		<sex>f</sex>
 		<discription>Варвара (Пыльнева), монахиня</discription>
 		<lifedates>(1936-)</lifedates>
-		<link>http://azbyka.ru/otechnik/Varvara_Pylneva/</link>
+		<link>https://azbyka.ru/otechnik/Varvara_Pylneva/</link>
 	</person>
 	<person>
 		<name>Варлаам%%</name>
@@ -719,7 +743,7 @@
 		<sex>m</sex>
 		<discription>Варлаам (Ряшенцев), архиепископ</discription>
 		<lifedates>(20 июня 1878–20 февраля 1942)</lifedates>
-		<link>http://azbyka.ru/otechnik/Varlaam_Rjashentsev/</link>
+		<link>https://azbyka.ru/otechnik/Varlaam_Rjashentsev/</link>
 	</person>
 	<person>
 		<name>Варнав$%</name>
@@ -729,7 +753,7 @@
 		<sex>m</sex>
 		<discription>Варнава, апостол</discription>
 		<lifedates>(?–61)</lifedates>
-		<link>http://azbyka.ru/otechnik/Varnava/</link>
+		<link>https://azbyka.ru/otechnik/Varnava/</link>
 	</person>
 	<person>
 		<name>Варнав$%</name>
@@ -737,7 +761,7 @@
 		<sex>m</sex>
 		<discription>Варнава Гефсиманский, преподобный</discription>
 		<lifedates>(24.01.1831–17.02.1906)</lifedates>
-		<link>http://azbyka.ru/otechnik/Varnava_Gefsimanskij/</link>
+		<link>https://azbyka.ru/otechnik/Varnava_Gefsimanskij/</link>
 	</person>
 	<person>
 		<name>Варсонофи$%</name>
@@ -746,7 +770,7 @@
 		<sex>m</sex>
 		<discription>Варсонофий (Верёвкин), игумен</discription>
 		<lifedates>(28 июля 1894–26 июня 1939)</lifedates>
-		<link>http://azbyka.ru/otechnik/Varsonofij_Verevkin/</link>
+		<link>https://azbyka.ru/otechnik/Varsonofij_Verevkin/</link>
 	</person>
 	<person>
 		<name>Варсонофи$%</name>
@@ -755,7 +779,7 @@
 		<sex>m</sex>
 		<discription>Варсонофий Оптинский (Плиханков), преподобный</discription>
 		<lifedates>(17 июля 1845–14 апреля 1913)</lifedates>
-		<link>http://azbyka.ru/otechnik/Varsonofij_Optinskij/</link>
+		<link>https://azbyka.ru/otechnik/Varsonofij_Optinskij/</link>
 	</person>
 	<person>
 		<name>Варсонофи$% и Иоанн%%</name>
@@ -764,7 +788,15 @@
 		<sex>m</sex>
 		<discription>Варсонофий и Иоанн, преподобные</discription>
 		<lifedates>(V/VI–VI века)</lifedates>
-		<link>http://azbyka.ru/otechnik/Varsonofij_Ioann/</link>
+		<link>https://azbyka.ru/otechnik/Varsonofij_Ioann/</link>
+	</person>
+	<person>
+		<name>Варсонофи$% Великого и Иоанн%%</name>
+		<nick/> 
+		<sex>m</sex>
+		<discription>Варсонофий и Иоанн, преподобные</discription>
+		<lifedates>(V/VI–VI века)</lifedates>
+		<link>https://azbyka.ru/otechnik/Varsonofij_Ioann/</link>
 	</person>
 	<person>
 		<name>Васили$%</name>
@@ -773,7 +805,7 @@
 		<sex>m</sex>
 		<discription>Василий (Кривошеин), архиепископ</discription>
 		<lifedates>(30.06.1900–22.09.1985)</lifedates>
-		<link>http://azbyka.ru/otechnik/Vasilij_Krivoshein/</link>
+		<link>https://azbyka.ru/otechnik/Vasilij_Krivoshein/</link>
 	</person>
 	<person>
 		<name>Васили$%</name>
@@ -783,7 +815,7 @@
 		<sex>m</sex>
 		<discription>Василий Васильевич Болотов, профессор</discription>
 		<lifedates>(12.01.1854–5.04.1900)</lifedates>
-		<link>http://azbyka.ru/otechnik/Vasilij_Bolotov/</link>
+		<link>https://azbyka.ru/otechnik/Vasilij_Bolotov/</link>
 	</person>
 	<person>
 		<name>Васили$%</name>
@@ -791,7 +823,7 @@
 		<sex>m</sex>
 		<discription>Василий Великий, святитель</discription>
 		<lifedates>(330–379)</lifedates>
-		<link>http://azbyka.ru/otechnik/Vasilij_Velikij/</link>
+		<link>https://azbyka.ru/otechnik/Vasilij_Velikij/</link>
 	</person>
 	<person>
 		<name>Васили$%</name>
@@ -800,7 +832,7 @@
 		<sex>m</sex>
 		<discription>Василий Зеньковский, протоиерей</discription>
 		<lifedates>(16.07.1881–5.08.1962)</lifedates>
-		<link>http://azbyka.ru/otechnik/Vasilij_Zenkovskij/</link>
+		<link>https://azbyka.ru/otechnik/Vasilij_Zenkovskij/</link>
 	</person>
 	<person>
 		<name>Васили$%</name>
@@ -809,7 +841,7 @@
 		<sex>m</sex>
 		<discription>Василий Кинешемский, епископ</discription>
 		<lifedates>(1876–1945)</lifedates>
-		<link>http://azbyka.ru/otechnik/Vasilij_Kineshemskij/</link>
+		<link>https://azbyka.ru/otechnik/Vasilij_Kineshemskij/</link>
 	</person>
 	<person>
 		<name>Васили$%</name>
@@ -817,7 +849,7 @@
 		<sex>m</sex>
 		<discription>Василий Поляномерульский, преподобный</discription>
 		<lifedates>(1692–25.04.1767)</lifedates>
-		<link>http://azbyka.ru/otechnik/Vasilij_Poljanomerulskij/</link>
+		<link>https://azbyka.ru/otechnik/Vasilij_Poljanomerulskij/</link>
 	</person>
 	<person>
 		<name>Васили$%</name>
@@ -826,7 +858,7 @@
 		<sex>m</sex>
 		<discription>Василий (Родзянко), епископ</discription>
 		<lifedates>(22.05.1915–17.09.1999)</lifedates>
-		<link>http://azbyka.ru/otechnik/Vasilij_Rodzyanko/</link>
+		<link>https://azbyka.ru/otechnik/Vasilij_Rodzyanko/</link>
 	</person>
 	<person>
 		<name>Васили$%</name>
@@ -836,7 +868,7 @@
 		<sex>m</sex>
 		<discription>Василий Ильич Экземплярский, профессор</discription>
 		<lifedates>(11.01.1875–03.07.1933)</lifedates>
-		<link>http://azbyka.ru/otechnik/Vasilij_Ekzemplyarskij/</link>
+		<link>https://azbyka.ru/otechnik/Vasilij_Ekzemplyarskij/</link>
 	</person>
 	<person>
 		<name>Вениамин%%</name>
@@ -845,7 +877,7 @@
 		<sex>m</sex>
 		<discription>Вениамин (Краснопевков-Румовский), архиепископ</discription>
 		<lifedates>(26.07.1739–17.03.1811)</lifedates>
-		<link>http://azbyka.ru/otechnik/Veniamin_Krasnopevkov_Rumovskij/</link>
+		<link>https://azbyka.ru/otechnik/Veniamin_Krasnopevkov_Rumovskij/</link>
 	</person>
 	<person>
 		<name>Вениамин%%</name>
@@ -854,7 +886,7 @@
 		<sex>m</sex>
 		<discription>Вениамин (Милов), епископ</discription>
 		<lifedates>(1889–1955)</lifedates>
-		<link>http://azbyka.ru/otechnik/Veniamin_Milov/</link>
+		<link>https://azbyka.ru/otechnik/Veniamin_Milov/</link>
 	</person>
 	<person>
 		<name>Вениамин%%</name>
@@ -863,7 +895,7 @@
 		<sex>m</sex>
 		<discription>Вениамин (Федченков), митрополит</discription>
 		<lifedates>(14 сентября 1880–4 октября 1961)</lifedates>
-		<link>http://azbyka.ru/otechnik/Veniamin_Fedchenkov/</link>
+		<link>https://azbyka.ru/otechnik/Veniamin_Fedchenkov/</link>
 	</person>
 	<person>
 		<name>Викенти$%</name>
@@ -872,7 +904,7 @@
 		<sex>m</sex>
 		<discription>Викентий Лиринский, преподобный</discription>
 		<lifedates>(?–~450)</lifedates>
-		<link>http://azbyka.ru/otechnik/Vikentij_Lirinskij/</link>
+		<link>https://azbyka.ru/otechnik/Vikentij_Lirinskij/</link>
 	</person>
 	<person>
 		<name>Виктор%%</name>
@@ -881,7 +913,7 @@
 		<sex>m</sex>
 		<discription>Виктор (Мамонтов), архимандрит</discription>
 		<lifedates>(10.09.1938)</lifedates>
-		<link>http://azbyka.ru/otechnik/Viktor_Mamontov/</link>
+		<link>https://azbyka.ru/otechnik/Viktor_Mamontov/</link>
 	</person>
 	<person>
 		<name>Виктор%%</name>
@@ -890,7 +922,7 @@
 		<sex>m</sex>
 		<discription>Виктор Гурьев, протоиерей</discription>
 		<lifedates>(1842–14.01.1912)</lifedates>
-		<link>http://azbyka.ru/otechnik/Viktor_Gurev/</link>
+		<link>https://azbyka.ru/otechnik/Viktor_Gurev/</link>
 	</person>
 	<person>
 		<name>Виктор%%</name>
@@ -899,7 +931,7 @@
 		<sex>m</sex>
 		<discription>Виктор Несмелов, профессор</discription>
 		<lifedates>(1863–1937)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nesmelov_Viktor/</link>
+		<link>https://azbyka.ru/otechnik/Nesmelov_Viktor/</link>
 	</person>
 	<person>
 		<name>Викторин%%</name>
@@ -907,7 +939,7 @@
 		<sex>m</sex>
 		<discription>Викторин Петавийский, святитель</discription>
 		<lifedates>(?–303 или 304)</lifedates>
-		<link>http://azbyka.ru/otechnik/Viktorin_Petavijskij/</link>
+		<link>https://azbyka.ru/otechnik/Viktorin_Petavijskij/</link>
 	</person>
 	<person>
 		<name>Виссарион%%</name>
@@ -916,7 +948,7 @@
 		<sex>m</sex>
 		<discription>Виссарион (Нечаев), епископ</discription>
 		<lifedates>(1823–1905)</lifedates>
-		<link>http://azbyka.ru/otechnik/Vissarion_Nechaev/</link>
+		<link>https://azbyka.ru/otechnik/Vissarion_Nechaev/</link>
 	</person>
 	<person>
 		<name>Владимир%%</name>
@@ -925,7 +957,7 @@
 		<sex>m</sex>
 		<discription>Владимир (Богоявленский), священномученик</discription>
 		<lifedates>(1.01.1848–25.01.1918)</lifedates>
-		<link>http://azbyka.ru/otechnik/Vladimir_Bogojavlenskij/</link>
+		<link>https://azbyka.ru/otechnik/Vladimir_Bogojavlenskij/</link>
 	</person>
 	<person>
 		<name>Владимир%%</name>
@@ -934,7 +966,7 @@
 		<sex>m</sex>
 		<discription>Владимир (Мусатов), иеромонах</discription>
 		<lifedates>(начало XIX в. – вторая половина XIX в.)</lifedates>
-		<link>http://azbyka.ru/otechnik/Vladimir_Musatov/</link>
+		<link>https://azbyka.ru/otechnik/Vladimir_Musatov/</link>
 	</person>
 	<person>
 		<name>Владимир%%</name>
@@ -944,7 +976,7 @@
 		<sex>m</sex>
 		<discription>Владимир Николаевич Бенешевич</discription>
 		<lifedates>(9.08.1874–27.01.1938)</lifedates>
-		<link>http://azbyka.ru/otechnik/Vladimir_Beneshevich/</link>
+		<link>https://azbyka.ru/otechnik/Vladimir_Beneshevich/</link>
 	</person>
 	<person>
 		<name>Владимир%%</name>
@@ -954,7 +986,7 @@
 		<sex>m</sex>
 		<discription>Владимир Николаевич Лосский, профессор</discription>
 		<lifedates>(26.05.1903–7.02.1958)</lifedates>
-		<link>http://azbyka.ru/otechnik/Vladimir_Losskij/</link>
+		<link>https://azbyka.ru/otechnik/Vladimir_Losskij/</link>
 	</person>
 	<person>
 		<name>Владимир%%</name>
@@ -962,7 +994,7 @@
 		<sex>m</sex>
 		<discription>Владимир Мономах, великий князь</discription>
 		<lifedates>(1053–1125)</lifedates>
-		<link>http://azbyka.ru/otechnik/Vladimir_Monomah/</link>
+		<link>https://azbyka.ru/otechnik/Vladimir_Monomah/</link>
 	</person>
 	<person>
 		<name>Владимир%%</name>
@@ -970,7 +1002,7 @@
 		<sex>m</sex>
 		<discription>профессор Владимир Петрович Рыбинский</discription>
 		<lifedates>(1867-1944)</lifedates>
-		<link>http://azbyka.ru/otechnik/Vladimir_Rybinskij/</link>
+		<link>https://azbyka.ru/otechnik/Vladimir_Rybinskij/</link>
 	</person>
 	<person>
 		<name>Владислав%%</name>
@@ -979,7 +1011,7 @@
 		<sex>m</sex>
 		<discription>Владислав Цыпин, протоиерей</discription>
 		<lifedates>(22.07.1947)</lifedates>
-		<link>http://azbyka.ru/otechnik/Vladislav_Tsypin/</link>
+		<link>https://azbyka.ru/otechnik/Vladislav_Tsypin/</link>
 	</person>
 	<person>
 		<name>Вонифати$%</name>
@@ -988,7 +1020,7 @@
 		<sex>m</sex>
 		<discription>Вонифатий Феофаниевский (Киевский), преподобный</discription>
 		<lifedates>(1785–27.12.1871)</lifedates>
-		<link>http://azbyka.ru/otechnik/Vonifatij_Feofanievskij/</link>
+		<link>https://azbyka.ru/otechnik/Vonifatij_Feofanievskij/</link>
 	</person>
 	<person>
 		<name>Гавриил%%</name>
@@ -997,7 +1029,7 @@
 		<sex>m</sex>
 		<discription>Гавриил Седмиезерский (Зырянов), преподобный</discription>
 		<lifedates>(14.03.1844–24.09.1915)</lifedates>
-		<link>http://azbyka.ru/otechnik/Gavriil_Sedmiezerskij/</link>
+		<link>https://azbyka.ru/otechnik/Gavriil_Sedmiezerskij/</link>
 	</person>
 	<person>
 		<name>Гавриили$%</name>
@@ -1007,7 +1039,7 @@
 		<sex>f</sex>
 		<discription>Гавриилия, геронтисса</discription>
 		<lifedates>(2.10.1897–28.03.1992)</lifedates>
-		<link>http://azbyka.ru/otechnik/Gavriiliya/</link>
+		<link>https://azbyka.ru/otechnik/Gavriiliya/</link>
 	</person>
 	<person>
 		<name>Геннади$%</name>
@@ -1017,7 +1049,7 @@
 		<sex>m</sex>
 		<discription>Геннадий I, патриарх Константинопольский, святитель</discription>
 		<lifedates>(~400–20 ноября 471)</lifedates>
-		<link>http://azbyka.ru/otechnik/Gennadij_Konstantinopolskij/</link>
+		<link>https://azbyka.ru/otechnik/Gennadij_Konstantinopolskij/</link>
 	</person>
 	<person>
 		<name>Геннади$%</name>
@@ -1025,7 +1057,7 @@
 		<sex>m</sex>
 		<discription>Геннадий Новгородский, святитель</discription>
 		<lifedates>(~1410–4 декабря 1505)</lifedates>
-		<link>http://azbyka.ru/otechnik/Gennadij_Novgorodskij/</link>
+		<link>https://azbyka.ru/otechnik/Gennadij_Novgorodskij/</link>
 	</person>
 	<person>
 		<name>Геннади$%</name>
@@ -1033,7 +1065,7 @@
 		<sex>m</sex>
 		<discription>Геннадий Схоларий, патриарх Константинопольский, святитель</discription>
 		<lifedates>(1400–1464)</lifedates>
-		<link>http://azbyka.ru/otechnik/Gennadij_Sholarij/</link>
+		<link>https://azbyka.ru/otechnik/Gennadij_Sholarij/</link>
 	</person>
 	<person>
 		<name>Геннади$%</name>
@@ -1041,7 +1073,7 @@
 		<sex>m</sex>
 		<discription>протоиерей Геннадий Нефёдов</discription>
 		<lifedates>(12.04.1942)</lifedates>
-		<link>http://azbyka.ru/otechnik/Gennadij_Nefedov/</link>
+		<link>https://azbyka.ru/otechnik/Gennadij_Nefedov/</link>
 	</person>
 	<person>
 		<name>Георги$%</name>
@@ -1050,7 +1082,7 @@
 		<sex>m</sex>
 		<discription>Георгий (Капсанис)</discription>
 		<lifedates>(?–8.06.2014)</lifedates>
-		<link>http://azbyka.ru/otechnik/Georgij_Kapsanis/</link>
+		<link>https://azbyka.ru/otechnik/Georgij_Kapsanis/</link>
 	</person>
 	<person>
 		<name>Георги$%</name>
@@ -1060,7 +1092,7 @@
 		<sex>m</sex>
 		<discription>Георгий, затворник Задонский</discription>
 		<lifedates>(1789–1836)</lifedates>
-		<link>http://azbyka.ru/otechnik/Georgij_Zadonskij/</link>
+		<link>https://azbyka.ru/otechnik/Georgij_Zadonskij/</link>
 	</person>
 	<person>
 		<name>Георги$%</name>
@@ -1069,7 +1101,7 @@
 		<sex>m</sex>
 		<discription>Георгий Максимов, священник</discription>
 		<lifedates>(02.04.1979)</lifedates>
-		<link>http://azbyka.ru/otechnik/Georgij_Maksimov/</link>
+		<link>https://azbyka.ru/otechnik/Georgij_Maksimov/</link>
 	</person>
 	<person>
 		<name>Георги$%</name>
@@ -1078,7 +1110,7 @@
 		<sex>m</sex>
 		<discription>Георгий Мандзаридис, профессор</discription>
 		<lifedates>(1935-)</lifedates>
-		<link>http://azbyka.ru/otechnik/Georgij_Mandzaridis/</link>
+		<link>https://azbyka.ru/otechnik/Georgij_Mandzaridis/</link>
 	</person>
 	<person>
 		<name>Георги$%</name>
@@ -1086,7 +1118,7 @@
 		<sex>m</sex>
 		<discription>Георгий Никомидийский, святитель</discription>
 		<lifedates>(IX век)</lifedates>
-		<link>http://azbyka.ru/otechnik/Georgij_Nikomidijskij/</link>
+		<link>https://azbyka.ru/otechnik/Georgij_Nikomidijskij/</link>
 	</person>
 	<person>
 		<name>Георги$%</name>
@@ -1096,7 +1128,7 @@
 		<sex>m</sex>
 		<discription>Георгий Петрович Федотов, профессор</discription>
 		<lifedates>(13.11.1886–1.09.1951)</lifedates>
-		<link>http://azbyka.ru/otechnik/Georgij_Fedotov/</link>
+		<link>https://azbyka.ru/otechnik/Georgij_Fedotov/</link>
 	</person>
 	<person>
 		<name>Георги$%</name>
@@ -1105,7 +1137,7 @@
 		<sex>m</sex>
 		<discription>Георгий Флоровский, протоиерей</discription>
 		<lifedates>(28.08.1893—11.08.1979)</lifedates>
-		<link>http://azbyka.ru/otechnik/Georgij_Florovskij/</link>
+		<link>https://azbyka.ru/otechnik/Georgij_Florovskij/</link>
 	</person>
 	<person>
 		<name>Герман%%</name>
@@ -1113,7 +1145,7 @@
 		<sex>m</sex>
 		<discription>Герман Константинопольский, святитель</discription>
 		<lifedates>(630/640–740)</lifedates>
-		<link>http://azbyka.ru/otechnik/German_Konstantinopolskij/</link>
+		<link>https://azbyka.ru/otechnik/German_Konstantinopolskij/</link>
 	</person>
 	<person>
 		<name>Герман%%</name>
@@ -1122,7 +1154,7 @@
 		<sex>m</sex>
 		<discription>Герман Зосимовский (Гомзин), преподобный</discription>
 		<lifedates>(20.03.1844–30.01.1923)</lifedates>
-		<link>http://azbyka.ru/otechnik/German_Gomzin/</link>
+		<link>https://azbyka.ru/otechnik/German_Gomzin/</link>
 	</person>
 	<person>
 		<name>Гермоген%%</name>
@@ -1131,7 +1163,7 @@
 		<sex>m</sex>
 		<discription>Гермоген Шиманский</discription>
 		<lifedates>(1915–8 марта 1970)</lifedates>
-		<link>http://azbyka.ru/otechnik/Germogen_Shimanskij/</link>
+		<link>https://azbyka.ru/otechnik/Germogen_Shimanskij/</link>
 	</person>
 	<person>
 		<name>Глеб%%</name>
@@ -1140,7 +1172,7 @@
 		<sex>m</sex>
 		<discription>Глеб Каледа, протоиерей</discription>
 		<lifedates>(02.12.1921–01.11.1994)</lifedates>
-		<link>http://azbyka.ru/otechnik/Gleb_Kaleda/</link>
+		<link>https://azbyka.ru/otechnik/Gleb_Kaleda/</link>
 	</person>
 	<person>
 		<name>Горазд%%</name>
@@ -1149,7 +1181,7 @@
 		<sex>m</sex>
 		<discription>Горазд (Павлик), священномученик</discription>
 		<lifedates>(1879–1942)</lifedates>
-		<link>http://azbyka.ru/otechnik/Gorazd_Pavlik/</link>
+		<link>https://azbyka.ru/otechnik/Gorazd_Pavlik/</link>
 	</person>
 	<person>
 		<name>Григори$%</name>
@@ -1158,7 +1190,7 @@
 		<sex>m</sex>
 		<discription>Григорий Киевский (Самвлак), святитель</discription>
 		<lifedates>(?–1473)</lifedates>
-		<link>http://azbyka.ru/otechnik/Grigorij_Kievskij/</link>
+		<link>https://azbyka.ru/otechnik/Grigorij_Kievskij/</link>
 	</person>
 	<person>
 		<name>Григори$%</name>
@@ -1167,7 +1199,7 @@
 		<sex>m</sex>
 		<discription>Григорий II Кипрский, патриарх Константинопольский, святитель</discription>
 		<lifedates>(1283–1289)</lifedates>
-		<link>http://azbyka.ru/otechnik/Grigorij_Kiprskij/</link>
+		<link>https://azbyka.ru/otechnik/Grigorij_Kiprskij/</link>
 	</person>
 	<person>
 		<name>Григори$%</name>
@@ -1177,7 +1209,7 @@
 		<sex>m</sex>
 		<discription>Григорий II, папа Римский</discription>
 		<lifedates>(669–11 февраля 731)</lifedates>
-		<link>http://azbyka.ru/otechnik/Grigorij_Rimskij/</link>
+		<link>https://azbyka.ru/otechnik/Grigorij_Rimskij/</link>
 	</person>
 	<person>
 		<name>Григори$%</name>
@@ -1185,7 +1217,7 @@
 		<sex>m</sex>
 		<discription>Григорий Антиохийский, святитель</discription>
 		<lifedates>(?–593)</lifedates>
-		<link>http://azbyka.ru/otechnik/Grigorij_Antiohijskij/</link>
+		<link>https://azbyka.ru/otechnik/Grigorij_Antiohijskij/</link>
 	</person>
 	<person>
 		<name>Григори$%</name>
@@ -1193,7 +1225,7 @@
 		<sex>m</sex>
 		<discription>Григорий Богослов, святитель</discription>
 		<lifedates>(329–389)</lifedates>
-		<link>http://azbyka.ru/otechnik/Grigorij_Bogoslov/</link>
+		<link>https://azbyka.ru/otechnik/Grigorij_Bogoslov/</link>
 	</person>
 	<person>
 		<name>Григори$%</name>
@@ -1202,7 +1234,7 @@
 		<sex>m</sex>
 		<discription>Григорий Великий (Двоеслов), святитель</discription>
 		<lifedates>(~540–604)</lifedates>
-		<link>http://azbyka.ru/otechnik/Grigorij_Dvoeslov/</link>
+		<link>https://azbyka.ru/otechnik/Grigorij_Dvoeslov/</link>
 	</person>
 	<person>
 		<name>Григори$%</name>
@@ -1211,7 +1243,7 @@
 		<sex>m</sex>
 		<discription>Григорий Дебольский, протоиерей</discription>
 		<lifedates>(1808–14.06.1872)</lifedates>
-		<link>http://azbyka.ru/otechnik/Grigorij_Debolskij/</link>
+		<link>https://azbyka.ru/otechnik/Grigorij_Debolskij/</link>
 	</person>
 	<person>
 		<name>Григори$%</name>
@@ -1219,7 +1251,7 @@
 		<sex>m</sex>
 		<discription>Григорий Декаполит, преподобный</discription>
 		<lifedates>(?–816)</lifedates>
-		<link>http://azbyka.ru/otechnik/Grigorij_Dekapolit/</link>
+		<link>https://azbyka.ru/otechnik/Grigorij_Dekapolit/</link>
 	</person>
 	<person>
 		<name>Григори$%</name>
@@ -1228,7 +1260,7 @@
 		<sex>m</sex>
 		<discription>Григорий Дьяченко, протоиерей</discription>
 		<lifedates>(1850–2 декабря 1903)</lifedates>
-		<link>http://azbyka.ru/otechnik/Grigorij_Djachenko/</link>
+		<link>https://azbyka.ru/otechnik/Grigorij_Djachenko/</link>
 	</person>
 	<person>
 		<name>Григори$%</name>
@@ -1236,7 +1268,7 @@
 		<sex>m</sex>
 		<discription>Григорий Нисский, святитель</discription>
 		<lifedates>(~335–~394)</lifedates>
-		<link>http://azbyka.ru/otechnik/Grigorij_Nisskij/</link>
+		<link>https://azbyka.ru/otechnik/Grigorij_Nisskij/</link>
 	</person>
 	<person>
 		<name>Григори$%</name>
@@ -1244,7 +1276,7 @@
 		<sex>m</sex>
 		<discription>Григорий Палама, святитель</discription>
 		<lifedates>(1296–1359)</lifedates>
-		<link>http://azbyka.ru/otechnik/Grigorij_Palama/</link>
+		<link>https://azbyka.ru/otechnik/Grigorij_Palama/</link>
 	</person>
 	<person>
 		<name>Григори$%</name>
@@ -1253,7 +1285,7 @@
 		<sex>m</sex>
 		<discription>Григорий Разумовский, протоиерей</discription>
 		<lifedates>(1883–9 января 1967)</lifedates>
-		<link>http://azbyka.ru/otechnik/Grigorij_Razumovskij/</link>
+		<link>https://azbyka.ru/otechnik/Grigorij_Razumovskij/</link>
 	</person>
 	<person>
 		<name>Григори$%</name>
@@ -1261,7 +1293,7 @@
 		<sex>m</sex>
 		<discription>Григорий Синаит, преподобный</discription>
 		<lifedates>(1260–1346)</lifedates>
-		<link>http://azbyka.ru/otechnik/Grigorij_Sinait/</link>
+		<link>https://azbyka.ru/otechnik/Grigorij_Sinait/</link>
 	</person>
 	<person>
 		<name>Григори$%</name>
@@ -1269,7 +1301,7 @@
 		<sex>m</sex>
 		<discription>Григорий Турский, святитель</discription>
 		<lifedates>(30 ноября 538(9) –17 ноября 593(4))</lifedates>
-		<link>http://azbyka.ru/otechnik/Grigorij_Turskij/</link>
+		<link>https://azbyka.ru/otechnik/Grigorij_Turskij/</link>
 	</person>
 	<person>
 		<name>Григори$%</name>
@@ -1277,7 +1309,7 @@
 		<sex>m</sex>
 		<discription>священномученик Григорий (Лебедев)</discription>
 		<lifedates>((24.11.1878–17.09.1937)</lifedates>
-		<link>http://azbyka.ru/otechnik/Grigorij_Lebedev/</link>
+		<link>https://azbyka.ru/otechnik/Grigorij_Lebedev/</link>
 	</person>
 	<person>
 		<name>Григори$%</name>
@@ -1285,7 +1317,15 @@
 		<sex>m</sex>
 		<discription>Григорий Чудотворец, епископ Неокесарийский, святитель</discription>
 		<lifedates>(213–270/275)</lifedates>
-		<link>http://azbyka.ru/otechnik/Grigorij_Chudotvorets/</link>
+		<link>https://azbyka.ru/otechnik/Grigorij_Chudotvorets/</link>
+	</person>
+	<person>
+		<name>Григори$%</name>
+		<nick>Неокесарийск$%%</nick>
+		<sex>m</sex>
+		<discription>Григорий Чудотворец, епископ Неокесарийский, святитель</discription>
+		<lifedates>(213–270/275)</lifedates>
+		<link>https://azbyka.ru/otechnik/Grigorij_Chudotvorets/</link>
 	</person>
 	<person>
 		<name>Давид%%</name>
@@ -1293,7 +1333,7 @@
 		<sex>m</sex>
 		<discription>Давид Дисипат, монах</discription>
 		<lifedates>(?-между 1347 и 1354)</lifedates>
-		<link>http://azbyka.ru/otechnik/David_Disipat/</link>
+		<link>https://azbyka.ru/otechnik/David_Disipat/</link>
 	</person>
 	<person>
 		<name>Даниил%%</name>
@@ -1301,17 +1341,17 @@
 		<sex>m</sex>
 		<discription>Даниил Катунакский, преподобный</discription>
 		<lifedates>(1846–1929)</lifedates>
-		<link>http://azbyka.ru/otechnik/Daniil_Katunakskij/</link>
+		<link>https://azbyka.ru/otechnik/Daniil_Katunakskij/</link>
 	</person>
 	<person>
 		<name>Диадох%%</name>
-		<nick>Фотикийский</nick>
+		<nick>Фотикийск$$%</nick>
 		<surname/>
 		<curacy>епископ%%</curacy>
 		<sex>m</sex>
 		<discription>Диадох, епископ Фотики, блаженный</discription>
 		<lifedates>(400–474)</lifedates>
-		<link>http://azbyka.ru/otechnik/Diadoh_Fotiki/</link>
+		<link>https://azbyka.ru/otechnik/Diadoh_Fotiki/</link>
 	</person>
 	<person>
 		<name>Диадох%%</name>
@@ -1321,7 +1361,15 @@
 		<sex>m</sex>
 		<discription>Диадох, епископ Фотики, блаженный</discription>
 		<lifedates>(400–474)</lifedates>
-		<link>http://azbyka.ru/otechnik/Diadoh_Fotiki/</link>
+		<link>https://azbyka.ru/otechnik/Diadoh_Fotiki/</link>
+	</person>
+	<person>
+		<name>Дидим%%</name>
+		<nick>Слеп%%</nick>
+		<sex>m</sex>
+		<discription>Дидим Александрийский</discription>
+		<lifedates>(313–389)</lifedates>
+		<link>https://azbyka.ru/otechnik/Didim_Aleksandrijskij/</link>
 	</person>
 	<person>
 		<name>Дидим%%</name>
@@ -1329,7 +1377,7 @@
 		<sex>m</sex>
 		<discription>Дидим Александрийский</discription>
 		<lifedates>(313–389)</lifedates>
-		<link>http://azbyka.ru/otechnik/Didim_Aleksandrijskij/</link>
+		<link>https://azbyka.ru/otechnik/Didim_Aleksandrijskij/</link>
 	</person>
 	<person>
 		<name>Д(и)?митри$%</name>
@@ -1337,7 +1385,7 @@
 		<sex>m</sex>
 		<discription>Димитрий Ростовский, святитель</discription>
 		<lifedates>(1651–1709)</lifedates>
-		<link>http://azbyka.ru/otechnik/Dmitrij_Rostovskij/</link>
+		<link>https://azbyka.ru/otechnik/Dmitrij_Rostovskij/</link>
 	</person>
 	<person>
 		<name>Диониси$%</name>
@@ -1345,7 +1393,7 @@
 		<sex>m</sex>
 		<discription>Дионисий Александрийский, священномученик</discription>
 		<lifedates>(около 190–264/265)</lifedates>
-		<link>http://azbyka.ru/otechnik/Dionisij_Aleksandrijskij/</link>
+		<link>https://azbyka.ru/otechnik/Dionisij_Aleksandrijskij/</link>
 	</person>
 	<person>
 		<name>Диониси$%</name>
@@ -1353,7 +1401,7 @@
 		<sex>m</sex>
 		<discription>Дионисий Ареопагит, священномученик</discription>
 		<lifedates>(?–~96)</lifedates>
-		<link>http://azbyka.ru/otechnik/Dionisij_Areopagit/</link>
+		<link>https://azbyka.ru/otechnik/Dionisij_Areopagit/</link>
 	</person>
 	<person>
 		<name>Диониси$%</name>
@@ -1361,7 +1409,7 @@
 		<sex>m</sex>
 		<discription>Дионисий Суздальский, святитель</discription>
 		<lifedates>(1300–15 октября 1385)</lifedates>
-		<link>http://azbyka.ru/otechnik/Dionisij_Suzdalskij/</link>
+		<link>https://azbyka.ru/otechnik/Dionisij_Suzdalskij/</link>
 	</person>
 	<person>
 		<name>Дмитри$%</name>
@@ -1371,7 +1419,7 @@
 		<sex>m</sex>
 		<discription>Дмитрий Сергеевич Леонардов</discription>
 		<lifedates>(21.10.1871–25.10.1915)</lifedates>
-		<link>http://azbyka.ru/otechnik/Dmitrij_Leonardov/</link>
+		<link>https://azbyka.ru/otechnik/Dmitrij_Leonardov/</link>
 	</person>
 	<person>
 		<name>Дорофе$%</name>
@@ -1380,7 +1428,7 @@
 		<sex>m</sex>
 		<discription>авва Дорофей, преподобный</discription>
 		<lifedates>(?–620)</lifedates>
-		<link>http://azbyka.ru/otechnik/Dorofej/</link>
+		<link>https://azbyka.ru/otechnik/Dorofej/</link>
 	</person>
 	<person>
 		<name>Евагри$%</name>
@@ -1388,7 +1436,7 @@
 		<sex>m</sex>
 		<discription>Евагрий Понтийский</discription>
 		<lifedates>(~345–~399)</lifedates>
-		<link>http://azbyka.ru/otechnik/Evagrij_Pontijskij/</link>
+		<link>https://azbyka.ru/otechnik/Evagrij_Pontijskij/</link>
 	</person>
 	<person>
 		<name>Евгени$%</name>
@@ -1397,7 +1445,7 @@
 		<sex>m</sex>
 		<discription>Евгений Аквилонов, протопресвитер</discription>
 		<lifedates>(4.11.1861–30.03.1911)</lifedates>
-		<link>http://azbyka.ru/otechnik/Evgenij_Akvilonov/</link>
+		<link>https://azbyka.ru/otechnik/Evgenij_Akvilonov/</link>
 	</person>
 	<person>
 		<name>Евгени$%</name>
@@ -1407,7 +1455,7 @@
 		<sex>m</sex>
 		<discription>Евгений Евстигнеевич Голубинский, профессор</discription>
 		<lifedates>(1834–1912)</lifedates>
-		<link>http://azbyka.ru/otechnik/Evgenij_Golubinskij/</link>
+		<link>https://azbyka.ru/otechnik/Evgenij_Golubinskij/</link>
 	</person>
 	<person>
 		<name>Евгени$%</name>
@@ -1417,7 +1465,7 @@
 		<sex>m</sex>
 		<discription>Евгений Николаевич Трубецкой, профессор</discription>
 		<lifedates>(5.10.1863–23.01.1920)</lifedates>
-		<link>http://azbyka.ru/otechnik/Evgenij_Trubeckoj/</link>
+		<link>https://azbyka.ru/otechnik/Evgenij_Trubeckoj/</link>
 	</person>
 	<person>
 		<name>Евсеви$%</name>
@@ -1425,7 +1473,7 @@
 		<curacy>архиепископ</curacy>
 		<discription>Евсевий (Орлинский), архиепископ</discription>
 		<lifedates>( 2.01.1807–21.02.1883)</lifedates>
-		<link>http://azbyka.ru/otechnik/Evsevij_Orlinskij/</link>
+		<link>https://azbyka.ru/otechnik/Evsevij_Orlinskij/</link>
 	</person>
 	<person>
 		<name>Евсеви$%</name>
@@ -1434,7 +1482,15 @@
 		<sex>m</sex>
 		<discription>Евсевий Кесарийский (Памфил)</discription>
 		<lifedates>(~260–339)</lifedates>
-		<link>http://azbyka.ru/otechnik/Evsevij_Kesarijskij/</link>
+		<link>https://azbyka.ru/otechnik/Evsevij_Kesarijskij/</link>
+	</person>
+	<person>
+		<name>Евсеви$%</name>
+		<nick>Кесарийск$$%</nick> 
+		<sex>m</sex>
+		<discription>Евсевий Кесарийский (Памфил)</discription>
+		<lifedates>(~260–339)</lifedates>
+		<link>https://azbyka.ru/otechnik/Evsevij_Kesarijskij/</link>
 	</person>
 	<person>
 		<name>Евстафи$%</name>
@@ -1442,7 +1498,7 @@
 		<sex>m</sex>
 		<discription>Евстафий Антиохийский, святитель</discription>
 		<lifedates>(?–337(6))</lifedates>
-		<link>http://azbyka.ru/otechnik/Evstafij_Antiohijskij/</link>
+		<link>https://azbyka.ru/otechnik/Evstafij_Antiohijskij/</link>
 	</person>
 	<person>
 		<name>Евтихи$%</name>
@@ -1450,7 +1506,7 @@
 		<sex>m</sex>
 		<discription>Евтихий Константинопольский, святитель</discription>
 		<lifedates>(~512–5 апреля 582)</lifedates>
-		<link>http://azbyka.ru/otechnik/Evtihij_Konstantinopolskij/</link>
+		<link>https://azbyka.ru/otechnik/Evtihij_Konstantinopolskij/</link>
 	</person>
 	<person>
 		<name>Евфими$%</name>
@@ -1459,7 +1515,7 @@
 		<sex>m</sex>
 		<discription>Евфимий Зигабен</discription>
 		<lifedates>(?–~1118)</lifedates>
-		<link>http://azbyka.ru/otechnik/Evfimij_Zigaben/</link>
+		<link>https://azbyka.ru/otechnik/Evfimij_Zigaben/</link>
 	</person>
 	<person>
 		<name>Епифани$%</name>
@@ -1467,7 +1523,7 @@
 		<sex>m</sex>
 		<discription>Епифаний Кипрский, святитель</discription>
 		<lifedates>(~315–403)</lifedates>
-		<link>http://azbyka.ru/otechnik/Epifanij_Kiprskij/</link>
+		<link>https://azbyka.ru/otechnik/Epifanij_Kiprskij/</link>
 	</person>
 	<person>
 		<name>Епифани$%</name>
@@ -1475,7 +1531,7 @@
 		<sex>m</sex>
 		<discription>Епифаний Премудрый, преподобный</discription>
 		<lifedates>(конец XIV—ок. 1420)</lifedates>
-		<link>http://azbyka.ru/otechnik/Epifanij_Premudryj/</link>
+		<link>https://azbyka.ru/otechnik/Epifanij_Premudryj/</link>
 	</person>
 	<person>
 		<name>Епифани$%</name>
@@ -1484,7 +1540,7 @@
 		<sex>m</sex>
 		<discription>Епифаний (Феодоропулос), архимандрит</discription>
 		<lifedates>(27.12.1930–10.11.1989)</lifedates>
-		<link>http://azbyka.ru/otechnik/Epifanij_Feodoropulos/</link>
+		<link>https://azbyka.ru/otechnik/Epifanij_Feodoropulos/</link>
 	</person>
 	<person>
 		<name>Ерм</name>
@@ -1493,7 +1549,7 @@
 		<sex>m</sex>
 		<discription>Ерм</discription>
 		<lifedates>(~50)</lifedates>
-		<link>http://azbyka.ru/otechnik/Erm/</link>
+		<link>https://azbyka.ru/otechnik/Erm/</link>
 	</person>
 	<person>
 		<name>Ерми$%</name>
@@ -1501,7 +1557,7 @@
 		<sex>m</sex>
 		<discription>Ермий Созомен</discription>
 		<lifedates>(~400–450)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ermij_Sozomen/</link>
+		<link>https://azbyka.ru/otechnik/Ermij_Sozomen/</link>
 	</person>
 	<person>
 		<name>Ерми$%</name>
@@ -1509,7 +1565,7 @@
 		<sex>m</sex>
 		<discription>Ермий Философ</discription>
 		<lifedates>(~50)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ermij_Filosof/</link>
+		<link>https://azbyka.ru/otechnik/Ermij_Filosof/</link>
 	</person>
 	<person>
 		<name>Ермоген%%</name>
@@ -1519,7 +1575,7 @@
 		<sex>m</sex>
 		<discription>Ермоген, патриарх Московский, священномученик</discription>
 		<lifedates>(ок. 1530–1612)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ermogen_Moskovskij/</link>
+		<link>https://azbyka.ru/otechnik/Ermogen_Moskovskij/</link>
 	</person>
 	<person>
 		<name>Ефрем%%</name>
@@ -1527,7 +1583,7 @@
 		<sex>m</sex>
 		<discription>Ефрем Антиохийский, святитель</discription>
 		<lifedates>(?–545)</lifedates>
-		<link>http://azbyka.ru/otechnik/Efrem_Antiohijskij/</link>
+		<link>https://azbyka.ru/otechnik/Efrem_Antiohijskij/</link>
 	</person>
 	<person>
 		<name>Ефрем%%</name>
@@ -1535,7 +1591,7 @@
 		<sex>m</sex>
 		<discription>Ефрем Сирин, преподобный</discription>
 		<lifedates>(~309–373)</lifedates>
-		<link>http://azbyka.ru/otechnik/Efrem_Sirin/</link>
+		<link>https://azbyka.ru/otechnik/Efrem_Sirin/</link>
 	</person>
 	<person>
 		<name>Ефрем%%</name>
@@ -1543,7 +1599,7 @@
 		<sex>m</sex>
 		<discription>Ефрем Катунакский, старец</discription>
 		<lifedates>(1912–27.02.1998 )</lifedates>
-		<link>http://azbyka.ru/otechnik/Efrem_Katunakskij/</link>
+		<link>https://azbyka.ru/otechnik/Efrem_Katunakskij/</link>
 	</person>
 	<person>
 		<name>Ефрем%%</name>
@@ -1552,7 +1608,7 @@
 		<sex>m</sex>
 		<discription>Ефрем Святогорец (Мораитис), архимандрит</discription>
 		<lifedates>(24.06.1928)</lifedates>
-		<link>http://azbyka.ru/otechnik/Efrem_Svyatogorec/</link>
+		<link>https://azbyka.ru/otechnik/Efrem_Svyatogorec/</link>
 	</person>
 	<person>
 		<name>Зенон%%</name>
@@ -1560,7 +1616,7 @@
 		<sex>m</sex>
 		<discription>Зенон Веронский, священномученик</discription>
 		<lifedates>(~300–12 апреля 370/371)</lifedates>
-		<link>http://azbyka.ru/otechnik/Zenon_Veronskij/</link>
+		<link>https://azbyka.ru/otechnik/Zenon_Veronskij/</link>
 	</person>
 	<person>
 		<name>Зосим$%</name>
@@ -1569,7 +1625,7 @@
 		<sex>m</sex>
 		<discription>Зосима (Верховский), преподобный</discription>
 		<lifedates>(24 марта 1768–24 октября 1833)</lifedates>
-		<link>http://azbyka.ru/otechnik/Zosima_Verhovskij/</link>
+		<link>https://azbyka.ru/otechnik/Zosima_Verhovskij/</link>
 	</person>
 	<person>
 		<name>Зосим$%</name>
@@ -1577,7 +1633,7 @@
 		<sex>m</sex>
 		<discription>Зосима Палестинский, блаженный авва</discription>
 		<lifedates>(460–560)</lifedates>
-		<link>http://azbyka.ru/otechnik/Zosima_Palestinskij/</link>
+		<link>https://azbyka.ru/otechnik/Zosima_Palestinskij/</link>
 	</person>
 	<person>
 		<name>Иаков%%</name>
@@ -1585,7 +1641,7 @@
 		<sex>m</sex>
 		<discription>Иаков Низибийский, святитель</discription>
 		<lifedates>(?–350)</lifedates>
-		<link>http://azbyka.ru/otechnik/Iakov_Nizibijskij/</link>
+		<link>https://azbyka.ru/otechnik/Iakov_Nizibijskij/</link>
 	</person>
 	<person>
 		<name>Иаков%%</name>
@@ -1594,7 +1650,7 @@
 		<sex>m</sex>
 		<discription>Иаков (Афраат) Персидский, епископ</discription>
 		<lifedates>(270-345)</lifedates>
-		<link>http://azbyka.ru/otechnik/Iakov_Persidskij/</link>
+		<link>https://azbyka.ru/otechnik/Iakov_Persidskij/</link>
 	</person>
 	<person>
 		<name>Иван%%</name>
@@ -1603,7 +1659,7 @@
 		<sex>m</sex>
 		<discription>Иван Айвазов</discription>
 		<lifedates>(13.02.1872—17.12.1964)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ivan_Aivazov/</link>
+		<link>https://azbyka.ru/otechnik/Ivan_Aivazov/</link>
 	</person>
 	<person>
 		<name>Иван%%</name>
@@ -1613,7 +1669,7 @@
 		<sex>m</sex>
 		<discription>Иван Алексеевич Карабинов, профессор</discription>
 		<lifedates>(1878–1937)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ivan_Karabinov/</link>
+		<link>https://azbyka.ru/otechnik/Ivan_Karabinov/</link>
 	</person>
 	<person>
 		<name>Иван%%</name>
@@ -1623,7 +1679,7 @@
 		<sex>m</sex>
 		<discription>Иван Михайлович Концевич</discription>
 		<lifedates>(19.10.1893–6.07.1965)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ivan_Koncevich/</link>
+		<link>https://azbyka.ru/otechnik/Ivan_Koncevich/</link>
 	</person>
 	<person>
 		<name>Иван%%</name>
@@ -1633,7 +1689,7 @@
 		<sex>m</sex>
 		<discription>Иван Иванович Соколов, профессор</discription>
 		<lifedates>(11.12.1865–03.05.1939)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ivan_Sokolov/</link>
+		<link>https://azbyka.ru/otechnik/Ivan_Sokolov/</link>
 	</person>
 	<person>
 		<name>Иван%%</name>
@@ -1642,7 +1698,7 @@
 		<sex>m</sex>
 		<discription>профессор Иван Николаевич Корсунский </discription>
 		<lifedates>(1849–1899)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ivan_Korsunskij/</link>
+		<link>https://azbyka.ru/otechnik/Ivan_Korsunskij/</link>
 	</person>
 	<person>
 		<name>Игнати$%</name>
@@ -1650,7 +1706,15 @@
 		<sex>m</sex>
 		<discription>Игнатий Антиохийский, священномученик</discription>
 		<lifedates>(~50–107)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ignatij_Antiohijskij/</link>
+		<link>https://azbyka.ru/otechnik/Ignatij_Antiohijskij/</link>
+	</person>
+	<person>
+		<name>Игнати$%</name>
+		<nick>Богоно$$%</nick>
+		<sex>m</sex>
+		<discription>Игнатий Антиохийский, священномученик</discription>
+		<lifedates>(~50–107)</lifedates>
+		<link>https://azbyka.ru/otechnik/Ignatij_Antiohijskij/</link>
 	</person>
 	<person>
 		<name>Игнати$%</name>
@@ -1660,7 +1724,7 @@
 		<sex>m</sex>
 		<discription>Игнатий (Брянчанинов), святитель</discription>
 		<lifedates>(1807–1867)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ignatij_Brjanchaninov/</link>
+		<link>https://azbyka.ru/otechnik/Ignatij_Brjanchaninov/</link>
 	</person>
 	<person>
 		<name>Игнати$%</name>
@@ -1670,7 +1734,27 @@
 		<sex>m</sex>
 		<discription>Игнатий (Малышев), архимандрит</discription>
 		<lifedates>24.03.1811–16.05.1897</lifedates>
-		<link>http://azbyka.ru/otechnik/Ignatij_Malyshev/</link>
+		<link>https://azbyka.ru/otechnik/Ignatij_Malyshev/</link>
+	</person>
+	<person>
+		<name>Игнати$%</name>
+		<nick/>
+		<surname>(Петровск$%%)</surname>
+		<curacy>%%%монахин%%</curacy>
+		<sex>f</sex>
+		<discription>Игнатия (Пузик, Петровская), схимонахиня</discription>
+		<lifedates>01.02.1903–29.08.2004</lifedates>
+		<link>https://azbyka.ru/otechnik/Ignatiya_Puzik/</link>
+	</person>
+	<person>
+		<name>Игнати$%</name>
+		<nick/>
+		<surname>(Пузик)</surname>
+		<curacy>%%%монахин%%</curacy>
+		<sex>f</sex>
+		<discription>Игнатия (Пузик, Петровская), схимонахиня</discription>
+		<lifedates>01.02.1903–29.08.2004</lifedates>
+		<link>https://azbyka.ru/otechnik/Ignatiya_Puzik/</link>
 	</person>
 	<person>
 		<name>Игорь%%</name>
@@ -1680,7 +1764,7 @@
 		<sex>m</sex>
 		<discription>Игорь Корнильевич Смолич, доктор богословия</discription>
 		<lifedates>(27.01.1898–2.11.1970)</lifedates>
-		<link>http://azbyka.ru/otechnik/Igor_Smolich/</link>
+		<link>https://azbyka.ru/otechnik/Igor_Smolich/</link>
 	</person>
 	<person>
 		<name>Иереми$%</name>
@@ -1689,7 +1773,7 @@
 		<sex>m</sex>
 		<discription>Иеремия Отшельник (Соловьев), епископ</discription>
 		<lifedates>(21.04.1799–18.12.1884)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ieremiya_Solovev/</link>
+		<link>https://azbyka.ru/otechnik/Ieremiya_Solovev/</link>
 	</person>
 	<person>
 		<name>Иероним%%</name>
@@ -1698,7 +1782,7 @@
 		<sex>m</sex>
 		<discription>Иероним Стридонский, блаженный</discription>
 		<lifedates>(~342–420)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ieronim_Stridonskij/</link>
+		<link>https://azbyka.ru/otechnik/Ieronim_Stridonskij/</link>
 	</person>
 	<person>
 		<name>Иероним%%</name>
@@ -1706,7 +1790,7 @@
 		<sex>m</sex>
 		<discription>Иероним Симонопетрский, игумен</discription>
 		<lifedates>(?–1957)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ieronim_Simonopetrskij/</link>
+		<link>https://azbyka.ru/otechnik/Ieronim_Simonopetrskij/</link>
 	</person>
 	<person>
 		<name>Иерофе$%</name>
@@ -1715,7 +1799,7 @@
 		<sex>m</sex>
 		<discription>Иерофей (Влахос), митрополит</discription>
 		<lifedates>(-1945)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ierofej_Vlahos/</link>
+		<link>https://azbyka.ru/otechnik/Ierofej_Vlahos/</link>
 	</person>
 	<person>
 		<name>Икумени$%</name>
@@ -1723,7 +1807,7 @@
 		<sex>m</sex>
 		<discription>Икумений Триккский, преподобный</discription>
 		<lifedates>(ок. ?–~945)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ikumenij_Trikkskij/</link>
+		<link>https://azbyka.ru/otechnik/Ikumenij_Trikkskij/</link>
 	</person>
 	<person>
 		<name>Илари$%</name>
@@ -1731,7 +1815,7 @@
 		<sex>m</sex>
 		<discription>Иларий Пиктавийский, святитель</discription>
 		<lifedates>(ок. 315–367)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ilarij_Piktavijskij/</link>
+		<link>https://azbyka.ru/otechnik/Ilarij_Piktavijskij/</link>
 	</person>
 	<person>
 		<name>Иларион%%</name>
@@ -1739,7 +1823,7 @@
 		<sex>m</sex>
 		<discription>Иларион Киевский, святитель</discription>
 		<lifedates>(?–~1055)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ilarion_Kievskij/</link>
+		<link>https://azbyka.ru/otechnik/Ilarion_Kievskij/</link>
 	</person>
 	<person>
 		<name>Иларион%%</name>
@@ -1748,7 +1832,7 @@
 		<sex>m</sex>
 		<discription>Иларион (Алфеев), митрополит</discription>
 		<lifedates>(24.07.1966)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ilarion_Alfeev/</link>
+		<link>https://azbyka.ru/otechnik/Ilarion_Alfeev/</link>
 	</person>
 	<person>
 		<name>Иларион%%</name>
@@ -1757,7 +1841,7 @@
 		<sex>m</sex>
 		<discription>Иларион (Троицкий), архиепископ Верейский, священномученик</discription>
 		<lifedates>(13(25).09.1886–28.12.1929)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ilarion_Troitskij/</link>
+		<link>https://azbyka.ru/otechnik/Ilarion_Troitskij/</link>
 	</person>
 	<person>
 		<name>Или$%</name>
@@ -1766,7 +1850,7 @@
 		<sex>m</sex>
 		<discription>Илия Минятий, святитель</discription>
 		<lifedates>(1669–1714)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ilija_Minjatij/</link>
+		<link>https://azbyka.ru/otechnik/Ilija_Minjatij/</link>
 	</person>
 	<person>
 		<name>Иннокенти$%</name>
@@ -1775,7 +1859,7 @@
 		<sex>m</sex>
 		<discription>Иннокентий (Борисов), архиепископ Херсонский и Таврический, святитель</discription>
 		<lifedates>(27.12.1800–7.06.1857)</lifedates>
-		<link>http://azbyka.ru/otechnik/Innokentij_Hersonskij/</link>
+		<link>https://azbyka.ru/otechnik/Innokentij_Hersonskij/</link>
 	</person>
 	<person>
 		<name>Иннокенти$%</name>
@@ -1784,7 +1868,7 @@
 		<sex>m</sex>
 		<discription>Иннокентий (Борисов), архиепископ Херсонский и Таврический, святитель</discription>
 		<lifedates>(27.12.1800–7.06.1857)</lifedates>
-		<link>http://azbyka.ru/otechnik/Innokentij_Hersonskij/</link>
+		<link>https://azbyka.ru/otechnik/Innokentij_Hersonskij/</link>
 	</person>
 	<person>
 		<name>Иннокенти$%</name>
@@ -1793,7 +1877,7 @@
 		<sex>m</sex>
 		<discription>Иннокентий (Вениаминов), митрополит Московский, святитель</discription>
 		<lifedates>(26.08.1797–31.03.1879)</lifedates>
-		<link>http://azbyka.ru/otechnik/Innokentij_Moskovskij/</link>
+		<link>https://azbyka.ru/otechnik/Innokentij_Moskovskij/</link>
 	</person>
 	<person>
 		<name>Иннокенти$%</name>
@@ -1802,7 +1886,7 @@
 		<sex>m</sex>
 		<discription>Иннокентий Пензенский (Смирнов), святитель</discription>
 		<lifedates>(30 мая 1784–10 октября 1819)</lifedates>
-		<link>http://azbyka.ru/otechnik/Innokentij_Penzenskij/</link>
+		<link>https://azbyka.ru/otechnik/Innokentij_Penzenskij/</link>
 	</person>
 	<person>
 		<name>Иоанн%%</name>
@@ -1811,7 +1895,7 @@
 		<sex>m</sex>
 		<discription>Иоанн (Алексеев), валаамский старец, схиигумен</discription>
 		<lifedates>(1873–1958)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ioann_Valaamskij/</link>
+		<link>https://azbyka.ru/otechnik/Ioann_Valaamskij/</link>
 	</person>
 	<person>
 		<name>Иоанн%%</name>
@@ -1820,7 +1904,7 @@
 		<sex>m</sex>
 		<discription>Иоанн Восторгов, священномученик</discription>
 		<lifedates>(1867–1918)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ioann_Vostorgov/</link>
+		<link>https://azbyka.ru/otechnik/Ioann_Vostorgov/</link>
 	</person>
 	<person>
 		<name>Иоанн%%</name>
@@ -1828,7 +1912,7 @@
 		<sex>m</sex>
 		<discription>Иоанн Дамаскин, преподобный</discription>
 		<lifedates>(~675–до 753)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ioann_Damaskin/</link>
+		<link>https://azbyka.ru/otechnik/Ioann_Damaskin/</link>
 	</person>
 	<person>
 		<name>Иоанн%%</name>
@@ -1836,7 +1920,7 @@
 		<sex>m</sex>
 		<discription>Иоанн Златоуст, святитель</discription>
 		<lifedates>(347–407)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ioann_Zlatoust/</link>
+		<link>https://azbyka.ru/otechnik/Ioann_Zlatoust/</link>
 	</person>
 	<person>
 		<name>Иоанн%%</name>
@@ -1844,7 +1928,7 @@
 		<sex>m</sex>
 		<discription>Иоанн Карпафский, преподобный</discription>
 		<lifedates>(V–VII века)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ioann_Karpafskij/</link>
+		<link>https://azbyka.ru/otechnik/Ioann_Karpafskij/</link>
 	</person>
 	<person>
 		<name>Иоанн%%</name>
@@ -1853,7 +1937,7 @@
 		<sex>m</sex>
 		<discription>Иоанн Кассиан Римлянин, преподобный</discription>
 		<lifedates>(~360–~435)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ioann_Kassian_Rimljanin/</link>
+		<link>https://azbyka.ru/otechnik/Ioann_Kassian_Rimljanin/</link>
 	</person>
 	<person>
 		<name>Иоанн%%</name>
@@ -1862,7 +1946,7 @@
 		<sex>m</sex>
 		<discription>Иоанн (Крестьянкин), архимандрит</discription>
 		<lifedates>(11 апреля 1910–5 февраля 2006)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ioann_Krestjankin/</link>
+		<link>https://azbyka.ru/otechnik/Ioann_Krestjankin/</link>
 	</person>
 	<person>
 		<name>Иоанн%%</name>
@@ -1870,7 +1954,7 @@
 		<sex>m</sex>
 		<discription>Иоанн Кронштадтский, праведный</discription>
 		<lifedates>(1829–1909)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ioann_Kronshtadtskij/</link>
+		<link>https://azbyka.ru/otechnik/Ioann_Kronshtadtskij/</link>
 	</person>
 	<person>
 		<name>Иоанн%%</name>
@@ -1878,7 +1962,7 @@
 		<sex>m</sex>
 		<discription>Иоанн Лествичник, преподобный</discription>
 		<lifedates>(535–602/649)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ioann_Lestvichnik/</link>
+		<link>https://azbyka.ru/otechnik/Ioann_Lestvichnik/</link>
 	</person>
 	<person>
 		<name>Иоанн%%</name>
@@ -1888,7 +1972,7 @@
 		<sex>m</sex>
 		<discription>Иоанн (Максимович), архиепископ Шанхайский и Сан-Францисский, святитель</discription>
 		<lifedates>(17.06.1896–2.07.1966)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ioann_Maksimovich/</link>
+		<link>https://azbyka.ru/otechnik/Ioann_Maksimovich/</link>
 	</person>
 	<person>
 		<name>Иоанн%%</name>
@@ -1897,7 +1981,7 @@
 		<sex>m</sex>
 		<discription>Иоанн (Маслов), схиархимандрит</discription>
 		<lifedates>(6.01.1932–29.07.1991)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ioann_Maslov/</link>
+		<link>https://azbyka.ru/otechnik/Ioann_Maslov/</link>
 	</person>
 	<person>
 		<name>Иоанн%%</name>
@@ -1906,7 +1990,7 @@
 		<sex>m</sex>
 		<discription>Иоанн Мейендорф, протоиерей</discription>
 		<lifedates>( 17.02.1926–22.07.1992 )</lifedates>
-		<link>http://azbyka.ru/otechnik/Ioann_Mejendorf/</link>
+		<link>https://azbyka.ru/otechnik/Ioann_Mejendorf/</link>
 	</person>
 	<person>
 		<name>Иоанн%%</name>
@@ -1915,7 +1999,7 @@
 		<sex>m</sex>
 		<discription>Иоанн Морев, протоиерей</discription>
 		<lifedates>(1860–09.04.1935)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ioann_Morev/</link>
+		<link>https://azbyka.ru/otechnik/Ioann_Morev/</link>
 	</person>
 	<person>
 		<name>Иоанн%%</name>
@@ -1923,7 +2007,7 @@
 		<sex>m</sex>
 		<discription>Иоанн Мосх, блаженный</discription>
 		<lifedates>(550–619)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ioann_Mosh/</link>
+		<link>https://azbyka.ru/otechnik/Ioann_Mosh/</link>
 	</person>
 	<person>
 		<name>Иоанн%%</name>
@@ -1932,7 +2016,7 @@
 		<sex>m</sex>
 		<discription>Иоанн Васильевич Попов, мученик</discription>
 		<lifedates>(17.01.1867–8.02.1938 года)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ioann_Popov/</link>
+		<link>https://azbyka.ru/otechnik/Ioann_Popov/</link>
 	</person>
 	<person>
 		<name>Иоанн%%</name>
@@ -1940,7 +2024,7 @@
 		<sex>m</sex>
 		<discription>Иоанн Постник, святитель</discription>
 		<lifedates>(?–595)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ioann_Postnik/</link>
+		<link>https://azbyka.ru/otechnik/Ioann_Postnik/</link>
 	</person>
 	<person>
 		<name>Иоанн%%</name>
@@ -1949,7 +2033,7 @@
 		<sex>m</sex>
 		<discription>Иоанн Тобольский (Максимович), святитель</discription>
 		<lifedates>(1651–1715)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ioann_Tobolskij/</link>
+		<link>https://azbyka.ru/otechnik/Ioann_Tobolskij/</link>
 	</person>
 	<person>
 		<name>Иоанн%%</name>
@@ -1958,7 +2042,7 @@
 		<sex>m</sex>
 		<discription>Иоанн (Шаховской), архиепископ</discription>
 		<lifedates>(23 августа 1902–30 мая 1989)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ioann_Shahovskoj/</link>
+		<link>https://azbyka.ru/otechnik/Ioann_Shahovskoj/</link>
 	</person>
 	<person>
 		<name>Иоасаф%%</name>
@@ -1966,7 +2050,7 @@
 		<sex>m</sex>
 		<discription>Иоасаф Белгородский, святитель</discription>
 		<lifedates>(1705–1754)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ioasaf_Belgorodskij/</link>
+		<link>https://azbyka.ru/otechnik/Ioasaf_Belgorodskij/</link>
 	</person>
 	<person>
 		<name>Иов%%</name>
@@ -1974,7 +2058,7 @@
 		<sex>m</sex>
 		<discription>Иов Почаевский, преподобный</discription>
 		<lifedates>(ок. 1551—28 октября 1651)</lifedates>
-		<link>http://azbyka.ru/otechnik/Iov_Pochaevskij/</link>
+		<link>https://azbyka.ru/otechnik/Iov_Pochaevskij/</link>
 	</person>
 	<person>
 		<name>Иосиф%%</name>
@@ -1982,7 +2066,7 @@
 		<sex>m</sex>
 		<discription>Иосиф Ватопедский, схимонах</discription>
 		<lifedates>(1921–2009)</lifedates>
-		<link>http://azbyka.ru/otechnik/Iosif_Vatopedskij/</link>
+		<link>https://azbyka.ru/otechnik/Iosif_Vatopedskij/</link>
 	</person>
 	<person>
 		<name>Иосиф%%</name>
@@ -1990,7 +2074,7 @@
 		<sex>m</sex>
 		<discription>Иосиф Волоцкий, преподобный</discription>
 		<lifedates>(1439–1515)</lifedates>
-		<link>http://azbyka.ru/otechnik/Iosif_Volotskij/</link>
+		<link>https://azbyka.ru/otechnik/Iosif_Volotskij/</link>
 	</person>
 	<person>
 		<name>Иосиф%%</name>
@@ -1998,7 +2082,7 @@
 		<sex>m</sex>
 		<discription>Иосиф Исихаст, преподобный</discription>
 		<lifedates>(1899–1959)</lifedates>
-		<link>http://azbyka.ru/otechnik/Iosif_Isihast/</link>
+		<link>https://azbyka.ru/otechnik/Iosif_Isihast/</link>
 	</person>
 	<person>
 		<name>Иосиф%%</name>
@@ -2007,7 +2091,7 @@
 		<sex>m</sex>
 		<discription>Иосиф Оптинский (Литовкин), преподобный</discription>
 		<lifedates>(15.11.1837–22.05.1911)</lifedates>
-		<link>http://azbyka.ru/otechnik/Iosif_Optinskij/</link>
+		<link>https://azbyka.ru/otechnik/Iosif_Optinskij/</link>
 	</person>
 	<person>
 		<name>Ипполит%%</name>
@@ -2015,7 +2099,7 @@
 		<sex>m</sex>
 		<discription>Ипполит Римский, священномученик</discription>
 		<lifedates>(~170–235)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ippolit_Rimskij/</link>
+		<link>https://azbyka.ru/otechnik/Ippolit_Rimskij/</link>
 	</person>
 	<person>
 		<name>Ирине$%</name>
@@ -2023,7 +2107,7 @@
 		<sex>m</sex>
 		<discription>Ириней Лионский, священномученик</discription>
 		<lifedates>(~130–~200)</lifedates>
-		<link>http://azbyka.ru/otechnik/Irinej_Lionskij/</link>
+		<link>https://azbyka.ru/otechnik/Irinej_Lionskij/</link>
 	</person>
 	<person>
 		<name>Ирине$%</name>
@@ -2032,7 +2116,7 @@
 		<sex>m</sex>
 		<discription>Ириней (Орда), епископ</discription>
 		<lifedates>(1837–10.04.1904)</lifedates>
-		<link>http://azbyka.ru/otechnik/Irinej_Orda/</link>
+		<link>https://azbyka.ru/otechnik/Irinej_Orda/</link>
 	</person>
 	<person>
 		<name>Исаак%%</name>
@@ -2041,7 +2125,7 @@
 		<sex>m</sex>
 		<discription>Исаак Сирин Ниневийский, преподобный</discription>
 		<lifedates>(VII–VIII век)</lifedates>
-		<link>http://azbyka.ru/otechnik/Isaak_Sirin/</link>
+		<link>https://azbyka.ru/otechnik/Isaak_Sirin/</link>
 	</person>
 	<person>
 		<name>Иса[ий]$%</name>
@@ -2050,7 +2134,7 @@
 		<sex>m</sex>
 		<discription>авва Исайя, отшельник, преподобный</discription>
 		<lifedates>(?–370)</lifedates>
-		<link>http://azbyka.ru/otechnik/Isajja/</link>
+		<link>https://azbyka.ru/otechnik/Isajja/</link>
 	</person>
 	<person>
 		<name>Исидор%%</name>
@@ -2058,7 +2142,7 @@
 		<sex>m</sex>
 		<discription>Исидор Севильский, святитель</discription>
 		<lifedates>(ок. 560–636)</lifedates>
-		<link>http://azbyka.ru/otechnik/Isidor_Sevilskij/</link>
+		<link>https://azbyka.ru/otechnik/Isidor_Sevilskij/</link>
 	</person>
 	<person>
 		<name>Исидор%%</name>
@@ -2066,7 +2150,7 @@
 		<sex>m</sex>
 		<discription>Исидор Пелусиот, преподобный</discription>
 		<lifedates>(?–435)</lifedates>
-		<link>http://azbyka.ru/otechnik/Isidor_Pelusiot/</link>
+		<link>https://azbyka.ru/otechnik/Isidor_Pelusiot/</link>
 	</person>
 	<person>
 		<name>Исихи$%</name>
@@ -2076,7 +2160,7 @@
 		<sex>m</sex>
 		<discription>Исихий, пресвитер Иерусалимский, преподобный</discription>
 		<lifedates>(?–~432(4))</lifedates>
-		<link>http://azbyka.ru/otechnik/Isihij_Ierusalimskij/</link>
+		<link>https://azbyka.ru/otechnik/Isihij_Ierusalimskij/</link>
 	</person>
 	<person>
 		<name>Иустин%%</name>
@@ -2085,7 +2169,7 @@
 		<sex>m</sex>
 		<discription>Иустин (Полянский), святитель</discription>
 		<lifedates>(15.05.1830–26.09.1903)</lifedates>
-		<link>http://azbyka.ru/otechnik/Iustin_Polyanskij/</link>
+		<link>https://azbyka.ru/otechnik/Iustin_Polyanskij/</link>
 	</person>
 	<person>
 		<name>Иустин%%</name>
@@ -2094,7 +2178,7 @@
 		<sex>m</sex>
 		<discription>Иустин (Попович), Челийский, преподобный</discription>
 		<lifedates>(1894–1978)</lifedates>
-		<link>http://azbyka.ru/otechnik/Iustin_Popovich/</link>
+		<link>https://azbyka.ru/otechnik/Iustin_Popovich/</link>
 	</person>
 	<person>
 		<name>Иустин%%</name>
@@ -2102,7 +2186,7 @@
 		<sex>m</sex>
 		<discription>Иустин Философ, мученик</discription>
 		<lifedates>(~100–165)</lifedates>
-		<link>http://azbyka.ru/otechnik/Iustin_Filosof/</link>
+		<link>https://azbyka.ru/otechnik/Iustin_Filosof/</link>
 	</person>
 	<person>
 		<name>Каллист%%</name>
@@ -2110,7 +2194,15 @@
 		<sex>m</sex>
 		<discription>Каллист Ангеликуд, преподобный</discription>
 		<lifedates>(XIV–XV вв.)</lifedates>
-		<link>http://azbyka.ru/otechnik/Kallist_Angelikud/</link>
+		<link>https://azbyka.ru/otechnik/Kallist_Angelikud/</link>
+	</person>
+	<person>
+		<name>Каллист%%</name>
+		<nick>Катафигиот%%</nick>
+		<sex>m</sex>
+		<discription>Каллист Ангеликуд, преподобный</discription>
+		<lifedates>(XIV–XV вв.)</lifedates>
+		<link>https://azbyka.ru/otechnik/Kallist_Angelikud/</link>
 	</person>
 	<person>
 		<name>Каллист%%</name>
@@ -2119,7 +2211,7 @@
 		<sex>m</sex>
 		<discription>Каллист (Уэр), митрополит</discription>
 		<lifedates>(11.09.1934)</lifedates>
-		<link>http://azbyka.ru/otechnik/Kallist_Uer/</link>
+		<link>https://azbyka.ru/otechnik/Kallist_Uer/</link>
 	</person>
 	<person>
 		<name>Кассиан%%</name>
@@ -2128,7 +2220,7 @@
 		<sex>m</sex>
 		<discription>Кассиан (Безобразов), епископ</discription>
 		<lifedates>(29 февраля 1892–4 февраля 1965)</lifedates>
-		<link>http://azbyka.ru/otechnik/Kassian_Bezobrazov/</link>
+		<link>https://azbyka.ru/otechnik/Kassian_Bezobrazov/</link>
 	</person>
 	<person>
 		<name>Кесари$%</name>
@@ -2136,7 +2228,7 @@
 		<sex>m</sex>
 		<discription>Кесарий Назианзин, праведный</discription>
 		<lifedates>(~331–после 368)</lifedates>
-		<link>http://azbyka.ru/otechnik/Kesarij_Nazianzin/</link>
+		<link>https://azbyka.ru/otechnik/Kesarij_Nazianzin/</link>
 	</person>
 	<person>
 		<name>Киприан%%</name>
@@ -2144,7 +2236,7 @@
 		<sex>m</sex>
 		<discription>Киприан Карфагенский, священномученик</discription>
 		<lifedates>(?–258)</lifedates>
-		<link>http://azbyka.ru/otechnik/Kiprian_Karfagenskij/</link>
+		<link>https://azbyka.ru/otechnik/Kiprian_Karfagenskij/</link>
 	</person>
 	<person>
 		<name>Киприан%%</name>
@@ -2153,7 +2245,7 @@
 		<sex>m</sex>
 		<discription>Киприан (Керн), архимандрит</discription>
 		<lifedates>(23.05.1899–11.02.1960)</lifedates>
-		<link>http://azbyka.ru/otechnik/Kiprian_Kern/</link>
+		<link>https://azbyka.ru/otechnik/Kiprian_Kern/</link>
 	</person>
 	<person>
 		<name>Кирик%%</name>
@@ -2161,7 +2253,7 @@
 		<sex>m</sex>
 		<discription>Кирик Афонский, схиархимандрит</discription>
 		<lifedates>(?–15 декабря 1938 г.)</lifedates>
-		<link>http://azbyka.ru/otechnik/Kirik_Afonskij/</link>
+		<link>https://azbyka.ru/otechnik/Kirik_Afonskij/</link>
 	</person>
 	<person>
 		<name>Кирилл%%</name>
@@ -2169,7 +2261,7 @@
 		<sex>m</sex>
 		<discription>Кирилл Александрийский, святитель</discription>
 		<lifedates>(~377–444)</lifedates>
-		<link>http://azbyka.ru/otechnik/Kirill_Aleksandrijskij/</link>
+		<link>https://azbyka.ru/otechnik/Kirill_Aleksandrijskij/</link>
 	</person>
 	<person>
 		<name>Кирилл%%</name>
@@ -2177,7 +2269,7 @@
 		<sex>m</sex>
 		<discription>Кирилл Иерусалимский, святитель</discription>
 		<lifedates>(315–386)</lifedates>
-		<link>http://azbyka.ru/otechnik/Kirill_Ierusalimskij/</link>
+		<link>https://azbyka.ru/otechnik/Kirill_Ierusalimskij/</link>
 	</person>
 	<person>
 		<name>Кирилл%%</name>
@@ -2187,7 +2279,7 @@
 		<sex>m</sex>
 		<discription>Кирилл II, митрополит Киевский</discription>
 		<lifedates>(XII век–1233)</lifedates>
-		<link>http://azbyka.ru/otechnik/Kirill_Kievskij/</link>
+		<link>https://azbyka.ru/otechnik/Kirill_Kievskij/</link>
 	</person>
 	<person>
 		<name>Кирилл%%</name>
@@ -2197,7 +2289,7 @@
 		<sex>m</sex>
 		<discription>Кирилл II, митрополит Ростовский, святитель</discription>
 		<lifedates>(?–21 мая 1262)</lifedates>
-		<link>http://azbyka.ru/otechnik/Kirill_Rostovskij/</link>
+		<link>https://azbyka.ru/otechnik/Kirill_Rostovskij/</link>
 	</person>
 	<person>
 		<name>Кирилл%%</name>
@@ -2205,7 +2297,7 @@
 		<sex>m</sex>
 		<discription>Кирилл Скифопольский</discription>
 		<lifedates>(525–558)</lifedates>
-		<link>http://azbyka.ru/otechnik/Kirill_Skifopolskij/</link>
+		<link>https://azbyka.ru/otechnik/Kirill_Skifopolskij/</link>
 	</person>
 	<person>
 		<name>Кирилл%%</name>
@@ -2213,7 +2305,7 @@
 		<sex>m</sex>
 		<discription>Кирилл Туровский, святитель</discription>
 		<lifedates>(1130–~1182)</lifedates>
-		<link>http://azbyka.ru/otechnik/Kirill_Turovskij/</link>
+		<link>https://azbyka.ru/otechnik/Kirill_Turovskij/</link>
 	</person>
 	<person>
 		<name>Климент%%</name>
@@ -2221,7 +2313,7 @@
 		<sex>m</sex>
 		<discription>Климент Римский</discription>
 		<lifedates>(?–101)</lifedates>
-		<link>http://azbyka.ru/otechnik/Kliment_Rimskij/</link>
+		<link>https://azbyka.ru/otechnik/Kliment_Rimskij/</link>
 	</person>
 	<person>
 		<name>Климент%%</name>
@@ -2229,7 +2321,7 @@
 		<sex>m</sex>
 		<discription>Климент Александрийский</discription>
 		<lifedates>(~150–~220)</lifedates>
-		<link>http://azbyka.ru/otechnik/Kliment_Aleksandrijskij/</link>
+		<link>https://azbyka.ru/otechnik/Kliment_Aleksandrijskij/</link>
 	</person>
 	<person>
 		<name>Кодрат%%</name>
@@ -2237,7 +2329,7 @@
 		<sex>m</sex>
 		<discription>Кодрат Афинский, священномученик</discription>
 		<lifedates>(?–~130)</lifedates>
-		<link>http://azbyka.ru/otechnik/Kodrat_Afinskij/</link>
+		<link>https://azbyka.ru/otechnik/Kodrat_Afinskij/</link>
 	</person>
 	<person>
 		<name>Константин%%</name>
@@ -2245,7 +2337,7 @@
 		<sex>m</sex>
 		<discription>Константин Великий, равноапостольный</discription>
 		<lifedates>(27 февраля 272–22 мая 337)</lifedates>
-		<link>http://azbyka.ru/otechnik/Konstantin_Velikij/</link>
+		<link>https://azbyka.ru/otechnik/Konstantin_Velikij/</link>
 	</person>
 	<person>
 		<name>Константин%%</name>
@@ -2253,7 +2345,7 @@
 		<sex>m</sex>
 		<discription>отец Константин Пархоменко</discription>
 		<lifedates>(</lifedates>
-		<link>http://azbyka.ru/parkhomenko/</link>
+		<link>https://azbyka.ru/parkhomenko/</link>
 	</person>
 	<person>
 		<name>Константин%%</name>
@@ -2263,7 +2355,7 @@
 		<sex>m</sex>
 		<discription>Константин Тимофеевич Никольский, протоиерей</discription>
 		<lifedates>(27.04.1824—4.12.1910)</lifedates>
-		<link>http://azbyka.ru/otechnik/Konstantin_Nikolskij/</link>
+		<link>https://azbyka.ru/otechnik/Konstantin_Nikolskij/</link>
 	</person>
 	<person>
 		<name>Константин%%</name>
@@ -2273,7 +2365,7 @@
 		<sex>m</sex>
 		<discription>Константин Ефимович Скурат, профессор</discription>
 		<lifedates>(1.09.1929)</lifedates>
-		<link>http://azbyka.ru/otechnik/Konstantin_Skurat/</link>
+		<link>https://azbyka.ru/otechnik/Konstantin_Skurat/</link>
 	</person>
 	<person>
 		<name>Корнели$%</name>
@@ -2283,7 +2375,7 @@
 		<sex>m</sex>
 		<discription>Корнелий, папа Римский, святитель</discription>
 		<lifedates>(?–июнь 253)</lifedates>
-		<link>http://azbyka.ru/otechnik/Kornelij_Rimskij/</link>
+		<link>https://azbyka.ru/otechnik/Kornelij_Rimskij/</link>
 	</person>
 	<person>
 		<name>Косм$%</name>
@@ -2291,7 +2383,7 @@
 		<sex>m</sex>
 		<discription>Косма Этолийский, равноапостольный</discription>
 		<lifedates>(1714–1779)</lifedates>
-		<link>http://azbyka.ru/otechnik/Kosma_Etolijskij/</link>
+		<link>https://azbyka.ru/otechnik/Kosma_Etolijskij/</link>
 	</person>
 	<person>
 		<name>Косм$%</name>
@@ -2299,7 +2391,7 @@
 		<sex>m</sex>
 		<discription>Косма Маиумский, преподобный</discription>
 		<lifedates>(VIII век–~787)</lifedates>
-		<link>http://azbyka.ru/otechnik/Kosma_Maiumskij/</link>
+		<link>https://azbyka.ru/otechnik/Kosma_Maiumskij/</link>
 	</person>
 	<person>
 		<name>Лавренти$%</name>
@@ -2307,7 +2399,7 @@
 		<sex>m</sex>
 		<discription>Лаврентий Черниговский, преподобный</discription>
 		<lifedates>(1868–1950)</lifedates>
-		<link>http://azbyka.ru/otechnik/Lavrentij_Chernigovskij/</link>
+		<link>https://azbyka.ru/otechnik/Lavrentij_Chernigovskij/</link>
 	</person>
 	<person>
 		<name>Лазарь%%</name>
@@ -2316,7 +2408,7 @@
 		<sex>m</sex>
 		<discription>Лазарь (Абашидзе), архимандрит</discription>
 		<lifedates>(25.08.1939)</lifedates>
-		<link>http://azbyka.ru/otechnik/Lazar_Abashidze/</link>
+		<link>https://azbyka.ru/otechnik/Lazar_Abashidze/</link>
 	</person>
 	<person>
 		<name>Лактанци$%</name>
@@ -2325,7 +2417,7 @@
 		<sex>m</sex>
 		<discription>Лактанций</discription>
 		<lifedates>(~250–~325)</lifedates>
-		<link>http://azbyka.ru/otechnik/Laktantsij/</link>
+		<link>https://azbyka.ru/otechnik/Laktantsij/</link>
 	</person>
 	<person>
 		<name>Л[еь]в%%</name>
@@ -2333,7 +2425,7 @@
 		<sex>m</sex>
 		<discription>Лев Великий, святитель</discription>
 		<lifedates>(390–461)</lifedates>
-		<link>http://azbyka.ru/otechnik/Lev_Velikij/</link>
+		<link>https://azbyka.ru/otechnik/Lev_Velikij/</link>
 	</person>
 	<person>
 		<name>Л[еь]в%%</name>
@@ -2342,7 +2434,7 @@
 		<sex>m</sex>
 		<discription>Лев Оптинский (Наголкин), преподобный</discription>
 		<lifedates>(1768–24.10.1841)</lifedates>
-		<link>http://azbyka.ru/otechnik/Lev_Optinskij/</link>
+		<link>https://azbyka.ru/otechnik/Lev_Optinskij/</link>
 	</person>
 	<person>
 		<name>Л[еь]в%%</name>
@@ -2352,7 +2444,7 @@
 		<sex>m</sex>
 		<discription>Лев Александрович Тихомиров</discription>
 		<lifedates>(31.01.1852–16.10.1923)</lifedates>
-		<link>http://azbyka.ru/otechnik/Lev_Tihomirov/</link>
+		<link>https://azbyka.ru/otechnik/Lev_Tihomirov/</link>
 	</person>
 	<person>
 		<name>Леонид%%</name>
@@ -2361,7 +2453,7 @@
 		<sex>m</sex>
 		<discription>Леонид Грилихес, протоиерей</discription>
 		<lifedates>(9.04.1961)</lifedates>
-		<link>http://azbyka.ru/otechnik/Leonid_Grilihes/</link>
+		<link>https://azbyka.ru/otechnik/Leonid_Grilihes/</link>
 	</person>
 	<person>
 		<name>Леонид%%</name>
@@ -2371,7 +2463,7 @@
 		<sex>m</sex>
 		<discription>Леонид Александрович Успенский, профессор</discription>
 		<lifedates>(8.08.1902–12.12.1987)</lifedates>
-		<link>http://azbyka.ru/otechnik/Leonid_Uspenskij/</link>
+		<link>https://azbyka.ru/otechnik/Leonid_Uspenskij/</link>
 	</person>
 	<person>
 		<name>Леонти$%</name>
@@ -2379,7 +2471,7 @@
 		<sex>m</sex>
 		<discription>Леонтий Иерусалимский, святитель</discription>
 		<lifedates>(~1120–1186(7))</lifedates>
-		<link>http://azbyka.ru/otechnik/Leontij_Ierusalimskij/</link>
+		<link>https://azbyka.ru/otechnik/Leontij_Ierusalimskij/</link>
 	</person>
 	<person>
 		<name>Леонти$%</name>
@@ -2387,7 +2479,7 @@
 		<sex>m</sex>
 		<discription>Леонтий Византийский</discription>
 		<lifedates>(~485–после 541)</lifedates>
-		<link>http://azbyka.ru/otechnik/Leontij_Vizantijskij/</link>
+		<link>https://azbyka.ru/otechnik/Leontij_Vizantijskij/</link>
 	</person>
 	<person>
 		<name>Ливери$%</name>
@@ -2396,7 +2488,7 @@
 		<sex>m</sex>
 		<discription>Ливерий Воронов, протоиерей</discription>
 		<lifedates>(1914–1995)</lifedates>
-		<link>http://azbyka.ru/otechnik/Liverij_Voronov/</link>
+		<link>https://azbyka.ru/otechnik/Liverij_Voronov/</link>
 	</person>
 	<person>
 		<name>Лук$%</name>
@@ -2405,7 +2497,7 @@
 		<sex>m</sex>
 		<discription>Лука (Войно-Ясенецкий), святитель</discription>
 		<lifedates>(1877–1961)</lifedates>
-		<link>http://azbyka.ru/otechnik/Luka_Vojno-Jasenetskij/</link>
+		<link>https://azbyka.ru/otechnik/Luka_Vojno-Jasenetskij/</link>
 	</person>
 	<person>
 		<name>Макари$%</name>
@@ -2413,15 +2505,15 @@
 		<sex>m</sex>
 		<discription>Макарий Александрийский, преподобный</discription>
 		<lifedates>(295–~395)</lifedates>
-		<link>http://azbyka.ru/otechnik/Makarij_Aleksandrijskij/</link>
-	</person>
+		<link>https://azbyka.ru/otechnik/Makarij_Aleksandrijskij/</link>
+	</person> 
 	<person>
 		<name>Макари$%</name>
 		<nick>Алтайск$$%</nick>
 		<sex>m</sex>
 		<discription>Макарий Алтайский, преподобный</discription>
 		<lifedates>(8 ноября 1792–18 мая 1847)</lifedates>
-		<link>http://azbyka.ru/otechnik/Makarij_Altajskij/</link>
+		<link>https://azbyka.ru/otechnik/Makarij_Altajskij/</link>
 	</person>
 	<person>
 		<name>Макари$%</name>
@@ -2430,7 +2522,7 @@
 		<sex>m</sex>
 		<discription>Макарий (Булгаков), митрополит</discription>
 		<lifedates>(19.09.1816–9.06.1882)</lifedates>
-		<link>http://azbyka.ru/otechnik/Makarij_Bulgakov/</link>
+		<link>https://azbyka.ru/otechnik/Makarij_Bulgakov/</link>
 	</person>
 	<person>
 		<name>Макари$%</name>
@@ -2438,8 +2530,16 @@
 		<sex>m</sex>
 		<discription>Макарий Великий, Египетский, преподобный</discription>
 		<lifedates>(~300–391)</lifedates>
-		<link>http://azbyka.ru/otechnik/Makarij_Velikij/</link>
-	</person>
+		<link>https://azbyka.ru/otechnik/Makarij_Velikij/</link>
+	</person> 
+	<person>
+		<name>Макари$%</name>
+		<nick>Египетск$$%</nick>
+		<sex>m</sex>
+		<discription>Макарий Великий, Египетский, преподобный</discription>
+		<lifedates>(~300–391)</lifedates>
+		<link>https://azbyka.ru/otechnik/Makarij_Velikij/</link>
+	</person> 
 	<person>
 		<name>Макари$%</name>
 		<nick/>
@@ -2447,7 +2547,7 @@
 		<sex>m</sex>
 		<discription>Макарий (Веретенников), архимандрит</discription>
 		<lifedates>(9.11.1951)</lifedates>
-		<link>http://azbyka.ru/otechnik/Makarij_Veretennikov/</link>
+		<link>https://azbyka.ru/otechnik/Makarij_Veretennikov/</link>
 	</person>
 	<person>
 		<name>Макари$%</name>
@@ -2456,7 +2556,7 @@
 		<sex>m</sex>
 		<discription>Макарий (Невский), святитель</discription>
 		<lifedates>(1835–1926)</lifedates>
-		<link>http://azbyka.ru/otechnik/Makarij_Nevskij/</link>
+		<link>https://azbyka.ru/otechnik/Makarij_Nevskij/</link>
 	</person>
 	<person>
 		<name>Макари$%</name>
@@ -2465,7 +2565,7 @@
 		<sex>m</sex>
 		<discription>Макарий Оптинский (Иванов), преподобный</discription>
 		<lifedates>(1788–1860)</lifedates>
-		<link>http://azbyka.ru/otechnik/Makarij_Optinskij/</link>
+		<link>https://azbyka.ru/otechnik/Makarij_Optinskij/</link>
 	</person>
 	<person>
 		<name>Максим%%</name>
@@ -2473,7 +2573,7 @@
 		<sex>m</sex>
 		<discription>Максим Грек, преподобный</discription>
 		<lifedates>(~1475–1556)</lifedates>
-		<link>http://azbyka.ru/otechnik/Maksim_Grek/</link>
+		<link>https://azbyka.ru/otechnik/Maksim_Grek/</link>
 	</person>
 	<person>
 		<name>Максим%%</name>
@@ -2481,7 +2581,7 @@
 		<sex>m</sex>
 		<discription>Максим Исповедник, преподобный</discription>
 		<lifedates>(~580–662)</lifedates>
-		<link>http://azbyka.ru/otechnik/Maksim_Ispovednik/</link>
+		<link>https://azbyka.ru/otechnik/Maksim_Ispovednik/</link>
 	</person>
 	<person>
 		<name>Марк%%</name>
@@ -2489,15 +2589,15 @@
 		<sex>m</sex>
 		<discription>Марк Подвижник, преподобный</discription>
 		<lifedates>(IV–V века)</lifedates>
-		<link>http://azbyka.ru/otechnik/Mark_Podvizhnik/</link>
+		<link>https://azbyka.ru/otechnik/Mark_Podvizhnik/</link>
 	</person>
 	<person>
 		<name>Марк%%</name>
-		<nick>Эфесск$$%</nick>
+		<nick>[ЕЭ]фесск$$%</nick>
 		<sex>m</sex>
 		<discription>Марк Эфесский, святитель</discription>
 		<lifedates>(1392–1444)</lifedates>
-		<link>http://azbyka.ru/otechnik/Mark_Efesskij/</link>
+		<link>https://azbyka.ru/otechnik/Mark_Efesskij/</link>
 	</person>
 	<person>
 		<name>Маркеллин%%</name>
@@ -2507,7 +2607,7 @@
 		<sex>m</sex>
 		<discription>Маркеллин Алексеевич Олесницкий, профессор</discription>
 		<lifedates>(1848–март 1905)</lifedates>
-		<link>http://azbyka.ru/otechnik/Markellin_Olesnickij/</link>
+		<link>https://azbyka.ru/otechnik/Markellin_Olesnickij/</link>
 	</person>
 	<person>
 		<name>Матве$%</name>
@@ -2516,7 +2616,7 @@
 		<sex>m</sex>
 		<discription>Матвей Барсов</discription>
 		<lifedates>(начало XIX–28.02.1896)</lifedates>
-		<link>http://azbyka.ru/otechnik/Matvej_Barsov/</link>
+		<link>https://azbyka.ru/otechnik/Matvej_Barsov/</link>
 	</person>
 	<person>
 		<name>Матфе$%</name>
@@ -2525,7 +2625,7 @@
 		<sex>m</sex>
 		<discription>Матфей Властарь</discription>
 		<lifedates>(?–~1360)</lifedates>
-		<link>http://azbyka.ru/otechnik/Matfej_Vlastar/</link>
+		<link>https://azbyka.ru/otechnik/Matfej_Vlastar/</link>
 	</person>
 	<person>
 		<name>Мелети$%</name>
@@ -2533,7 +2633,7 @@
 		<sex>m</sex>
 		<discription>Мелетий Александрийский, святитель</discription>
 		<lifedates>(1549–13 сентября 1601)</lifedates>
-		<link>http://azbyka.ru/otechnik/Meletij_Aleksandrijskij/</link>
+		<link>https://azbyka.ru/otechnik/Meletij_Aleksandrijskij/</link>
 	</person>
 	<person>
 		<name>Мелитон%%</name>
@@ -2541,7 +2641,7 @@
 		<sex>m</sex>
 		<discription>Мелитон Сардийский, святитель</discription>
 		<lifedates>(начало II века–~190)</lifedates>
-		<link>http://azbyka.ru/otechnik/Meliton_Sardijskij/</link>
+		<link>https://azbyka.ru/otechnik/Meliton_Sardijskij/</link>
 	</person>
 	<person>
 		<name>Мефоди$%</name>
@@ -2550,7 +2650,7 @@
 		<sex>m</sex>
 		<discription>Мефодий I Константинопольский, исповедник, святитель</discription>
 		<lifedates>(788/800–847)</lifedates>
-		<link>http://azbyka.ru/otechnik/Mefodij_Konstantinopolskij/</link>
+		<link>https://azbyka.ru/otechnik/Mefodij_Konstantinopolskij/</link>
 	</person>
 	<person>
 		<name>Мефоди$%</name>
@@ -2558,7 +2658,7 @@
 		<sex>m</sex>
 		<discription>Мефодий Олимпийский, епископ Патарский, священномученик</discription>
 		<lifedates>(~260–312)</lifedates>
-		<link>http://azbyka.ru/otechnik/Mefodij_Olimpijskij/</link>
+		<link>https://azbyka.ru/otechnik/Mefodij_Olimpijskij/</link>
 	</person>
 	<person>
 		<name>Минуци$%</name>
@@ -2567,7 +2667,15 @@
 		<sex>m</sex>
 		<discription>Минуций Феликс</discription>
 		<lifedates>(II–III века)</lifedates>
-		<link>http://azbyka.ru/otechnik/Minutsij_Feliks/</link>
+		<link>https://azbyka.ru/otechnik/Minutsij_Feliks/</link>
+	</person>
+	<person>
+		<name>Митрофан%%</name>
+		<nick>Зноско-Боровски%%</nick>
+		<sex>m</sex>
+		<discription>Митрофан (Зноско-Боровский), епископ</discription>
+		<lifedates>(17.08.1909–15.02.2002)</lifedates>
+		<link>https://azbyka.ru/otechnik/Mitrofan_Znosko_Borovskij/</link>
 	</person>
 	<person>
 		<name>Митрофан%%</name>
@@ -2575,7 +2683,7 @@
 		<sex>m</sex>
 		<discription>Митрофан Воронежский, святитель</discription>
 		<lifedates>(6 ноября 1623–23 ноября 1703)</lifedates>
-		<link>http://azbyka.ru/otechnik/Mitrofan_Voronezhskij/</link>
+		<link>https://azbyka.ru/otechnik/Mitrofan_Voronezhskij/</link>
 	</person>
 	<person>
 		<name>Михаил%%</name>
@@ -2584,7 +2692,7 @@
 		<sex>m</sex>
 		<discription>Михаил (Грибановский), епископ</discription>
 		<lifedates>(14.11.1856–31.08.1898)</lifedates>
-		<link>http://azbyka.ru/otechnik/Mihail_Gribanovskij/</link>
+		<link>https://azbyka.ru/otechnik/Mihail_Gribanovskij/</link>
 	</person>
 	<person>
 		<name>Михаил%%</name>
@@ -2593,7 +2701,7 @@
 		<sex>m</sex>
 		<discription>Михаил (Лузин), епископ</discription>
 		<lifedates>(1830–20 марта 1887)</lifedates>
-		<link>http://azbyka.ru/otechnik/Mihail_Luzin/</link>
+		<link>https://azbyka.ru/otechnik/Mihail_Luzin/</link>
 	</person>
 	<person>
 		<name>Михаил%%</name>
@@ -2602,7 +2710,7 @@
 		<sex>m</sex>
 		<discription>Михаил (Мудьюгин), архиепископ</discription>
 		<lifedates>(12.05.1912–28.02.2000)</lifedates>
-		<link>http://azbyka.ru/otechnik/Mihail_Mudyugin/</link>
+		<link>https://azbyka.ru/otechnik/Mihail_Mudyugin/</link>
 	</person>
 	<person>
 		<name>Михаил%%</name>
@@ -2611,7 +2719,7 @@
 		<sex>m</sex>
 		<discription>Михаил Дронов, протоиерей</discription>
 		<lifedates>(09.11.1957)</lifedates>
-		<link>http://azbyka.ru/otechnik/Mihail_Dronov/</link>
+		<link>https://azbyka.ru/otechnik/Mihail_Dronov/</link>
 	</person>
 	<person>
 		<name>Михаил%%</name>
@@ -2620,7 +2728,7 @@
 		<sex>m</sex>
 		<discription>Михаил Новоселов, мученик</discription>
 		<lifedates>(1.07.1864—17.01.1938)</lifedates>
-		<link>http://azbyka.ru/otechnik/Mihail_Novoselov/</link>
+		<link>https://azbyka.ru/otechnik/Mihail_Novoselov/</link>
 	</person>
 	<person>
 		<name>Михаил%%</name>
@@ -2629,7 +2737,7 @@
 		<sex>m</sex>
 		<discription>Михаил Помазанский, протопресвитер</discription>
 		<lifedates>(1888–1988)</lifedates>
-		<link>http://azbyka.ru/otechnik/Mihail_Pomazanskij/</link>
+		<link>https://azbyka.ru/otechnik/Mihail_Pomazanskij/</link>
 	</person>
 	<person>
 		<name>Михаил%%</name>
@@ -2639,7 +2747,7 @@
 		<sex>m</sex>
 		<discription>Михаил Эммануилович Поснов, профессор</discription>
 		<lifedates>(1873–3.10.1931)</lifedates>
-		<link>http://azbyka.ru/otechnik/Mihail_Posnov/</link>
+		<link>https://azbyka.ru/otechnik/Mihail_Posnov/</link>
 	</person>
 	<person>
 		<name>Михаил%%</name>
@@ -2648,7 +2756,7 @@
 		<sex>m</sex>
 		<discription>Михаил Пселл</discription>
 		<lifedates>(1018–~1078)</lifedates>
-		<link>http://azbyka.ru/otechnik/Mihail_Psell/</link>
+		<link>https://azbyka.ru/otechnik/Mihail_Psell/</link>
 	</person>
 	<person>
 		<name>Михаил%%</name>
@@ -2658,7 +2766,7 @@
 		<sex>m</sex>
 		<discription>Михаил Николаевич Скабалланович, профессор</discription>
 		<lifedates>(23.10.1871–1931)</lifedates>
-		<link>http://azbyka.ru/otechnik/Mihail_Skaballanovich/</link>
+		<link>https://azbyka.ru/otechnik/Mihail_Skaballanovich/</link>
 	</person>
 	<person>
 		<name>Михаил%%</name>
@@ -2667,7 +2775,7 @@
 		<sex>m</sex>
 		<discription>Михаил Чельцов, священномученик</discription>
 		<lifedates>(1870–7 января 1931)</lifedates>
-		<link>http://azbyka.ru/otechnik/Mihail_Cheltsov/</link>
+		<link>https://azbyka.ru/otechnik/Mihail_Cheltsov/</link>
 	</person>
 	<person>
 		<name>Моисе$%</name>
@@ -2677,7 +2785,7 @@
 		<sex>m</sex>
 		<discription>Моисей, архимандрит, старец Брянской Белобережной Пустыни</discription>
 		<lifedates>(1772—1848)</lifedates>
-		<link>http://azbyka.ru/otechnik/Moisej/</link>
+		<link>https://azbyka.ru/otechnik/Moisej/</link>
 	</person>
 	<person>
 		<name>Нафанаил%%</name>
@@ -2686,7 +2794,7 @@
 		<sex>m</sex>
 		<discription>Нафанаил (Львов), архиепископ</discription>
 		<lifedates>(30.08.1906–8.11.1986)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nafanail_Lvov/</link>
+		<link>https://azbyka.ru/otechnik/Nafanail_Lvov/</link>
 	</person>
 	<person>
 		<name>Нектари$%</name>
@@ -2694,7 +2802,7 @@
 		<sex>m</sex>
 		<discription>Нектарий Эгинский, святитель</discription>
 		<lifedates>(1 октября 1846–8 ноября 1920)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nektarij_Eginskij/</link>
+		<link>https://azbyka.ru/otechnik/Nektarij_Eginskij/</link>
 	</person>
 	<person>
 		<name>Нектари$%</name>
@@ -2703,7 +2811,7 @@
 		<sex>m</sex>
 		<discription>Нектарий Оптинский (Тихонов), преподобный</discription>
 		<lifedates>(1853–12.05.1928)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nektarij_Optinskij/</link>
+		<link>https://azbyka.ru/otechnik/Nektarij_Optinskij/</link>
 	</person>
 	<person>
 		<name>Немеси$%</name>
@@ -2711,7 +2819,7 @@
 		<sex>m</sex>
 		<discription>Немесий Емесский, епископ</discription>
 		<lifedates>(ок. 390–?)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nemesij_Emesskij/</link>
+		<link>https://azbyka.ru/otechnik/Nemesij_Emesskij/</link>
 	</person>
 	<person>
 		<name>Неофит%%</name>
@@ -2721,7 +2829,7 @@
 		<sex>m</sex>
 		<discription>Неофит, затворник Кипрский, преподобный</discription>
 		<lifedates>(1134–не ранее 1220)</lifedates>
-		<link>http://azbyka.ru/otechnik/Neofit_Kiprskij/</link>
+		<link>https://azbyka.ru/otechnik/Neofit_Kiprskij/</link>
 	</person>
 	<person>
 		<name>Нестор%%</name>
@@ -2729,7 +2837,7 @@
 		<sex>m</sex>
 		<discription>Нестор Летописец, преподобный</discription>
 		<lifedates>(~1056–1114)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nestor_Letopisets/</link>
+		<link>https://azbyka.ru/otechnik/Nestor_Letopisets/</link>
 	</person>
 	<person>
 		<name>Никанор%%</name>
@@ -2738,7 +2846,7 @@
 		<sex>m</sex>
 		<discription>Никанор (Каменский), епископ Смоленский</discription>
 		<lifedates>(1847—1910)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikanor_Kamenskij/</link>
+		<link>https://azbyka.ru/otechnik/Nikanor_Kamenskij/</link>
 	</person>
 	<person>
 		<name>Никанор%%</name>
@@ -2747,7 +2855,7 @@
 		<sex>m</sex>
 		<discription>Никанор (Бровкович), архиепископ</discription>
 		<lifedates>(20.11.1826–27.12.1890)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikanor_Brovkovich/</link>
+		<link>https://azbyka.ru/otechnik/Nikanor_Brovkovich/</link>
 	</person>
 	<person>
 		<name>Никит$%</name>
@@ -2755,7 +2863,7 @@
 		<sex>m</sex>
 		<discription>Никита Стифат, преподобный</discription>
 		<lifedates>(X–XI)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikita_Stifat/</link>
+		<link>https://azbyka.ru/otechnik/Nikita_Stifat/</link>
 	</person>
 	<person>
 		<name>Никит$%</name>
@@ -2763,7 +2871,7 @@
 		<sex>m</sex>
 		<discription>Никита Хониат</discription>
 		<lifedates>(~1155–~1213-1216)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikita_Honiat/</link>
+		<link>https://azbyka.ru/otechnik/Nikita_Honiat/</link>
 	</person>
 	<person>
 		<name>Никифор%%</name>
@@ -2771,7 +2879,7 @@
 		<sex>m</sex>
 		<discription>Никифор Константинопольский, исповедник, святитель</discription>
 		<lifedates>(~758–828)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikifor_Konstantinopolskij/</link>
+		<link>https://azbyka.ru/otechnik/Nikifor_Konstantinopolskij/</link>
 	</person>
 	<person>
 		<name>Никифор%%</name>
@@ -2780,7 +2888,7 @@
 		<sex>m</sex>
 		<discription>Никифор (Феотокис), архиепископ Астраханский</discription>
 		<lifedates>(1731–1800)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikifor_Feotokis/</link>
+		<link>https://azbyka.ru/otechnik/Nikifor_Feotokis/</link>
 	</person>
 	<person>
 		<name>Никифор%%</name>
@@ -2789,7 +2897,7 @@
 		<sex>m</sex>
 		<discription>Никифор (Бажанов), архимандрит</discription>
 		<lifedates>(28.05.1832–27.12.1895)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikifor/</link>
+		<link>https://azbyka.ru/otechnik/Nikifor/</link>
 	</person>
 	<person>
 		<name>Никодим%%</name>
@@ -2798,7 +2906,7 @@
 		<sex>m</sex>
 		<discription>Никодим (Милаш), священноисповедник</discription>
 		<lifedates>(1845–1915)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikodim_Milash/</link>
+		<link>https://azbyka.ru/otechnik/Nikodim_Milash/</link>
 	</person>
 	<person>
 		<name>Никодим%%</name>
@@ -2806,7 +2914,7 @@
 		<sex>m</sex>
 		<discription>Никодим Святогорец, преподобный</discription>
 		<lifedates>(1749–1809)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikodim_Svjatogorets/</link>
+		<link>https://azbyka.ru/otechnik/Nikodim_Svjatogorets/</link>
 	</person>
 	<person>
 		<name>Никодим%%</name>
@@ -2814,7 +2922,7 @@
 		<sex>m</sex>
 		<discription>Никодим Карульский, схимонах</discription>
 		<lifedates>(~1885–1984)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikodim_Karulskij/</link>
+		<link>https://azbyka.ru/otechnik/Nikodim_Karulskij/</link>
 	</person>
 	<person>
 		<name>Никола$%</name>
@@ -2823,7 +2931,7 @@
 		<sex>m</sex>
 		<discription>Николай (Могилевский), священноисповедник</discription>
 		<lifedates>(9.04.1877–25.10.1955)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikolaj_Mogilevskij/</link>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Mogilevskij/</link>
 	</person>
 	<person>
 		<name>Никола$%</name>
@@ -2833,7 +2941,7 @@
 		<sex>m</sex>
 		<discription>Николай Николаевич Афанасьев, протопресвитер</discription>
 		<lifedates>(4.09.1893–4.12.1966)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikolaj_Afanasev/</link>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Afanasev/</link>
 	</person>
 	<person>
 		<name>Никола$%</name>
@@ -2841,7 +2949,7 @@
 		<sex>m</sex>
 		<discription>Николай Варжанский, мученик</discription>
 		<lifedates>(1881–1918)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikolaj_Varzhanskij/</link>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Varzhanskij/</link>
 	</person>
 	<person>
 		<name>Никола$%</name>
@@ -2851,7 +2959,7 @@
 		<sex>m</sex>
 		<discription>Николай Никанорович Глубоковский, профессор</discription>
 		<lifedates>(6.12.1863–18.03.1937)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikolaj_Glubokovskij/</link>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Glubokovskij/</link>
 	</person>
 	<person>
 		<name>Никола$%</name>
@@ -2860,7 +2968,7 @@
 		<sex>m</sex>
 		<discription>Николай Гурьянов, протоиерей</discription>
 		<lifedates>(24.05.1909–24.08.2002)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikolaj_Gurjanov/</link>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Gurjanov/</link>
 	</person>
 	<person>
 		<name>Никола$%</name>
@@ -2868,7 +2976,7 @@
 		<sex>m</sex>
 		<discription>Николай Кавасила, праведный</discription>
 		<lifedates>(1322–1397(8))</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikolaj_Kavasila/</link>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Kavasila/</link>
 	</person>
 	<person>
 		<name>Никола$%</name>
@@ -2878,7 +2986,7 @@
 		<sex>m</sex>
 		<discription>Николай Фомич Красносельцев, профессор</discription>
 		<lifedates>(1845–11.09.1898)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikolaj_Krasnoselcev/</link>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Krasnoselcev/</link>
 	</person>
 	<person>
 		<name>Никола$%</name>
@@ -2886,7 +2994,7 @@
 		<sex>m</sex>
 		<discription>Николай Мефонский, епископ</discription>
 		<lifedates>(?–между 1157 и 1166)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikolaj_Mefonskij/</link>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Mefonskij/</link>
 	</person>
 	<person>
 		<name>Никола$%</name>
@@ -2894,7 +3002,7 @@
 		<sex>m</sex>
 		<discription>Николай Мистик, святитель</discription>
 		<lifedates>(852–925)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikolaj_Mistik/</link>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Mistik/</link>
 	</person>
 	<person>
 		<name>Никола$%</name>
@@ -2904,7 +3012,7 @@
 		<sex>m</sex>
 		<discription>Николай Евграфович Пестов, профессор</discription>
 		<lifedates>(1892–1982)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikolaj_Pestov/</link>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Pestov/</link>
 	</person>
 	<person>
 		<name>Никола$%</name>
@@ -2912,7 +3020,7 @@
 		<sex>m</sex>
 		<discription>Николай Сербский, святитель</discription>
 		<lifedates>(1880–1956)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikolaj_Serbskij/</link>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Serbskij/</link>
 	</person>
 	<person>
 		<name>Никола$%</name>
@@ -2922,7 +3030,7 @@
 		<sex>m</sex>
 		<discription>Николай Семёнович Суворов, профессор</discription>
 		<lifedates>(1848–6.08.1909)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikolaj_Suvorov/</link>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Suvorov/</link>
 	</person>
 	<person>
 		<name>Никола$%</name>
@@ -2932,7 +3040,7 @@
 		<sex>m</sex>
 		<discription>Николай Дмитриевич Успенский, профессор</discription>
 		<lifedates>(15.01.1900–23.07.1987)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikolaj_Uspenskij/</link>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Uspenskij/</link>
 	</person>
 	<person>
 		<name>Никола$%</name>
@@ -2941,7 +3049,7 @@
 		<sex>m</sex>
 		<discription>Николай Японский (Касаткин), равноапостольный</discription>
 		<lifedates>(13.08.1836–16.02.1912)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikolaj_Japonskij/</link>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Japonskij/</link>
 	</person>
 	<person>
 		<name>Никон%%</name>
@@ -2950,7 +3058,7 @@
 		<sex>m</sex>
 		<discription>Никон (Воробьев), игумен</discription>
 		<lifedates>(1894–1963)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikon_Vorobev/</link>
+		<link>https://azbyka.ru/otechnik/Nikon_Vorobev/</link>
 	</person>
 	<person>
 		<name>Никон%%</name>
@@ -2959,7 +3067,7 @@
 		<sex>m</sex>
 		<discription>Никон Оптинский (Беляев), исповедник, преподобный</discription>
 		<lifedates>(26.09.1888–25.06.1931)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikon_Optinskij/</link>
+		<link>https://azbyka.ru/otechnik/Nikon_Optinskij/</link>
 	</person>
 	<person>
 		<name>Никон%%</name>
@@ -2968,7 +3076,7 @@
 		<sex>m</sex>
 		<discription>Никон (Рождественский), архимандрит</discription>
 		<lifedates>(4.04.1851–12.01.1919)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nikon_Rozhdestvenskij/</link>
+		<link>https://azbyka.ru/otechnik/Nikon_Rozhdestvenskij/</link>
 	</person>
 	<person>
 		<name>Нил%%</name>
@@ -2976,7 +3084,15 @@
 		<sex>m</sex>
 		<discription>Нил Синайский, преподобный</discription>
 		<lifedates>(?–450)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nil_Sinajskij/</link>
+		<link>https://azbyka.ru/otechnik/Nil_Sinajskij/</link>
+	</person>
+	<person>
+		<name>Нил%%</name>
+		<nick>Анкирск$$%</nick>
+		<sex>m</sex>
+		<discription>Нил Синайский, преподобный</discription>
+		<lifedates>(?–450)</lifedates>
+		<link>https://azbyka.ru/otechnik/Nil_Sinajskij/</link>
 	</person>
 	<person>
 		<name>Нил%%</name>
@@ -2984,7 +3100,7 @@
 		<sex>m</sex>
 		<discription>Нил Сорский, преподобный</discription>
 		<lifedates>(1433–1508)</lifedates>
-		<link>http://azbyka.ru/otechnik/Nil_Sorskij/</link>
+		<link>https://azbyka.ru/otechnik/Nil_Sorskij/</link>
 	</person>
 	<person>
 		<name>Олег%%</name>
@@ -2993,7 +3109,7 @@
 		<sex>m</sex>
 		<discription>Олег Давыденков, протоиерей</discription>
 		<lifedates>(20.03.1966)</lifedates>
-		<link>http://azbyka.ru/otechnik/Oleg_Davydenkov/</link>
+		<link>https://azbyka.ru/otechnik/Oleg_Davydenkov/</link>
 	</person>
 	<person>
 		<name>Онуфри$%</name>
@@ -3002,7 +3118,7 @@
 		<sex>m</sex>
 		<discription>Онуфрий (Гагалюк), священномученик</discription>
 		<lifedates>(2.04.1889—1.06.1938)</lifedates>
-		<link>http://azbyka.ru/otechnik/Onufrij_Gagaluk/</link>
+		<link>https://azbyka.ru/otechnik/Onufrij_Gagaluk/</link>
 	</person>
 	<person>
 		<name>Ориген%%</name>
@@ -3011,7 +3127,7 @@
 		<sex>m</sex>
 		<discription>Ориген</discription>
 		<lifedates>(~185–254)</lifedates>
-		<link>http://azbyka.ru/otechnik/Origen/</link>
+		<link>https://azbyka.ru/otechnik/Origen/</link>
 	</person>
 	<person>
 		<name>Ортиси$%</name>
@@ -3019,7 +3135,7 @@
 		<sex>m</sex>
 		<discription>Ортисий Тавеннский, преподобный</discription>
 		<lifedates>(?–после 368)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ortisij_Tavennskij/</link>
+		<link>https://azbyka.ru/otechnik/Ortisij_Tavennskij/</link>
 	</person>
 	<person>
 		<name>Павел%%</name>
@@ -3028,7 +3144,7 @@
 		<sex>m</sex>
 		<discription>Павел (Кратиров), священномученик</discription>
 		<lifedates>( 6 мая 1871–23 дек./5 янв. 1932)</lifedates>
-		<link>http://azbyka.ru/otechnik/Pavel_Kratirov/</link>
+		<link>https://azbyka.ru/otechnik/Pavel_Kratirov/</link>
 	</person>
 	<person>
 		<name>Павел%%</name>
@@ -3038,7 +3154,7 @@
 		<sex>m</sex>
 		<discription>Павел Николаевич Евдокимов, профессор</discription>
 		<lifedates>(1901–16.09.1970)</lifedates>
-		<link>http://azbyka.ru/otechnik/Pavel_Evdokimov/</link>
+		<link>https://azbyka.ru/otechnik/Pavel_Evdokimov/</link>
 	</person>
 	<person>
 		<name>Павел%%</name>
@@ -3048,7 +3164,7 @@
 		<sex>m</sex>
 		<discription>Павел Алексеевич Матвеевский, протоиерей</discription>
 		<lifedates>(около 1828–09.12.1900)</lifedates>
-		<link>http://azbyka.ru/otechnik/Pavel_Matveevskij/</link>
+		<link>https://azbyka.ru/otechnik/Pavel_Matveevskij/</link>
 	</person>
 	<person>
 		<name>Павел%%</name>
@@ -3058,7 +3174,7 @@
 		<sex>m</sex>
 		<discription>Павел Иванович Савваитов</discription>
 		<lifedates>(15.02.1815–12.07.1895)</lifedates>
-		<link>http://azbyka.ru/otechnik/Pavel_Savvaitov/</link>
+		<link>https://azbyka.ru/otechnik/Pavel_Savvaitov/</link>
 	</person>
 	<person>
 		<name>Павел%%</name>
@@ -3067,7 +3183,7 @@
 		<sex>m</sex>
 		<discription>Павел Сержантов, диакон</discription>
 		<lifedates>(24.10.1973)</lifedates>
-		<link>http://azbyka.ru/otechnik/Pavel_Serzhantov/</link>
+		<link>https://azbyka.ru/otechnik/Pavel_Serzhantov/</link>
 	</person>
 	<person>
 		<name>Павел%%</name>
@@ -3076,7 +3192,7 @@
 		<sex>m</sex>
 		<discription>Павел Флоренский, священник</discription>
 		<lifedates>(9.01.1882–8.12.1937)</lifedates>
-		<link>http://azbyka.ru/otechnik/Pavel_Florenskij/</link>
+		<link>https://azbyka.ru/otechnik/Pavel_Florenskij/</link>
 	</person>
 	<person>
 		<name>Павел%%</name>
@@ -3086,7 +3202,7 @@
 		<sex>m</sex>
 		<discription>Павел Александрович Юнгеров, профессор</discription>
 		<lifedates>(1856–1921(22))</lifedates>
-		<link>http://azbyka.ru/otechnik/Pavel_Yungerov/</link>
+		<link>https://azbyka.ru/otechnik/Pavel_Yungerov/</link>
 	</person>
 	<person>
 		<name>Павлин%%</name>
@@ -3094,7 +3210,7 @@
 		<sex>m</sex>
 		<discription>Павлин Ноланский, блаженный</discription>
 		<lifedates>(~353–22 июня 431)</lifedates>
-		<link>http://azbyka.ru/otechnik/Pavlin_Nolanskij/</link>
+		<link>https://azbyka.ru/otechnik/Pavlin_Nolanskij/</link>
 	</person>
 	<person>
 		<name>Паиси$%</name>
@@ -3103,7 +3219,7 @@
 		<sex>m</sex>
 		<discription>Паисий (Величковский), преподобный</discription>
 		<lifedates>(1722–1794)</lifedates>
-		<link>http://azbyka.ru/otechnik/Paisij_Velichkovskij/</link>
+		<link>https://azbyka.ru/otechnik/Paisij_Velichkovskij/</link>
 	</person>
 	<person>
 		<name>Паиси$%</name>
@@ -3111,7 +3227,7 @@
 		<sex>m</sex>
 		<discription>Паисий Святогорец, преподобный</discription>
 		<lifedates>(25 июля 1924–12 июля 1994)</lifedates>
-		<link>http://azbyka.ru/otechnik/Paisij_Svjatogorets/</link>
+		<link>https://azbyka.ru/otechnik/Paisij_Svjatogorets/</link>
 	</person>
 	<person>
 		<name>Пантелеимон%$$</name>
@@ -3120,7 +3236,7 @@
 		<sex>m</sex>
 		<discription>Пантелеимон (Нижник), архимандрит</discription>
 		<lifedates>(4.01.1895–13.01.1985)</lifedates>
-		<link>http://azbyka.ru/otechnik/Panteleimon_Nizhnik/</link>
+		<link>https://azbyka.ru/otechnik/Panteleimon_Nizhnik/</link>
 	</person>
 	<person>
 		<name>Марк%%</name>
@@ -3128,7 +3244,7 @@
 		<sex>m</sex>
 		<discription>Марк (Лозинский), игумен</discription>
 		<lifedates>(4.06.1939–29.01.1973)</lifedates>
-		<link>http://azbyka.ru/otechnik/Mark_Lozinskij/</link>
+		<link>https://azbyka.ru/otechnik/Mark_Lozinskij/</link>
 	</person>
 	<person>
 		<name>Иоанн%%</name>
@@ -3137,7 +3253,7 @@
 		<sex>m</sex>
 		<discription>Иоанн Орфанитский, иерей</discription>
 		<lifedates>(1854–?)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ioann_Orfanitskij/</link>
+		<link>https://azbyka.ru/otechnik/Ioann_Orfanitskij/</link>
 	</person>
 	<person>
 		<name>Иван%</name>
@@ -3147,7 +3263,7 @@
 		<sex>m</sex>
 		<discription>Иван Николаевич Бухарев, протоиерей</discription>
 		<lifedates>(?–1909)</lifedates>
-		<link>http://azbyka.ru/otechnik/Ivan_Buharev/</link>
+		<link>https://azbyka.ru/otechnik/Ivan_Buharev/</link>
 	</person>
 	<person>
 		<name>Серафим%%</name>
@@ -3157,7 +3273,7 @@
 		<sex>m</sex>
 		<discription>схиархимандрит Серафим Глинский (Романцов)</discription>
 		<lifedates>(28.06.1885–1.01.1976)</lifedates>
-		<link>http://azbyka.ru/otechnik/Serafim_Glinskij/</link>
+		<link>https://azbyka.ru/otechnik/Serafim_Glinskij/</link>
 	</person>
 	<person>
 		<name>Амфилохи$%</name>
@@ -3166,7 +3282,7 @@
 		<sex>m</sex>
 		<discription>Амфилохий (Сергиевский-Казанцев), архимандрит</discription>
 		<lifedates>(20.06.1818–20.07.1893)</lifedates>
-		<link>http://azbyka.ru/otechnik/Amfilohij_Sergievskij-Kazancev/</link>
+		<link>https://azbyka.ru/otechnik/Amfilohij_Sergievskij-Kazancev/</link>
 	</person>
 	<person>
 		<name>Михаил%%</name>
@@ -3175,16 +3291,16 @@
 		<sex>m</sex>
 		<discription>Михаил Михайлович Тареев</discription>
 		<lifedates>(7.11.1867–4.06.1934)</lifedates>
-		<link>http://azbyka.ru/otechnik/Mihail_Tareev/</link>
+		<link>https://azbyka.ru/otechnik/Mihail_Tareev/</link>
 	</person>
 	<person>
 		<name>Паллади$%</name>
-		<surname>(Пьянко$$%)</surname>
+		<surname>(Пьянко$%%)</surname>
 		<curacy>епископ</curacy>
 		<sex>m</sex>
 		<discription>Палладий (Пьянков), епископ</discription>
 		<lifedates>(1816—1882)</lifedates>
-		<link>http://azbyka.ru/otechnik/Palladij_Pyankov/</link>
+		<link>https://azbyka.ru/otechnik/Palladij_Pyankov/</link>
 	</person>
 	<person>
 		<name>Паллади$%</name>
@@ -3192,7 +3308,7 @@
 		<sex>m</sex>
 		<discription>Палладий Еленопольский, епископ</discription>
 		<lifedates>(360–420)</lifedates>
-		<link>http://azbyka.ru/otechnik/Palladij_Elenopolskij/</link>
+		<link>https://azbyka.ru/otechnik/Palladij_Elenopolskij/</link>
 	</person>
 	<person>
 		<name>Пантелеимон%%</name>
@@ -3201,7 +3317,7 @@
 		<sex>m</sex>
 		<discription>Пантелеимон (Успенский), иеромонах</discription>
 		<lifedates>(24.10.1886–01.05.1918 г.)</lifedates>
-		<link>http://azbyka.ru/otechnik/Рanteleimon_Uspenskij/</link>
+		<link>https://azbyka.ru/otechnik/Рanteleimon_Uspenskij/</link>
 	</person>
 	<person>
 		<name>Папи$%</name>
@@ -3209,7 +3325,7 @@
 		<sex>m</sex>
 		<discription>Папий Иерапольский</discription>
 		<lifedates>(~70–155 или 165)</lifedates>
-		<link>http://azbyka.ru/otechnik/Papij_Ierapolskij/</link>
+		<link>https://azbyka.ru/otechnik/Papij_Ierapolskij/</link>
 	</person>
 	<person>
 		<name>Парфени$%</name>
@@ -3218,7 +3334,7 @@
 		<sex>m</sex>
 		<discription>Парфений Киевский (Краснопевцев), преподобный</discription>
 		<lifedates>(1790—1855)</lifedates>
-		<link>http://azbyka.ru/otechnik/Parfenij_Kievskij/</link>
+		<link>https://azbyka.ru/otechnik/Parfenij_Kievskij/</link>
 	</person>
 	<person>
 		<name>Патрик%%</name>
@@ -3226,7 +3342,7 @@
 		<sex>m</sex>
 		<discription>Патрик Ирландский, святой</discription>
 		<lifedates>(~387–493)</lifedates>
-		<link>http://azbyka.ru/otechnik/Patrik_Irlandskij/</link>
+		<link>https://azbyka.ru/otechnik/Patrik_Irlandskij/</link>
 	</person>
 	<person>
 		<name>Пахоми$%</name>
@@ -3234,7 +3350,7 @@
 		<sex>m</sex>
 		<discription>Пахомий Великий, преподобный</discription>
 		<lifedates>(~292–~346)</lifedates>
-		<link>http://azbyka.ru/otechnik/Pahomij_Velikij/</link>
+		<link>https://azbyka.ru/otechnik/Pahomij_Velikij/</link>
 	</person>
 	<person>
 		<name>Петр%%</name>
@@ -3243,7 +3359,7 @@
 		<sex>m</sex>
 		<discription>Петр Александрийский, священномученик</discription>
 		<lifedates>(?–311)</lifedates>
-		<link>http://azbyka.ru/otechnik/Petr_Aleksandrijskij/</link>
+		<link>https://azbyka.ru/otechnik/Petr_Aleksandrijskij/</link>
 	</person>
 	<person>
 		<name>Петр%%</name>
@@ -3251,7 +3367,7 @@
 		<sex>m</sex>
 		<discription>Петр Дамаскин, священномученик</discription>
 		<lifedates>(?—775 г. (или XII век))</lifedates>
-		<link>http://azbyka.ru/otechnik/Petr_Damaskin/</link>
+		<link>https://azbyka.ru/otechnik/Petr_Damaskin/</link>
 	</person>
 	<person>
 		<name>Петр%%</name>
@@ -3260,7 +3376,7 @@
 		<sex>m</sex>
 		<discription>Петр (Екатириновский), епископ</discription>
 		<lifedates>(1820–1889)</lifedates>
-		<link>http://azbyka.ru/otechnik/Petr_Ekaterinovskij/</link>
+		<link>https://azbyka.ru/otechnik/Petr_Ekaterinovskij/</link>
 	</person>
 	<person>
 		<name>Петр%%</name>
@@ -3269,7 +3385,7 @@
 		<sex>m</sex>
 		<discription>Петр (Зверев), священномученик</discription>
 		<lifedates>(1878–1929)</lifedates>
-		<link>http://azbyka.ru/otechnik/Petr_Zverev/</link>
+		<link>https://azbyka.ru/otechnik/Petr_Zverev/</link>
 	</person>
 	<person>
 		<name>Петр%%</name>
@@ -3279,7 +3395,7 @@
 		<sex>m</sex>
 		<discription>Петр Васильевич Знаменский, профессор</discription>
 		<lifedates>(27.03.1836–02.05.1917)</lifedates>
-		<link>http://azbyka.ru/otechnik/Petr_Znamenskij/</link>
+		<link>https://azbyka.ru/otechnik/Petr_Znamenskij/</link>
 	</person>
 	<person>
 		<name>Петр%%</name>
@@ -3289,7 +3405,7 @@
 		<sex>m</sex>
 		<discription>Петр Симонович Казанский, профессор</discription>
 		<lifedates>(1819–1878)</lifedates>
-		<link>http://azbyka.ru/otechnik/Petr_Kazanskij/</link>
+		<link>https://azbyka.ru/otechnik/Petr_Kazanskij/</link>
 	</person>
 	<person>
 		<name>Петр%%</name>
@@ -3298,7 +3414,7 @@
 		<sex>m</sex>
 		<discription>Петр (Могила), митрополит Киевский, святитель</discription>
 		<lifedates>(1596–1646)</lifedates>
-		<link>http://azbyka.ru/otechnik/Petr_Mogila/</link>
+		<link>https://azbyka.ru/otechnik/Petr_Mogila/</link>
 	</person>
 	<person>
 		<name>Петр%%</name>
@@ -3308,7 +3424,7 @@
 		<sex>m</sex>
 		<discription>Петр, митрополит Московский и всея Руси, святитель</discription>
 		<lifedates>(2-я пол. XIII в.–1326)</lifedates>
-		<link>http://azbyka.ru/otechnik/Petr_Moskovskij/</link>
+		<link>https://azbyka.ru/otechnik/Petr_Moskovskij/</link>
 	</person>
 	<person>
 		<name>Петр%%</name>
@@ -3317,7 +3433,7 @@
 		<sex>m</sex>
 		<discription>Петр (Пиголь), игумен</discription>
 		<lifedates>(4.05.1955)</lifedates>
-		<link>http://azbyka.ru/otechnik/Petr_Pigol/</link>
+		<link>https://azbyka.ru/otechnik/Petr_Pigol/</link>
 	</person>
 	<person>
 		<name>Петр%%</name>
@@ -3326,7 +3442,7 @@
 		<sex>m</sex>
 		<discription>Петр Преображенский, протоиерей</discription>
 		<lifedates>(28.10.1828—3.06.1893)</lifedates>
-		<link>http://azbyka.ru/otechnik/Petr_Preobrazhenskij/</link>
+		<link>https://azbyka.ru/otechnik/Petr_Preobrazhenskij/</link>
 	</person>
 	<person>
 		<name>Пимен%%</name>
@@ -3334,7 +3450,7 @@
 		<sex>m</sex>
 		<discription>Пимен Великий, преподобный</discription>
 		<lifedates>(340–~450)</lifedates>
-		<link>http://azbyka.ru/otechnik/Pimen_Velikij/</link>
+		<link>https://azbyka.ru/otechnik/Pimen_Velikij/</link>
 	</person>
 	<person>
 		<name>Пимен%%</name>
@@ -3343,7 +3459,7 @@
 		<sex>m</sex>
 		<discription>Пимен (Белоликов), священномученик</discription>
 		<lifedates>(17ноября 1879—16 сентября 1918)</lifedates>
-		<link>http://azbyka.ru/otechnik/Pimen_Belolikov/</link>
+		<link>https://azbyka.ru/otechnik/Pimen_Belolikov/</link>
 	</person>
 	<person>
 		<name>Плакид$%</name>
@@ -3352,7 +3468,7 @@
 		<sex>m</sex>
 		<discription>Плакида (Дезей), схиархимандрит</discription>
 		<lifedates>(1926-)</lifedates>
-		<link>http://azbyka.ru/otechnik/Plakida_Dezej/</link>
+		<link>https://azbyka.ru/otechnik/Plakida_Dezej/</link>
 	</person>
 	<person>
 		<name>Платон%%</name>
@@ -3361,7 +3477,7 @@
 		<sex>m</sex>
 		<discription>Платон (Левшин), митрополит</discription>
 		<lifedates>(29.06.1737–11.11.1812)</lifedates>
-		<link>http://azbyka.ru/otechnik/Platon_Levshin/</link>
+		<link>https://azbyka.ru/otechnik/Platon_Levshin/</link>
 	</person>
 	<person>
 		<name>Поликарп%%</name>
@@ -3370,7 +3486,7 @@
 		<sex>m</sex>
 		<discription>Поликарп Смирнский, священномученик</discription>
 		<lifedates>(~85–157)</lifedates>
-		<link>http://azbyka.ru/otechnik/Polikarp_Smirnskij/</link>
+		<link>https://azbyka.ru/otechnik/Polikarp_Smirnskij/</link>
 	</person>
 	<person>
 		<name>Порфири$%</name>
@@ -3378,7 +3494,7 @@
 		<sex>m</sex>
 		<discription>Порфирий Кавсокаливит, преподобный</discription>
 		<lifedates>(7.02.1906–2.12.1991)</lifedates>
-		<link>http://azbyka.ru/otechnik/Porfirij_Kavsokalivit/</link>
+		<link>https://azbyka.ru/otechnik/Porfirij_Kavsokalivit/</link>
 	</person>
 	<person>
 		<name>Прокл%%</name>
@@ -3386,7 +3502,7 @@
 		<sex>m</sex>
 		<discription>Прокл Константинопольский, святитель</discription>
 		<lifedates>(?–446/447)</lifedates>
-		<link>http://azbyka.ru/otechnik/Prokl_Konstantinopolskij/</link>
+		<link>https://azbyka.ru/otechnik/Prokl_Konstantinopolskij/</link>
 	</person>
 	<person>
 		<name>П[её]тр%%</name>
@@ -3395,7 +3511,7 @@
 		<sex>m</sex>
 		<discription>Пётр (Полянский), священномученик</discription>
 		<lifedates>(10.07.1862–10.10.1937)</lifedates>
-		<link>http://azbyka.ru/otechnik/Petr_Polyanskij/</link>
+		<link>https://azbyka.ru/otechnik/Petr_Polyanskij/</link>
 	</person>
 	<person>
 		<name>Родион%%</name>
@@ -3404,7 +3520,7 @@
 		<sex>m</sex>
 		<discription>Родион Путятин, протоиерей</discription>
 		<lifedates>(1807–1869)</lifedates>
-		<link>http://azbyka.ru/otechnik/Rodion_Putyatin/</link>
+		<link>https://azbyka.ru/otechnik/Rodion_Putyatin/</link>
 	</person>
 	<person>
 		<name>Роман%%</name>
@@ -3412,7 +3528,7 @@
 		<sex>m</sex>
 		<discription>Роман Сладкопевец, преподобный</discription>
 		<lifedates>(середина V–VI века)</lifedates>
-		<link>http://azbyka.ru/otechnik/Roman_Sladkopevets/</link>
+		<link>https://azbyka.ru/otechnik/Roman_Sladkopevets/</link>
 	</person>
 	<person>
 		<name>Руфин%%</name>
@@ -3422,7 +3538,7 @@
 		<sex>m</sex>
 		<discription>Руфин, пресвитер Аквилейский, преподобный</discription>
 		<lifedates>(345–410)</lifedates>
-		<link>http://azbyka.ru/otechnik/Rufin_Akvilejskij/</link>
+		<link>https://azbyka.ru/otechnik/Rufin_Akvilejskij/</link>
 	</person>
 	<person>
 		<name>Савв$%</name>
@@ -3430,7 +3546,7 @@
 		<sex>m</sex>
 		<discription>Савва Сербский, святитель</discription>
 		<lifedates>(1169–1237)</lifedates>
-		<link>http://azbyka.ru/otechnik/Savva_Serbskij/</link>
+		<link>https://azbyka.ru/otechnik/Savva_Serbskij/</link>
 	</person>
 	<person>
 		<name>Савв$%</name>
@@ -3439,7 +3555,7 @@
 		<sex>m</sex>
 		<discription>Савва (Остапенко), схиигумен</discription>
 		<lifedates>(23 ноября 1898–27 июля 1980)</lifedates>
-		<link>http://azbyka.ru/otechnik/Savva_Ostapenko/</link>
+		<link>https://azbyka.ru/otechnik/Savva_Ostapenko/</link>
 	</person>
 	<person>
 		<name>Севастиан%%</name>
@@ -3448,7 +3564,7 @@
 		<sex>m</sex>
 		<discription>Севастиан Карагандинский (Фомин), преподобноисповедник</discription>
 		<lifedates>(28.10.1884–19.04.1966)</lifedates>
-		<link>http://azbyka.ru/otechnik/Sevastian_Karagandinskij/</link>
+		<link>https://azbyka.ru/otechnik/Sevastian_Karagandinskij/</link>
 	</person>
 	<person>
 		<name>Сем[её]н%%</name>
@@ -3458,7 +3574,7 @@
 		<sex>m</sex>
 		<discription>Семён Людвигович Франк</discription>
 		<lifedates>(28.02.1877–10.12.1950)</lifedates>
-		<link>http://azbyka.ru/otechnik/Semen_Frank/</link>
+		<link>https://azbyka.ru/otechnik/Semen_Frank/</link>
 	</person>
 	<person>
 		<name>Серапион%%</name>
@@ -3466,7 +3582,7 @@
 		<sex>m</sex>
 		<discription>Серапион Владимирский, святитель</discription>
 		<lifedates>(?–1275)</lifedates>
-		<link>http://azbyka.ru/otechnik/Serapion_Vladimirskij/</link>
+		<link>https://azbyka.ru/otechnik/Serapion_Vladimirskij/</link>
 	</person>
 	<person>
 		<name>Серапион%%</name>
@@ -3474,7 +3590,7 @@
 		<sex>m</sex>
 		<discription>Серапион Тмуитский</discription>
 		<lifedates>(начало IV века–после 362 года)</lifedates>
-		<link>http://azbyka.ru/otechnik/Serapion_Tmuitskij/</link>
+		<link>https://azbyka.ru/otechnik/Serapion_Tmuitskij/</link>
 	</person>
 	<person>
 		<name>Серафим%%</name>
@@ -3482,7 +3598,7 @@
 		<sex>m</sex>
 		<discription>Серафим Вырицкий, преподобный</discription>
 		<lifedates>(31 марта 1866–3 апреля 1949)</lifedates>
-		<link>http://azbyka.ru/otechnik/Serafim_Vyritskij/</link>
+		<link>https://azbyka.ru/otechnik/Serafim_Vyritskij/</link>
 	</person>
 	<person>
 		<name>Серафим%%</name>
@@ -3491,7 +3607,7 @@
 		<sex>m</sex>
 		<discription>Серафим (Звездинский), епископ Дмитровский, священномученик</discription>
 		<lifedates>(7.04.1883–26.08.1937)</lifedates>
-		<link>http://azbyka.ru/otechnik/Serafim_Zvezdinskij/</link>
+		<link>https://azbyka.ru/otechnik/Serafim_Zvezdinskij/</link>
 	</person>
 	<person>
 		<name>Серафим%%</name>
@@ -3500,7 +3616,7 @@
 		<sex>m</sex>
 		<discription>Серафим (Роуз), иеромонах</discription>
 		<lifedates>(1934–1982)</lifedates>
-		<link>http://azbyka.ru/otechnik/Serafim_Rouz/</link>
+		<link>https://azbyka.ru/otechnik/Serafim_Rouz/</link>
 	</person>
 	<person>
 		<name>Серафим%%</name>
@@ -3508,7 +3624,7 @@
 		<sex>m</sex>
 		<discription>Серафим Саровский, преподобный</discription>
 		<lifedates>(1754–1833)</lifedates>
-		<link>http://azbyka.ru/otechnik/Serafim_Sarovskij/</link>
+		<link>https://azbyka.ru/otechnik/Serafim_Sarovskij/</link>
 	</person>
 	<person>
 		<name>Серафим%%</name>
@@ -3517,7 +3633,7 @@
 		<sex>m</sex>
 		<discription>Серафим Слободской, протоиерей</discription>
 		<lifedates>(11.09.1912–5.11.1971)</lifedates>
-		<link>http://azbyka.ru/otechnik/Serafim_Slobodskoj/</link>
+		<link>https://azbyka.ru/otechnik/Serafim_Slobodskoj/</link>
 	</person>
 	<person>
 		<name>Серафим%%</name>
@@ -3526,7 +3642,7 @@
 		<sex>m</sex>
 		<discription>Серафим (Соболев), архиепископ</discription>
 		<lifedates>(1881–1950)</lifedates>
-		<link>http://azbyka.ru/otechnik/Serafim_Sobolev/</link>
+		<link>https://azbyka.ru/otechnik/Serafim_Sobolev/</link>
 	</person>
 	<person>
 		<name>Серафим%%</name>
@@ -3535,7 +3651,7 @@
 		<sex>m</sex>
 		<discription>Серафим (Чичагов), священномученик</discription>
 		<lifedates>(январь 1856–11 декабря 1937)</lifedates>
-		<link>http://azbyka.ru/otechnik/Serafim_Chichagov/</link>
+		<link>https://azbyka.ru/otechnik/Serafim_Chichagov/</link>
 	</person>
 	<person>
 		<name>Серге$%</name>
@@ -3545,7 +3661,7 @@
 		<sex>m</sex>
 		<discription>Сергей Сергеевич Аверинцев, профессор</discription>
 		<lifedates>(10.12.1937–21.02.2004)</lifedates>
-		<link>http://azbyka.ru/otechnik/Sergej_Averincev/</link>
+		<link>https://azbyka.ru/otechnik/Sergej_Averincev/</link>
 	</person>
 	<person>
 		<name>Серге$%</name>
@@ -3555,7 +3671,7 @@
 		<sex>m</sex>
 		<discription>Сергей Иванович Смирнов, профессор</discription>
 		<lifedates>(8.09.1870–4.07.1916)</lifedates>
-		<link>http://azbyka.ru/otechnik/Sergej_Smirnov/</link>
+		<link>https://azbyka.ru/otechnik/Sergej_Smirnov/</link>
 	</person>
 	<person>
 		<name>Серге$%</name>
@@ -3565,7 +3681,7 @@
 		<sex>m</sex>
 		<discription>Сергей Викторович Троицкий, профессор</discription>
 		<lifedates>(14.03.1878 г. - 27.11.1972)</lifedates>
-		<link>http://azbyka.ru/otechnik/Sergej_Troickij/</link>
+		<link>https://azbyka.ru/otechnik/Sergej_Troickij/</link>
 	</person>
 	<person>
 		<name>Серге$%</name>
@@ -3575,7 +3691,7 @@
 		<sex>m</sex>
 		<discription>Сергей Иосифович Фудель</discription>
 		<lifedates>(13.01.1900–7.03.1977)</lifedates>
-		<link>http://azbyka.ru/otechnik/Sergej_Fudel/</link>
+		<link>https://azbyka.ru/otechnik/Sergej_Fudel/</link>
 	</person>
 	<person>
 		<name>Серги$%</name>
@@ -3584,7 +3700,7 @@
 		<sex>m</sex>
 		<discription>Сергий (Королев), архиепископ</discription>
 		<lifedates>(30.01.1881–18.12.1952)</lifedates>
-		<link>http://azbyka.ru/otechnik/Sergij_Korolev/</link>
+		<link>https://azbyka.ru/otechnik/Sergij_Korolev/</link>
 	</person>
 	<person>
 		<name>Серги$%</name>
@@ -3593,7 +3709,7 @@
 		<sex>m</sex>
 		<discription>Сергий (Четвериков), иеросхимонах</discription>
 		<lifedates>(24.06.1867–29.04.1947)</lifedates>
-		<link>http://azbyka.ru/otechnik/Sergij_Chetverikov/</link>
+		<link>https://azbyka.ru/otechnik/Sergij_Chetverikov/</link>
 	</person>
 	<person>
 		<name>Серги$%</name>
@@ -3602,7 +3718,7 @@
 		<sex>m</sex>
 		<discription>Сергий Мечев, священномученик</discription>
 		<lifedates>(1892–1942)</lifedates>
-		<link>http://azbyka.ru/otechnik/Sergij_Mechev/</link>
+		<link>https://azbyka.ru/otechnik/Sergij_Mechev/</link>
 	</person>
 	<person>
 		<name>Серги$%</name>
@@ -3610,7 +3726,7 @@
 		<sex>m</sex>
 		<discription>Сергий Правдолюбов, священноисповедник</discription>
 		<lifedates>(26.06.1890–18.12.1950)</lifedates>
-		<link>http://azbyka.ru/otechnik/Sergij_Pravdoljubov/</link>
+		<link>https://azbyka.ru/otechnik/Sergij_Pravdoljubov/</link>
 	</person>
 	<person>
 		<name>Серги$%</name>
@@ -3619,7 +3735,7 @@
 		<sex>m</sex>
 		<discription>Сергий (Спасский), архиепископ</discription>
 		<lifedates>(1830–1904)</lifedates>
-		<link>http://azbyka.ru/otechnik/Sergij_Spasskij/</link>
+		<link>https://azbyka.ru/otechnik/Sergij_Spasskij/</link>
 	</person>
 	<person>
 		<name>Серги$%</name>
@@ -3628,7 +3744,7 @@
 		<sex>m</sex>
 		<discription>Сергий Терновский, протоиерей</discription>
 		<lifedates>(?–1868)</lifedates>
-		<link>http://azbyka.ru/otechnik/Sergij_Ternovskij/</link>
+		<link>https://azbyka.ru/otechnik/Sergij_Ternovskij/</link>
 	</person>
 	<person>
 		<name>Сикст%%</name>
@@ -3638,7 +3754,7 @@
 		<sex>m</sex>
 		<discription>Сикст II, папа римский, священномученик</discription>
 		<lifedates>(?–6 августа 258)</lifedates>
-		<link>http://azbyka.ru/otechnik/Sikst/</link>
+		<link>https://azbyka.ru/otechnik/Sikst/</link>
 	</person>
 	<person>
 		<name>Силуан%%</name>
@@ -3646,7 +3762,7 @@
 		<sex>m</sex>
 		<discription>Силуан Афонский, преподобный</discription>
 		<lifedates>(1866–1938)</lifedates>
-		<link>http://azbyka.ru/otechnik/Siluan_Afonskij/</link>
+		<link>https://azbyka.ru/otechnik/Siluan_Afonskij/</link>
 	</person>
 	<person>
 		<name>Симеон%%</name>
@@ -3655,7 +3771,7 @@
 		<sex>m</sex>
 		<discription>Симеон (Нарбеков), архимандрит</discription>
 		<lifedates>(26.07.1884–17.01.1969)</lifedates>
-		<link>http://azbyka.ru/otechnik/Simeon_Narbekov/</link>
+		<link>https://azbyka.ru/otechnik/Simeon_Narbekov/</link>
 	</person>
 	<person>
 		<name>Симеон%%</name>
@@ -3663,7 +3779,7 @@
 		<sex>m</sex>
 		<discription>Симеон Афонский, монах</discription>
 		<lifedates>(1866–1938)</lifedates>
-		<link>http://azbyka.ru/otechnik/Simeon_Afonskij/</link>
+		<link>https://azbyka.ru/otechnik/Simeon_Afonskij/</link>
 	</person>
 	<person>
 		<name>Симеон%%</name>
@@ -3671,7 +3787,7 @@
 		<sex>m</sex>
 		<discription>Симеон Благоговейный, преподобный</discription>
 		<lifedates>(X–XI века)</lifedates>
-		<link>http://azbyka.ru/otechnik/Simeon_Blagogovejnyj/</link>
+		<link>https://azbyka.ru/otechnik/Simeon_Blagogovejnyj/</link>
 	</person>
 	<person>
 		<name>Симеон%%</name>
@@ -3679,7 +3795,7 @@
 		<sex>m</sex>
 		<discription>Симеон Метафраст, преподобный</discription>
 		<lifedates>(IX век–X век)</lifedates>
-		<link>http://azbyka.ru/otechnik/Simeon_Metafrast/</link>
+		<link>https://azbyka.ru/otechnik/Simeon_Metafrast/</link>
 	</person>
 	<person>
 		<name>Симеон%%</name>
@@ -3688,7 +3804,7 @@
 		<sex>m</sex>
 		<discription>Симеон Новый Богослов, преподобный</discription>
 		<lifedates>(949–1022)</lifedates>
-		<link>http://azbyka.ru/otechnik/Simeon_Novyj_Bogoslov/</link>
+		<link>https://azbyka.ru/otechnik/Simeon_Novyj_Bogoslov/</link>
 	</person>
 	<person>
 		<name>Симеон%%</name>
@@ -3696,7 +3812,7 @@
 		<sex>m</sex>
 		<discription>Симеон Солунский, святитель</discription>
 		<lifedates>(?–1429)</lifedates>
-		<link>http://azbyka.ru/otechnik/Simeon_Solunskij/</link>
+		<link>https://azbyka.ru/otechnik/Simeon_Solunskij/</link>
 	</person>
 	<person>
 		<name>Сократ%%</name>
@@ -3704,7 +3820,7 @@
 		<sex>m</sex>
 		<discription>Сократ Схоластик</discription>
 		<lifedates>(~380–после 439)</lifedates>
-		<link>http://azbyka.ru/otechnik/Sokrat_Sholastik/</link>
+		<link>https://azbyka.ru/otechnik/Sokrat_Sholastik/</link>
 	</person>
 	<person>
 		<name>Софрони$%</name>
@@ -3713,7 +3829,7 @@
 		<sex>m</sex>
 		<discription>Софроний (Сахаров), архимандрит</discription>
 		<lifedates>(22 сентября 1896–11 июля 1993)</lifedates>
-		<link>http://azbyka.ru/otechnik/Sofronij_Saharov/</link>
+		<link>https://azbyka.ru/otechnik/Sofronij_Saharov/</link>
 	</person>
 	<person>
 		<name>Софрони$%</name>
@@ -3721,7 +3837,7 @@
 		<sex>m</sex>
 		<discription>Софроний Иерусалимский, святитель</discription>
 		<lifedates>(~560–638)</lifedates>
-		<link>http://azbyka.ru/otechnik/Sofronij_Ierusalimskij/</link>
+		<link>https://azbyka.ru/otechnik/Sofronij_Ierusalimskij/</link>
 	</person>
 	<person>
 		<name>Стефан%%</name>
@@ -3729,7 +3845,7 @@
 		<sex>m</sex>
 		<discription>Стефан Кашменский, протоиерей</discription>
 		<lifedates>(1817–1886)</lifedates>
-		<link>http://azbyka.ru/otechnik/Stefan_Kashmenskij/</link>
+		<link>https://azbyka.ru/otechnik/Stefan_Kashmenskij/</link>
 	</person>
 	<person>
 		<name>Стефан%%</name>
@@ -3738,7 +3854,7 @@
 		<sex>m</sex>
 		<discription>Стефан (Яворский), митрополит</discription>
 		<lifedates>(1658–1722)</lifedates>
-		<link>http://azbyka.ru/otechnik/Stefan_Javorskij/</link>
+		<link>https://azbyka.ru/otechnik/Stefan_Javorskij/</link>
 	</person>
 	<person>
 		<name>Таиси$%</name>
@@ -3747,7 +3863,7 @@
 		<sex>m</sex>
 		<discription>Таисия (Солопова), игумения</discription>
 		<lifedates>(1842–15.01.1915)</lifedates>
-		<link>http://azbyka.ru/otechnik/Taisija_Solopova/</link>
+		<link>https://azbyka.ru/otechnik/Taisija_Solopova/</link>
 	</person>
 	<person>
 		<name>Тараси$%</name>
@@ -3755,7 +3871,7 @@
 		<sex>m</sex>
 		<discription>Тарасий Константинопольский, святитель</discription>
 		<lifedates>(~730–25 февраля 806)</lifedates>
-		<link>http://azbyka.ru/otechnik/Tarasij_Konstantinopolskij/</link>
+		<link>https://azbyka.ru/otechnik/Tarasij_Konstantinopolskij/</link>
 	</person>
 	<person>
 		<name>Татиан%%</name>
@@ -3764,7 +3880,7 @@
 		<sex>m</sex>
 		<discription>Татиан</discription>
 		<lifedates>(II век)</lifedates>
-		<link>http://azbyka.ru/otechnik/Tatian/</link>
+		<link>https://azbyka.ru/otechnik/Tatian/</link>
 	</person>
 	<person>
 		<name>Тертуллиан%%</name>
@@ -3773,7 +3889,7 @@
 		<sex>m</sex>
 		<discription>Тертуллиан</discription>
 		<lifedates>(~155–после 220)</lifedates>
-		<link>http://azbyka.ru/otechnik/Tertullian/</link>
+		<link>https://azbyka.ru/otechnik/Tertullian/</link>
 	</person>
 	<person>
 		<name>Тимофе$%</name>
@@ -3783,7 +3899,7 @@
 		<sex>m</sex>
 		<discription>Тимофей Иванович Буткевич, протоиерей</discription>
 		<lifedates>(21.02.1854–13.02.1925 года)</lifedates>
-		<link>http://azbyka.ru/otechnik/Timofej_Butkevich/</link>
+		<link>https://azbyka.ru/otechnik/Timofej_Butkevich/</link>
 	</person>
 	<person>
 		<name>Тихон%%</name>
@@ -3792,7 +3908,7 @@
 		<sex>m</sex>
 		<discription>Тихон (Белавин), патриарх Московский и всея Руси, святитель</discription>
 		<lifedates>(31.01.1865–7.04.1925)</lifedates>
-		<link>http://azbyka.ru/otechnik/Tihon_Belavin/</link>
+		<link>https://azbyka.ru/otechnik/Tihon_Belavin/</link>
 	</person>
 	<person>
 		<name>Тихон%%</name>
@@ -3801,7 +3917,7 @@
 		<sex>m</sex>
 		<discription>Тихон Задонский, святитель</discription>
 		<lifedates>(1724–1783)</lifedates>
-		<link>http://azbyka.ru/otechnik/Tihon_Zadonskij/</link>
+		<link>https://azbyka.ru/otechnik/Tihon_Zadonskij/</link>
 	</person>
 	<person>
 		<name>Тихони$%</name>
@@ -3809,7 +3925,7 @@
 		<sex>m</sex>
 		<discription>Тихоний Африканский</discription>
 		<lifedates>(ок.330–ок.390)</lifedates>
-		<link>http://azbyka.ru/otechnik/Tihonij_Afrikanskij/</link>
+		<link>https://azbyka.ru/otechnik/Tihonij_Afrikanskij/</link>
 	</person>
 	<person>
 		<name>Трифон%%</name>
@@ -3818,7 +3934,7 @@
 		<sex>m</sex>
 		<discription>Трифон (Туркестанов), митрополит</discription>
 		<lifedates>(11.12.1861–14.06.1934)</lifedates>
-		<link>http://azbyka.ru/otechnik/Trifon_Turkestanov/</link>
+		<link>https://azbyka.ru/otechnik/Trifon_Turkestanov/</link>
 	</person>
 	<person>
 		<name>Фадде$%</name>
@@ -3827,7 +3943,7 @@
 		<sex>m</sex>
 		<discription>Фаддей (Успенский), архиепископ Тверской, священномученик</discription>
 		<lifedates>(1211.1872–31.12.1937)</lifedates>
-		<link>http://azbyka.ru/otechnik/Faddej_Uspenskij/</link>
+		<link>https://azbyka.ru/otechnik/Faddej_Uspenskij/</link>
 	</person>
 	<person>
 		<name>Фадде$%</name>
@@ -3835,7 +3951,7 @@
 		<sex>m</sex>
 		<discription>Фаддей Витовницкий, архимандрит</discription>
 		<lifedates>(19 октября 1914–14 апреля 2003)</lifedates>
-		<link>http://azbyka.ru/otechnik/Faddej_Vitovnitskij/</link>
+		<link>https://azbyka.ru/otechnik/Faddej_Vitovnitskij/</link>
 	</person>
 	<person>
 		<name>Фаласси$%</name>
@@ -3843,7 +3959,7 @@
 		<sex>m</sex>
 		<discription>Фалассий Ливийский, преподобный</discription>
 		<lifedates>(?–~660)</lifedates>
-		<link>http://azbyka.ru/otechnik/Falassij_Livijskij/</link>
+		<link>https://azbyka.ru/otechnik/Falassij_Livijskij/</link>
 	</person>
 	<person>
 		<name>Феликс%%</name>
@@ -3852,7 +3968,7 @@
 		<sex>m</sex>
 		<discription>Феликс III</discription>
 		<lifedates>(II) (?–492)</lifedates>
-		<link>http://azbyka.ru/otechnik/Feliks/</link>
+		<link>https://azbyka.ru/otechnik/Feliks/</link>
 	</person>
 	<person>
 		<name>Феодор%%</name>
@@ -3860,7 +3976,7 @@
 		<sex>m</sex>
 		<discription>Феодор Карский, епископ</discription>
 		<lifedates>(Абу Курра) (~750–830)</lifedates>
-		<link>http://azbyka.ru/otechnik/Feodor_Karskij/</link>
+		<link>https://azbyka.ru/otechnik/Feodor_Karskij/</link>
 	</person>
 	<person>
 		<name>Феодор%%</name>
@@ -3869,7 +3985,7 @@
 		<sex>m</sex>
 		<discription>Феодор (Поздеевский), архиепископ</discription>
 		<lifedates>(21 марта 1876–23 октября 1937)</lifedates>
-		<link>http://azbyka.ru/otechnik/Feodor_Pozdeevskij/</link>
+		<link>https://azbyka.ru/otechnik/Feodor_Pozdeevskij/</link>
 	</person>
 	<person>
 		<name>Феодор%%</name>
@@ -3877,7 +3993,7 @@
 		<sex>m</sex>
 		<discription>Феодор Санаксарский, преподобный</discription>
 		<lifedates>(1718–19.02.1791)</lifedates>
-		<link>http://azbyka.ru/otechnik/Feodor_Sanaksarskij/</link>
+		<link>https://azbyka.ru/otechnik/Feodor_Sanaksarskij/</link>
 	</person>
 	<person>
 		<name>Феодор%%</name>
@@ -3885,7 +4001,7 @@
 		<sex>m</sex>
 		<discription>Феодор Свирский, схимонах</discription>
 		<lifedates>(1756–1822)</lifedates>
-		<link>http://azbyka.ru/otechnik/Feodor_Svirskij/</link>
+		<link>https://azbyka.ru/otechnik/Feodor_Svirskij/</link>
 	</person>
 	<person>
 		<name>Феодор%%</name>
@@ -3893,7 +4009,7 @@
 		<sex>m</sex>
 		<discription>Феодор Студит, преподобный</discription>
 		<lifedates>(759–826)</lifedates>
-		<link>http://azbyka.ru/otechnik/Feodor_Studit/</link>
+		<link>https://azbyka.ru/otechnik/Feodor_Studit/</link>
 	</person>
 	<person>
 		<name>Феодор%%</name>
@@ -3901,7 +4017,7 @@
 		<sex>m</sex>
 		<discription>Феодор Эдесский, святитель</discription>
 		<lifedates>(?–848)</lifedates>
-		<link>http://azbyka.ru/otechnik/Feodor_Edesskij/</link>
+		<link>https://azbyka.ru/otechnik/Feodor_Edesskij/</link>
 	</person>
 	<person>
 		<name>Феодор%%</name>
@@ -3909,7 +4025,7 @@
 		<sex>m</sex>
 		<discription>Феодор Чтец</discription>
 		<lifedates>(конец V века–первая четверть VI века)</lifedates>
-		<link>http://azbyka.ru/otechnik/Feodor_Chtec/</link>
+		<link>https://azbyka.ru/otechnik/Feodor_Chtec/</link>
 	</person>
 	<person>
 		<name>Феодорит%%</name>
@@ -3917,7 +4033,7 @@
 		<sex>m</sex>
 		<discription>Феодорит Кирский, блаженный</discription>
 		<lifedates>(386/393–457)</lifedates>
-		<link>http://azbyka.ru/otechnik/Feodorit_Kirskij/</link>
+		<link>https://azbyka.ru/otechnik/Feodorit_Kirskij/</link>
 	</person>
 	<person>
 		<name>Феодоси$%</name>
@@ -3925,7 +4041,7 @@
 		<sex>m</sex>
 		<discription>Феодосий Печерский, преподобный</discription>
 		<lifedates>(~1008–3 мая 1074)</lifedates>
-		<link>http://azbyka.ru/otechnik/Feodosij_Pecherskij/</link>
+		<link>https://azbyka.ru/otechnik/Feodosij_Pecherskij/</link>
 	</person>
 	<person>
 		<name>Феолипт%%</name>
@@ -3933,7 +4049,7 @@
 		<sex>m</sex>
 		<discription>Феолипт Филадельфийский, святитель</discription>
 		<lifedates>(~1252–~1325)</lifedates>
-		<link>http://azbyka.ru/otechnik/Feolipt_Filadelfijskij/</link>
+		<link>https://azbyka.ru/otechnik/Feolipt_Filadelfijskij/</link>
 	</person>
 	<person>
 		<name>Феофан%%</name>
@@ -3942,7 +4058,7 @@
 		<sex>m</sex>
 		<discription>Феофан (Быстров), архиепископ</discription>
 		<lifedates>(31 декабря 1874–6 февраля 1940)</lifedates>
-		<link>http://azbyka.ru/otechnik/Feofan_Bystrov/</link>
+		<link>https://azbyka.ru/otechnik/Feofan_Bystrov/</link>
 	</person>
 	<person>
 		<name>Феофан%%</name>
@@ -3951,7 +4067,7 @@
 		<sex>m</sex>
 		<discription>Феофан Затворник, святитель</discription>
 		<lifedates>(1815–1894)</lifedates>
-		<link>http://azbyka.ru/otechnik/Feofan_Zatvornik/</link>
+		<link>https://azbyka.ru/otechnik/Feofan_Zatvornik/</link>
 	</person>
 	<person>
 		<name>Феофан%%</name>
@@ -3959,7 +4075,7 @@
 		<sex>m</sex>
 		<discription>Феофан Исповедник, преподобный</discription>
 		<lifedates>(~760–818)</lifedates>
-		<link>http://azbyka.ru/otechnik/Feofan_Ispovednik/</link>
+		<link>https://azbyka.ru/otechnik/Feofan_Ispovednik/</link>
 	</person>
 	<person>
 		<name>Феофан%%</name>
@@ -3967,7 +4083,7 @@
 		<sex>m</sex>
 		<discription>Феофан Никейский, святитель</discription>
 		<lifedates>(конец VIII века–~850 г.)</lifedates>
-		<link>http://azbyka.ru/otechnik/Feofan_Nikejskij/</link>
+		<link>https://azbyka.ru/otechnik/Feofan_Nikejskij/</link>
 	</person>
 	<person>
 		<name>Феофан%%</name>
@@ -3975,7 +4091,7 @@
 		<sex>m</sex>
 		<discription>священномученик Феофан (Адаменко)</discription>
 		<lifedates>(1885–20.11.1937)</lifedates>
-		<link>http://azbyka.ru/otechnik/Feofan_Adamenko/</link>
+		<link>https://azbyka.ru/otechnik/Feofan_Adamenko/</link>
 	</person>
 	<person>
 		<name>Феофил%%</name>
@@ -3983,7 +4099,7 @@
 		<sex>m</sex>
 		<discription>Феофил Антиохийский, святитель</discription>
 		<lifedates>(?–не ранее 181)</lifedates>
-		<link>http://azbyka.ru/otechnik/Feofil_Antiohijskij/</link>
+		<link>https://azbyka.ru/otechnik/Feofil_Antiohijskij/</link>
 	</person>
 	<person>
 		<name>Феофилакт%%</name>
@@ -3991,7 +4107,7 @@
 		<sex>m</sex>
 		<discription>Феофилакт Болгарский, блаженный</discription>
 		<lifedates>(XI–XII)</lifedates>
-		<link>http://azbyka.ru/otechnik/Feofilakt_Bolgarskij/</link>
+		<link>https://azbyka.ru/otechnik/Feofilakt_Bolgarskij/</link>
 	</person>
 	<person>
 		<name>Филарет%%</name>
@@ -4000,7 +4116,7 @@
 		<sex>m</sex>
 		<discription>Филарет (Амфитеатров), митрополит Киевский, святитель</discription>
 		<lifedates>(17.04.1779–21.12.1857)</lifedates>
-		<link>http://azbyka.ru/otechnik/Filaret_Amfiteatrov/</link>
+		<link>https://azbyka.ru/otechnik/Filaret_Amfiteatrov/</link>
 	</person>
 	<person>
 		<name>Филарет%%</name>
@@ -4009,7 +4125,7 @@
 		<sex>m</sex>
 		<discription>Филарет (Вознесенский), митрополит</discription>
 		<lifedates>(22 марта 1903–21 ноября 1985)</lifedates>
-		<link>http://azbyka.ru/otechnik/Filaret_Voznesenskij/</link>
+		<link>https://azbyka.ru/otechnik/Filaret_Voznesenskij/</link>
 	</person>
 	<person>
 		<name>Филарет%%</name>
@@ -4018,7 +4134,7 @@
 		<sex>m</sex>
 		<discription>Филарет Глинский (Данилевский), преподобный</discription>
 		<lifedates>(1777–1841)</lifedates>
-		<link>http://azbyka.ru/otechnik/Filaret_Glinskij/</link>
+		<link>https://azbyka.ru/otechnik/Filaret_Glinskij/</link>
 	</person>
 	<person>
 		<name>Филарет%%</name>
@@ -4027,7 +4143,7 @@
 		<sex>m</sex>
 		<discription>Филарет Московский (Дроздов), святитель</discription>
 		<lifedates>(1783–1867)</lifedates>
-		<link>http://azbyka.ru/otechnik/Filaret_Moskovskij/</link>
+		<link>https://azbyka.ru/otechnik/Filaret_Moskovskij/</link>
 	</person>
 	<person>
 		<name>Филарет%%</name>
@@ -4036,7 +4152,7 @@
 		<sex>m</sex>
 		<discription>Филарет Черниговский (Гумилевский), святитель</discription>
 		<lifedates>(1805–1866)</lifedates>
-		<link>http://azbyka.ru/otechnik/Filaret_Chernigovskij/</link>
+		<link>https://azbyka.ru/otechnik/Filaret_Chernigovskij/</link>
 	</person>
 	<person>
 		<name>Философ%%</name>
@@ -4046,7 +4162,7 @@
 		<sex>m</sex>
 		<discription>Философ Николаевич Орнатский, священномученик</discription>
 		<lifedates>(1860–1937)</lifedates>
-		<link>http://azbyka.ru/otechnik/Filosof_Ornatskij/</link>
+		<link>https://azbyka.ru/otechnik/Filosof_Ornatskij/</link>
 	</person>
 	<person>
 		<name>Фом$%</name>
@@ -4055,7 +4171,7 @@
 		<sex>m</sex>
 		<discription>Фома Хопко, протопресвитер</discription>
 		<lifedates>(28.03.1939–18.03.2015)</lifedates>
-		<link>http://azbyka.ru/otechnik/Foma_Hopko/</link>
+		<link>https://azbyka.ru/otechnik/Foma_Hopko/</link>
 	</person>
 	<person>
 		<name>Фоти$%</name>
@@ -4064,7 +4180,7 @@
 		<sex>m</sex>
 		<discription>Фотий Константинопольский, святитель</discription>
 		<lifedates>(~820–896)</lifedates>
-		<link>http://azbyka.ru/otechnik/Fotij_Konstantinopolskij/</link>
+		<link>https://azbyka.ru/otechnik/Fotij_Konstantinopolskij/</link>
 	</person>
 	<person>
 		<name>Фоти$%</name>
@@ -4073,7 +4189,7 @@
 		<sex>m</sex>
 		<discription>Фотий (Спасский), архимандрит</discription>
 		<lifedates>(6.06.1792–26.02.1838)</lifedates>
-		<link>http://azbyka.ru/otechnik/Fotij_Spasskij/</link>
+		<link>https://azbyka.ru/otechnik/Fotij_Spasskij/</link>
 	</person>
 	<person>
 		<name>Целестин%%</name>
@@ -4083,7 +4199,7 @@
 		<sex>m</sex>
 		<discription>Целестин I, святитель</discription>
 		<lifedates>(?–432)</lifedates>
-		<link>http://azbyka.ru/otechnik/Tselestin/</link>
+		<link>https://azbyka.ru/otechnik/Tselestin/</link>
 	</person>
 	<person>
 		<name>Эмилиан%%</name>
@@ -4092,7 +4208,7 @@
 		<sex>m</sex>
 		<discription>Эмилиан (Вафидис), схиархимандрит</discription>
 		<lifedates>(5 октября 1934)</lifedates>
-		<link>http://azbyka.ru/otechnik/Emilian_Vafidis/</link>
+		<link>https://azbyka.ru/otechnik/Emilian_Vafidis/</link>
 	</person>
 	<person>
 		<name>Юли$%</name>
@@ -4100,7 +4216,7 @@
 		<sex>m</sex>
 		<discription>Юлий Африкан</discription>
 		<lifedates>(ок.160–ок.240)</lifedates>
-		<link>http://azbyka.ru/otechnik/Julij_Afrikan/</link>
+		<link>https://azbyka.ru/otechnik/Julij_Afrikan/</link>
 	</person>
 	<person>
 		<name>Адриан%%</name>
@@ -4109,7 +4225,7 @@
 		<sex>m</sex>
 		<discription>Адриан Югский</discription>
 		<lifedates>(1800-07.08.1853)</lifedates>
-		<link>http://azbyka.ru/otechnik/Adrian_Yugskij/</link>
+		<link>https://azbyka.ru/otechnik/Adrian_Yugskij/</link>
 	</person>
 	<person>
 		<name>Константин%%</name>
@@ -4119,6 +4235,1195 @@
 		<sex>m</sex>
 		<discription>Константин Николаевич Леонтьев</discription>
 		<lifedates>(25.01.1831–24.11.1891)</lifedates>
-		<link>http://azbyka.ru/otechnik/Konstantin_Leontev/</link>
+		<link>https://azbyka.ru/otechnik/Konstantin_Leontev/</link>
+	</person>
+	<person>
+		<name>Жан%%-Клод%%</name>
+		<nick/>
+		<surname>Ларше</surname>
+		<sex>m</sex>
+		<discription>Жан-Клод Ларше, профессор</discription>
+		<lifedates>(1949)</lifedates>
+		<link>https://azbyka.ru/otechnik/Zhan_Klod_Larshe/</link>
+	</person>
+	<person>
+		<name>Пав%л%%</name>
+		<nick/>
+		<surname>Алфеев%%</surname>
+		<sex>m</sex>
+		<discription>Павел Алфеев, протоиерей</discription>
+		<lifedates>(06.01.1846–1918)</lifedates>
+		<link>https://azbyka.ru/otechnik/Pavel_Alfeev/</link>
+	</person>
+	<person>
+		<name>Сильвестр%%</name>
+		<nick/>
+		<surname>(Малеванск%%%)</surname>
+		<sex>m</sex>
+		<discription>Сильвестр (Малеванский), епископ</discription>
+		<lifedates>(22.01.1828–25.11.1908)</lifedates>
+		<link>https://azbyka.ru/otechnik/Silvestr_Malevanskij/</link>
+	</person>
+	<person>
+		<name>Иван%%</name>
+		<nick/>
+		<middlename>Данилович%%</middlename>
+		<surname>Мансветов%%</surname>
+		<sex>m</sex>
+		<discription>Иван Данилович Мансветов, профессор</discription>
+		<lifedates>(1843–1885)</lifedates>
+		<link>https://azbyka.ru/otechnik/Ivan_Mansvetov/</link>
+	</person>
+	<person>
+		<name>Иоанн%%</name>
+		<nick/>
+		<surname>Смолин%%</surname>
+		<sex>m</sex>
+		<discription>Иоанн Смолин, протоиерей</discription>
+		<lifedates>(1867–25.01.1927)</lifedates>
+		<link>https://azbyka.ru/otechnik/Ioann_Smolin/</link>
+	</person>
+	<person>
+		<name>Порфири%%</name>
+		<nick/>
+		<surname>(Успенск%%%)</surname>
+		<sex>m</sex>
+		<discription>Порфирий (Успенский), епископ</discription>
+		<lifedates>(20.09.1804–1.05.1885)</lifedates>
+		<link>https://azbyka.ru/otechnik/Porfirij_Uspenskij/</link>
+	</person>
+	<person>
+		<name>Никола%%</name>
+		<nick/>
+		<middlename>Иванович%%</middlename>
+		<surname>Сагард%%</surname>
+		<sex>m</sex>
+		<discription>Николай Иванович Сагарда</discription>
+		<lifedates>(01.12.1870–16.03.1943)</lifedates>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Sagarda/</link>
+	</person>
+	<person>
+		<name>Авраам%%</name>
+		<nick/>
+		<middlename>Самуилович%%</middlename>
+		<surname>Позов%%</surname>
+		<sex>m</sex>
+		<discription>Авраам Самуилович Позов (Позидис)</discription>
+		<lifedates>(17.12.1890–23.09.1984)</lifedates>
+		<link>https://azbyka.ru/otechnik/Avraam_Pozov/</link>
+	</person>
+	<person>
+		<name>Александр%%</name>
+		<nick/>
+		<middlename>Александрович%%</middlename>
+		<surname>Бронзов%%</surname>
+		<sex>m</sex>
+		<discription>Александр Александрович Бронзов</discription>
+		<lifedates>(1858-1919/1937)</lifedates>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Bronzov/</link>
+	</person>
+	<person>
+		<name>Никола$%</name>
+		<nick/>
+		<middlename>Васильевич%%</middlename>
+		<surname>Покровск$%%</surname>
+		<sex>m</sex>
+		<discription>Николай Васильевич Покровский</discription>
+		<lifedates>(20.10.1848–08.03.1917)</lifedates>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Pokrovskij/</link>
+	</person> 
+	<person>
+		<name>Платон%%</name>
+		<nick/>
+		<surname>(Фивейск$%%)</surname>
+		<sex>m</sex>
+		<discription>Платон (Фивейский), архиепископ</discription>
+		<lifedates>(18.06.1809–12.05.1877)</lifedates>
+		<link>https://azbyka.ru/otechnik/Platon_Fivejskij/</link>
+	</person>
+	<person>
+		<name>Никола%%</name>
+		<nick/>
+		<surname>Елеонск$%%</surname>
+		<sex>m</sex>
+		<discription>Николай Елеонский, протоиерей</discription>
+		<lifedates>(23.11.1843–07.11.1910)</lifedates>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Eleonskij/</link>
+	</person>
+	<person>
+		<name>Евгени$%%%</name>
+		<nick/>
+		<surname>(Болховитинов%%)</surname>
+		<sex>m</sex>
+		<discription>Евгений (Болховитинов), митрополит</discription>
+		<lifedates>(29.12.1767–07.03.1837)</lifedates>
+		<link>https://azbyka.ru/otechnik/Evgenij_Bolhovitinov/</link>
+	</person>
+	<person>
+		<name>Фёдор%%</name>
+		<nick/>
+		<middlename>Герасимович%%</middlename>
+		<surname>Елеонск$%%</surname>
+		<sex>m</sex>
+		<discription>профессор Фёдор Герасимович Елеонский</discription>
+		<lifedates>(12.04.1836–03.11.1906)</lifedates>
+		<link>https://azbyka.ru/otechnik/Fedor_Eleonskij/</link>
+	</person>
+	<person>
+		<name>Димитри$%</name>
+		<nick/>
+		<surname>(Муретов%%)</surname>
+		<sex>m</sex>
+		<discription>Димитрий (Муретов), архиепископ</discription>
+		<lifedates>(23.02.1811–26.11.1883)</lifedates>
+		<link>https://azbyka.ru/otechnik/Dimitrij_Muretov/</link>
+	</person>
+	<person>
+		<name>Александр%%</name>
+		<nick/>
+		<middlename>Львович%%</middlename>
+		<surname>Катанск$%%</surname>
+		<sex>m</sex>
+		<discription>профессор Александр Львович Катанский</discription>
+		<lifedates>(1.12.1836–27.02.1919)</lifedates>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Katanskij/</link>
+	</person>
+	<person>
+		<name>Константин%%</name>
+		<nick/>
+		<middlename>Николаевич%%</middlename>
+		<surname>Сильченков%%</surname>
+		<sex>m</sex>
+		<discription>Константин Николаевич Сильченков</discription>
+		<lifedates>(1869–20.02.1903)</lifedates>
+		<link>https://azbyka.ru/otechnik/Konstantin_Silchenkov/</link>
+	</person>
+	<person>
+		<name>Александр%%</name>
+		<nick/>
+		<surname>Ветелев%%</surname>
+		<sex>m</sex>
+		<discription>Александр Ветелев, протоиерей</discription>
+		<lifedates>(6.12.1892–28.06.1976)</lifedates>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Vetelev/</link>
+	</person>
+	<person>
+		<name>Валентин%%</name>
+		<nick/>
+		<surname>Мордасов%%</surname>
+		<sex>m</sex>
+		<discription>Валентин Мордасов, протоиерей</discription>
+		<lifedates>(10.03.1930–19.07.1998)</lifedates>
+		<link>https://azbyka.ru/otechnik/Valentin_Mordasov/</link>
+	</person>
+	<person>
+		<name>Гавриил%%</name>
+		<nick/>
+		<surname>(Бунге)</surname>
+		<sex>m</sex>
+		<discription>Гавриил (Бунге), схиархимандрит</discription>
+		<lifedates>(1940)</lifedates>
+		<link>https://azbyka.ru/otechnik/Gavriil_Bunge/</link>
+	</person>
+	<person>
+		<name>Габриэл%%</name>
+		<nick/>
+		<surname>(Бунге)</surname>
+		<sex>m</sex>
+		<discription>Гавриил (Бунге), схиархимандрит</discription>
+		<lifedates>(1940)</lifedates>
+		<link>https://azbyka.ru/otechnik/Gavriil_Bunge/</link>
+	</person>
+	
+	<person>
+		<name>Серге%%</name>
+		<nick/>
+		<middlename>Васильевич%%</middlename>
+		<surname>Кохомск$%%</surname>
+		<sex>m</sex>
+		<discription>Сергей Васильевич Кохомский</discription>
+		<lifedates>(?–1900)</lifedates>
+		<link>https://azbyka.ru/otechnik/Sergej_Kohomskij/</link>
+	</person>
+	<person>
+		<name>Серги$%</name>
+		<nick/>
+		<surname>(Ляпидевск$%%)</surname>
+		<sex>m</sex>
+		<discription>Сергий (Ляпидевский), митрополит</discription>
+		<lifedates>(21.05.1820–23.02.1898)</lifedates>
+		<link>https://azbyka.ru/otechnik/Sergij_Lyapidevskij/</link>
+	</person>
+	<person>
+		<name>Амвроси$%</name>
+		<nick/>
+		<surname>(Погодин%%)</surname>
+		<sex>m</sex>
+		<discription>Амвросий (Погодин), архимандрит</discription>
+		<lifedates>(10.07.1925–30.10.2004)</lifedates>
+		<link>https://azbyka.ru/otechnik/Amvrosij_Pogodin/</link>
+	</person>
+	<person>
+		<name>Пав$%%</name>
+		<nick/>
+		<middlename>Васильевич%%</middlename>
+		<surname>Левитов%%</surname>
+		<sex>m</sex>
+		<discription>Павел Васильевич Левитов</discription>
+		<lifedates>(1877–1942)</lifedates>
+		<link>https://azbyka.ru/otechnik/Pavel_Levitov/</link>
+	</person>
+	<person>
+		<name>Пав$%%</name>
+		<nick/>
+		<middlename>Иванович%%</middlename>
+		<surname>Горск%%%-Платонов%%</surname>
+		<sex>m</sex>
+		<discription>Павел Иванович Горский-Платонов, профессор</discription>
+		<lifedates>(1835–1904)</lifedates>
+		<link>https://azbyka.ru/otechnik/Pavel_Gorskij-Platonov/</link>
+	</person>
+	<person>
+		<name>Григори$%%</name>
+		<nick/>
+		<middlename>Александрович%%</middlename>
+		<surname>Воскресенски%%</surname>
+		<sex>m</sex>
+		<discription>Григорий Александрович Воскресенский, профессор</discription>
+		<lifedates>(08.02.1849–23.03.1918)</lifedates>
+		<link>https://azbyka.ru/otechnik/Grigorij_Voskresenskij/</link>
+	</person>
+	<person>
+		<name>Никанор%%</name>
+		<nick/>
+		<surname>(Клементьевск$%%)</surname>
+		<sex>m</sex>
+		<discription>Никанор (Клементьевский), митрополит</discription>
+		<lifedates>(26.11.1787–17.09.1856)</lifedates>
+		<link>https://azbyka.ru/otechnik/Nikanor_Klementevskij/</link>
+	</person>
+	<person>
+		<name>Никола$%%</name>
+		<nick/>
+		<middlename>Иванович%%</middlename>
+		<surname>Барсов%%</surname>
+		<sex>m</sex>
+		<discription>Николай Иванович Барсов, профессор</discription>
+		<lifedates>(21.04.1839–30.03.1903)</lifedates>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Barsov/</link>
+	</person>
+	<person>
+		<name>Иоанн%%</name>
+		<nick/>
+		<surname>Янышев%%</surname>
+		<sex>m</sex>
+		<discription>Иоанн Янышев, протопресвитер</discription>
+		<lifedates>(14.04.1826–13.06.1910)</lifedates>
+		<link>https://azbyka.ru/otechnik/Ioann_Yanyshev/</link>
+	</person>
+	<person>
+		<name>Ирине$%%</name>
+		<nick/>
+		<surname>(Клементьевск$%%)</surname>
+		<sex>m</sex>
+		<discription>Ириней (Клементьевский), архиепископ</discription>
+		<lifedates>(02.1753–24.04.1818)</lifedates>
+		<link>https://azbyka.ru/otechnik/Irinej_Klementevskij/</link>
+	</person>
+	<person>
+		<name>Анатоли$%</name>
+		<nick/>
+		<surname>(Грисюк%%)</surname>
+		<sex>m</sex>
+		<discription>Анатолий (Грисюк), священномученик</discription>
+		<lifedates>(31.08.1880–23.01.1938)</lifedates>
+		<link>https://azbyka.ru/otechnik/Anatolij_Grisyuk/</link>
+	</person>
+	<person>
+		<name>Петр%%</name>
+		<nick/>
+		<surname>(Л[`´ʼ’ʼ’']Юилье)</surname>
+		<curacy>архиепископ%%</curacy>
+		<sex>m</sex>
+		<discription>Петр (Л’Юилье), архиепископ</discription>
+		<lifedates>(03.12.1926–19.11.2007)</lifedates>
+		<link>https://azbyka.ru/otechnik/Petr_lyuile/</link>
+	</person>
+	<person>
+		<name>Иль$%%</name>
+		<nick/>
+		<middlename>Степанович%%</middlename>
+		<surname>Бердников%%</surname>
+		<sex>m</sex>
+		<discription>Илья Степанович Бердников</discription>
+		<lifedates>(13.07.1839–30.09.1915)</lifedates>
+		<link>https://azbyka.ru/otechnik/Ilya_Berdnikov/</link>
+	</person>
+	<person>
+		<name>Евграф%%</name>
+		<nick/>
+		<middlename>Иванович%%</middlename>
+		<surname>Ловягин%%</surname>
+		<sex>m</sex>
+		<discription>Евграф Иванович Ловягин, профессор</discription>
+		<lifedates>(22.12.1822–09.04.1909)</lifedates>
+		<link>https://azbyka.ru/otechnik/Evgraf_Lovyagin/</link>
+	</person>
+	<person>
+		<name>Иларион%%</name>
+		<nick/>
+		<middlename>Алексеевич%%</middlename>
+		<surname>Чистович%%</surname>
+		<sex>m</sex>
+		<discription>Иларион Алексеевич Чистович</discription>
+		<lifedates>(18.10.1828–03.11.1893)</lifedates>
+		<link>https://azbyka.ru/otechnik/Ilarion_Chistovich/</link>
+	</person>
+	<person>
+		<name>Пётр%%</name>
+		<nick/>
+		<middlename>Иванович%%</middlename>
+		<surname>Цветков%%</surname>
+		<sex>m</sex>
+		<discription>Пётр Иванович Цветков</discription>
+		<lifedates>(19.08.1845–31.01.1914)</lifedates>
+		<link>https://azbyka.ru/otechnik/Petr_Cvetkov/</link>
+	</person>
+	<person>
+		<name>Евстафи$%</name>
+		<nick/>
+		<surname>Ворон$$%</surname>
+		<sex>m</sex>
+		<discription>Евстафий Воронец</discription>
+		<lifedates>(1846–1913)</lifedates>
+		<link>https://azbyka.ru/otechnik/Evstafij_Voronec/</link>
+	</person>
+	<person>
+		<name>Константин%%</name>
+		<nick/>
+		<middlename>Дмитриевич%%</middlename>
+		<surname>Попов%%</surname>
+		<sex>m</sex>
+		<discription>Константин Дмитриевич Попов, профессор</discription>
+		<lifedates>(1849–05.05.1911)</lifedates>
+		<link>https://azbyka.ru/otechnik/Konstantin_Popov/</link>
+	</person>
+	<person>
+		<name>Серге$%%</name>
+		<nick/>
+		<middlename>Леонтьевич%%</middlename>
+		<surname>Епифанович%%</surname>
+		<sex>m</sex>
+		<discription>Сергей Леонтьевич Епифанович, профессор</discription>
+		<lifedates>(15.11.1886–28.09.1918)</lifedates>
+		<link>https://azbyka.ru/otechnik/Sergej_Epifanovich/</link>
+	</person>
+	<person>
+		<name>Константин%%</name>
+		<nick/>
+		<surname>Аггеев%%</surname>
+		<sex>m</sex>
+		<discription>Константин Аггеев, протоиерей</discription>
+		<lifedates>(28.05.1868–1921)</lifedates>
+		<link>https://azbyka.ru/otechnik/Konstantin_Aggeev/</link>
+	</person>
+	<person>
+		<name>Никола$%%</name>
+		<nick/>
+		<middlename>Петрович%%</middlename>
+		<surname>Аксаков%%</surname>
+		<sex>m</sex>
+		<discription>Николай Петрович Аксаков</discription>
+		<lifedates>(29.06.1848–18.04.1909)</lifedates>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Aksakov/</link>
+	</person>
+	<person>
+		<name>Васили$%</name>
+		<nick/>
+		<surname>Певцов%%</surname>
+		<sex>m</sex>
+		<discription>Василий Певцов, протоиерей</discription>
+		<lifedates>(1836–?)</lifedates>
+		<link>https://azbyka.ru/otechnik/Vasilij_Pevcov/</link>
+	</person>
+	<person>
+		<name>Борис%%</name>
+		<nick/>
+		<middlename>Иванович%%</middlename>
+		<surname>Сове</surname>
+		<sex>m</sex>
+		<discription>Борис Иванович Сове, профессор</discription>
+		<lifedates>(03.01.1900–15.08.1962)</lifedates>
+		<link>https://azbyka.ru/otechnik/Boris_Sove/</link>
+	</person>
+	<person>
+		<name>Александр%%</name>
+		<nick/>
+		<middlename>Петрович%%</middlename>
+		<surname>Голубцов%%</surname>
+		<sex>m</sex>
+		<discription>Александр Петрович Голубцов, профессор</discription>
+		<lifedates>(02.12.1860–17.07.1911)</lifedates>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Golubcov/</link>
+	</person>
+	<person>
+		<name>Алекси$%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Лавров%%-Платонов%%</surname>
+		<sex>m</sex>
+		<discription>Алексий (Лавров-Платонов), архиепископ</discription>
+		<lifedates>(02.09.1829–22.11.1890)</lifedates>
+		<link>https://azbyka.ru/otechnik/Aleksij_Lavrov-Platonov/</link>
+	</person>
+	<person>
+		<name>Арсени$%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Минин%%</surname>
+		<sex>m</sex>
+		<discription>Арсений (Минин), иеромонах</discription>
+		<lifedates>(1823–17.11.1879)</lifedates>
+		<link>https://azbyka.ru/otechnik/Arsenij_Minin/</link>
+	</person>
+	<person>
+		<name>Александр%%</name>
+		<nick/>
+		<middlename>Матвеевич%%</middlename>
+		<surname>Бухарев%%</surname>
+		<sex>m</sex>
+		<discription>Александр Матвеевич Бухарев</discription>
+		<lifedates>(02.08.1822–14.04.1871)</lifedates>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Buharev/</link>
+	</person>
+	<person>
+		<name>Пав$%%</name>
+		<nick/>
+		<middlename>Васильевич%%</middlename>
+		<surname>Тихомиров%%</surname>
+		<sex>m</sex>
+		<discription>Павел Васильевич Тихомиров</discription>
+		<lifedates>(03.01.1868–01.01.1937)</lifedates>
+		<link>https://azbyka.ru/otechnik/Pavel_Tihomirov/</link>
+	</person>
+	<person>
+		<name>Серги$%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Тихомиров%%</surname>
+		<sex>m</sex>
+		<discription>Сергий (Тихомиров), митрополит</discription>
+		<lifedates>(03.06.1871–10.08.1945)</lifedates>
+		<link>https://azbyka.ru/otechnik/Sergij_Tihomirov/</link>
+	</person>
+	<person>
+		<name>Моисе$%%</name>
+		<nick/>
+		<middlename>Александрович%%</middlename>
+		<surname>Голубев%%</surname>
+		<sex>m</sex>
+		<discription>Моисей Александрович Голубев, профессор</discription>
+		<lifedates>(05.11.1824–22.08.1869)</lifedates>
+		<link>https://azbyka.ru/otechnik/Moisej_Golubev/</link>
+	</person>
+	<person>
+		<name>Стефан%%</name>
+		<nick/>
+		<middlename>Тимофеевич%%</middlename>
+		<surname>Голубев%%</surname>
+		<sex>m</sex>
+		<discription>Стефан Тимофеевич Голубев, профессор</discription>
+		<lifedates>(25.10.1848–22.11.1920)</lifedates>
+		<link>https://azbyka.ru/otechnik/Stefan_Golubev/</link>
+	</person>
+	<person>
+		<name>Васили$%%</name>
+		<nick/>
+		<middlename>Гаврилович%%</middlename>
+		<surname>Рождественск$%%</surname>
+		<sex>m</sex>
+		<discription>Василий Гаврилович Рождественский, профессор</discription>
+		<lifedates>(1839–02.10.1917)</lifedates>
+		<link>https://azbyka.ru/otechnik/Vasilij_Rozhdestvenskij/</link>
+	</person>
+	<person>
+		<name>Васили$%%</name>
+		<nick/>
+		<middlename>Федорович%%</middlename>
+		<surname>Певницк$%%</surname>
+		<sex>m</sex>
+		<discription>Василий Федорович Певницкий, профессор</discription>
+		<lifedates>(12.03.1832–24.07.1911)</lifedates>
+		<link>https://azbyka.ru/otechnik/Vasilij_Pevnickij/</link>
+	</person>
+	<person>
+		<name>Иоанн%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Смирнов%%</surname>
+		<sex>m</sex>
+		<discription>Иоанн (Смирнов), архиепископ</discription>
+		<lifedates>(24.08.1844–14.10.1919)</lifedates>
+		<link>https://azbyka.ru/otechnik/Ioann_Smirnov/</link>
+	</person>
+	<person>
+		<name>Евгени$%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Попов%%</surname>
+		<sex>m</sex>
+		<discription>Евгений Попов, протоиерей</discription>
+		<lifedates>(1824–29.05.1888)</lifedates>
+		<link>https://azbyka.ru/otechnik/Evgenij_Popov/</link>
+	</person>
+	<person>
+		<name>Александр%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Рождественски$%%</surname>
+		<sex>m</sex>
+		<discription>Александр Рождественский, протоиерей</discription>
+		<lifedates>(1865–1930)</lifedates>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Rozhdestvenskij/</link>
+	</person>
+	<person>
+		<name>Геннади$%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Фаст%%</surname>
+		<sex>m</sex>
+		<discription>Геннадий Фаст, протоиерей</discription>
+		<lifedates>(22.12.1954)</lifedates>
+		<link>https://azbyka.ru/otechnik/Gennadij_Fast/</link>
+	</person>
+	<person>
+		<name>Серге$%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Петровски$%%</surname>
+		<sex>m</sex>
+		<discription>Сергей Петровский, священник</discription>
+		<lifedates>(1864–1934)</lifedates>
+		<link>https://azbyka.ru/otechnik/Sergej_Petrovskij/</link>
+	</person>
+	<person>
+		<name>Антони$%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Амфитеатров%%</surname>
+		<sex>m</sex>
+		<discription>Антоний (Амфитеатров), архиепископ</discription>
+		<lifedates>(27.10.1815–20.11.1879)</lifedates>
+		<link>https://azbyka.ru/otechnik/Antonij_Amfiteatrov/</link>
+	</person>
+	<person>
+		<name>Серги$%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Смирнов%%</surname>
+		<sex>m</sex>
+		<discription>Сергий Смирнов, протоиерей</discription>
+		<lifedates>(05.09.1818–16.02.1889)</lifedates>
+		<link>https://azbyka.ru/otechnik/Sergij_Smirnov/</link>
+	</person>
+	<person>
+		<name>Иван%%</name>
+		<nick/>
+		<middlename>Степанович%%</middlename>
+		<surname>Знаменск$%%</surname>
+		<sex>m</sex>
+		<discription>Иван Степанович Знаменский</discription>
+		<lifedates>(1853–23.08.1882)</lifedates>
+		<link>https://azbyka.ru/otechnik/Ivan_Znamenskij/</link>
+	</person>
+	<person>
+		<name>Иоанн%%</name>
+		<nick>Рижск$$%</nick>
+		<middlename/>
+		<surname>(Поммер%%)</surname>
+		<sex>m</sex>
+		<discription>Иоанн Поммер, священномученик</discription>
+		<lifedates>(18.01.1876–12.10.1934)</lifedates>
+		<link>https://azbyka.ru/otechnik/Ioann_Pommer/</link>
+	</person>
+	<person>
+		<name>Иоанн%%</name>
+		<nick/>
+		<middlename/>
+		<surname>(Соколов%%)</surname>
+		<sex>m</sex>
+		<discription>Иоанн (Соколов), епископ</discription>
+		<lifedates>(05.06.1818–17.03.1869)</lifedates>
+		<link>https://azbyka.ru/otechnik/Ioann_Sokolov/</link>
+	</person>
+	<person>
+		<name>Никола$%%</name>
+		<nick/>
+		<middlename>Иванович%%</middlename>
+		<surname>Троицк$%%</surname>
+		<sex>m</sex>
+		<discription>Николай Иванович Троицкий</discription>
+		<lifedates>(14.04.1851–24.09.1920)</lifedates>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Troickij/</link>
+	</person>
+	<person>
+		<name>Иван%%</name>
+		<nick/>
+		<middlename>Петрович%%</middlename>
+		<surname>Николин%%</surname>
+		<sex>m</sex>
+		<discription>Иван Петрович Николин</discription>
+		<lifedates>(1867–не ранее 1918)</lifedates>
+		<link>https://azbyka.ru/otechnik/Ivan_Nikolin/</link>
+	</person>
+	<person>
+		<name>Андроник%%</name> 
+		<nick>Пермск$$%</nick>
+		<middlename/>
+		<surname>(Никольск$%%)</surname>
+		<sex>m</sex>
+		<discription>Андроник (Никольский), священномученик</discription>
+		<lifedates>(13.08.1870–20.06.1918)</lifedates>
+		<link>https://azbyka.ru/otechnik/Andronik_Nikolskij/</link>
+	</person>
+	<person>
+		<name>Тимофе$%%</name>
+		<nick/>
+		<middlename>Васильевич%%</middlename>
+		<surname>Барсов%%</surname>
+		<sex>m</sex>
+		<discription>Тимофей Васильевич Барсов, профессор</discription>
+		<lifedates>(11.06.1836–07.01.1904)</lifedates>
+		<link>https://azbyka.ru/otechnik/Timofej_Barsov/</link>
+	</person>
+	<person>
+		<name>Назари$%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Фаворов%%</surname>
+		<sex>m</sex>
+		<discription>Назарий Фаворов, протоиерей</discription>
+		<lifedates>(1820–24.01.1897)</lifedates>
+		<link>https://azbyka.ru/otechnik/Nazarij_Favorov/</link>
+	</person>
+	<person>
+		<name>Иоанн%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Зизиулас%%</surname>
+		<sex>m</sex>
+		<discription>Иоанн Зизиу́лас, митрополит</discription>
+		<lifedates>(10.01.1931)</lifedates>
+		<link>https://azbyka.ru/otechnik/Ioann_Ziziulas/</link>
+	</person>
+	<person>
+		<name>Иоанн%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Яхонтов%%</surname>
+		<sex>m</sex>
+		<discription>Иоанн Яхонтов, протоиерей</discription>
+		<lifedates>(1819–03.04.1888)</lifedates>
+		<link>https://azbyka.ru/otechnik/Ioann_Yahontov/</link>
+	</person>
+	<person>
+		<name>Димитри$%%</name>
+		<nick/>
+		<middlename/>
+		<surname>(Самбикин%%)</surname>
+		<sex>m</sex>
+		<discription>Димитрий (Самбикин), архиепископ</discription>
+		<lifedates>(15.10.1839–30.03.1908)</lifedates>
+		<link>https://azbyka.ru/otechnik/Dimitrij_Sambikin/</link>
+	</person>
+	<person>
+		<name>Иннокенти$%%</name>
+		<nick/>
+		<middlename/>
+		<surname>(Просвирнин%%)</surname>
+		<sex>m</sex>
+		<discription>Иннокентий (Просвирнин), архимандрит</discription>
+		<lifedates>(05.05.1940–12.07.1994)</lifedates>
+		<link>https://azbyka.ru/otechnik/Innokentij_Prosvirnin/</link>
+	</person>
+	<person>
+		<name>Михаил%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Фивейск$%%</surname>
+		<sex>m</sex>
+		<discription>Михаил Фивейский, протоиерей</discription>
+		<lifedates>(1856–1919)</lifedates>
+		<link>https://azbyka.ru/otechnik/Mihail_Fivejskij/</link>
+	</person>
+	<person>
+		<name>Александр%%</name>
+		<nick/>
+		<middlename>Иванович%%</middlename>
+		<surname>Пономарёв%%</surname>
+		<sex>m</sex>
+		<discription>Александр Иванович Пономарёв, профессор</discription>
+		<lifedates>(1849–1911)</lifedates>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Ponomarev/</link>
+	</person>
+	<person>
+		<name>Константин%%</name>
+		<nick/>
+		<middlename>Иванович%%</middlename>
+		<surname>Скворцов%%</surname>
+		<sex>m</sex>
+		<discription>Константин Иванович Скворцов, профессор</discription>
+		<lifedates>(12.05.1821–12.10.1876)</lifedates>
+		<link>https://azbyka.ru/otechnik/Konstantin_Skvorcov/</link>
+	</person>
+	<person>
+		<name>Таврион%%</name>
+		<nick/>
+		<middlename/>
+		<surname>(Батозск$%%)</surname>
+		<sex>m</sex>
+		<discription>Таврион (Батозский), архимандрит</discription>
+		<lifedates>(10.04.1898–13.04.1978)</lifedates>
+		<link>https://azbyka.ru/otechnik/Tavrion_Batozskij/</link>
+	</person>
+	<person>
+		<name>Никола$%%</name>
+		<nick/>
+		<middlename>Фёдорович%%</middlename>
+		<surname>Каптерев%%</surname>
+		<sex>m</sex>
+		<discription>Николай Фёдорович Каптерев, профессор</discription>
+		<lifedates>(12.05.1821–12.10.1876)</lifedates>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Kapterev/</link>
+	</person>
+	<person>
+		<name>Леонид%%</name>
+		<nick/>
+		<middlename/>
+		<surname>(Краснопевков%%)</surname>
+		<sex>m</sex>
+		<discription>Леонид (Краснопевков), архиепископ</discription>
+		<lifedates>(28.02.1817–27.12.1876)</lifedates>
+		<link>https://azbyka.ru/otechnik/Leonid_Krasnopevkov/</link>
+	</person>
+	<person>
+		<name>Иван%%</name>
+		<nick/>
+		<middlename>Егорович%%</middlename>
+		<surname>Троицк$%%</surname>
+		<sex>m</sex>
+		<discription>Иван Егорович Троицкий, профессор</discription>
+		<lifedates>(18.04.1832–15.08.1901)</lifedates>
+		<link>https://azbyka.ru/otechnik/Ivan_Troickij/</link>
+	</person>
+	<person>
+		<name>Витали$%%</name>
+		<nick/>
+		<middlename/>
+		<surname>(Гречулевич%%)</surname>
+		<sex>m</sex>
+		<discription>Виталий (Гречулевич), епископ</discription>
+		<lifedates>13.01.1822–28.05.1885</lifedates>
+		<link>https://azbyka.ru/otechnik/Vitalij_Grechulevich/</link>
+	</person>
+	<person>
+		<name>Пав$%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Николаевски$%%</surname>
+		<sex>m</sex>
+		<discription>Павел Николаевский, протоиерей</discription>
+		<lifedates>20.06.1841–29.11.1899</lifedates>
+		<link>https://azbyka.ru/otechnik/Pavel_Nikolaevskij/</link>
+	</person>
+	<person>
+		<name>Иван%%</name>
+		<nick/>
+		<middlename>Степанович%%</middlename>
+		<surname>Якимов%%</surname>
+		<sex>m</sex>
+		<discription>Иван Степанович Якимов, профессор</discription>
+		<lifedates>(1847–04.05.1885)</lifedates>
+		<link>https://azbyka.ru/otechnik/Ivan_Yakimov/</link>
+	</person>
+	<person>
+		<name>Александр%%</name>
+		<nick/>
+		<middlename>Васильевич%%</middlename>
+		<surname>Михайлов%%</surname>
+		<sex>m</sex>
+		<discription>Александр Васильевич Михайлов</discription>
+		<lifedates>(03.04.1859–10.08.1927 )</lifedates>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Mihajlov/</link>
+	</person>
+	<person>
+		<name>Александр%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Сулоцки$%%</surname>
+		<sex>m</sex>
+		<discription>Александр Сулоцкий, протоиерей</discription>
+		<lifedates>1812–16.05.1884</lifedates>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Sulockii/</link>
+	</person>
+	<person>
+		<name>Васили$%%</name>
+		<nick/>
+		<middlename>Никанорович%%</middlename>
+		<surname>Мышцын%%</surname>
+		<sex>m</sex>
+		<discription>Василий Никанорович Мышцын, профессор</discription>
+		<lifedates>02.02.1866–02.04.1936</lifedates>
+		<link>https://azbyka.ru/otechnik/Vasilij_Myshcyn/</link>
+	</person>
+	<person>
+		<name>Никола$%%</name>
+		<nick/>
+		<middlename>Константинович%%</middlename>
+		<surname>Никольски$%%</surname>
+		<sex>m</sex>
+		<discription>Николай Константинович Никольский</discription>
+		<lifedates>29.07.1863–23.03.1936</lifedates>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Nikolskij/</link>
+	</person>
+	<person>
+		<name>Иван%%</name>
+		<nick/>
+		<middlename>Васильевич%%</middlename>
+		<surname>Чельцов%%</surname>
+		<sex>m</sex>
+		<discription>Иван Васильевич Чельцов, профессор</discription>
+		<lifedates>28.08.1828–05.05.1878</lifedates>
+		<link>https://azbyka.ru/otechnik/Ivan_Chelcov/</link>
+	</person>
+	<person>
+		<name>Стефан%%</name>
+		<nick/>
+		<middlename>Григорьевич%%</middlename>
+		<surname>Рункевич%%</surname>
+		<sex>m</sex>
+		<discription>Стефан Григорьевич Рункевич</discription>
+		<lifedates>11.01.1867–1924</lifedates>
+		<link>https://azbyka.ru/otechnik/Stefan_Runkevich/</link>
+	</person>
+	<person>
+		<name>Герасим%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Павск$%%</surname>
+		<sex>m</sex>
+		<discription>Герасим Павский, протоиерей</discription>
+		<lifedates>04.03.1787–19.04.1863</lifedates>
+		<link>https://azbyka.ru/otechnik/Gerasim_Pavskii/</link>
+	</person>
+	<person>
+		<name>Иван%%</name>
+		<nick/>
+		<middlename>Яковлевич%%</middlename>
+		<surname>Порфирьев%%</surname>
+		<sex>m</sex>
+		<discription>Иван Яковлевич Порфирьев, профессор</discription>
+		<lifedates>11.01.1867–1924</lifedates>
+		<link>https://azbyka.ru/otechnik/Ivan_Porfirev/</link>
+	</person>
+	<person>
+		<name>Пав$%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Аникиев%%</surname>
+		<sex>m</sex>
+		<discription>Павел Аникиев, протоиерей</discription>
+		<lifedates>19.06.1878–01.02.1932</lifedates>
+		<link>https://azbyka.ru/otechnik/Pavel_Anikiev/</link>
+	</person>
+	<person>
+		<name>Александр%%</name>
+		<nick/>
+		<middlename>Иванович%%</middlename>
+		<surname>Садов%%</surname>
+		<sex>m</sex>
+		<discription>Александр Иванович Садов, профессор</discription>
+		<lifedates>09.09.1850–05.04.1930</lifedates>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Sadov/</link>
+	</person>
+	<person>
+		<name>Антони$%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Вадковск$%%</surname>
+		<sex>m</sex>
+		<discription>Антоний (Вадковский), митрополит</discription>
+		<lifedates>15.09.1846–15.11.1912</lifedates>
+		<link>https://azbyka.ru/otechnik/Antonij_Vadkovskij/</link>
+	</person>
+	<person>
+		<name>Иоанн%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Арсеньев%%</surname>
+		<sex>m</sex>
+		<discription>Иоанн Арсеньев, священник</discription>
+		<lifedates>07.03.1862–08.09.1930</lifedates>
+		<link>https://azbyka.ru/otechnik/Ioann_Arsenev/</link>
+	</person>
+	<person>
+		<name>Михаил%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Архангельск$%%</surname>
+		<sex>m</sex>
+		<discription>Михаил Архангельский, протоиерей</discription>
+		<lifedates>?–1904</lifedates>
+		<link>https://azbyka.ru/otechnik/Mihail_Arhangelskij/</link>
+	</person>
+	<person>
+		<name>Никола$%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Боголюбов%%</surname>
+		<sex>m</sex>
+		<discription>Николай Боголюбов, протоиерей</discription>
+		<lifedates>01.06.1872–14.05.1934</lifedates>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Bogolyubov/</link>
+	</person>
+	<person>
+		<name>Яков%%</name>
+		<nick/>
+		<middlename>Алексеевич%%</middlename>
+		<surname>Богородск$%%</surname>
+		<sex>m</sex>
+		<discription>Яков Алексеевич Богородский, профессор</discription>
+		<lifedates>14.10.1841–31.07.1920</lifedates>
+		<link>https://azbyka.ru/otechnik/Yakov_Bogorodskij/</link>
+	</person>
+	<person>
+		<name>Борис%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Плотников%%</surname>
+		<sex>m</sex>
+		<discription>Борис (Плотников), епископ</discription>
+		<lifedates>28.07.1855–01.12.1901</lifedates>
+		<link>https://azbyka.ru/otechnik/Boris_Plotnikov/</link>
+	</person>
+	<person>
+		<name>Васили$%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Бандаков%%</surname>
+		<sex>m</sex>
+		<discription>Василий Бандаков, протоиерей</discription>
+		<lifedates>1808–15.01.1890</lifedates>
+		<link>https://azbyka.ru/otechnik/Vasilij_Bandakov/</link>
+	</person>
+	<person>
+		<name>Васили$%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Богдашевск$%%</surname>
+		<sex>m</sex>
+		<discription>Василий (Богдашевский), архиепископ</discription>
+		<lifedates>19.10.1861–25.02.1933</lifedates>
+		<link>https://azbyka.ru/otechnik/Vasilij_Bogdashevskij/</link>
+	</person>
+	<person>
+		<name>Александр%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Введенск$%%</surname>
+		<sex>m</sex>
+		<discription>Александр Введенский, протоиерей</discription>
+		<lifedates>08.10.1884–04.04.1973</lifedates>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Vvedenskij/</link>
+	</person>
+	<person>
+		<name>Алексе$%%</name>
+		<nick/>
+		<middlename>Иванович$</middlename>
+		<surname>Введенск$%%</surname>
+		<sex>m</sex>
+		<discription>Алексей Иванович Введенский</discription>
+		<lifedates>1861–1913</lifedates>
+		<link>https://azbyka.ru/otechnik/Aleksej_Vvedenskij/</link>
+	</person>
+	<person>
+		<name>Фёдор%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Голубинск$%%</surname>
+		<sex>m</sex>
+		<discription>Фёдор Голубинский, протоиерей</discription>
+		<lifedates>02.01.1798–03.09.1854</lifedates>
+		<link>https://azbyka.ru/otechnik/Fedor_Golubinskij/</link>
+	</person>
+	<person>
+		<name>Евгени$%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Воронцов%%</surname>
+		<sex>m</sex>
+		<discription>Евгений Воронцов, протоиерей</discription>
+		<lifedates>02.02.1867–31.10.1925</lifedates>
+		<link>https://azbyka.ru/otechnik/Evgenij_Voroncov/</link>
+	</person>
+	<person>
+		<name>Пав$%%</name>
+		<nick/>
+		<middlename>Петрович%%</middlename>
+		<surname>Пономарёв$%%</surname>
+		<sex>m</sex>
+		<discription>Павел Петрович Пономарёв, профессор</discription>
+		<lifedates>1872–не ранее 1921</lifedates>
+		<link>https://azbyka.ru/otechnik/Pavel_Ponomarev/</link>
+	</person>
+	<person>
+		<name>Никола$%%</name>
+		<nick/>
+		<middlename>Гаврилович%%</middlename>
+		<surname>Городенск$%%</surname>
+		<sex>m</sex>
+		<discription>Николай Гаврилович Городенский, профессор</discription>
+		<lifedates>20.05.1871–27.02.1936</lifedates>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Gorodenskij/</link>
+	</person>
+	<person>
+		<name>Григори$%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Борисоглебск$%%</surname>
+		<sex>m</sex>
+		<discription>Григорий (Борисоглебский), архимандрит</discription>
+		<lifedates>31.03.1867–30.11.1893</lifedates>
+		<link>https://azbyka.ru/otechnik/Grigorij_Borisoglebskij/</link>
+	</person>
+	<person>
+		<name>Никола$%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Гроссу</surname>
+		<sex>m</sex>
+		<discription>Николай Гроссу, протоиерей</discription>
+		<lifedates>12.09.1867–1938</lifedates>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Grossu/</link>
+	</person>
+	<person>
+		<name>Гури$%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Степанов%%</surname>
+		<sex>m</sex>
+		<discription>Гурий (Степанов), священномученик</discription>
+		<lifedates>03.10.1880–01.11.1937</lifedates>
+		<link>https://azbyka.ru/otechnik/Gurij_Stepanov/</link>
+	</person>
+	<person>
+		<name>Александр%%</name>
+		<nick/>
+		<middlename>Фёдорович%%</middlename>
+		<surname>Гусев%%</surname>
+		<sex>m</sex>
+		<discription>Александр Фёдорович Гусев, профессор</discription>
+		<lifedates>23.08.1845–08.07.1904</lifedates>
+		<link>https://azbyka.ru/otechnik/Aleksandr_Gusev/</link>
+	</person>
+	<person>
+		<name>Вениамин%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Платонов%%</surname>
+		<sex>m</sex>
+		<discription>Вениамин (Платонов), епископ</discription>
+		<lifedates>28.02.1819–13.06.1905</lifedates>
+		<link>https://azbyka.ru/otechnik/Veniamin_Platonov/</link>
+	</person>
+	<person>
+		<name>Никола$%%</name>
+		<nick/>
+		<middlename>Александрович%%</middlename>
+		<surname>Заозерск$%%</surname>
+		<sex>m</sex>
+		<discription>Николай Александрович Заозерский, профессор</discription>
+		<lifedates>24.04.1851–02.07.1919</lifedates>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Zaozerskij/</link>
+	</person>
+	<person>
+		<name>Дмитри$%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Боголюбов%%</surname>
+		<sex>m</sex>
+		<discription>Дмитрий Боголюбов, протоиерей</discription>
+		<lifedates>17.02.1869–22.06.1953</lifedates>
+		<link>https://azbyka.ru/otechnik/Dmitrij_Bogolyubov/</link>
+	</person>
+	<person>
+		<name>Никола$%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Малиновск$%%</surname>
+		<sex>m</sex>
+		<discription>Николай Малиновский, протоиерей</discription>
+		<lifedates>18.11.1861–28.01.1917</lifedates>
+		<link>https://azbyka.ru/otechnik/Nikolaj_Malinovskij/</link>
+	</person>
+	<person>
+		<name>Михаил%%</name>
+		<nick/>
+		<middlename>Александрович%%</middlename>
+		<surname>Кальнев%%</surname>
+		<sex>m</sex>
+		<discription>Михаил Александрович Кальнев</discription>
+		<lifedates>1864 – после 1920</lifedates>
+		<link>https://azbyka.ru/otechnik/Mihail_Kalnev/</link>
+	</person>
+	<person>
+		<name>Иоанн%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Митропольск$%%</surname>
+		<sex>m</sex>
+		<discription>Иоанн (Митропольский), епископ</discription>
+		<lifedates>27.09.1836–02.06.1914</lifedates>
+		<link>https://azbyka.ru/otechnik/Ioann_Mitropolskij/</link>
+	</person>
+	<person>
+		<name>Даниил%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Сысоев%%</surname>
+		<sex>m</sex>
+		<discription>Даниил Сысоев, иерей</discription>
+		<lifedates>12.01.1974–20.11.2009</lifedates>
+		<link>https://azbyka.ru/otechnik/Daniil_Sysoev/</link>
+	</person>
+	<person>
+		<name>Владимир%%</name>
+		<nick/>
+		<middlename>Александрович%%</middlename>
+		<surname>Керенск$%%</surname>
+		<sex>m</sex>
+		<discription>Владимир Александрович Керенский, профессор</discription>
+		<lifedates>1868–не ранее 1927</lifedates>
+		<link>https://azbyka.ru/otechnik/Vladimir_Kerenskij/</link>
+	</person>
+	<person>
+		<name>Пётр%%</name>
+		<nick/>
+		<middlename>Михайлович%%</middlename>
+		<surname>Минин%%</surname>
+		<sex>m</sex>
+		<discription>Пётр Михайлович Минин</discription>
+		<lifedates>1876-?</lifedates>
+		<link>https://azbyka.ru/otechnik/Petr_Minin/</link>
+	</person>
+	<person>
+		<name>Михаил%%</name>
+		<nick/>
+		<middlename/>
+		<surname>Орлов%%</surname>
+		<sex>m</sex>
+		<discription>Михаил Орлов, протоиерей</discription>
+		<lifedates>02.07.1864–02.06.1920 </lifedates>
+		<link>https://azbyka.ru/otechnik/Mihail_Orlov/</link>
 	</person>
 </HighlightNames>

@@ -1,19 +1,13 @@
 === Bg Highlight Names ===
 
 Contributors: VBog
-
 Donate link: https://bogaiskov.ru/about-me/donate/
-
 Tags: имя, отчество, монах, фамилия, ссылка, книга
-
+Requires PHP: 5.3
 Requires at least: 3.0.1
-
-Tested up to: 4.6.0
-
+Tested up to: 4.8.3
 Stable tag: trunk
-
 License: GPLv2 or later
-
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
@@ -214,6 +208,11 @@ Plugin highlight the names in the text. Supports Russian names (Last, First, MI)
 
 
 == Changelog ==
+
+= 1.2.1-3 =
+
+* Дополнен файл данных "Библиотека Святых отцов и церковных писателей".
+* Исправлены некоторые ошибки.
 
 = 1.2 =
 

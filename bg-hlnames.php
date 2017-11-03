@@ -3,7 +3,7 @@
 Plugin Name: Bg Highlight Names
 Plugin URI: https://bogaiskov.ru/highlight-names/
 Description: Highlight Russian names in text of posts and pages.
-Version: 1.2.2
+Version: 1.2.3
 Author: VBog
 Author URI: http://bogaiskov.ru
 Text Domain: bg-highlight-names
@@ -35,7 +35,7 @@ Domain Path: /languages
 if ( !defined('ABSPATH') ) {
 	die( 'Sorry, you are not allowed to access this page directly.' ); 
 }
-define('BG_HLNAMES_VERSION', '1.2.2');
+define('BG_HLNAMES_VERSION', '1.2.3');
 
 
 $bg_hlnames_start_time = microtime(true);
