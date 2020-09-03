@@ -58,9 +58,6 @@ include_once('includes/settings.php' );
 // Задаем начальные значения параметров
 bg_hlnames_add_options ();
 
-ini_set('memory_limit', '256M');
-
-
 // Проверяем текущую версию плагина и обновляем файл данных
 function bg_hlnames_update_datefile() {
 	if ( version_compare( get_option('bg_hlnames_version'), BG_HLNAMES_VERSION, '<' ) ) {
